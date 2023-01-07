@@ -1,0 +1,630 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+    <title>5. Laboratorio didattico &#8212; Psicometria</title>
+    
+  <!-- Loaded before other Sphinx assets -->
+  <link href="_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
+<link href="_static/styles/pydata-sphinx-theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
+
+    
+  <link rel="stylesheet"
+    href="_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
+    <link rel="stylesheet" href="_static/styles/sphinx-book-theme.css?digest=5115cc725059bd94278eecd172e13a965bf8f5a9" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="_static/exercise.css" />
+    <link rel="stylesheet" type="text/css" href="_static/design-style.b7bb847fb20b106c3d81b95245e65545.min.css" />
+    
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf">
+
+    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/clipboard.min.js"></script>
+    <script src="_static/copybutton.js"></script>
+    <script src="_static/scripts/sphinx-book-theme.js?digest=9c920249402e914e316237a7dbc6769907cce411"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="_static/togglebutton.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="_static/design-tabs.js"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
+const thebe_selector = ".thebe,.cell"
+const thebe_selector_input = "pre"
+const thebe_selector_output = ".output, .cell_output"
+</script>
+    <script async="async" src="_static/sphinx-thebe.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="7. Modalità di verifica dell’apprendimento" href="esame.html" />
+    <link rel="prev" title="4. Calendario" href="calendario.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="None">
+    
+
+    <!-- Google Analytics -->
+    
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="60">
+<!-- Checkboxes to toggle the left sidebar -->
+<input type="checkbox" class="sidebar-toggle" name="__navigation" id="__navigation" aria-label="Toggle navigation sidebar">
+<label class="overlay overlay-navbar" for="__navigation">
+    <div class="visually-hidden">Toggle navigation sidebar</div>
+</label>
+<!-- Checkboxes to toggle the in-page toc -->
+<input type="checkbox" class="sidebar-toggle" name="__page-toc" id="__page-toc" aria-label="Toggle in-page Table of Contents">
+<label class="overlay overlay-pagetoc" for="__page-toc">
+    <div class="visually-hidden">Toggle in-page Table of Contents</div>
+</label>
+<!-- Headers at the top -->
+<div class="announcement header-item noprint"></div>
+<div class="header header-item noprint"></div>
+
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<!-- Sidebar -->
+<div class="bd-sidebar noprint" id="site-navigation">
+    <div class="bd-sidebar__content">
+        <div class="bd-sidebar__top"><div class="navbar-brand-box">
+    <a class="navbar-brand text-wrap" href="index.html">
+      
+        <!-- `logo` is deprecated in Sphinx 4.0, so remove this when we stop supporting 3 -->
+        
+      
+      
+      <img src="_static/altair-hist.png" class="logo" alt="logo">
+      
+      
+      <h1 class="site-logo" id="site-title">Psicometria</h1>
+      
+    </a>
+</div><form class="bd-search d-flex align-items-center" action="search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="intro.html">
+                    Psicometria
+                </a>
+            </li>
+        </ul>
+        <p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  A.A. 2022-2023
+ </span>
+</p>
+<ul class="current nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="syllabus.html">
+   1. Syllabus
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="materiali_didattici.html">
+   2. Materiali didattici
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="come_studiare.html">
+   3. Come studiare
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="calendario.html">
+   4. Calendario
+  </a>
+ </li>
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
+   5. Laboratorio didattico
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="esame.html">
+   7. Modalità di verifica dell’apprendimento
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="faq.html">
+   8. FAQ
+  </a>
+ </li>
+</ul>
+
+    </div>
+</nav></div>
+        <div class="bd-sidebar__bottom">
+             <!-- To handle the deprecated key -->
+            
+            <div class="navbar_extra_footer">
+            Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
+            </div>
+            
+        </div>
+    </div>
+    <div id="rtd-footer-container"></div>
+</div>
+
+
+          
+
+
+          
+<!-- A tiny helper pixel to detect if we've scrolled -->
+<div class="sbt-scroll-pixel-helper"></div>
+<!-- Main content -->
+<div class="col py-0 content-container">
+    
+    <div class="header-article row sticky-top noprint">
+        
+
+
+
+<div class="col py-1 d-flex header-article-main">
+    <div class="header-article__left">
+        
+        <label for="__navigation"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="right"
+title="Toggle navigation"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-bars"></i>
+  </span>
+
+</label>
+
+        
+    </div>
+    <div class="header-article__right">
+<div class="menu-dropdown menu-dropdown-launch-buttons">
+  <button class="headerbtn menu-dropdown__trigger"
+      aria-label="Launch interactive content">
+      <i class="fas fa-rocket"></i>
+  </button>
+  <div class="menu-dropdown__content">
+    <ul>
+      <li>
+        <a href="https://mybinder.org/v2/gh/ccaudek/psicometria_2023/master?urlpath=tree/laboratorio_didattico.ipynb"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Launch on Binder"
+>
+  
+
+<span class="headerbtn__icon-container">
+  
+    <img src="_static/images/logo_binder.svg">
+  </span>
+<span class="headerbtn__text-container">Binder</span>
+</a>
+
+      </li>
+      
+      <li>
+        <a href="https://colab.research.google.com/github/ccaudek/psicometria_2023/blob/master/laboratorio_didattico.ipynb"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Launch on Colab"
+>
+  
+
+<span class="headerbtn__icon-container">
+  
+    <img src="_static/images/logo_colab.png">
+  </span>
+<span class="headerbtn__text-container">Colab</span>
+</a>
+
+      </li>
+      
+    </ul>
+  </div>
+</div>
+
+<button onclick="toggleFullScreen()"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="bottom"
+title="Fullscreen mode"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+<div class="menu-dropdown menu-dropdown-repository-buttons">
+  <button class="headerbtn menu-dropdown__trigger"
+      aria-label="Source repositories">
+      <i class="fab fa-github"></i>
+  </button>
+  <div class="menu-dropdown__content">
+    <ul>
+      <li>
+        <a href="https://github.com/ccaudek/psicometria_2023"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Source repository"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+<span class="headerbtn__text-container">repository</span>
+</a>
+
+      </li>
+      
+      <li>
+        <a href="https://github.com/ccaudek/psicometria_2023/issues/new?title=Issue%20on%20page%20%2Flaboratorio_didattico.html&body=Your%20issue%20content%20here."
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Open an issue"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-lightbulb"></i>
+  </span>
+<span class="headerbtn__text-container">open issue</span>
+</a>
+
+      </li>
+      
+    </ul>
+  </div>
+</div>
+
+<div class="menu-dropdown menu-dropdown-download-buttons">
+  <button class="headerbtn menu-dropdown__trigger"
+      aria-label="Download this page">
+      <i class="fas fa-download"></i>
+  </button>
+  <div class="menu-dropdown__content">
+    <ul>
+      <li>
+        <a href="_sources/laboratorio_didattico.ipynb"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Download source file"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="headerbtn__text-container">.ipynb</span>
+</a>
+
+      </li>
+      
+      <li>
+        
+<button onclick="printPdf(this)"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="left"
+title="Print to PDF"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="headerbtn__text-container">.pdf</span>
+</button>
+
+      </li>
+      
+    </ul>
+  </div>
+</div>
+<label for="__page-toc"
+  class="headerbtn headerbtn-page-toc"
+  
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-list"></i>
+  </span>
+
+</label>
+
+    </div>
+</div>
+
+<!-- Table of contents -->
+<div class="col-md-3 bd-toc show noprint">
+    <div class="tocsection onthispage pt-5 pb-3">
+        <i class="fas fa-list"></i> Contents
+    </div>
+    <nav id="bd-toc-nav" aria-label="Page">
+        <ul class="visible nav section-nav flex-column">
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#">
+   5. Laboratorio didattico
+  </a>
+  <ul class="visible nav section-nav flex-column">
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#modalita-di-svolgimento">
+     5.1. Modalità di svolgimento
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#composizione-e-attivita-dei-gruppi">
+     5.2. Composizione e attività dei gruppi
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#istruzioni-e-tivity">
+     5.3. Istruzioni E-tivity
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#consegne-di-lavoro">
+     5.4. Consegne di lavoro
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#modalita-di-verifica">
+     5.5. Modalità di verifica
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#esempio">
+     5.6. Esempio
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#demos">
+   6. Demos
+  </a>
+ </li>
+</ul>
+
+    </nav>
+</div>
+    </div>
+    <div class="article row">
+        <div class="col pl-md-3 pl-lg-5 content-container">
+            <!-- Table of contents that is only displayed when printing the page -->
+            <div id="jb-print-docs-body" class="onlyprint">
+                <h1>Laboratorio didattico</h1>
+                <!-- Table of contents -->
+                <div id="print-main-content">
+                    <div id="jb-print-toc">
+                        
+                        <div>
+                            <h2> Contents </h2>
+                        </div>
+                        <nav aria-label="Page">
+                            <ul class="visible nav section-nav flex-column">
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#">
+   5. Laboratorio didattico
+  </a>
+  <ul class="visible nav section-nav flex-column">
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#modalita-di-svolgimento">
+     5.1. Modalità di svolgimento
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#composizione-e-attivita-dei-gruppi">
+     5.2. Composizione e attività dei gruppi
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#istruzioni-e-tivity">
+     5.3. Istruzioni E-tivity
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#consegne-di-lavoro">
+     5.4. Consegne di lavoro
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#modalita-di-verifica">
+     5.5. Modalità di verifica
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#esempio">
+     5.6. Esempio
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#demos">
+   6. Demos
+  </a>
+ </li>
+</ul>
+
+                        </nav>
+                    </div>
+                </div>
+            </div>
+            <main id="main-content" role="main">
+                
+              <div>
+                
+  <section class="tex2jax_ignore mathjax_ignore" id="laboratorio-didattico">
+<h1><span class="section-number">5. </span>Laboratorio didattico<a class="headerlink" href="#laboratorio-didattico" title="Permalink to this headline">#</a></h1>
+<p>Il laboratorio didattico consentirà agli studenti di applicare le conoscenze apprese e di usare il loro know-how per portare a termine un progetto di analisi di dati psicologici.</p>
+<ul class="simple">
+<li><p>Il primo obiettivo del laboratorio didattico è la produzione di un elaborato nel quale, a partire dai dati reali messi a disposizione dagli autori di recenti pubblicazioni psicologiche, si ripercorre il percorso che, partendo dall’ipotesi della ricerca e attraverso l’analisi dei dati, conduce alle conclusioni dello studio.</p></li>
+<li><p>Il secondo obiettivo è quello di contribuire a sviluppare le competenze comunicativo-relazionali che rendono possibile sia una presentazione orale dei risultati sia un’interazione proficua e costruttiva con gli altri membri del gruppo.</p></li>
+</ul>
+<section id="modalita-di-svolgimento">
+<h2><span class="section-number">5.1. </span>Modalità di svolgimento<a class="headerlink" href="#modalita-di-svolgimento" title="Permalink to this headline">#</a></h2>
+<p>Il laboratorio didattico prevede una serie di incontri Meet che si svolgeranno sia collettivamente, a lezione, sia separatamente per i vari gruppi, sotto la supervisione del docente. Il resto si svolgerà tramite incontri organizzati autonomamente dai partecipanti e online in piattaforma Moodle tramite il Forum.</p>
+<p>Allo studente si chiede quanto segue.</p>
+<ol class="simple">
+<li><p>Lettura dell’articolo messo a disposizione che motiva il lavoro. Si presti particolare attenzione ai seguenti punti.</p>
+<ul class="simple">
+<li><p>Qual è l’ipotesi della ricerca?</p></li>
+<li><p>Che relazione c’è tra l’ipotesi di ricerca e la letteratura di riferimento?</p></li>
+<li><p>Quale metodologia viene usata dagli autori per raccogliere i dati necessari a verificare l’ipotesi che motiva lo studio?</p></li>
+<li><p>Come vengono interpretati i risultati dell’analisi statistica e perché tali risultati sono rilevanti per la verifica dell’ipotesi della ricerca?</p></li>
+<li><p>Quali conclusioni traggono gli autori dai risultati ottenuti?</p></li>
+<li><p>In che modo i risultati ottenuti contribuiscono ad avanzare le nostre conoscenze del fenomeno considerato?</p></li>
+</ul>
+</li>
+<li><p>Svolgimento delle attività seguenti.</p>
+<ul class="simple">
+<li><p>attività n. 1: lavoro di gruppo.</p></li>
+<li><p>attività n. 2: produzione di un elaborato.</p></li>
+</ul>
+</li>
+</ol>
+</section>
+<section id="composizione-e-attivita-dei-gruppi">
+<h2><span class="section-number">5.2. </span>Composizione e attività dei gruppi<a class="headerlink" href="#composizione-e-attivita-dei-gruppi" title="Permalink to this headline">#</a></h2>
+<p>Le attività del laboratorio didattico si svolgeranno in gruppo.</p>
+<p>Ogni gruppo dovrà essere costituito da un minimo di 20 e un massimo di 30 studenti. Ciascun gruppo verrà identificato dal cognome del primo autore dell’articolo di riferimento. I gruppi verranno formati entro la fine della seconda settimana di lezione. Ogni gruppo avrà un referente che avrà il ruolo di organizzare gli incontri periodici del gruppo e di interfacciarsi con me per eventuali comunicazioni e aggiornamenti. Ogni studente frequentante deve far parte di un gruppo. Per iscriversi ad un gruppo, è necessario seguire le indicazioni riportate nella pagina Moodle. Vi consiglio di fissare un incontro settimanale telematico per discutere sia gli esercizi WarmUp, sia i progressi del progetto di gruppo.</p>
+</section>
+<section id="istruzioni-e-tivity">
+<h2><span class="section-number">5.3. </span>Istruzioni E-tivity<a class="headerlink" href="#istruzioni-e-tivity" title="Permalink to this headline">#</a></h2>
+<p>Ogni gruppo dovrà sintetizzare i risultati delle attività svolte a livello individuale e di gruppo in una relazione finale di sintesi. Tale documento dovrà essere strutturato come indicato nell’E-tivity che illustra l’analisi dei dati di Mehr, Song e Spelke (2016).</p>
+<ul class="simple">
+<li><p>Il coordinatore a nome del gruppo caricherà il documento su Moodle, riportando i nominativi di tutti i membri del gruppo.</p></li>
+<li><p>Le presentazioni orali verranno svolte in due incontri che avranno luogo l’ultima settimana di lezione.</p></li>
+<li><p>Ogni presentazione avrà durata di 5 minuti; ad essa seguirà una discussione. Tutti i membri del gruppo dovranno essere presenti.</p></li>
+</ul>
+</section>
+<section id="consegne-di-lavoro">
+<h2><span class="section-number">5.4. </span>Consegne di lavoro<a class="headerlink" href="#consegne-di-lavoro" title="Permalink to this headline">#</a></h2>
+<p>Prodotto atteso: file in formato R Markdown (Rmd) avente la struttura dell’esempio fornito (Mehr, Song e Spelke, 2016).</p>
+</section>
+<section id="modalita-di-verifica">
+<h2><span class="section-number">5.5. </span>Modalità di verifica<a class="headerlink" href="#modalita-di-verifica" title="Permalink to this headline">#</a></h2>
+<p>Presentazione orale del lavoro svolto e valutazione dell’elaborato scritto.</p>
+</section>
+<section id="esempio">
+<h2><span class="section-number">5.6. </span>Esempio<a class="headerlink" href="#esempio" title="Permalink to this headline">#</a></h2>
+<p>Fornisco qui un <a class="reference external" href="http://htmlpreview.github.io/?https://github.com/ccaudek/ds4psy_R_demos/blob/main/project/melody.html">esempio</a> di relazione, insieme all’<a class="reference external" href="https://github.com/ccaudek/ds4psy_R_demos/blob/main/project/melodies_infants.pdf">articolo</a> di partenza.</p>
+</section>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="demos">
+<h1><span class="section-number">6. </span>Demos<a class="headerlink" href="#demos" title="Permalink to this headline">#</a></h1>
+<p>Il repository <a class="reference external" href="https://github.com/ccaudek/ds4psy_R_demos">ds4psy_R_demos</a> contiene vari script Rmd che ulteriormente illustrano o estendono i temi discussi nella dispensa <em>Data science per psicologi</em>.</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://github.com/ccaudek/ds4psy_R_demos/tree/main/demos_ch03/">Capitolo 3</a></p>
+<ul>
+<li><p><a class="reference external" href="http://htmlpreview.github.io/?https://github.com/ccaudek/ds4psy_R_demos/blob/main/demos_ch03/demo03_01.html">3.1: Istogramma</a></p></li>
+</ul>
+</li>
+</ul>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./."
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+            </main>
+            <footer class="footer-article noprint">
+                
+    <!-- Previous / next buttons -->
+<div class='prev-next-area'>
+    <a class='left-prev' id="prev-link" href="calendario.html" title="previous page">
+        <i class="fas fa-angle-left"></i>
+        <div class="prev-next-info">
+            <p class="prev-next-subtitle">previous</p>
+            <p class="prev-next-title"><span class="section-number">4. </span>Calendario</p>
+        </div>
+    </a>
+    <a class='right-next' id="next-link" href="esame.html" title="next page">
+    <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title"><span class="section-number">7. </span>Modalità di verifica dell’apprendimento</p>
+    </div>
+    <i class="fas fa-angle-right"></i>
+    </a>
+</div>
+            </footer>
+        </div>
+    </div>
+    <div class="footer-content row">
+        <footer class="col footer"><p>
+  
+    By Corrado Caudek<br/>
+  
+      &copy; Copyright 2022.<br/>
+</p>
+        </footer>
+    </div>
+    
+</div>
+
+
+      </div>
+    </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf"></script>
+
+
+  </body>
+</html>

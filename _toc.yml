@@ -1,0 +1,19 @@
+format: jb-book
+root: intro
+parts:
+  - caption: A.A. 2022-2023
+    numbered: true
+    chapters:
+      - file: syllabus
+      - file: materiali_didattici
+      - file: come_studiare
+      - file: calendario
+      - file: laboratorio_didattico
+      - file: esame
+      - file: faq
+  - caption: Esercizi
+    chapters:
+      - file: esercizi/01_key_notions/key_notions_index
+        sections:
+          - file: esercizi/01_key_notions/ex_measurement_scales
+          - file: esercizi/01_key_notions/ex_descriptive_stats
