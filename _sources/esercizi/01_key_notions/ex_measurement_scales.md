@@ -1,4 +1,4 @@
-# ✅ Quiz M1.01
+# ✅ Quiz M1.02
 
 ```{admonition} Question
 In the notebook "First look at our dataset", we used pandas and specifically
