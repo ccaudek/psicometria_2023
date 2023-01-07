@@ -468,7 +468,7 @@ numero di candidati ottenga un punteggio compreso tra 550 e 600:</p>
 </div>
 <div class="solution dropdown admonition" id="esercizi/03_distributions/ex_gaussian-solution-5">
 
-<p class="admonition-title">Solution to<a class="reference internal" href="#label-distributions-gauss-04"> Exercise 19</a></p>
+<p class="admonition-title">Solution to<a class="reference internal" href="#label-distributions-gauss-03"> Exercise 18</a></p>
 <section id="solution-content">
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">scipy.stats</span> <span class="k">as</span> <span class="nn">st</span>
 
@@ -492,7 +492,7 @@ motivazione superiore al suo.  Quale punteggio ha ottenuto Mario Rossi nel test?
 </div>
 <div class="solution dropdown admonition" id="esercizi/03_distributions/ex_gaussian-solution-7">
 
-<p class="admonition-title">Solution to<a class="reference internal" href="#label-distributions-gauss-03"> Exercise 18</a></p>
+<p class="admonition-title">Solution to<a class="reference internal" href="#label-distributions-gauss-04"> Exercise 19</a></p>
 <section id="solution-content">
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">scipy.stats</span> <span class="k">as</span> <span class="nn">st</span>
 
@@ -500,6 +500,121 @@ motivazione superiore al suo.  Quale punteggio ha ottenuto Mario Rossi nel test?
 </pre></div>
 </div>
 <p>La soluzione è 27.311922798445405.</p>
+</section>
+</div>
+<div class="exercise admonition" id="label-distributions-gauss-05">
+
+<p class="admonition-title"><span class="caption-number">Exercise 20 </span></p>
+<section id="exercise-content">
+<p>L’altezza e il peso sono due misure usate per monitorare la crescita dei bambini.
+La World Health Organization misura lo sviluppo infantile confrontando il peso di
+bambini aventi la stessa età e lo stesso genere.  Nel 2009, il peso delle
+bambine alte 80 cm si distribuiva normalmente con media μ = 10.2 kg e
+deviazione standard σ = 0.8 kg. Nel 2009, qual era la proporzione di bambine alte
+80 cm con un peso inferiore a 7.9 kg?</p>
+</section>
+</div>
+<div class="solution dropdown admonition" id="esercizi/03_distributions/ex_gaussian-solution-9">
+
+<p class="admonition-title">Solution to<a class="reference internal" href="#label-distributions-gauss-05"> Exercise 20</a></p>
+<section id="solution-content">
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">scipy.stats</span> <span class="k">as</span> <span class="nn">st</span>
+
+<span class="n">st</span><span class="o">.</span><span class="n">norm</span><span class="o">.</span><span class="n">cdf</span><span class="p">(</span><span class="mf">7.9</span><span class="p">,</span> <span class="mf">10.2</span><span class="p">,</span> <span class="mf">0.8</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>La soluzione è 0.0020201374899460095.</p>
+</section>
+</div>
+<div class="exercise admonition" id="label-distributions-gauss-06">
+
+<p class="admonition-title"><span class="caption-number">Exercise 21 </span></p>
+<section id="exercise-content">
+<p>Supponiamo che l’altezza delle bambine di 5 anni segua la distribuzione normale
+con una media di 115 cm. Sappiamo che solo il 5% delle bambine di 5 anni ha un’altezza
+superiore a 125 cm.  Si calcoli la deviazione standard della distribuzione dell’altezza
+delle bambine di 5 anni.</p>
+</section>
+</div>
+<div class="solution dropdown admonition" id="esercizi/03_distributions/ex_gaussian-solution-11">
+
+<p class="admonition-title">Solution to<a class="reference internal" href="#label-distributions-gauss-06"> Exercise 21</a></p>
+<section id="solution-content">
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">scipy.stats</span> <span class="k">as</span> <span class="nn">st</span>
+
+<span class="c1"># st.norm.ppf(0.95, 0, 1) = (x - mu) / sigma</span>
+<span class="n">x</span> <span class="o">=</span> <span class="mi">125</span>
+<span class="n">mu</span> <span class="o">=</span> <span class="mi">115</span>
+<span class="n">sigma</span> <span class="o">=</span> <span class="p">(</span><span class="n">x</span> <span class="o">-</span> <span class="n">mu</span><span class="p">)</span> <span class="o">/</span> <span class="n">st</span><span class="o">.</span><span class="n">norm</span><span class="o">.</span><span class="n">ppf</span><span class="p">(</span><span class="mf">0.95</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span>
+<span class="n">sigma</span>
+</pre></div>
+</div>
+<p>La soluzione è 6.0795683191176915.</p>
+</section>
+</div>
+<div class="exercise admonition" id="label-distributions-gauss-07">
+
+<p class="admonition-title"><span class="caption-number">Exercise 22 </span></p>
+<section id="exercise-content">
+<p>La durata della gravidanza dal concepimento alla nascita del bambino segue
+approssimativamente la distribuzione normale con media di 266 giorni e deviazione
+standard di 16 giorni. Quale proporzione di gravidanze ha una durata compresa tra
+240 e 270 giorni?</p>
+</section>
+</div>
+<div class="solution dropdown admonition" id="esercizi/03_distributions/ex_gaussian-solution-13">
+
+<p class="admonition-title">Solution to<a class="reference internal" href="#label-distributions-gauss-07"> Exercise 22</a></p>
+<section id="solution-content">
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">scipy.stats</span> <span class="k">as</span> <span class="nn">st</span>
+
+<span class="n">st</span><span class="o">.</span><span class="n">norm</span><span class="o">.</span><span class="n">cdf</span><span class="p">(</span><span class="mi">270</span><span class="p">,</span> <span class="mi">266</span><span class="p">,</span> <span class="mi">16</span><span class="p">)</span> <span class="o">-</span> <span class="n">st</span><span class="o">.</span><span class="n">norm</span><span class="o">.</span><span class="n">cdf</span><span class="p">(</span><span class="mi">240</span><span class="p">,</span> <span class="mi">266</span><span class="p">,</span> <span class="mi">16</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>La soluzione è 0.5466250462677041.</p>
+</section>
+</div>
+<div class="exercise admonition" id="label-distributions-gauss-08">
+
+<p class="admonition-title"><span class="caption-number">Exercise 23 </span></p>
+<section id="exercise-content">
+<p>La durata della gravidanza dal concepimento alla nascita del bambino segue
+approssimativamente la distribuzione normale con media di 266 giorni e deviazione
+standard di 16 giorni. Qual è la durata che comprende il 70% delle gravidanze aventi
+la durata minore?</p>
+</section>
+</div>
+<div class="solution dropdown admonition" id="esercizi/03_distributions/ex_gaussian-solution-15">
+
+<p class="admonition-title">Solution to<a class="reference internal" href="#label-distributions-gauss-08"> Exercise 23</a></p>
+<section id="solution-content">
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">scipy.stats</span> <span class="k">as</span> <span class="nn">st</span>
+
+<span class="n">st</span><span class="o">.</span><span class="n">norm</span><span class="o">.</span><span class="n">ppf</span><span class="p">(</span><span class="mf">.70</span><span class="p">,</span> <span class="mi">266</span><span class="p">,</span> <span class="mi">16</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>La soluzione è 274.39040820332866.</p>
+</section>
+</div>
+<div class="exercise admonition" id="label-distributions-gauss-09">
+
+<p class="admonition-title"><span class="caption-number">Exercise 24 </span></p>
+<section id="exercise-content">
+<p>In ciascun anno vengono bruciati in media 4300 acri di foresta in New Mexico. Il numero di acri bruciati nel corso degli anni segue approssimativamente la distribuzione normale
+con una deviazione standard di 750 acri. Qual è la probabilità che in un dato anno
+venga bruciata una superficie compresa tra 2500 e 4200 acri?</p>
+</section>
+</div>
+<div class="solution dropdown admonition" id="esercizi/03_distributions/ex_gaussian-solution-17">
+
+<p class="admonition-title">Solution to<a class="reference internal" href="#label-distributions-gauss-09"> Exercise 24</a></p>
+<section id="solution-content">
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">scipy.stats</span> <span class="k">as</span> <span class="nn">st</span>
+
+<span class="p">(</span><span class="n">st</span><span class="o">.</span><span class="n">norm</span><span class="o">.</span><span class="n">cdf</span><span class="p">(</span><span class="mi">4200</span><span class="p">,</span> <span class="mi">4300</span><span class="p">,</span> <span class="mi">750</span><span class="p">)</span> <span class="o">-</span> <span class="n">st</span><span class="o">.</span><span class="n">norm</span><span class="o">.</span><span class="n">cdf</span><span class="p">(</span><span class="mi">2500</span><span class="p">,</span> <span class="mi">4300</span><span class="p">,</span> <span class="mi">750</span><span class="p">))</span>
+</pre></div>
+</div>
+<p>La soluzione è 0.43876734745178986.</p>
 </section>
 </div>
 </section>
