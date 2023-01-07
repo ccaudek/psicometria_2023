@@ -1,4 +1,4 @@
-# ✅ Quiz M1.02
+# ✅ Quiz M1.03
 
 ```{exercise}
 :label: my-exercise
