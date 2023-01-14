@@ -191,12 +191,12 @@ const thebe_selector_output = ".output, .cell_output"
   <ul>
    <li class="toctree-l2">
     <a class="reference internal" href="../02_descr_stats/ex_key_notions.html">
-     2.1. ✅ Quiz M1.01
+     2.1. ✅ Concetti chiave
     </a>
    </li>
    <li class="toctree-l2">
     <a class="reference internal" href="../02_descr_stats/ex_scales.html">
-     2.2. ✅ Quiz M1.02
+     2.2. ✅ Scale di misura
     </a>
    </li>
    <li class="toctree-l2">
@@ -206,7 +206,7 @@ const thebe_selector_output = ".output, .cell_output"
    </li>
    <li class="toctree-l2">
     <a class="reference internal" href="../02_descr_stats/ex_eda.html">
-     2.4. ✅ Quiz M1.03
+     2.4. ✅ EDA
     </a>
    </li>
   </ul>
@@ -234,6 +234,23 @@ const thebe_selector_output = ".output, .cell_output"
    <li class="toctree-l2">
     <a class="reference internal" href="ex_bayes_theorem.html">
      3.3. ✅ Teorema di Bayes
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../04_rv_distr/rv_distr_index.html">
+   4. Distribuzioni di variabili casuali
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/>
+  <label for="toctree-checkbox-4">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../04_rv_distr/ex_gaussian.html">
+     4.1. ✅ Distribuzione Normale
     </a>
    </li>
   </ul>
@@ -421,7 +438,7 @@ title="Print to PDF"
 <h1><span class="section-number">3.2. </span>✅ Probabilità condizionata<a class="headerlink" href="#probabilita-condizionata" title="Permalink to this headline">#</a></h1>
 <div class="exercise admonition" id="label-prob-conditional_prob-01">
 
-<p class="admonition-title"><span class="caption-number">Exercise 3.2 </span></p>
+<p class="admonition-title"><span class="caption-number">Exercise 3.5 </span></p>
 <section id="exercise-content">
 <p>Quale delle seguenti espressioni corrisponde all’affermazione: la probabilità che piova lunedì? (da Statistical rethinking)</p>
 <ol class="simple">
@@ -434,14 +451,14 @@ title="Print to PDF"
 </div>
 <div class="solution dropdown admonition" id="exercises/03_prob/ex_conditional_prob-solution-1">
 
-<p class="admonition-title">Solution to<a class="reference internal" href="#label-prob-conditional_prob-01"> Exercise 3.2</a></p>
+<p class="admonition-title">Solution to<a class="reference internal" href="#label-prob-conditional_prob-01"> Exercise 3.5</a></p>
 <section id="solution-content">
 <p>Interpreto questa domanda come “la probabilità di pioggia dato che è lunedì”. Ciò significa che le risposte (2) che (4) sono corrette.</p>
 </section>
 </div>
 <div class="exercise admonition" id="label-prob-conditional_prob-02">
 
-<p class="admonition-title"><span class="caption-number">Exercise 3.3 </span></p>
+<p class="admonition-title"><span class="caption-number">Exercise 3.6 </span></p>
 <section id="exercise-content">
 <p>Quale delle seguenti affermazioni corrisponde all’espressione: Pr(lunedì | pioggia)? (da Statistical rethinking)</p>
 <ol class="simple">
@@ -454,14 +471,14 @@ title="Print to PDF"
 </div>
 <div class="solution dropdown admonition" id="exercises/03_prob/ex_conditional_prob-solution-3">
 
-<p class="admonition-title">Solution to<a class="reference internal" href="#label-prob-conditional_prob-02"> Exercise 3.3</a></p>
+<p class="admonition-title">Solution to<a class="reference internal" href="#label-prob-conditional_prob-02"> Exercise 3.6</a></p>
 <section id="solution-content">
 <p>Solo la risposta (3) corrisponde all’espressione Pr(lunedì | pioggia).</p>
 </section>
 </div>
 <div class="exercise admonition" id="label-prob-conditional_prob-03">
 
-<p class="admonition-title"><span class="caption-number">Exercise 3.4 </span></p>
+<p class="admonition-title"><span class="caption-number">Exercise 3.7 </span></p>
 <section id="exercise-content">
 <p>Quale delle seguenti espressioni corrisponde all’affermazione: la probabilità che sia lunedì, dato che sta piovendo? (da Statistical rethinking)</p>
 <ol class="simple">
@@ -475,14 +492,14 @@ title="Print to PDF"
 </div>
 <div class="solution dropdown admonition" id="exercises/03_prob/ex_conditional_prob-solution-5">
 
-<p class="admonition-title">Solution to<a class="reference internal" href="#label-prob-conditional_prob-03"> Exercise 3.4</a></p>
+<p class="admonition-title">Solution to<a class="reference internal" href="#label-prob-conditional_prob-03"> Exercise 3.7</a></p>
 <section id="solution-content">
 <p>Ci sono ancora due risposte corrette. L’opzione di risposta (1) è la notazione standard per la probabilità condizionata. L’opzione di risposta (4) è equivalente, poiché questo è il teorema di Bayes.</p>
 </section>
 </div>
 <div class="exercise admonition" id="label-prob-conditional_prob-04">
 
-<p class="admonition-title"><span class="caption-number">Exercise 3.5 </span></p>
+<p class="admonition-title"><span class="caption-number">Exercise 3.8 </span></p>
 <section id="exercise-content">
 <p>Per due eventi,  𝐴 e 𝐵, 𝑃(𝐴)=0.73, 𝑃(𝐵)=0.48 e 𝑃(𝐴∩𝐵)=0.29.</p>
 <ol class="simple">
@@ -494,7 +511,7 @@ title="Print to PDF"
 </div>
 <div class="solution dropdown admonition" id="exercises/03_prob/ex_conditional_prob-solution-7">
 
-<p class="admonition-title">Solution to<a class="reference internal" href="#label-prob-conditional_prob-04"> Exercise 3.5</a></p>
+<p class="admonition-title">Solution to<a class="reference internal" href="#label-prob-conditional_prob-04"> Exercise 3.8</a></p>
 <section id="solution-content">
 <ol class="simple">
 <li><p>0.6</p></li>
@@ -505,7 +522,7 @@ title="Print to PDF"
 </div>
 <div class="exercise admonition" id="label-prob-conditional_prob-05">
 
-<p class="admonition-title"><span class="caption-number">Exercise 3.6 </span></p>
+<p class="admonition-title"><span class="caption-number">Exercise 3.9 </span></p>
 <section id="exercise-content">
 <p>Per due eventi indipendenti  𝐴  e  𝐵,  𝑃(𝐴)=0.81  e  𝑃(𝐵)=0.27. Trova</p>
 <ol class="simple">
@@ -517,7 +534,7 @@ title="Print to PDF"
 </div>
 <div class="solution dropdown admonition" id="exercises/03_prob/ex_conditional_prob-solution-9">
 
-<p class="admonition-title">Solution to<a class="reference internal" href="#label-prob-conditional_prob-05"> Exercise 3.6</a></p>
+<p class="admonition-title">Solution to<a class="reference internal" href="#label-prob-conditional_prob-05"> Exercise 3.9</a></p>
 <section id="solution-content">
 <ol class="simple">
 <li><p>0.22</p></li>
@@ -528,7 +545,7 @@ title="Print to PDF"
 </div>
 <div class="exercise admonition" id="label-prob-conditional_prob-06">
 
-<p class="admonition-title"><span class="caption-number">Exercise 3.7 </span></p>
+<p class="admonition-title"><span class="caption-number">Exercise 3.10 </span></p>
 <section id="exercise-content">
 <p>Per due eventi mutuamente esclusivi 𝐴 e 𝐵, 𝑃(𝐴)=0.17 e 𝑃(𝐵)=0.32.</p>
 <ol class="simple">
@@ -539,7 +556,7 @@ title="Print to PDF"
 </div>
 <div class="solution dropdown admonition" id="exercises/03_prob/ex_conditional_prob-solution-11">
 
-<p class="admonition-title">Solution to<a class="reference internal" href="#label-prob-conditional_prob-06"> Exercise 3.7</a></p>
+<p class="admonition-title">Solution to<a class="reference internal" href="#label-prob-conditional_prob-06"> Exercise 3.10</a></p>
 <section id="solution-content">
 <ol class="simple">
 <li><p>0</p></li>
@@ -549,7 +566,7 @@ title="Print to PDF"
 </div>
 <div class="exercise admonition" id="label-prob-conditional_prob-07">
 
-<p class="admonition-title"><span class="caption-number">Exercise 3.8 </span></p>
+<p class="admonition-title"><span class="caption-number">Exercise 3.11 </span></p>
 <section id="exercise-content">
 <p>Calcola le seguenti probabilità in relazione al lancio di un singolo dado equilibrato.</p>
 <ol class="simple">
@@ -561,7 +578,7 @@ title="Print to PDF"
 </div>
 <div class="solution dropdown admonition" id="exercises/03_prob/ex_conditional_prob-solution-13">
 
-<p class="admonition-title">Solution to<a class="reference internal" href="#label-prob-conditional_prob-07"> Exercise 3.8</a></p>
+<p class="admonition-title">Solution to<a class="reference internal" href="#label-prob-conditional_prob-07"> Exercise 3.11</a></p>
 <section id="solution-content">
 <ol class="simple">
 <li><p>0.5</p></li>
@@ -572,7 +589,7 @@ title="Print to PDF"
 </div>
 <div class="exercise admonition" id="label-prob-conditional_prob-08">
 
-<p class="admonition-title"><span class="caption-number">Exercise 3.9 </span></p>
+<p class="admonition-title"><span class="caption-number">Exercise 3.12 </span></p>
 <section id="exercise-content">
 <p>In un certo collegio, il 25% degli studenti è stato bocciato in matematica,
 il 15% è stato bocciato in chimica, e il 10% è stato bocciato sia in
@@ -582,7 +599,7 @@ bocciato in chimica, qual è la probabilità che sia stato bocciato anche in mat
 </div>
 <div class="solution dropdown admonition" id="exercises/03_prob/ex_conditional_prob-solution-15">
 
-<p class="admonition-title">Solution to<a class="reference internal" href="#label-prob-conditional_prob-08"> Exercise 3.9</a></p>
+<p class="admonition-title">Solution to<a class="reference internal" href="#label-prob-conditional_prob-08"> Exercise 3.12</a></p>
 <section id="solution-content">
 <p>Sia M = {studenti bocciati in matematica} e C = {studenti bocciati in chimica},
 allora: P(M) = 0.25, P(C) = 0.15, P(M∩C) = 0.10.
@@ -592,7 +609,7 @@ che è stato bocciato in chimica, è P(M|C) = P(M∩C) / P(C) = 0.10 / 0.15 = 2/
 </div>
 <div class="exercise admonition" id="label-prob-conditional_prob-09">
 
-<p class="admonition-title"><span class="caption-number">Exercise 3.10 </span></p>
+<p class="admonition-title"><span class="caption-number">Exercise 3.13 </span></p>
 <section id="exercise-content">
 <p>In un certo collegio, il 25% degli studenti è stato bocciato in matematica,
 il 15% è stato bocciato in chimica, e il 10% è stato bocciato sia in
@@ -602,7 +619,7 @@ bocciato in matematica, qual è la probabilità che sia stato bocciato anche in 
 </div>
 <div class="solution dropdown admonition" id="exercises/03_prob/ex_conditional_prob-solution-17">
 
-<p class="admonition-title">Solution to<a class="reference internal" href="#label-prob-conditional_prob-09"> Exercise 3.10</a></p>
+<p class="admonition-title">Solution to<a class="reference internal" href="#label-prob-conditional_prob-09"> Exercise 3.13</a></p>
 <section id="solution-content">
 <p>La probabilità che uno studente sia stato bocciato in chimica, se si sa che è
 stato bocciato in matematica, è P(C|M) = P(C∩M) / P(M) = 0.10 / 0.25 = 2/5.</p>
@@ -610,7 +627,7 @@ stato bocciato in matematica, è P(C|M) = P(C∩M) / P(M) = 0.10 / 0.25 = 2/5.</
 </div>
 <div class="exercise admonition" id="label-prob-conditional_prob-10">
 
-<p class="admonition-title"><span class="caption-number">Exercise 3.11 </span></p>
+<p class="admonition-title"><span class="caption-number">Exercise 3.14 </span></p>
 <section id="exercise-content">
 <p>In un certo collegio, il 25% degli studenti è stato bocciato in matematica,
 il 15% è stato bocciato in chimica, e il 10% è stato bocciato sia in
@@ -620,7 +637,7 @@ probabilità che sia stato bocciato in matematica o in chimica?</p>
 </div>
 <div class="solution dropdown admonition" id="exercises/03_prob/ex_conditional_prob-solution-19">
 
-<p class="admonition-title">Solution to<a class="reference internal" href="#label-prob-conditional_prob-10"> Exercise 3.11</a></p>
+<p class="admonition-title">Solution to<a class="reference internal" href="#label-prob-conditional_prob-10"> Exercise 3.14</a></p>
 <section id="solution-content">
 <p>La probabilità che sia stato bocciato in matematica o in chimica, è
 P(M∪C) = P(M) + P(C) − P(M∩C) = 0.25 + 0.15 − 0.10 = 0.30.</p>

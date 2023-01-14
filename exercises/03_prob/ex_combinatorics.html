@@ -51,8 +51,6 @@ const thebe_selector_input = "pre"
 const thebe_selector_output = ".output, .cell_output"
 </script>
     <script async="async" src="../../_static/sphinx-thebe.js"></script>
-    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
-    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
     <link rel="next" title="3.2. ✅ Probabilità condizionata" href="ex_conditional_prob.html" />
@@ -193,12 +191,12 @@ const thebe_selector_output = ".output, .cell_output"
   <ul>
    <li class="toctree-l2">
     <a class="reference internal" href="../02_descr_stats/ex_key_notions.html">
-     2.1. ✅ Quiz M1.01
+     2.1. ✅ Concetti chiave
     </a>
    </li>
    <li class="toctree-l2">
     <a class="reference internal" href="../02_descr_stats/ex_scales.html">
-     2.2. ✅ Quiz M1.02
+     2.2. ✅ Scale di misura
     </a>
    </li>
    <li class="toctree-l2">
@@ -208,7 +206,7 @@ const thebe_selector_output = ".output, .cell_output"
    </li>
    <li class="toctree-l2">
     <a class="reference internal" href="../02_descr_stats/ex_eda.html">
-     2.4. ✅ Quiz M1.03
+     2.4. ✅ EDA
     </a>
    </li>
   </ul>
@@ -236,6 +234,23 @@ const thebe_selector_output = ".output, .cell_output"
    <li class="toctree-l2">
     <a class="reference internal" href="ex_bayes_theorem.html">
      3.3. ✅ Teorema di Bayes
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../04_rv_distr/rv_distr_index.html">
+   4. Distribuzioni di variabili casuali
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/>
+  <label for="toctree-checkbox-4">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../04_rv_distr/ex_gaussian.html">
+     4.1. ✅ Distribuzione Normale
     </a>
    </li>
   </ul>
@@ -421,31 +436,127 @@ title="Print to PDF"
                 
   <section class="tex2jax_ignore mathjax_ignore" id="calcolo-combinatorio">
 <h1><span class="section-number">3.1. </span>✅ Calcolo combinatorio<a class="headerlink" href="#calcolo-combinatorio" title="Permalink to this headline">#</a></h1>
-<p>Del calcolo combinatorio qui considereremo solo le permutazioni e le combinazioni. Una combinazione riguarda la selezione di un certo numero di elementi da un elenco e l’ordine non ha importanza. Una permutazione riguarda la selezione di un certo numero di elementi da un insieme e l’ordine è importante.</p>
-<div class="exercise admonition" id="label-prob-combinatorics-01">
+<div class="exercise admonition" id="label-combinatorics-01">
 
 <p class="admonition-title"><span class="caption-number">Exercise 3.1 </span></p>
 <section id="exercise-content">
-<p>Quante permutazioni si possono ottenere dall’insieme <span class="math notranslate nohighlight">\(\{1, 2, 3\}\)</span>?</p>
+<p>Vengono lanciati 5 dadi bilanciati a 6 facce. Qual è la probabilità che la somma dei dadi sia uguale a 19?</p>
 </section>
 </div>
 <div class="solution dropdown admonition" id="exercises/03_prob/ex_combinatorics-solution-1">
 
-<p class="admonition-title">Solution to<a class="reference internal" href="#label-prob-combinatorics-01"> Exercise 3.1</a></p>
+<p class="admonition-title">Solution to<a class="reference internal" href="#label-combinatorics-01"> Exercise 3.1</a></p>
 <section id="solution-content">
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">math</span> <span class="kn">import</span> <span class="n">factorial</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+<span class="kn">import</span> <span class="nn">itertools</span> <span class="k">as</span> <span class="nn">it</span>
+<span class="kn">import</span> <span class="nn">math</span>
 
-<span class="n">n</span> <span class="o">=</span> <span class="mi">3</span>
-<span class="n">perm</span> <span class="o">=</span> <span class="n">factorial</span><span class="p">(</span><span class="n">n</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">perm</span><span class="p">)</span>
+<span class="n">die_rolls</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="n">it</span><span class="o">.</span><span class="n">product</span><span class="p">(</span><span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">7</span><span class="p">),</span> <span class="n">repeat</span><span class="o">=</span><span class="mi">5</span><span class="p">))</span>
+<span class="n">results</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="mi">5</span><span class="p">,</span> <span class="mi">31</span><span class="p">)</span>
+<span class="n">prob_distr</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">()</span>
+<span class="n">freq</span> <span class="o">=</span> <span class="nb">sum</span><span class="p">(</span><span class="nb">sum</span><span class="p">(</span><span class="n">rol</span><span class="p">)</span> <span class="o">==</span> <span class="n">results</span> <span class="k">for</span> <span class="n">rol</span> <span class="ow">in</span> <span class="n">die_rolls</span><span class="p">)</span>
+<span class="n">prob_distr</span><span class="p">[</span><span class="s1">&#39;py&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">freq</span> <span class="o">/</span> <span class="nb">sum</span><span class="p">(</span><span class="n">freq</span><span class="p">)</span>
+<span class="n">prob_distr</span><span class="p">[</span><span class="s1">&#39;y&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">results</span>
+<span class="n">prob_distr</span><span class="p">[</span><span class="n">prob_distr</span><span class="p">[</span><span class="s1">&#39;y&#39;</span><span class="p">]</span> <span class="o">==</span> <span class="mi">19</span><span class="p">]</span>
 </pre></div>
 </div>
-<p>La soluzione è 6.</p>
+<p>La soluzione è 0.094522.</p>
+<p>Oppure, in maniera più semplice:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">die_rolls</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="n">it</span><span class="o">.</span><span class="n">product</span><span class="p">(</span><span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">7</span><span class="p">),</span> <span class="n">repeat</span><span class="o">=</span><span class="mi">5</span><span class="p">))</span>
+<span class="n">n1</span> <span class="o">=</span> <span class="nb">sum</span><span class="p">(</span><span class="nb">sum</span><span class="p">(</span><span class="n">rol</span><span class="p">)</span> <span class="o">==</span> <span class="mi">19</span> <span class="k">for</span> <span class="n">rol</span> <span class="ow">in</span> <span class="n">die_rolls</span><span class="p">)</span>
+<span class="n">n</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">die_rolls</span><span class="p">)</span>
+<span class="n">n1</span> <span class="o">/</span> <span class="n">n</span>
+</pre></div>
+</div>
+</section>
+</div>
+<div class="exercise admonition" id="label-combinatorics-02">
+
+<p class="admonition-title"><span class="caption-number">Exercise 3.2 </span></p>
+<section id="exercise-content">
+<p>Vengono lanciati 5 dadi bilanciati a 6 facce. Qual è la probabilità che la somma dei dadi sia minore o uguale a 19?</p>
 </section>
 </div>
 <div class="solution dropdown admonition" id="exercises/03_prob/ex_combinatorics-solution-3">
 
-<p class="admonition-title">Solution to<a class="reference internal" href="ex_bayes_theorem.html#label-prob-combinatorics-02"> Exercise 3.13</a></p>
+<p class="admonition-title">Solution to<a class="reference internal" href="#label-combinatorics-02"> Exercise 3.2</a></p>
+<section id="solution-content">
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+<span class="kn">import</span> <span class="nn">itertools</span> <span class="k">as</span> <span class="nn">it</span>
+<span class="kn">import</span> <span class="nn">math</span>
+
+<span class="n">die_rolls</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="n">it</span><span class="o">.</span><span class="n">product</span><span class="p">(</span><span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">7</span><span class="p">),</span> <span class="n">repeat</span><span class="o">=</span><span class="mi">5</span><span class="p">))</span>
+<span class="n">results</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="mi">5</span><span class="p">,</span> <span class="mi">31</span><span class="p">)</span>
+
+<span class="n">prob_distr</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">()</span>
+<span class="n">freq</span> <span class="o">=</span> <span class="nb">sum</span><span class="p">(</span><span class="nb">sum</span><span class="p">(</span><span class="n">rol</span><span class="p">)</span><span class="o">==</span><span class="n">results</span> <span class="k">for</span> <span class="n">rol</span> <span class="ow">in</span> <span class="n">die_rolls</span><span class="p">)</span>
+
+<span class="n">prob_distr</span><span class="p">[</span><span class="s1">&#39;py&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">freq</span> <span class="o">/</span> <span class="nb">sum</span><span class="p">(</span><span class="n">freq</span><span class="p">)</span>
+<span class="n">prob_distr</span><span class="p">[</span><span class="s1">&#39;y&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">results</span>
+
+<span class="n">prob_distr</span><span class="o">.</span><span class="n">query</span><span class="p">(</span><span class="s1">&#39;y &lt;= 19&#39;</span><span class="p">)[</span><span class="s1">&#39;py&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">sum</span><span class="p">()</span>
+</pre></div>
+</div>
+<p>La soluzione è 0.6948302469135803.</p>
+<p>Oppure, in maniera più semplice</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">die_rolls</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="n">it</span><span class="o">.</span><span class="n">product</span><span class="p">(</span><span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">7</span><span class="p">),</span> <span class="n">repeat</span><span class="o">=</span><span class="mi">5</span><span class="p">))</span>
+<span class="n">n1</span> <span class="o">=</span> <span class="nb">sum</span><span class="p">(</span><span class="nb">sum</span><span class="p">(</span><span class="n">rol</span><span class="p">)</span> <span class="o">&lt;=</span> <span class="mi">19</span> <span class="k">for</span> <span class="n">rol</span> <span class="ow">in</span> <span class="n">die_rolls</span><span class="p">)</span>
+<span class="n">n</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">die_rolls</span><span class="p">)</span>
+<span class="n">n1</span> <span class="o">/</span> <span class="n">n</span>
+</pre></div>
+</div>
+</section>
+</div>
+<div class="exercise admonition" id="label-combinatorics-03">
+
+<p class="admonition-title"><span class="caption-number">Exercise 3.3 </span></p>
+<section id="exercise-content">
+<p>Vengono lanciati 5 dadi bilanciati a 6 facce. Qual è la probabilità che la somma dei dadi sia maggiore di 25?</p>
+</section>
+</div>
+<div class="solution dropdown admonition" id="exercises/03_prob/ex_combinatorics-solution-5">
+
+<p class="admonition-title">Solution to<a class="reference internal" href="#label-combinatorics-03"> Exercise 3.3</a></p>
+<section id="solution-content">
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+<span class="kn">import</span> <span class="nn">itertools</span> <span class="k">as</span> <span class="nn">it</span>
+<span class="kn">import</span> <span class="nn">math</span>
+
+<span class="n">die_rolls</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="n">it</span><span class="o">.</span><span class="n">product</span><span class="p">(</span><span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">7</span><span class="p">),</span> <span class="n">repeat</span><span class="o">=</span><span class="mi">5</span><span class="p">))</span>
+<span class="n">results</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="mi">5</span><span class="p">,</span> <span class="mi">31</span><span class="p">)</span>
+
+<span class="n">prob_distr</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">()</span>
+<span class="n">freq</span> <span class="o">=</span> <span class="nb">sum</span><span class="p">(</span><span class="nb">sum</span><span class="p">(</span><span class="n">rol</span><span class="p">)</span> <span class="o">==</span> <span class="n">results</span> <span class="k">for</span> <span class="n">rol</span> <span class="ow">in</span> <span class="n">die_rolls</span><span class="p">)</span>
+
+<span class="n">prob_distr</span><span class="p">[</span><span class="s1">&#39;py&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">freq</span> <span class="o">/</span> <span class="nb">sum</span><span class="p">(</span><span class="n">freq</span><span class="p">)</span>
+<span class="n">prob_distr</span><span class="p">[</span><span class="s1">&#39;y&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">results</span>
+
+<span class="n">prob_distr</span><span class="o">.</span><span class="n">query</span><span class="p">(</span><span class="s1">&#39;y &gt; 25&#39;</span><span class="p">)[</span><span class="s1">&#39;py&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">sum</span><span class="p">()</span>
+</pre></div>
+</div>
+<p>La soluzione è 0.016203703703703703.</p>
+<p>Oppure, in maniera più semplice</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">die_rolls</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="n">it</span><span class="o">.</span><span class="n">product</span><span class="p">(</span><span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">7</span><span class="p">),</span> <span class="n">repeat</span><span class="o">=</span><span class="mi">5</span><span class="p">))</span>
+<span class="n">n1</span> <span class="o">=</span> <span class="nb">sum</span><span class="p">(</span><span class="nb">sum</span><span class="p">(</span><span class="n">rol</span><span class="p">)</span> <span class="o">&gt;</span> <span class="mi">25</span> <span class="k">for</span> <span class="n">rol</span> <span class="ow">in</span> <span class="n">die_rolls</span><span class="p">)</span>
+<span class="n">n</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">die_rolls</span><span class="p">)</span>
+<span class="n">n1</span> <span class="o">/</span> <span class="n">n</span>
+</pre></div>
+</div>
+</section>
+</div>
+<div class="exercise admonition" id="label-combinatorics-04">
+
+<p class="admonition-title"><span class="caption-number">Exercise 3.4 </span></p>
+<section id="exercise-content">
+<p>Se estraiamo a caso da un mazzo di carte da poker 2 carte, quante combinazioni sono possibili?</p>
+</section>
+</div>
+<div class="solution dropdown admonition" id="exercises/03_prob/ex_combinatorics-solution-7">
+
+<p class="admonition-title">Solution to<a class="reference internal" href="#label-combinatorics-04"> Exercise 3.4</a></p>
 <section id="solution-content">
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">math</span> <span class="kn">import</span> <span class="n">factorial</span>
 

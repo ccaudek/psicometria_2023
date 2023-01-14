@@ -55,6 +55,7 @@ const thebe_selector_output = ".output, .cell_output"
     <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="4. Distribuzioni di variabili casuali" href="../04_rv_distr/rv_distr_index.html" />
     <link rel="prev" title="3.2. ✅ Probabilità condizionata" href="ex_conditional_prob.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="None">
@@ -192,12 +193,12 @@ const thebe_selector_output = ".output, .cell_output"
   <ul>
    <li class="toctree-l2">
     <a class="reference internal" href="../02_descr_stats/ex_key_notions.html">
-     2.1. ✅ Quiz M1.01
+     2.1. ✅ Concetti chiave
     </a>
    </li>
    <li class="toctree-l2">
     <a class="reference internal" href="../02_descr_stats/ex_scales.html">
-     2.2. ✅ Quiz M1.02
+     2.2. ✅ Scale di misura
     </a>
    </li>
    <li class="toctree-l2">
@@ -207,7 +208,7 @@ const thebe_selector_output = ".output, .cell_output"
    </li>
    <li class="toctree-l2">
     <a class="reference internal" href="../02_descr_stats/ex_eda.html">
-     2.4. ✅ Quiz M1.03
+     2.4. ✅ EDA
     </a>
    </li>
   </ul>
@@ -235,6 +236,23 @@ const thebe_selector_output = ".output, .cell_output"
    <li class="toctree-l2 current active">
     <a class="current reference internal" href="#">
      3.3. ✅ Teorema di Bayes
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../04_rv_distr/rv_distr_index.html">
+   4. Distribuzioni di variabili casuali
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/>
+  <label for="toctree-checkbox-4">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../04_rv_distr/ex_gaussian.html">
+     4.1. ✅ Distribuzione Normale
     </a>
    </li>
   </ul>
@@ -422,14 +440,14 @@ title="Print to PDF"
 <h1><span class="section-number">3.3. </span>✅ Teorema di Bayes<a class="headerlink" href="#teorema-di-bayes" title="Permalink to this headline">#</a></h1>
 <div class="exercise admonition" id="label-prob-bayes-theorem-01">
 
-<p class="admonition-title"><span class="caption-number">Exercise 3.12 </span></p>
+<p class="admonition-title"><span class="caption-number">Exercise 3.15 </span></p>
 <section id="exercise-content">
 <p>Un esame del sangue rilieva correttamente il vampirisimo il 95% delle volte, <span class="math notranslate nohighlight">\(Pr(Positive|Vampire)\)</span> = 0.95. Il test ha un tasso di falsi psitivi di <span class="math notranslate nohighlight">\(Pr(Positive | Mortal)\)</span> = 0.01. Sappiamo anche che i vampiri sono rari – circa lo 0.1% della popolazione, <span class="math notranslate nohighlight">\(Pr(Vampire)\)</span> = 0.001. Si trovi la probabilità di essere un vampiro dato che il test ha dato un risultato positivo. (da Statistical rethinking)</p>
 </section>
 </div>
 <div class="solution dropdown admonition" id="exercises/03_prob/ex_bayes_theorem-solution-1">
 
-<p class="admonition-title">Solution to<a class="reference internal" href="#label-prob-bayes-theorem-01"> Exercise 3.12</a></p>
+<p class="admonition-title">Solution to<a class="reference internal" href="#label-prob-bayes-theorem-01"> Exercise 3.15</a></p>
 <section id="solution-content">
 <p>Per calcolare <span class="math notranslate nohighlight">\(Pr(Vampire|Positive)\)</span> applichiamo il teorema di Bayes:
 <span class="math notranslate nohighlight">\(Pr(Vampire | Positive) = \frac{Pr(Positive | Vampire) * Pr(Vampire)}{Pr(Positive)}\)</span>.</p>
@@ -447,14 +465,14 @@ title="Print to PDF"
 </div>
 <div class="exercise admonition" id="label-prob-combinatorics-02">
 
-<p class="admonition-title"><span class="caption-number">Exercise 3.13 </span></p>
+<p class="admonition-title"><span class="caption-number">Exercise 3.16 </span></p>
 <section id="exercise-content">
 <p>Se estraiamo a caso da un mazzo di carte da poker 2 carte, quante combinazioni sono possibili?</p>
 </section>
 </div>
 <div class="solution dropdown admonition" id="exercises/03_prob/ex_bayes_theorem-solution-3">
 
-<p class="admonition-title">Solution to<a class="reference internal" href="#label-prob-combinatorics-02"> Exercise 3.13</a></p>
+<p class="admonition-title">Solution to<a class="reference internal" href="#label-prob-combinatorics-02"> Exercise 3.16</a></p>
 <section id="solution-content">
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">math</span> <span class="kn">import</span> <span class="n">factorial</span>
 
@@ -508,6 +526,13 @@ title="Print to PDF"
             <p class="prev-next-subtitle">previous</p>
             <p class="prev-next-title"><span class="section-number">3.2. </span>✅ Probabilità condizionata</p>
         </div>
+    </a>
+    <a class='right-next' id="next-link" href="../04_rv_distr/rv_distr_index.html" title="next page">
+    <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title"><span class="section-number">4. </span>Distribuzioni di variabili casuali</p>
+    </div>
+    <i class="fas fa-angle-right"></i>
     </a>
 </div>
             </footer>
