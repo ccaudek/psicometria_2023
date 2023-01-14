@@ -1,0 +1,5 @@
+# Inferenza bayesiana
+
+```{tableofcontents}
+
+```

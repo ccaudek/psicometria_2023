@@ -1,5 +1,0 @@
-# Distribuzioni
-
-```{tableofcontents}
-
-```

@@ -1,5 +1,0 @@
-# Nozioni di base
-
-```{tableofcontents}
-
-```

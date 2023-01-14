@@ -1,5 +1,0 @@
-# Probabilità
-
-```{tableofcontents}
-
-```
