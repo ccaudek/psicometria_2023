@@ -1,4 +1,4 @@
-# Nozioni di base
+# Statistica descrittiva
 
 ```{tableofcontents}
 

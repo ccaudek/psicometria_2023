@@ -1,4 +1,4 @@
-# Probabilità
+# Inferenza bayesiana
 
 ```{tableofcontents}
 

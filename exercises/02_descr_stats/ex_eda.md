@@ -1,4 +1,4 @@
-# ✅ Quiz M1.03
+# ✅ EDA
 
 ```{exercise}
 :label: my-exercise

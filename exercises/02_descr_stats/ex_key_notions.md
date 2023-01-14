@@ -1,4 +1,4 @@
-# ✅ Quiz M1.01
+# ✅ Concetti chiave
 
 ```{exercise}
 :label: lab-key-notions_01

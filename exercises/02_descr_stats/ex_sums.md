@@ -31,10 +31,12 @@ Si valuti $\sum_{i=1}^5 x_i$.
 ````{solution} label-key-notions-sums-02
 :class: dropdown
 
+In tutti gli esercizi utilizzo un array NumPy anziché una lista Python. La differenza è che una lista Python può contenere dati di tipi diversi, mentre tutti gli elementi in un array NumPy sono omogenei. Ne segue che un array NumPy numerico è simile ad un vettore numerico e quindi ad esso possiamo applicare le operazioni aritmetiche.
+
 ```{code-block} python
 import numpy as np
 
-x = [2, 2, 1, 3, 1]
+x = np.array([2, 2, 1, 3, 1])
 np.sum(x)
 ```
 La soluzione è 9.
@@ -55,7 +57,7 @@ Si valuti $\sum_{i=1}^5 3 x_i$.
 ```{code-block} python
 import numpy as np
 
-x = [3, 1, 2, 9, 1]
+x = np.array([3, 1, 2, 9, 1])
 np.sum(3*x)
 ```
 La soluzione è 48. Oppure
@@ -63,7 +65,7 @@ La soluzione è 48. Oppure
 ```{code-block} python
 import numpy as np
 
-x = [3, 1, 2, 9, 1]
+x = np.array([3, 1, 2, 9, 1])
 3*np.sum(x)
 ```
 ````
@@ -105,8 +107,9 @@ Si valuti $\sum_{i=1}^5 a x_i$.
 
 ```{code-block} python
 import numpy as np
+
 a = 3
-x = [9, 2, -1, 4, 1]
+x = np.array([9, 2, -1, 4, 1])
 np.sum(a * x)
 ```
 La soluzione è 45. In maniera equivalente potevamo scrivere `a*np.sum(x)`.
@@ -126,8 +129,9 @@ Si valuti $\sum_{i=1}^5 (a + x_i)$.
 
 ```{code-block} python
 import numpy as np
+
 a = 2
-x = [8, -2, 1, 1, 0]
+x = np.array([8, -2, 1, 1, 0])
 5*a + np.sum(x)
 ```
 La soluzione è 18.
@@ -147,8 +151,9 @@ Si valuti $\sum_{i=1}^5 (x_i + y_i)$.
 
 ```{code-block} python
 import numpy as np
-x = [8, -2, 1, 1, 0]
-y = [3, 2, 6, -1, 9]
+
+x = np.array([8, -2, 1, 1, 0])
+y = np.array([3, 2, 6, -1, 9])
 np.sum(x + y)
 ```
 La soluzione è 27.
@@ -167,16 +172,6 @@ Si valuti $\sum_{i=1}^5 (x_i \cdot y_i)$.
 :class: dropdown
 
 Non è possibile sommare elemento per elemento una lista.  Possiamo procedere così:
-
-```{code-block} python
-import operator as op
-
-x = [1, 2, 3]
-y = [4, 5, 6]
-
-sum(map(op.add, x, y))
-```
-La soluzione è 21. Oppure possiamo creare due numpy array, il che rende possibile la somma elemento-per-elemento:
 
 ```{code-block} python
 import numpy as np

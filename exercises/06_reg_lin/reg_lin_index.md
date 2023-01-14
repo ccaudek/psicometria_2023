@@ -1,4 +1,4 @@
-# Nozioni di base
+# Regressione lineare
 
 ```{tableofcontents}
 

@@ -1,48 +1,4 @@
-# ✅ Quiz M1.03
-
-```{exercise}
-:label: my-exercise
-
-Recall that $n!$ is read as "$n$ factorial" and defined as
-$n! = n \times (n - 1) \times \cdots \times 2 \times 1$.
-
-There are functions to compute this in various modules, but let's
-write our own version as an exercise.
-
-In particular, write a function `factorial` such that `factorial(n)` returns $n!$
-for any positive integer $n$.
-```
-
-````{solution} my-exercise
-:class: dropdown
-:label: my-solution
-
-Here's one solution.
-
-```{code-block} python
-def factorial(n):
-    k = 1
-    for i in range(n):
-        k = k * (i + 1)
-    return k
-
-factorial(4)
-```
-````
-
-+++
-
-```{admonition} Question
-A categorical variable is:
-
-- a) a variable with **only two** different possible values
-- b) a variable with continuous numerical values
-- c) a variable with a finite set of possible values
-
-_Select a single answer_
-```
-
-+++
+# ✅ Scale di misura
 
 ```{admonition} Question
 In the notebook "First look at our dataset", we used pandas and specifically
@@ -85,4 +41,16 @@ How is a tabular dataset organized?
 - d) the target variable is represented by a column
 
 _Select all answers that apply_
+```
+
++++
+
+```{admonition} Question
+A categorical variable is:
+
+- a) a variable with **only two** different possible values
+- b) a variable with continuous numerical values
+- c) a variable with a finite set of possible values
+
+_Select a single answer_
 ```

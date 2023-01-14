@@ -1,4 +1,4 @@
-# Distribuzioni
+# Inferenza frequentista
 
 ```{tableofcontents}
 

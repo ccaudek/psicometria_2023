@@ -5,7 +5,7 @@
 # 
 # Viene qui fornito un calendario delle attività didattiche: l'elenco dei materiali da studiare ogni settimana, le scadenze per la consegna degli esercizi WarmUp, e le scadenze dei report in itinere. I compiti WarmUp assegnati vanno svolti **prima** di venire a lezione. 
 # 
-# **Nota:** DSpP = *Data Science per Psicologi* (la dispensa che useremo in questo insegnamento).
+# **Nota:** ds4psy = *Data Science per Psicologi* (la dispensa che useremo in questo insegnamento).
 # 
 # **Il presente calendario non è definitivo e potrà subire delle variazioni che saranno comunicate mediante l'aggiornamento di questa pagina web.**
 # 
@@ -13,18 +13,18 @@
 # 
 # <!-- ------------------------------------------------------ -->
 # 
-# ### `r meeting_headers[1]`
+# ## Settimana 1: 2 marzo 2023
 # 
 # **Presentazione dell'insegnamento**
 # 
-# La prima settimana di lezioni include un unico incontro. In tale incontro verrà presentato il calendario didattico e verranno descritte le attività che si svolgeranno durante il semestre. Nell'ottica dell'_insegnamento capovolto_, questa prima settimana darà il tempo agli studenti di leggere il materiale didattico e di svolgere gli esercizi WarmUp relativi agli argomenti trattati nella seconda settimana di lezione, ovvero la statistica descrittiva e l'analisi esplorativa dei dati.
+# La prima settimana di lezioni include un unico incontro. In tale incontro verranno descritte le attività che si svolgeranno durante il semestre. Nell'ottica dell'_insegnamento capovolto_, questa prima settimana darà il tempo agli studenti di leggere il materiale didattico e di svolgere gli esercizi WarmUp relativi agli argomenti trattati nella seconda settimana di lezione.
 # 
 # *Incontri di lezione ed esercitazioni pratiche #* 1
 # 
 # *Letture da fare questa settimana sugli argomenti che verranno trattati la settimana successiva:*  
 # 
-#  - DSpP capitoli 1, 2, 3, 4, 5.
-#  - DSpP appendice: linguaggio $\textsf{R}$. In parallelo, suggerisco anche di consultare il testo [R for Data Science](https://r4ds.had.co.nz/index.html) (consiglio i capitoli 1, 2, 3, 9, 10, 15, 18, 20, 21).
+#  - ds4psy capitoli 1-6.
+#  - Suggerisco anche di iniziare la consultazione del sito [Python for Data Science](https://aeturrell.github.io/python4DS/welcome.html) (consiglio i capitoli 1, 2, 3, 9, 10, 15, 18, 20, 21).
 # 
 # *Compiti*: 
 # 
@@ -42,7 +42,7 @@
 # 
 # <!-- ------------------------------------------------------ -->
 # 
-# ### `r meeting_headers[2]`
+# ## `r meeting_headers[2]`
 # 
 # **Statistica descrittiva e analisi esplorativa dei dati**
 # 
@@ -66,7 +66,7 @@
 # 
 # <!-- ------------------------------------------------------ -->
 # 
-# ### `r meeting_headers[3]`
+# ## `r meeting_headers[3]`
 # 
 # **Elementi di teoria delle probabilità**
 # 
@@ -93,7 +93,7 @@
 # 
 # <!-- ------------------------------------------------------ -->
 # 
-# ### `r meeting_headers[4]`
+# ## `r meeting_headers[4]`
 # 
 # **Distribuzioni di densità e modellizzazione bayesiana**
 # 
@@ -116,7 +116,7 @@
 # 
 # <!-- ------------------------------------------------------ -->
 # 
-# ### `r meeting_headers[5]`
+# ## `r meeting_headers[5]`
 # 
 # **Distribuzioni a priori coniugate; l'influenza della distribuzione a priori**
 # 
@@ -136,7 +136,7 @@
 # 
 # <!-- ------------------------------------------------------ -->
 # 
-# ### `r meeting_headers[6]`
+# ## `r meeting_headers[6]`
 # 
 # **Stima della distribuzione a posteriori**
 # 
@@ -155,7 +155,7 @@
 # 
 # <!-- ------------------------------------------------------ -->
 # 
-# ### `r meeting_headers[7]`
+# ## `r meeting_headers[7]`
 # 
 # *Incontri di lezione ed esercitazioni pratiche #* 17
 # 
@@ -167,7 +167,7 @@
 # 
 # <!-- ------------------------------------------------------ -->
 # 
-# ### `r meeting_headers[8]`
+# ## `r meeting_headers[8]`
 # 
 # **Introduzione al linguaggio Stan; inferenza su una proporzione**
 # 
@@ -183,7 +183,7 @@
 # 
 # <!-- ------------------------------------------------------ -->
 # 
-# ### `r meeting_headers[9]`
+# ## `r meeting_headers[9]`
 # 
 # **Il modello statistico lineare (I)**
 # 
@@ -200,7 +200,7 @@
 # 
 # <!-- ------------------------------------------------------ -->
 # 
-# ### `r meeting_headers[10]`
+# ## `r meeting_headers[10]`
 # 
 # **Il modello statistico lineare (II)**
 # 
@@ -222,7 +222,7 @@
 # 
 # <!-- ------------------------------------------------------ -->
 # 
-# ### `r meeting_headers[11]`
+# ## `r meeting_headers[11]`
 # 
 # **Il confronto tra modelli e selezione di variabili**
 # 

@@ -1,8 +1,9 @@
 format: jb-book
 root: intro
+options:  # The options key will be applied to all chapters, but not sub-sections
+  numbered: True
 parts:
 - caption: A.A. 2022-2023
-  numbered: true
   chapters:
   - file: syllabus
   - file: materiali_didattici
@@ -12,19 +13,22 @@ parts:
   - file: esame
   - file: faq
 - caption: Esercizi
+  numbered: True 
   chapters:
-  - file: esercizi/01_key_notions/key_notions_index
+  - file: exercises/01_python/python_index
     sections:
-    - file: esercizi/01_key_notions/ex_key_notions
-    - file: esercizi/01_key_notions/ex_sums
-    - file: esercizi/01_key_notions/ex_measurement_scales
-    - file: esercizi/01_key_notions/ex_descriptive_stats
-  - file: esercizi/02_probability/probability_index
+    - file: exercises/01_python/ex_python
+  - file: exercises/02_descr_stats/descr_stats_index
     sections:
-    - file: esercizi/02_probability/ex_combinatorics
-  - file: esercizi/03_distributions/distributions_index
+    - file: exercises/02_descr_stats/ex_key_notions
+    - file: exercises/02_descr_stats/ex_scales
+    - file: exercises/02_descr_stats/ex_sums
+    - file: exercises/02_descr_stats/ex_eda
+  - file: exercises/03_prob/prob_index
     sections:
-    - file: esercizi/03_distributions/ex_gaussian
-  - file: esercizi/99_last/missing_index
+    - file: exercises/03_prob/ex_combinatorics
+    - file: exercises/03_prob/ex_conditional_prob
+    - file: exercises/03_prob/ex_bayes_theorem
+  - file: exercises/04_rv_distr/rv_distr_index
     sections:
-    - file: esercizi/99_last/ex_missing
+    - file: exercises/04_rv_distr/ex_gaussian
