@@ -53,6 +53,7 @@ const thebe_selector_output = ".output, .cell_output"
     <script async="async" src="../../_static/sphinx-thebe.js"></script>
     <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
     <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <link rel="shortcut icon" href="../../_static/icons8-graduation-cap-30.png"/>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
     <link rel="next" title="3. Teoria della probabilità" href="../03_prob/prob_index.html" />
@@ -438,81 +439,262 @@ title="Print to PDF"
                 
   <section class="tex2jax_ignore mathjax_ignore" id="eda">
 <h1><span class="section-number">2.4. </span>✅ EDA<a class="headerlink" href="#eda" title="Permalink to this headline">#</a></h1>
-<div class="exercise admonition" id="my-exercise">
+<div class="exercise admonition" id="ex-eda-pensuins-1">
 
 <p class="admonition-title"><span class="caption-number">Exercise 2.13 </span></p>
 <section id="exercise-content">
-<p>Recall that <span class="math notranslate nohighlight">\(n!\)</span> is read as “<span class="math notranslate nohighlight">\(n\)</span> factorial” and defined as
-<span class="math notranslate nohighlight">\(n! = n \times (n - 1) \times \cdots \times 2 \times 1\)</span>.</p>
-<p>There are functions to compute this in various modules, but let’s
-write our own version as an exercise.</p>
-<p>In particular, write a function <code class="docutils literal notranslate"><span class="pre">factorial</span></code> such that <code class="docutils literal notranslate"><span class="pre">factorial(n)</span></code> returns <span class="math notranslate nohighlight">\(n!\)</span>
-for any positive integer <span class="math notranslate nohighlight">\(n\)</span>.</p>
+<p>Si importi il file <code class="docutils literal notranslate"><span class="pre">penguins.csv</span></code> e si verifichi la presenza di dati mancanti. Se ci sono dei dati mancanti li si escluda. Si trovi la proporzione di osservazioni che sono state raccolte sull’isola Dream.</p>
 </section>
 </div>
-<div class="solution dropdown admonition" id="my-solution">
+<div class="solution dropdown admonition" id="sol-eda-pensuins-1">
 
-<p class="admonition-title">Solution to<a class="reference internal" href="#my-exercise"> Exercise 2.13</a></p>
+<p class="admonition-title">Solution to<a class="reference internal" href="#ex-eda-pensuins-1"> Exercise 2.13</a></p>
 <section id="solution-content">
-<p>Here’s one solution.</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">factorial</span><span class="p">(</span><span class="n">n</span><span class="p">):</span>
-    <span class="n">k</span> <span class="o">=</span> <span class="mi">1</span>
-    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">n</span><span class="p">):</span>
-        <span class="n">k</span> <span class="o">=</span> <span class="n">k</span> <span class="o">*</span> <span class="p">(</span><span class="n">i</span> <span class="o">+</span> <span class="mi">1</span><span class="p">)</span>
-    <span class="k">return</span> <span class="n">k</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span> 
+<span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
 
-<span class="n">factorial</span><span class="p">(</span><span class="mi">4</span><span class="p">)</span>
+<span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">&#39;data/penguins.csv&#39;</span><span class="p">)</span>
+<span class="n">df</span><span class="o">.</span><span class="n">dropna</span><span class="p">(</span><span class="n">inplace</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+<span class="n">df</span><span class="o">.</span><span class="n">shape</span>
+
+<span class="n">df</span><span class="o">.</span><span class="n">value_counts</span><span class="p">(</span><span class="s1">&#39;island&#39;</span><span class="p">,</span> <span class="n">normalize</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>il 36.9% delle osservazioni è relativa all’isola Dream.</p>
+</section>
+</div>
+<div class="exercise admonition" id="ex-eda-pensuins-2">
+
+<p class="admonition-title"><span class="caption-number">Exercise 2.14 </span></p>
+<section id="exercise-content">
+<p>Per i dati dell’esercizio <a class="reference internal" href="#ex-eda-pensuins-1"><span class="std std-numref">Exercise 2.13</span></a>, si trovino la media e la deviazione standard, quale statistica descrittiva, della variabile <code class="docutils literal notranslate"><span class="pre">body_mass_g</span></code>. Si verifichi il risultato applicando la formula della deviazione standard.</p>
+</section>
+</div>
+<div class="solution dropdown admonition" id="sol-eda-pensuins-2">
+
+<p class="admonition-title">Solution to<a class="reference internal" href="#ex-eda-pensuins-2"> Exercise 2.14</a></p>
+<section id="solution-content">
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span> 
+<span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+
+<span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">&#39;data/penguins.csv&#39;</span><span class="p">)</span>
+<span class="n">df</span><span class="o">.</span><span class="n">dropna</span><span class="p">(</span><span class="n">inplace</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+
+<span class="n">df</span><span class="p">[</span><span class="s1">&#39;body_mass_g&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">mean</span><span class="p">()</span>
+<span class="n">df</span><span class="p">[</span><span class="s1">&#39;body_mass_g&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">std</span><span class="p">(</span><span class="n">ddof</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>
+
+<span class="n">y</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="s1">&#39;body_mass_g&#39;</span><span class="p">]</span>
+
+<span class="k">def</span> <span class="nf">mystd</span><span class="p">(</span><span class="n">x</span><span class="p">):</span>
+    <span class="n">vx</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">sum</span><span class="p">((</span><span class="n">x</span> <span class="o">-</span> <span class="n">np</span><span class="o">.</span><span class="n">mean</span><span class="p">(</span><span class="n">x</span><span class="p">))</span><span class="o">**</span><span class="mi">2</span><span class="p">)</span> <span class="o">/</span> <span class="nb">len</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
+    <span class="n">std</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">sqrt</span><span class="p">(</span><span class="n">vx</span><span class="p">)</span>
+    <span class="k">return</span> <span class="n">std</span>
+
+<span class="n">mystd</span><span class="p">(</span><span class="n">y</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>La media è 4207.057057057057; la deviazione standard è 804.0058601595629.</p>
+</section>
+</div>
+<div class="exercise admonition" id="ex-eda-penguins-3">
+
+<p class="admonition-title"><span class="caption-number">Exercise 2.15 </span></p>
+<section id="exercise-content">
+<p>Si ripeta l’esercizio <a class="reference internal" href="#ex-eda-pensuins-2"><span class="std std-numref">Exercise 2.14</span></a> usando solo i dati dell’isola Biscoe.</p>
+</section>
+</div>
+<div class="solution dropdown admonition" id="sol-eda-penguins-3">
+
+<p class="admonition-title">Solution to<a class="reference internal" href="#ex-eda-penguins-3"> Exercise 2.15</a></p>
+<section id="solution-content">
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span> 
+<span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+
+<span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">&#39;data/penguins.csv&#39;</span><span class="p">)</span>
+<span class="n">df</span><span class="o">.</span><span class="n">dropna</span><span class="p">(</span><span class="n">inplace</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+
+<span class="n">df</span><span class="p">[</span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;island&#39;</span><span class="p">]</span> <span class="o">==</span> <span class="s1">&#39;Biscoe&#39;</span><span class="p">][</span><span class="s1">&#39;body_mass_g&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">mean</span><span class="p">()</span>
+<span class="n">df</span><span class="p">[</span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;island&#39;</span><span class="p">]</span> <span class="o">==</span> <span class="s1">&#39;Biscoe&#39;</span><span class="p">][</span><span class="s1">&#39;body_mass_g&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">std</span><span class="p">(</span><span class="n">ddof</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>La media è 4719.171779141105; la deviazione standard è 788.4303859944841.</p>
+</section>
+</div>
+<div class="exercise admonition" id="ex-eda-penguins-4">
+
+<p class="admonition-title"><span class="caption-number">Exercise 2.16 </span></p>
+<section id="exercise-content">
+<p>Per i dati dell’esercizio <a class="reference internal" href="#ex-eda-penguins-3"><span class="std std-numref">Exercise 2.15</span></a>, si costruisca un istogramma per verificare il tipo di distribuzione dei dati. Si verifichi se, per questi dati, è plausibile la regola <span class="math notranslate nohighlight">\(s ≈ 1.4281 MAD\)</span>.</p>
+</section>
+</div>
+<div class="solution dropdown admonition" id="sol-eda-penguins-4">
+
+<p class="admonition-title">Solution to<a class="reference internal" href="#ex-eda-penguins-4"> Exercise 2.16</a></p>
+<section id="solution-content">
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span> 
+<span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+
+<span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">&#39;data/penguins.csv&#39;</span><span class="p">)</span>
+<span class="n">df</span><span class="o">.</span><span class="n">dropna</span><span class="p">(</span><span class="n">inplace</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+
+<span class="n">df</span><span class="p">[</span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;island&#39;</span><span class="p">]</span> <span class="o">==</span> <span class="s1">&#39;Biscoe&#39;</span><span class="p">][</span><span class="s1">&#39;body_mass_g&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">plot</span><span class="o">.</span><span class="n">hist</span><span class="p">()</span>
+
+<span class="n">y</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;island&#39;</span><span class="p">]</span> <span class="o">==</span> <span class="s1">&#39;Biscoe&#39;</span><span class="p">][</span><span class="s1">&#39;body_mass_g&#39;</span><span class="p">]</span>
+<span class="n">y</span>
+
+<span class="n">mad</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">median</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">abs</span><span class="p">(</span><span class="n">y</span> <span class="o">-</span> <span class="n">np</span><span class="o">.</span><span class="n">median</span><span class="p">(</span><span class="n">y</span><span class="p">)))</span>
+<span class="n">mad</span>
+
+<span class="mf">1.4826</span> <span class="o">*</span> <span class="n">mad</span>
+</pre></div>
+</div>
+<p>Anche se i dati mostrano una leggera asimmetria negativa, la regola <span class="math notranslate nohighlight">\(s ≈ 1.4281 MAD\)</span> descrive in maniera approssimativa quello che succede nel campione. Questo ci offre un modo per interpretare la deviazione standard.</p>
+</section>
+</div>
+<div class="exercise admonition" id="ex-eda-penguins-5">
+
+<p class="admonition-title"><span class="caption-number">Exercise 2.17 </span></p>
+<section id="exercise-content">
+<p>Per dati che si distribuiscono in maniera approssimativamente Normale, ci possiamo aspettare che il 95% dei dati sia compreso nell’intervallo <span class="math notranslate nohighlight">\(\bar{y} \pm 2 s\)</span>. Si verifichi questa affermazione usando i dati dei pinguini maschi che sono stati osservati sull’isola Dream prima del 2009.</p>
+</section>
+</div>
+<div class="solution dropdown admonition" id="sol-eda-penguins-5">
+
+<p class="admonition-title">Solution to<a class="reference internal" href="#ex-eda-penguins-5"> Exercise 2.17</a></p>
+<section id="solution-content">
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span> 
+<span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+
+<span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">&#39;data/penguins.csv&#39;</span><span class="p">)</span>
+<span class="n">df</span><span class="o">.</span><span class="n">dropna</span><span class="p">(</span><span class="n">inplace</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+
+<span class="n">eval_string</span> <span class="o">=</span> <span class="s2">&quot;island == &#39;Dream&#39; &amp; sex == &#39;male&#39; &amp; year &lt; 2009&quot;</span>
+<span class="n">y</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">query</span><span class="p">(</span><span class="n">eval_string</span><span class="p">)[</span><span class="s1">&#39;flipper_length_mm&#39;</span><span class="p">]</span>
+<span class="n">y</span><span class="o">.</span><span class="n">hist</span><span class="p">()</span>
+<span class="n">y</span><span class="o">.</span><span class="n">quantile</span><span class="p">(</span><span class="mf">0.975</span><span class="p">)</span> <span class="o">-</span> <span class="n">y</span><span class="o">.</span><span class="n">quantile</span><span class="p">(</span><span class="mf">0.025</span><span class="p">)</span>
+<span class="mi">4</span> <span class="o">*</span> <span class="n">y</span><span class="o">.</span><span class="n">std</span><span class="p">(</span><span class="n">ddof</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Nel caso presente, la “regola empirica” è valida.</p>
+</section>
+</div>
+<div class="exercise admonition" id="ex-eda-penguins-6">
+
+<p class="admonition-title"><span class="caption-number">Exercise 2.18 </span></p>
+<section id="exercise-content">
+<p>Si considerino le osservazioni relative all’isola Biscoe e alla specie Adelie. Esaminiamo la variabile <code class="docutils literal notranslate"><span class="pre">flipper_length_mm</span></code>. Per questa variabile, si trovino gli eventuali valori <em>outlier</em> costruendo un boxplot. Dopo avere eliminato gli <em>outlier</em>, si calcoli la media.</p>
+</section>
+</div>
+<div class="solution dropdown admonition" id="sol-eda-penguins-6">
+
+<p class="admonition-title">Solution to<a class="reference internal" href="#ex-eda-penguins-6"> Exercise 2.18</a></p>
+<section id="solution-content">
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span> 
+<span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+
+<span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">&#39;data/penguins.csv&#39;</span><span class="p">)</span>
+<span class="n">df</span><span class="o">.</span><span class="n">dropna</span><span class="p">(</span><span class="n">inplace</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+
+<span class="n">eval_string</span> <span class="o">=</span> <span class="s2">&quot;island == &#39;Biscoe&#39; &amp; species == &#39;Adelie&#39;&quot;</span>
+<span class="n">y</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">query</span><span class="p">(</span><span class="n">eval_string</span><span class="p">)[</span><span class="s1">&#39;flipper_length_mm&#39;</span><span class="p">]</span>
+<span class="n">y</span><span class="o">.</span><span class="n">hist</span><span class="p">()</span>
+<span class="n">newdf</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">y</span><span class="p">)</span>
+<span class="n">_</span> <span class="o">=</span> <span class="n">newdf</span><span class="o">.</span><span class="n">boxplot</span><span class="p">(</span><span class="n">column</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;flipper_length_mm&#39;</span><span class="p">])</span>  
+<span class="n">q1</span> <span class="o">=</span> <span class="n">y</span><span class="o">.</span><span class="n">quantile</span><span class="p">(</span><span class="mf">0.25</span><span class="p">)</span>
+<span class="n">q3</span> <span class="o">=</span> <span class="n">y</span><span class="o">.</span><span class="n">quantile</span><span class="p">(</span><span class="mf">0.75</span><span class="p">)</span>
+<span class="n">IQR</span> <span class="o">=</span> <span class="n">q3</span> <span class="o">-</span> <span class="n">q1</span>
+<span class="n">outliers</span> <span class="o">=</span> <span class="n">newdf</span><span class="p">[((</span><span class="n">newdf</span> <span class="o">&lt;</span> <span class="p">(</span><span class="n">q1</span> <span class="o">-</span> <span class="mf">1.5</span><span class="o">*</span><span class="n">IQR</span><span class="p">))</span> <span class="o">|</span> <span class="p">(</span><span class="n">newdf</span> <span class="o">&gt;</span> <span class="p">(</span><span class="n">q3</span> <span class="o">+</span> <span class="mf">1.5</span><span class="o">*</span><span class="n">IQR</span><span class="p">)))]</span>
+<span class="n">outliers</span><span class="o">.</span><span class="n">dropna</span><span class="p">(</span><span class="n">subset</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;flipper_length_mm&#39;</span><span class="p">])</span>
+<span class="n">newdf2</span> <span class="o">=</span> <span class="n">newdf</span><span class="p">[</span><span class="n">newdf</span><span class="p">[</span><span class="s1">&#39;flipper_length_mm&#39;</span><span class="p">]</span> <span class="o">&gt;</span> <span class="mi">172</span><span class="p">]</span>
+<span class="n">newdf2</span><span class="p">[</span><span class="s1">&#39;flipper_length_mm&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">mean</span><span class="p">()</span>
 </pre></div>
 </div>
 </section>
 </div>
-<div class="admonition-question admonition">
-<p class="admonition-title">Question</p>
-<p>A categorical variable is:</p>
-<ul class="simple">
-<li><p>a) a variable with <strong>only two</strong> different possible values</p></li>
-<li><p>b) a variable with continuous numerical values</p></li>
-<li><p>c) a variable with a finite set of possible values</p></li>
-</ul>
-<p><em>Select a single answer</em></p>
+<div class="exercise admonition" id="ex-eda-penguins-7">
+
+<p class="admonition-title"><span class="caption-number">Exercise 2.19 </span></p>
+<section id="exercise-content">
+<p>Per i dati dell’esercizio <a class="reference internal" href="#ex-eda-pensuins-1"><span class="std std-numref">Exercise 2.13</span></a>, dopo avere eliminato i dati mancanti, si costruisca un violin plot che include uno strip plot della variabile <code class="docutils literal notranslate"><span class="pre">flipper_length_mm</span></code> in funzione di <code class="docutils literal notranslate"><span class="pre">species</span></code>.</p>
+</section>
 </div>
-<div class="admonition-question admonition">
-<p class="admonition-title">Question</p>
-<p>In the notebook “First look at our dataset”, we used pandas and specifically
-<code class="docutils literal notranslate"><span class="pre">adult_census</span> <span class="pre">=</span> <span class="pre">pd.read_csv(&quot;../datasets/adult-census.csv&quot;)</span></code> to:</p>
-<ul class="simple">
-<li><p>a) load a comma-separated values file</p></li>
-<li><p>b) load a dataset already included in the pandas package</p></li>
-<li><p>c) load a file only containing the survey features</p></li>
-<li><p>d) load a file only containing the target of our classification problem:
-whether or not a person has a low or high income salary</p></li>
-<li><p>e) load a file containing both the features and the target for our classification
-problem</p></li>
-</ul>
-<p><em>Select all answers that apply</em></p>
+<div class="solution dropdown admonition" id="sol-eda-penguins-7">
+
+<p class="admonition-title">Solution to<a class="reference internal" href="#ex-eda-penguins-7"> Exercise 2.19</a></p>
+<section id="solution-content">
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span> 
+<span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+<span class="kn">import</span> <span class="nn">seaborn</span> <span class="k">as</span> <span class="nn">sns</span>
+
+<span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">&#39;data/penguins.csv&#39;</span><span class="p">)</span>
+<span class="n">df</span><span class="o">.</span><span class="n">dropna</span><span class="p">(</span><span class="n">inplace</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+
+<span class="n">ax</span> <span class="o">=</span> <span class="n">sns</span><span class="o">.</span><span class="n">violinplot</span><span class="p">(</span>
+    <span class="n">data</span><span class="o">=</span><span class="n">df</span><span class="p">,</span>
+    <span class="n">x</span> <span class="o">=</span> <span class="s1">&#39;species&#39;</span><span class="p">,</span>
+    <span class="n">y</span> <span class="o">=</span> <span class="s1">&#39;flipper_length_mm&#39;</span><span class="p">,</span>
+    <span class="n">color</span> <span class="o">=</span> <span class="s1">&#39;.8&#39;</span>
+<span class="p">)</span>
+
+<span class="n">ax</span> <span class="o">=</span> <span class="n">sns</span><span class="o">.</span><span class="n">stripplot</span><span class="p">(</span>
+    <span class="n">data</span> <span class="o">=</span> <span class="n">df</span><span class="p">,</span>
+    <span class="n">x</span> <span class="o">=</span> <span class="s1">&#39;species&#39;</span><span class="p">,</span>
+    <span class="n">y</span> <span class="o">=</span> <span class="s1">&#39;flipper_length_mm&#39;</span><span class="p">,</span>
+    <span class="n">palette</span> <span class="o">=</span> <span class="s1">&#39;colorblind&#39;</span>
+<span class="p">)</span>
+</pre></div>
 </div>
-<div class="admonition-question admonition">
-<p class="admonition-title">Question</p>
-<p>In the previous notebook, we used:</p>
-<ul class="simple">
-<li><p>a) pandas to manipulate data</p></li>
-<li><p>b) pandas and seaborn to visually inspect the dataset</p></li>
-<li><p>c) numpy and scipy to perform numerical inspection (for instance using
-<code class="docutils literal notranslate"><span class="pre">scipy.optimize.minimize</span></code>)</p></li>
-<li><p>d) scikit-learn to fit some machine learning models</p></li>
-</ul>
-<p><em>Select all answers that apply</em></p>
+</section>
 </div>
-<div class="admonition-question admonition">
-<p class="admonition-title">Question</p>
-<p>How is a tabular dataset organized?</p>
-<ul class="simple">
-<li><p>a) a column represents a sample and a row represents a feature</p></li>
-<li><p>b) a column represents a feature and a row represents a sample</p></li>
-<li><p>c) the target variable is represented by a row</p></li>
-<li><p>d) the target variable is represented by a column</p></li>
-</ul>
-<p><em>Select all answers that apply</em></p>
+<div class="exercise admonition" id="ex-eda-penguins-8">
+
+<p class="admonition-title"><span class="caption-number">Exercise 2.20 </span></p>
+<section id="exercise-content">
+<p>Per i dati dell’esercizio <a class="reference internal" href="#ex-eda-pensuins-1"><span class="std std-numref">Exercise 2.13</span></a>, dopo avere eliminato i dati mancanti, si consideriano solo i dati dei pinguini femmina che non si trovano sull’isola Biscoe. Si trovi la deviazione standard, quale statistica inferenziale, per le variabili <code class="docutils literal notranslate"><span class="pre">bill_length_mm</span></code>	 e <code class="docutils literal notranslate"><span class="pre">bill_depth_mm</span></code>, separatamente per ciascuna specie.</p>
+</section>
+</div>
+<div class="solution dropdown admonition" id="sol-eda-penguins-8">
+
+<p class="admonition-title">Solution to<a class="reference internal" href="#ex-eda-penguins-8"> Exercise 2.20</a></p>
+<section id="solution-content">
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span> 
+<span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+
+<span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">&#39;data/penguins.csv&#39;</span><span class="p">)</span>
+<span class="n">df</span><span class="o">.</span><span class="n">dropna</span><span class="p">(</span><span class="n">inplace</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+
+<span class="n">eval_string</span> <span class="o">=</span> <span class="s2">&quot;island != &#39;Biscoe&#39; &amp; sex == &#39;female&#39;&quot;</span>
+<span class="n">newdf</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">query</span><span class="p">(</span><span class="n">eval_string</span><span class="p">)</span>
+<span class="n">newdf</span><span class="o">.</span><span class="n">groupby</span><span class="p">(</span><span class="s2">&quot;species&quot;</span><span class="p">)[[</span><span class="s2">&quot;bill_length_mm&quot;</span><span class="p">,</span> <span class="s2">&quot;bill_depth_mm&quot;</span><span class="p">]]</span><span class="o">.</span><span class="n">std</span><span class="p">(</span><span class="n">ddof</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+</pre></div>
+</div>
+</section>
+</div>
+<div class="exercise admonition" id="ex-eda-penguins-9">
+
+<p class="admonition-title"><span class="caption-number">Exercise 2.21 </span></p>
+<section id="exercise-content">
+<p>Per i dati dell’esercizio <a class="reference internal" href="#ex-eda-pensuins-1"><span class="std std-numref">Exercise 2.13</span></a>, dopo avere eliminato i dati mancanti, si consideriano solo le osservazioni raccolte nel 2009. Si trovi il numero di osservazioni e la media per le variabili ‘bill_length_mm’ e ‘bill_depth_mm’, separatamente per ciascuna specie e ciascun genere.</p>
+</section>
+</div>
+<div class="solution dropdown admonition" id="sol-eda-penguins-9">
+
+<p class="admonition-title">Solution to<a class="reference internal" href="#ex-eda-penguins-9"> Exercise 2.21</a></p>
+<section id="solution-content">
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span> 
+<span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+
+<span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">&#39;data/penguins.csv&#39;</span><span class="p">)</span>
+<span class="n">df</span><span class="o">.</span><span class="n">dropna</span><span class="p">(</span><span class="n">inplace</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+
+<span class="n">newdf</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;year&#39;</span><span class="p">]</span> <span class="o">==</span> <span class="mi">2008</span><span class="p">]</span>
+<span class="n">summary_stats</span> <span class="o">=</span> <span class="p">(</span><span class="n">newdf</span><span class="o">.</span><span class="n">loc</span><span class="p">[:,</span> <span class="p">[</span><span class="s1">&#39;species&#39;</span><span class="p">,</span> <span class="s1">&#39;sex&#39;</span><span class="p">,</span> <span class="s1">&#39;bill_length_mm&#39;</span><span class="p">,</span> <span class="s1">&#39;bill_depth_mm&#39;</span><span class="p">]]</span>
+                         <span class="o">.</span><span class="n">groupby</span><span class="p">([</span><span class="s1">&#39;species&#39;</span><span class="p">,</span> <span class="s1">&#39;sex&#39;</span><span class="p">])</span>
+                         <span class="o">.</span><span class="n">aggregate</span><span class="p">([</span><span class="s1">&#39;mean&#39;</span><span class="p">,</span> <span class="s1">&#39;count&#39;</span><span class="p">]))</span>
+<span class="n">summary_stats</span><span class="o">.</span><span class="n">round</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>
+</pre></div>
+</div>
+</section>
 </div>
 </section>
 
@@ -566,7 +748,7 @@ problem</p></li>
   
     By Corrado Caudek<br/>
   
-      &copy; Copyright 2022.<br/>
+      &copy; Copyright 2023.<br/>
 </p>
         </footer>
     </div>
