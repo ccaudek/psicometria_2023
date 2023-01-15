@@ -4,7 +4,7 @@
 # # Psicometria
 # 
 # ```{warning} 
-# Questo sito web verrà spesso aggiornato durante il periodo di svolgimento dell'insegnamento (marzo-maggio 2023).
+# Questo sito web verrà aggiornato spesso durante il periodo di svolgimento dell'insegnamento (marzo-maggio 2023).
 # ```
 # 
 # ```{admonition} Importante
