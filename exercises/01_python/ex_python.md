@@ -199,7 +199,7 @@ even
 ```{exercise}
 :label: label-python-10
 
-Usando la funzione `enumerate()` si stampino gli indici degli elementi della lista [4, 2, 5, 7, 8].
+Esaminiamo la funzione `enumerate()`. Eseguiamo l'istruzione `e = enumerate(["a", "b", "c"])`. Possiamo esaminare il contenuto di `e` con `list(e)`. Avendo capito cosa produce  `enumerate()`, usando un ciclo `for` stampiamo gli indici che `enumerate()` ha assegnato agli elementi della lista [4, 2, 5, 7, 8].
 ```
 
 ````{solution} label-python-10
@@ -370,5 +370,63 @@ my_list1[0] = 99
 
 print(my_list1)
 print(new_list)
+```
+````
+
++++
+
+```{exercise}
+:label: label-python-19
+
+Senza eseguire le seguenti istruzioni, indovinate se producono True o False.
+
+x = 2
+y = 2
+z = 4
+
+# Statement 1
+x > z
+
+# Statement 1
+x == y
+
+# Statement 3
+(x < y) and (x > y)
+
+# Statement 4
+(x < y) or (x > y)
+
+# Statement 5
+(x <= y) and (x >= y)
+
+# Statement 6
+True and ((x < z) or (x < y))
+```
+
+````{solution} label-python-19
+:class: dropdown
+
+```{code-block} python
+x = 2
+y = 2
+z = 4
+
+# Statement 1
+x > z
+
+# Statement 1
+x == y
+
+# Statement 3
+(x < y) and (x > y)
+
+# Statement 4
+(x < y) or (x > y)
+
+# Statement 5
+(x <= y) and (x >= y)
+
+# Statement 6
+True and ((x < z) or (x < y))
 ```
 ````
