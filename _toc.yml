@@ -9,7 +9,10 @@ parts:
   - file: materiali_didattici
   - file: come_studiare
   - file: calendario
-  - file: laboratorio_didattico
+  - file: laboratorio_didattico/laboratorio_didattico_index
+    sections:
+    - file: laboratorio_didattico/laboratorio_didattico.ipynb
+    - file: laboratorio_didattico/melody
   - file: esame
   - file: faq
 - caption: Esercizi
