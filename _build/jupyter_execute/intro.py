@@ -8,7 +8,7 @@
 # ```
 # 
 # ```{admonition} Importante
-# Il presente sito web è **l'unica fonte che va consultata** per informazioni sul programma dell'insegnamento Psicometria e sulle modalità d'esame.
+# Il presente sito web è **l'unica fonte che va consultata** per informazioni sul programma dell'insegnamento B000286 - PSICOMETRIA (Cognomi L-Z) e sulle modalità d'esame.
 # ```
 # 
 # ## 📝 Informazioni sull'insegnamento
