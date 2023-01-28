@@ -34,4 +34,9 @@ parts:
     - file: exercises/03_prob/ex_bayes_theorem
   - file: exercises/04_rv_distr/rv_distr_index
     sections:
+    - file: exercises/04_rv_distr/ex_rv_discrete
+    - file: exercises/04_rv_distr/ex_binomial
     - file: exercises/04_rv_distr/ex_gaussian
+  - file: exercises/05_joint_prob/joint_prob_index
+    sections:
+    - file: exercises/05_joint_prob/ex_joint_prob

@@ -47,9 +47,25 @@ Sulla base di questo campione, conosciamo il peso medio dei neonati in Sud Itali
 :label: lab-key-notions_02-solution
 
 1. a. L'insieme di tutti i rifugiati ucraini in Italia, presenti, passati e futuri. b. la media del numero mensile di attacchi di panico per ciascuna persona. c. Essendo questa una popolazione virtuale non è possibile conoscere il valore dei parametri.
-2.
-3.
+2. L'insieme di tutti i neonati neonati nel Sud Italia ultimi cinque anni. Il parametro di interesse è la media di qeusta popolazione. Il valore del parametro è sconosciuto.
+3. a. L'insieme degli adulti che possiedono un telefono cellulare. b. proporzione di adulti che possiedono un cellulare. c. la statistica è la proporzione nel campione. d. Possiamo inferire, su questi dati, la proporzione nella popolazione, ma non la conosciamo con certezza. Vedremo come a tale stima potrà essere associato un livello (alto o basso) di credibilità.
 
+```
+
++++
+
+```{exercise}
+:label: lab-key-notions_03
+
+Uno studio psicologico esamina le seguenti variabili: età, tempi di reazione in un compito, proporzione di risposte corrette, genere, status socio-economico.  Individua le variabili indipendenti e le variabili dipendenti.
+```
+
+```{solution} lab-key-notions_03
+:class: dropdown
+:label: lab-key-notions_03-solution
+
+Variabili indipendenti: età, genere, status socio-economico.
+Variabili dipendenti: tempi di reazione in un compito, proporzione di risposte corrette.
 ```
 
 +++
