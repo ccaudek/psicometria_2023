@@ -380,53 +380,25 @@ print(new_list)
 
 Senza eseguire le seguenti istruzioni, indovinate se producono True o False.
 
-x = 2
-y = 2
-z = 4
+x = 2;
+y = 2;
+z = 4;
 
-# Statement 1
 x > z
 
-# Statement 1
 x == y
 
-# Statement 3
 (x < y) and (x > y)
 
-# Statement 4
 (x < y) or (x > y)
 
-# Statement 5
 (x <= y) and (x >= y)
 
-# Statement 6
 True and ((x < z) or (x < y))
 ```
 
 ````{solution} label-python-19
 :class: dropdown
 
-```{code-block} python
-x = 2
-y = 2
-z = 4
-
-# Statement 1
-x > z
-
-# Statement 1
-x == y
-
-# Statement 3
-(x < y) and (x > y)
-
-# Statement 4
-(x < y) or (x > y)
-
-# Statement 5
-(x <= y) and (x >= y)
-
-# Statement 6
-True and ((x < z) or (x < y))
-```
+Per verificare la soluzione, inserite (una per volta) le istruzioni precedenti in una cella di un Jupyter Notebook.
 ````

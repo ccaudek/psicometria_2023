@@ -143,10 +143,27 @@ const thebe_selector_output = ".output, .cell_output"
    Calendario
   </a>
  </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="../../laboratorio_didattico.html">
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../../laboratorio_didattico/laboratorio_didattico_index.html">
    Laboratorio didattico
   </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
+  <label for="toctree-checkbox-1">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../laboratorio_didattico/laboratorio_didattico.html">
+     Istruzioni E-tivity
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../laboratorio_didattico/melody.html">
+     Il significato sociale della musica in età evolutiva
+    </a>
+   </li>
+  </ul>
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="../../esame.html">
@@ -169,8 +186,8 @@ const thebe_selector_output = ".output, .cell_output"
   <a class="reference internal" href="../01_python/python_index.html">
    1. Python per la data analisi
   </a>
-  <input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
-  <label for="toctree-checkbox-1">
+  <input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/>
+  <label for="toctree-checkbox-2">
    <i class="fas fa-chevron-down">
    </i>
   </label>
@@ -186,8 +203,8 @@ const thebe_selector_output = ".output, .cell_output"
   <a class="reference internal" href="descr_stats_index.html">
    2. Statistica descrittiva
   </a>
-  <input checked="" class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/>
-  <label for="toctree-checkbox-2">
+  <input checked="" class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/>
+  <label for="toctree-checkbox-3">
    <i class="fas fa-chevron-down">
    </i>
   </label>
@@ -218,8 +235,8 @@ const thebe_selector_output = ".output, .cell_output"
   <a class="reference internal" href="../03_prob/prob_index.html">
    3. Teoria della probabilità
   </a>
-  <input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/>
-  <label for="toctree-checkbox-3">
+  <input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/>
+  <label for="toctree-checkbox-4">
    <i class="fas fa-chevron-down">
    </i>
   </label>
@@ -245,8 +262,8 @@ const thebe_selector_output = ".output, .cell_output"
   <a class="reference internal" href="../04_rv_distr/rv_distr_index.html">
    4. Distribuzioni di variabili casuali
   </a>
-  <input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/>
-  <label for="toctree-checkbox-4">
+  <input class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" type="checkbox"/>
+  <label for="toctree-checkbox-5">
    <i class="fas fa-chevron-down">
    </i>
   </label>
@@ -441,14 +458,14 @@ title="Print to PDF"
 <h1><span class="section-number">2.4. </span>✅ EDA<a class="headerlink" href="#eda" title="Permalink to this headline">#</a></h1>
 <div class="exercise admonition" id="ex-eda-pensuins-1">
 
-<p class="admonition-title"><span class="caption-number">Exercise 2.13 </span></p>
+<p class="admonition-title"><span class="caption-number">Exercise 2.27 </span></p>
 <section id="exercise-content">
 <p>Si importi il file <code class="docutils literal notranslate"><span class="pre">penguins.csv</span></code> e si verifichi la presenza di dati mancanti. Se ci sono dei dati mancanti li si escluda. Si trovi la proporzione di osservazioni che sono state raccolte sull’isola Dream.</p>
 </section>
 </div>
 <div class="solution dropdown admonition" id="sol-eda-pensuins-1">
 
-<p class="admonition-title">Solution to<a class="reference internal" href="#ex-eda-pensuins-1"> Exercise 2.13</a></p>
+<p class="admonition-title">Solution to<a class="reference internal" href="#ex-eda-pensuins-1"> Exercise 2.27</a></p>
 <section id="solution-content">
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span> 
 <span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
@@ -465,14 +482,14 @@ title="Print to PDF"
 </div>
 <div class="exercise admonition" id="ex-eda-pensuins-2">
 
-<p class="admonition-title"><span class="caption-number">Exercise 2.14 </span></p>
+<p class="admonition-title"><span class="caption-number">Exercise 2.28 </span></p>
 <section id="exercise-content">
-<p>Per i dati dell’esercizio <a class="reference internal" href="#ex-eda-pensuins-1"><span class="std std-numref">Exercise 2.13</span></a>, si trovino la media e la deviazione standard, quale statistica descrittiva, della variabile <code class="docutils literal notranslate"><span class="pre">body_mass_g</span></code>. Si verifichi il risultato applicando la formula della deviazione standard.</p>
+<p>Per i dati dell’esercizio <a class="reference internal" href="#ex-eda-pensuins-1"><span class="std std-numref">Exercise 2.27</span></a>, si trovino la media e la deviazione standard, quale statistica descrittiva, della variabile <code class="docutils literal notranslate"><span class="pre">body_mass_g</span></code>. Si verifichi il risultato applicando la formula della deviazione standard.</p>
 </section>
 </div>
 <div class="solution dropdown admonition" id="sol-eda-pensuins-2">
 
-<p class="admonition-title">Solution to<a class="reference internal" href="#ex-eda-pensuins-2"> Exercise 2.14</a></p>
+<p class="admonition-title">Solution to<a class="reference internal" href="#ex-eda-pensuins-2"> Exercise 2.28</a></p>
 <section id="solution-content">
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span> 
 <span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
@@ -498,14 +515,14 @@ title="Print to PDF"
 </div>
 <div class="exercise admonition" id="ex-eda-penguins-3">
 
-<p class="admonition-title"><span class="caption-number">Exercise 2.15 </span></p>
+<p class="admonition-title"><span class="caption-number">Exercise 2.29 </span></p>
 <section id="exercise-content">
-<p>Si ripeta l’esercizio <a class="reference internal" href="#ex-eda-pensuins-2"><span class="std std-numref">Exercise 2.14</span></a> usando solo i dati dell’isola Biscoe.</p>
+<p>Si ripeta l’esercizio <a class="reference internal" href="#ex-eda-pensuins-2"><span class="std std-numref">Exercise 2.28</span></a> usando solo i dati dell’isola Biscoe.</p>
 </section>
 </div>
 <div class="solution dropdown admonition" id="sol-eda-penguins-3">
 
-<p class="admonition-title">Solution to<a class="reference internal" href="#ex-eda-penguins-3"> Exercise 2.15</a></p>
+<p class="admonition-title">Solution to<a class="reference internal" href="#ex-eda-penguins-3"> Exercise 2.29</a></p>
 <section id="solution-content">
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span> 
 <span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
@@ -522,14 +539,14 @@ title="Print to PDF"
 </div>
 <div class="exercise admonition" id="ex-eda-penguins-4">
 
-<p class="admonition-title"><span class="caption-number">Exercise 2.16 </span></p>
+<p class="admonition-title"><span class="caption-number">Exercise 2.30 </span></p>
 <section id="exercise-content">
-<p>Per i dati dell’esercizio <a class="reference internal" href="#ex-eda-penguins-3"><span class="std std-numref">Exercise 2.15</span></a>, si costruisca un istogramma per verificare il tipo di distribuzione dei dati. Si verifichi se, per questi dati, è plausibile la regola <span class="math notranslate nohighlight">\(s ≈ 1.4281 MAD\)</span>.</p>
+<p>Per i dati dell’esercizio <a class="reference internal" href="#ex-eda-penguins-3"><span class="std std-numref">Exercise 2.29</span></a>, si costruisca un istogramma per verificare il tipo di distribuzione dei dati. Si verifichi se, per questi dati, è plausibile la regola <span class="math notranslate nohighlight">\(s ≈ 1.4281 MAD\)</span>.</p>
 </section>
 </div>
 <div class="solution dropdown admonition" id="sol-eda-penguins-4">
 
-<p class="admonition-title">Solution to<a class="reference internal" href="#ex-eda-penguins-4"> Exercise 2.16</a></p>
+<p class="admonition-title">Solution to<a class="reference internal" href="#ex-eda-penguins-4"> Exercise 2.30</a></p>
 <section id="solution-content">
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span> 
 <span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
@@ -553,14 +570,14 @@ title="Print to PDF"
 </div>
 <div class="exercise admonition" id="ex-eda-penguins-5">
 
-<p class="admonition-title"><span class="caption-number">Exercise 2.17 </span></p>
+<p class="admonition-title"><span class="caption-number">Exercise 2.31 </span></p>
 <section id="exercise-content">
 <p>Per dati che si distribuiscono in maniera approssimativamente Normale, ci possiamo aspettare che il 95% dei dati sia compreso nell’intervallo <span class="math notranslate nohighlight">\(\bar{y} \pm 2 s\)</span>. Si verifichi questa affermazione usando i dati dei pinguini maschi che sono stati osservati sull’isola Dream prima del 2009.</p>
 </section>
 </div>
 <div class="solution dropdown admonition" id="sol-eda-penguins-5">
 
-<p class="admonition-title">Solution to<a class="reference internal" href="#ex-eda-penguins-5"> Exercise 2.17</a></p>
+<p class="admonition-title">Solution to<a class="reference internal" href="#ex-eda-penguins-5"> Exercise 2.31</a></p>
 <section id="solution-content">
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span> 
 <span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
@@ -580,14 +597,14 @@ title="Print to PDF"
 </div>
 <div class="exercise admonition" id="ex-eda-penguins-6">
 
-<p class="admonition-title"><span class="caption-number">Exercise 2.18 </span></p>
+<p class="admonition-title"><span class="caption-number">Exercise 2.32 </span></p>
 <section id="exercise-content">
 <p>Si considerino le osservazioni relative all’isola Biscoe e alla specie Adelie. Esaminiamo la variabile <code class="docutils literal notranslate"><span class="pre">flipper_length_mm</span></code>. Per questa variabile, si trovino gli eventuali valori <em>outlier</em> costruendo un boxplot. Dopo avere eliminato gli <em>outlier</em>, si calcoli la media.</p>
 </section>
 </div>
 <div class="solution dropdown admonition" id="sol-eda-penguins-6">
 
-<p class="admonition-title">Solution to<a class="reference internal" href="#ex-eda-penguins-6"> Exercise 2.18</a></p>
+<p class="admonition-title">Solution to<a class="reference internal" href="#ex-eda-penguins-6"> Exercise 2.32</a></p>
 <section id="solution-content">
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span> 
 <span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
@@ -613,14 +630,14 @@ title="Print to PDF"
 </div>
 <div class="exercise admonition" id="ex-eda-penguins-7">
 
-<p class="admonition-title"><span class="caption-number">Exercise 2.19 </span></p>
+<p class="admonition-title"><span class="caption-number">Exercise 2.33 </span></p>
 <section id="exercise-content">
-<p>Per i dati dell’esercizio <a class="reference internal" href="#ex-eda-pensuins-1"><span class="std std-numref">Exercise 2.13</span></a>, dopo avere eliminato i dati mancanti, si costruisca un violin plot che include uno strip plot della variabile <code class="docutils literal notranslate"><span class="pre">flipper_length_mm</span></code> in funzione di <code class="docutils literal notranslate"><span class="pre">species</span></code>.</p>
+<p>Per i dati dell’esercizio <a class="reference internal" href="#ex-eda-pensuins-1"><span class="std std-numref">Exercise 2.27</span></a>, dopo avere eliminato i dati mancanti, si costruisca un violin plot che include uno strip plot della variabile <code class="docutils literal notranslate"><span class="pre">flipper_length_mm</span></code> in funzione di <code class="docutils literal notranslate"><span class="pre">species</span></code>.</p>
 </section>
 </div>
 <div class="solution dropdown admonition" id="sol-eda-penguins-7">
 
-<p class="admonition-title">Solution to<a class="reference internal" href="#ex-eda-penguins-7"> Exercise 2.19</a></p>
+<p class="admonition-title">Solution to<a class="reference internal" href="#ex-eda-penguins-7"> Exercise 2.33</a></p>
 <section id="solution-content">
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span> 
 <span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
@@ -648,14 +665,14 @@ title="Print to PDF"
 </div>
 <div class="exercise admonition" id="ex-eda-penguins-8">
 
-<p class="admonition-title"><span class="caption-number">Exercise 2.20 </span></p>
+<p class="admonition-title"><span class="caption-number">Exercise 2.34 </span></p>
 <section id="exercise-content">
-<p>Per i dati dell’esercizio <a class="reference internal" href="#ex-eda-pensuins-1"><span class="std std-numref">Exercise 2.13</span></a>, dopo avere eliminato i dati mancanti, si consideriano solo i dati dei pinguini femmina che non si trovano sull’isola Biscoe. Si trovi la deviazione standard, quale statistica inferenziale, per le variabili <code class="docutils literal notranslate"><span class="pre">bill_length_mm</span></code>	 e <code class="docutils literal notranslate"><span class="pre">bill_depth_mm</span></code>, separatamente per ciascuna specie.</p>
+<p>Per i dati dell’esercizio <a class="reference internal" href="#ex-eda-pensuins-1"><span class="std std-numref">Exercise 2.27</span></a>, dopo avere eliminato i dati mancanti, si consideriano solo i dati dei pinguini femmina che non si trovano sull’isola Biscoe. Si trovi la deviazione standard, quale statistica inferenziale, per le variabili <code class="docutils literal notranslate"><span class="pre">bill_length_mm</span></code>	 e <code class="docutils literal notranslate"><span class="pre">bill_depth_mm</span></code>, separatamente per ciascuna specie.</p>
 </section>
 </div>
 <div class="solution dropdown admonition" id="sol-eda-penguins-8">
 
-<p class="admonition-title">Solution to<a class="reference internal" href="#ex-eda-penguins-8"> Exercise 2.20</a></p>
+<p class="admonition-title">Solution to<a class="reference internal" href="#ex-eda-penguins-8"> Exercise 2.34</a></p>
 <section id="solution-content">
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span> 
 <span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
@@ -672,14 +689,14 @@ title="Print to PDF"
 </div>
 <div class="exercise admonition" id="ex-eda-penguins-9">
 
-<p class="admonition-title"><span class="caption-number">Exercise 2.21 </span></p>
+<p class="admonition-title"><span class="caption-number">Exercise 2.35 </span></p>
 <section id="exercise-content">
-<p>Per i dati dell’esercizio <a class="reference internal" href="#ex-eda-pensuins-1"><span class="std std-numref">Exercise 2.13</span></a>, dopo avere eliminato i dati mancanti, si consideriano solo le osservazioni raccolte nel 2009. Si trovi il numero di osservazioni e la media per le variabili ‘bill_length_mm’ e ‘bill_depth_mm’, separatamente per ciascuna specie e ciascun genere.</p>
+<p>Per i dati dell’esercizio <a class="reference internal" href="#ex-eda-pensuins-1"><span class="std std-numref">Exercise 2.27</span></a>, dopo avere eliminato i dati mancanti, si consideriano solo le osservazioni raccolte nel 2009. Si trovi il numero di osservazioni e la media per le variabili ‘bill_length_mm’ e ‘bill_depth_mm’, separatamente per ciascuna specie e ciascun genere.</p>
 </section>
 </div>
 <div class="solution dropdown admonition" id="sol-eda-penguins-9">
 
-<p class="admonition-title">Solution to<a class="reference internal" href="#ex-eda-penguins-9"> Exercise 2.21</a></p>
+<p class="admonition-title">Solution to<a class="reference internal" href="#ex-eda-penguins-9"> Exercise 2.35</a></p>
 <section id="solution-content">
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span> 
 <span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
@@ -694,6 +711,269 @@ title="Print to PDF"
 <span class="n">summary_stats</span><span class="o">.</span><span class="n">round</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>
 </pre></div>
 </div>
+</section>
+</div>
+<div class="exercise admonition" id="ex-eda-1">
+
+<p class="admonition-title"><span class="caption-number">Exercise 2.36 </span></p>
+<section id="exercise-content">
+<p>Si consideri la variabile x = 28, 16, 40, 21, 33, 15, 42, 13, 11, 14, 96. Si calcoli il valore soglia che, in un boxplot, separa i valori anomali dal massimo numero possibile che può essere assunto dal valore adiacente superiore.</p>
+</section>
+</div>
+<div class="solution dropdown admonition" id="sol-eda-1">
+
+<p class="admonition-title">Solution to<a class="reference internal" href="#ex-eda-1"> Exercise 2.36</a></p>
+<section id="solution-content">
+<p>69.5</p>
+</section>
+</div>
+<div class="exercise admonition" id="ex-eda-2">
+
+<p class="admonition-title"><span class="caption-number">Exercise 2.37 </span></p>
+<section id="exercise-content">
+<p>Si consideri la variabile x = 28, 16, 40, 21, 33, 15, 42, 13, 11, 14, 96. Si calcoli il valore soglia che, in un boxplot, separa i valori anomali dal massimo numero possibile che può essere assunto dal valore adiacente superiore.</p>
+</section>
+</div>
+<div class="solution dropdown admonition" id="sol-eda-2">
+
+<p class="admonition-title">Solution to<a class="reference internal" href="#ex-eda-2"> Exercise 2.37</a></p>
+<section id="solution-content">
+<p>0.83</p>
+</section>
+</div>
+<div class="exercise admonition" id="ex-eda-3">
+
+<p class="admonition-title"><span class="caption-number">Exercise 2.38 </span></p>
+<section id="exercise-content">
+<p>Si scelga l’affermazione più appropriata per descrivere la correlazione.</p>
+<p>a.
+Il coefficiente di correlazione r di Pearson quantifica la relazione tra due variabili.</p>
+<p>b.
+Il coefficiente di correlazione r di Pearson quantifica la relazione tra due variabili ordinali.</p>
+<p>c.
+Il coefficiente di correlazione r di Pearson quantifica la relazione lineare tra due variabili.</p>
+<p>d.
+Il coefficiente di correlazione r di Pearson ci dice se esiste un’associazione tra due variabili oppure se non esiste.</p>
+<p>e.
+Il coefficiente di correlazione r di Pearson non può essere calcolato se la relazione tra due variabili è curvilinea.</p>
+</section>
+</div>
+<div class="solution dropdown admonition" id="sol-eda-3">
+
+<p class="admonition-title">Solution to<a class="reference internal" href="#ex-eda-3"> Exercise 2.38</a></p>
+<section id="solution-content">
+<p>Il coefficiente di correlazione r di Pearson quantifica la relazione lineare tra due variabili.</p>
+</section>
+</div>
+<div class="exercise admonition" id="ex-eda-4">
+
+<p class="admonition-title"><span class="caption-number">Exercise 2.39 </span></p>
+<section id="exercise-content">
+<p>Si scelga l’affermazione più appropriata per descrivere la correlazione.</p>
+<p>a.
+Tanto più il coefficiente di correlazione 𝑟
+di Pearson si avvicina a -1 tanto più forte è l’associazione lineare tra 𝑋
+e 𝑌.</p>
+<p>b.
+Tanto più il coefficiente di correlazione 𝑟
+di Pearson si avvicina a -1 o a +1 tanto più forte è l’associazione lineare tra 𝑋
+e 𝑌.</p>
+<p>c.
+Tanto più il coefficiente di correlazione 𝑟
+di Pearson si avvicina a 0.5 tanto più forte è l’associazione lineare tra 𝑋
+e 𝑌.</p>
+<p>d.
+Tanto più il coefficiente di correlazione 𝑟
+di Pearson si avvicina a +1 tanto più forte è l’associazione lineare tra 𝑋
+e 𝑌.</p>
+<p>e.
+Tanto più il coefficiente di correlazione 𝑟
+di Pearson si avvicina a 0 tanto più forte è l’associazione lineare tra 𝑋
+e 𝑌.</p>
+</section>
+</div>
+<div class="solution dropdown admonition" id="sol-eda-4">
+
+<p class="admonition-title">Solution to<a class="reference internal" href="#ex-eda-4"> Exercise 2.39</a></p>
+<section id="solution-content">
+<p>Tanto più il coefficiente di correlazione 𝑟 di Pearson si avvicina a -1 o a +1 tanto più forte è l’associazione lineare tra 𝑋 e 𝑌.</p>
+</section>
+</div>
+<div class="exercise admonition" id="ex-eda-5">
+
+<p class="admonition-title"><span class="caption-number">Exercise 2.40 </span></p>
+<section id="exercise-content">
+<p>Si scelga l’affermazione corretta.</p>
+<p>a.
+Se il coefficiente di correlazione 𝑟
+di Pearson è 0 allora non vi è associazione tra 𝑋
+e 𝑌
+.</p>
+<p>b.
+Se il coefficiente di correlazione 𝑟
+di Pearson è 0 allora 𝑋
+e 𝑌
+sono perfettamente associate.</p>
+<p>c.
+Se il coefficiente di correlazione 𝑟
+di Pearson è 0 allora 𝑋
+e 𝑌
+sono due grandezze incommensurabili.</p>
+<p>d.
+Se il coefficiente di correlazione 𝑟
+di Pearson è 0 allora non c’è associazione lineare tra 𝑋
+e 𝑌
+.</p>
+<p>e.
+Se il coefficiente di correlazione 𝑟
+di Pearson è 0 allora c’è un’associazione curvilinea tra 𝑋
+e 𝑌
+.</p>
+</section>
+</div>
+<div class="solution dropdown admonition" id="sol-eda-5">
+
+<p class="admonition-title">Solution to<a class="reference internal" href="#ex-eda-5"> Exercise 2.40</a></p>
+<section id="solution-content">
+<p>Se il coefficiente di correlazione 𝑟
+di Pearson è 0 allora non c’è associazione lineare tra 𝑋
+e 𝑌
+.</p>
+</section>
+</div>
+<div class="exercise admonition" id="ex-eda-6">
+
+<p class="admonition-title"><span class="caption-number">Exercise 2.41 </span></p>
+<section id="exercise-content">
+<p>Si scelga l’affermazione corretta.</p>
+<p>a.
+Il valore del coefficiente di correlazione 𝑟
+di Pearson cambia se viene cambiata l’unità di misura delle variabili 𝑋
+e 𝑌
+.</p>
+<p>b.
+Il valore del coefficiente di correlazione 𝑟
+di Pearson non cambia se prendiamo il logaritmo di una delle due variabili.</p>
+<p>c.
+Il valore del coefficiente di correlazione 𝑟
+di Pearson non cambia se prendiamo il logaritmo di entrambe le variabili.</p>
+<p>d.
+Il valore del coefficiente di correlazione 𝑟
+di Pearson non cambia se viene cambiata l’unità di misura delle variabili 𝑋
+e 𝑌.</p>
+<p>e.
+Il valore del coefficiente di correlazione 𝑟
+di Pearson non cambia se moltiplichiamo per 0 una delle due variabili.</p>
+</section>
+</div>
+<div class="solution dropdown admonition" id="sol-eda-6">
+
+<p class="admonition-title">Solution to<a class="reference internal" href="#ex-eda-6"> Exercise 2.41</a></p>
+<section id="solution-content">
+<p>Il valore del coefficiente di correlazione 𝑟
+di Pearson non cambia se viene cambiata l’unità di misura delle variabili 𝑋
+e 𝑌.</p>
+</section>
+</div>
+<div class="exercise admonition" id="ex-eda-7">
+
+<p class="admonition-title"><span class="caption-number">Exercise 2.42 </span></p>
+<section id="exercise-content">
+<p>Consideriamo due variabili continue, 𝑋
+e 𝑌
+. Sappiamo che la covarianza tra 𝑋
+e 𝑌
+è 23.9768
+e che la correlazione tra 𝑋
+e 𝑌
+è 0.6911
+. Sapendo che le medie di 𝑋
+e 𝑌
+sono, rispettivamente, uguali a 123.4547 e 253.8992, e sapendo che la deviazione standard di 𝑋
+è 4.182
+, si trovi la deviazione standard di 𝑌
+.</p>
+</section>
+</div>
+<div class="solution dropdown admonition" id="sol-eda-7">
+
+<p class="admonition-title">Solution to<a class="reference internal" href="#ex-eda-7"> Exercise 2.42</a></p>
+<section id="solution-content">
+<p>8.3</p>
+</section>
+</div>
+<div class="exercise admonition" id="ex-eda-8">
+
+<p class="admonition-title"><span class="caption-number">Exercise 2.43 </span></p>
+<section id="exercise-content">
+<p>Sia 𝑋 = {39, 46, 3, 25, 2, 13, 40, 44, 12, 42, 20, 32, 37, 43, 48}. Si trovi la distribuzione di frequenze assolute per la partizione di 𝑋 in 5 classi di eguale ampiezza (0-10, 10-20, …, 40-50). Si utilizzino intervalli chiusi a destra e aperti a sinistra. Nelle alternative di risposta, i numeri sono ordinati in modo tale che il primo corrisponde alla frequenza assoluta della classe inferiore, il secondo alla frequenza assoluta della classe successiva a quella più bassa, ecc.</p>
+</section>
+</div>
+<div class="solution dropdown admonition" id="sol-eda-8">
+
+<p class="admonition-title">Solution to<a class="reference internal" href="#ex-eda-8"> Exercise 2.43</a></p>
+<section id="solution-content">
+<p>2 3 1 4 5</p>
+</section>
+</div>
+<div class="exercise admonition" id="ex-eda-9">
+
+<p class="admonition-title"><span class="caption-number">Exercise 2.44 </span></p>
+<section id="exercise-content">
+<p>Si importi il file parenthood.csv fornito su Moodle nella cartella Risorse &gt; data. Il significato delle variabili è il seguente:</p>
+<p>dan.sleep: ore di sonno della psicologa che ha fornito i dati (Danielle Navarro);</p>
+<p>dan.grump: irritabilità della psicologa il giorno dopo, misurata su una scala da 0 a 100;</p>
+<p>baby.sleep: ore di sonno del figlio (o figlia) di Danielle;</p>
+<p>day: giorno della misurazione delle variabili;</p>
+<p>X: indice da 1 a 100 (si può ignorare).</p>
+<p>Si calcoli la media delle ore di sonno di Danielle.</p>
+</section>
+</div>
+<div class="solution dropdown admonition" id="sol-eda-9">
+
+<p class="admonition-title">Solution to<a class="reference internal" href="#ex-eda-9"> Exercise 2.44</a></p>
+<section id="solution-content">
+<p>6.9652</p>
+</section>
+</div>
+<div class="exercise admonition" id="ex-eda-10">
+
+<p class="admonition-title"><span class="caption-number">Exercise 2.45 </span></p>
+<section id="exercise-content">
+<p>Si legga in R il file parenthood.csv fornito su Moodle nella cartella Risorse &gt; data. Il significato delle variabili è il seguente:</p>
+<p>dan.sleep: ore di sonno della psicologa che ha fornito i dati (Danielle Navarro);</p>
+<p>dan.grump: irritabilità della psicologa il giorno dopo, misurata su una scala da 0 a 100;</p>
+<p>baby.sleep: ore di sonno del figlio (o figlia) di Danielle;</p>
+<p>day: giorno della misurazione delle variabili;</p>
+<p>X: indice da 1 a 100 (si può ignorare).</p>
+<p>Si calcoli la correlazione tra le ore di sonno di Danielle e l’irritabilità di Danielle il giorno dopo. Si calcoli nuovamente questa correlazione dopo avere cambiato l’unità di misura della durata del sonno: da ore in minuti. Si interpretino i risultati ottenuti.</p>
+</section>
+</div>
+<div class="solution dropdown admonition" id="sol-eda-10">
+
+<p class="admonition-title">Solution to<a class="reference internal" href="#ex-eda-10"> Exercise 2.45</a></p>
+<section id="solution-content">
+<p>Quando la durata del sonno è espressa in ore la correlazione è -0.903384. Tale valore non cambia quando esprimiamo la durata del sonno in minuti.</p>
+</section>
+</div>
+<div class="exercise admonition" id="ex-eda-11">
+
+<p class="admonition-title"><span class="caption-number">Exercise 2.46 </span></p>
+<section id="exercise-content">
+<p>Si legga in R il file parenthood.csv fornito su Moodle nella cartella Risorse &gt; data. Il significato delle variabili è il seguente:</p>
+<p>dan.sleep: ore di sonno della psicologa che ha fornito i dati (Danielle Navarro);</p>
+<p>dan.grump: irritabilità della psicologa il giorno dopo, misurata su una scala da 0 a 100;</p>
+<p>baby.sleep: ore di sonno del figlio (o figlia) di Danielle;</p>
+<p>day: giorno della misurazione delle variabili;</p>
+<p>X: indice da 1 a 100 (si può ignorare).</p>
+<p>Si calcoli e si interpreti il terzo quantile delle ore di sonno di Danielle.</p>
+</section>
+</div>
+<div class="solution dropdown admonition" id="sol-eda-11">
+
+<p class="admonition-title">Solution to<a class="reference internal" href="#ex-eda-11"> Exercise 2.46</a></p>
+<section id="solution-content">
+<p>7.74 significa che nel 75 percento delle notti Danielle dorme meno di 7.74 ore.</p>
 </section>
 </div>
 </section>

@@ -141,10 +141,27 @@ const thebe_selector_output = ".output, .cell_output"
    Calendario
   </a>
  </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="../../laboratorio_didattico.html">
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../../laboratorio_didattico/laboratorio_didattico_index.html">
    Laboratorio didattico
   </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
+  <label for="toctree-checkbox-1">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../laboratorio_didattico/laboratorio_didattico.html">
+     Istruzioni E-tivity
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../laboratorio_didattico/melody.html">
+     Il significato sociale della musica in età evolutiva
+    </a>
+   </li>
+  </ul>
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="../../esame.html">
@@ -167,8 +184,8 @@ const thebe_selector_output = ".output, .cell_output"
   <a class="reference internal" href="../01_python/python_index.html">
    1. Python per la data analisi
   </a>
-  <input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
-  <label for="toctree-checkbox-1">
+  <input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/>
+  <label for="toctree-checkbox-2">
    <i class="fas fa-chevron-down">
    </i>
   </label>
@@ -184,8 +201,8 @@ const thebe_selector_output = ".output, .cell_output"
   <a class="reference internal" href="descr_stats_index.html">
    2. Statistica descrittiva
   </a>
-  <input checked="" class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/>
-  <label for="toctree-checkbox-2">
+  <input checked="" class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/>
+  <label for="toctree-checkbox-3">
    <i class="fas fa-chevron-down">
    </i>
   </label>
@@ -216,8 +233,8 @@ const thebe_selector_output = ".output, .cell_output"
   <a class="reference internal" href="../03_prob/prob_index.html">
    3. Teoria della probabilità
   </a>
-  <input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/>
-  <label for="toctree-checkbox-3">
+  <input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/>
+  <label for="toctree-checkbox-4">
    <i class="fas fa-chevron-down">
    </i>
   </label>
@@ -243,8 +260,8 @@ const thebe_selector_output = ".output, .cell_output"
   <a class="reference internal" href="../04_rv_distr/rv_distr_index.html">
    4. Distribuzioni di variabili casuali
   </a>
-  <input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/>
-  <label for="toctree-checkbox-4">
+  <input class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" type="checkbox"/>
+  <label for="toctree-checkbox-5">
    <i class="fas fa-chevron-down">
    </i>
   </label>
@@ -437,53 +454,188 @@ title="Print to PDF"
                 
   <section class="tex2jax_ignore mathjax_ignore" id="scale-di-misura">
 <h1><span class="section-number">2.2. </span>✅ Scale di misura<a class="headerlink" href="#scale-di-misura" title="Permalink to this headline">#</a></h1>
-<div class="admonition-question admonition">
-<p class="admonition-title">Question</p>
-<p>In the notebook “First look at our dataset”, we used pandas and specifically
-<code class="docutils literal notranslate"><span class="pre">adult_census</span> <span class="pre">=</span> <span class="pre">pd.read_csv(&quot;../datasets/adult-census.csv&quot;)</span></code> to:</p>
-<ul class="simple">
-<li><p>a) load a comma-separated values file</p></li>
-<li><p>b) load a dataset already included in the pandas package</p></li>
-<li><p>c) load a file only containing the survey features</p></li>
-<li><p>d) load a file only containing the target of our classification problem:
-whether or not a person has a low or high income salary</p></li>
-<li><p>e) load a file containing both the features and the target for our classification
-problem</p></li>
-</ul>
-<p><em>Select all answers that apply</em></p>
+<div class="exercise admonition" id="label-scales-01">
+
+<p class="admonition-title"><span class="caption-number">Exercise 2.4 </span></p>
+<section id="exercise-content">
+<p>Durante un colloquio clinico, ai sopravvissuti a un tornado viene chiesto di dichiarare “no” o “sì” se hanno avuto sintomi specifici di Disturbo Post-Traumatico da Stress (PTSD) nella settimana passata. L’intervistatore somma il numero totale di risposte “sì” per creare una scala di sintomi PTSD totali.   Si scelga la scala di misurazione appropriata.</p>
+</section>
 </div>
-<div class="admonition-question admonition">
-<p class="admonition-title">Question</p>
-<p>In the previous notebook, we used:</p>
-<ul class="simple">
-<li><p>a) pandas to manipulate data</p></li>
-<li><p>b) pandas and seaborn to visually inspect the dataset</p></li>
-<li><p>c) numpy and scipy to perform numerical inspection (for instance using
-<code class="docutils literal notranslate"><span class="pre">scipy.optimize.minimize</span></code>)</p></li>
-<li><p>d) scikit-learn to fit some machine learning models</p></li>
-</ul>
-<p><em>Select all answers that apply</em></p>
+<div class="solution dropdown admonition" id="exercises/02_descr_stats/ex_scales-solution-1">
+
+<p class="admonition-title">Solution to<a class="reference internal" href="#label-scales-01"> Exercise 2.4</a></p>
+<section id="solution-content">
+<p>rapporti</p>
+</section>
 </div>
-<div class="admonition-question admonition">
-<p class="admonition-title">Question</p>
-<p>How is a tabular dataset organized?</p>
-<ul class="simple">
-<li><p>a) a column represents a sample and a row represents a feature</p></li>
-<li><p>b) a column represents a feature and a row represents a sample</p></li>
-<li><p>c) the target variable is represented by a row</p></li>
-<li><p>d) the target variable is represented by a column</p></li>
-</ul>
-<p><em>Select all answers that apply</em></p>
+<div class="exercise admonition" id="label-scales-02">
+
+<p class="admonition-title"><span class="caption-number">Exercise 2.5 </span></p>
+<section id="exercise-content">
+<p>Tutti i nuovi pazienti in centro di salute mentale ricevono una Check list di sintomi e devono segnalare la frequenza con cui hanno manifestato ciascun sintomo nell’ultima settimana. I pazienti assegnano un indice di frequenza a ciascun sintomo (0 - per niente, 1 - a volte, 2 - spesso, 3 - quasi sempre).   Si scelga la scala di misurazione appropriata.</p>
+</section>
 </div>
-<div class="admonition-question admonition">
-<p class="admonition-title">Question</p>
-<p>A categorical variable is:</p>
-<ul class="simple">
-<li><p>a) a variable with <strong>only two</strong> different possible values</p></li>
-<li><p>b) a variable with continuous numerical values</p></li>
-<li><p>c) a variable with a finite set of possible values</p></li>
-</ul>
-<p><em>Select a single answer</em></p>
+<div class="solution dropdown admonition" id="exercises/02_descr_stats/ex_scales-solution-3">
+
+<p class="admonition-title">Solution to<a class="reference internal" href="#label-scales-02"> Exercise 2.5</a></p>
+<section id="solution-content">
+<p>ordinale</p>
+</section>
+</div>
+<div class="exercise admonition" id="label-scales-03">
+
+<p class="admonition-title"><span class="caption-number">Exercise 2.6 </span></p>
+<section id="exercise-content">
+<p>Un ricercatore, Mario Rossi, sottopone la Rosenberg Self-Esteem Scale (Rosenberg, 1989) ad due gruppi di soggetti, uno con status socio-economico alto e l’altro con status socio-economico basso. Si chiede se l’autostima sia diversa tra i due gruppi.</p>
+<p>Un secondo ricercatore, Guido Bianchi, vuole replicare le analisi precedenti, ma prima di qualsiasi analisi decide di dividere i punteggi ottenuti da Mario Rossi per 100.   Il modo di procedere di Guido Bianchi è corretto?</p>
+</section>
+</div>
+<div class="solution dropdown admonition" id="exercises/02_descr_stats/ex_scales-solution-5">
+
+<p class="admonition-title">Solution to<a class="reference internal" href="#label-scales-03"> Exercise 2.6</a></p>
+<section id="solution-content">
+<p>sì</p>
+</section>
+</div>
+<div class="exercise admonition" id="label-scales-04">
+
+<p class="admonition-title"><span class="caption-number">Exercise 2.7 </span></p>
+<section id="exercise-content">
+<p>In un lavoro sulla testimonianza giudiziaria, ad un gruppo di soggetti adulti viene chiesto di dare una previsione più accurata possibile sulla loro prestazione in una prova di riconoscimento di volti (scala da 1 a 7, 1=pessima, 7= ottima). Alla metà di loro era stato detto che avrebbero poi svolto la prova di riconoscimento, all’altra meta che non l’avrebbero svolta. Indicare la variabile dipendente precisandone la scala di misura.</p>
+</section>
+</div>
+<div class="solution dropdown admonition" id="exercises/02_descr_stats/ex_scales-solution-7">
+
+<p class="admonition-title">Solution to<a class="reference internal" href="#label-scales-04"> Exercise 2.7</a></p>
+<section id="solution-content">
+<p>Valutazione = da pessima a ottima (1, dots, 7). Scala ordinale: le differenze su una scala di questo tipo non sono quantitative ma qualitative.</p>
+</section>
+</div>
+<div class="exercise admonition" id="label-scales-05">
+
+<p class="admonition-title"><span class="caption-number">Exercise 2.8 </span></p>
+<section id="exercise-content">
+<p>Identifica il livello di misurazione della seguente variabile: classificazione nella quale un’unità di osservazione può appartenere a più di una classe.</p>
+</section>
+</div>
+<div class="solution dropdown admonition" id="exercises/02_descr_stats/ex_scales-solution-9">
+
+<p class="admonition-title">Solution to<a class="reference internal" href="#label-scales-05"> Exercise 2.8</a></p>
+<section id="solution-content">
+<p>neppure a livello nominale</p>
+</section>
+</div>
+<div class="exercise admonition" id="label-scales-06">
+
+<p class="admonition-title"><span class="caption-number">Exercise 2.9 </span></p>
+<section id="exercise-content">
+<p>Durante un colloquio clinico, ai sopravvissuti a un tornado viene chiesto di dichiarare “no” o “sì” se hanno manifestato sintomi specifici di disturbo post-traumatico da stress (PTSD) nella settimana precedente. Il numero “0” è assegnato a “no” e il numero “1” è assegnato a “sì”.   Si scelga la scala di misurazione appropriata.</p>
+</section>
+</div>
+<div class="solution dropdown admonition" id="exercises/02_descr_stats/ex_scales-solution-11">
+
+<p class="admonition-title">Solution to<a class="reference internal" href="#label-scales-06"> Exercise 2.9</a></p>
+<section id="solution-content">
+<p>nominale</p>
+</section>
+</div>
+<div class="exercise admonition" id="label-scales-07">
+
+<p class="admonition-title"><span class="caption-number">Exercise 2.10 </span></p>
+<section id="exercise-content">
+<p>Gli intervistatori chiedono ai soggetti della ricerca di descrivere in dettaglio le loro relazioni con persone importanti della loro vita. Utilizzando criteri stabiliti, i valutatori codificano queste descrizioni e assegnano ad esse una delle seguenti categorie di attaccamento (Sicuro - 1, Preoccupato - 2, Pauroso - 3, Respingente - 4).   Si scelga la scala di misurazione appropriata.</p>
+</section>
+</div>
+<div class="solution dropdown admonition" id="exercises/02_descr_stats/ex_scales-solution-13">
+
+<p class="admonition-title">Solution to<a class="reference internal" href="#label-scales-07"> Exercise 2.10</a></p>
+<section id="solution-content">
+<p>nominale</p>
+</section>
+</div>
+<div class="exercise admonition" id="label-scales-08">
+
+<p class="admonition-title"><span class="caption-number">Exercise 2.11 </span></p>
+<section id="exercise-content">
+<p>Ad un gruppo di neo-mamme viene chiesto di poter studiare il sonno dei loro bambini. Lo sperimentatore vuole misurare il tempo trascorso dormendo. I bambini vengono suddivisi in tre gruppi: pre-termine, nati a termine, nati atermine con problemi al parto. Indicare la variabile indipendente precisandone la scala di misura.</p>
+</section>
+</div>
+<div class="solution dropdown admonition" id="exercises/02_descr_stats/ex_scales-solution-15">
+
+<p class="admonition-title">Solution to<a class="reference internal" href="#label-scales-08"> Exercise 2.11</a></p>
+<section id="solution-content">
+<p>La caratteristica alla nascita (pre-termine, termine, con problemi) è la variabile indipendente. È una variabile non manipolabile. La scala di misura è nominale.</p>
+</section>
+</div>
+<div class="exercise admonition" id="label-scales-09">
+
+<p class="admonition-title"><span class="caption-number">Exercise 2.12 </span></p>
+<section id="exercise-content">
+<p>A 360 soggetti anziani che hanno recentemente vissuto situazioni di forte stress (es. un grave lutto) viene somministrato un Test sulla depressione (conpunteggio da -10 a +10). Lo stesso test viene presentato a 240 soggetti anziani, aventi la stessa età media dei precedenti, che non sono stati toccati da esperienze particolarmete stressanti. Indicare la variabile dipendente precisandone la scala di misura.</p>
+</section>
+</div>
+<div class="solution dropdown admonition" id="exercises/02_descr_stats/ex_scales-solution-17">
+
+<p class="admonition-title">Solution to<a class="reference internal" href="#label-scales-09"> Exercise 2.12</a></p>
+<section id="solution-content">
+<p>La variabile dipendente è la depressione, ovvero i punteggi del Test (da -10 a +10). Il livello di scala è a intervalli; i valori di segno negativo indicano che esiste un punto zero arbitrario.</p>
+</section>
+</div>
+<div class="exercise admonition" id="label-scales-10">
+
+<p class="admonition-title"><span class="caption-number">Exercise 2.13 </span></p>
+<section id="exercise-content">
+<p>Ai soggetti di un esperimento viene chiesto di guardare lo schermo di un computer. A intervalli di 30 secondi, l’immagine di una chiave inglese lampeggia sullo schermo. L’immagine potrebbe apparire in qualsiasi punto dello schermo. A volte la chiave ha un’estremità aperta (curva) e a volte la chiave è un esagono chiuso. Ai soggetti viene chiesto di premere il tasto “Y” sulla tastiera di un computer se la chiave inglese è aperta e il tasto “N” se è chiuso. Il punteggio totale è il numero di risposte corrette.   Si scelga la scala di misurazione appropriata.</p>
+</section>
+</div>
+<div class="solution dropdown admonition" id="exercises/02_descr_stats/ex_scales-solution-19">
+
+<p class="admonition-title">Solution to<a class="reference internal" href="#label-scales-10"> Exercise 2.13</a></p>
+<section id="solution-content">
+<p>rapporti</p>
+</section>
+</div>
+<div class="exercise admonition" id="label-scales-11">
+
+<p class="admonition-title"><span class="caption-number">Exercise 2.14 </span></p>
+<section id="exercise-content">
+<p>Ad un gruppo di neo-mamme viene chiesto di poter studiare il sonno dei loro bambini. Lo sperimentatore vuole misurare il tempo trascorso dormendo. I bambini vengono suddivisi in tre gruppi: pre-termine, nati a termine, nati atermine con problemi al parto. Indicare la variabile dipendente precisandone la scala di misura.</p>
+</section>
+</div>
+<div class="solution dropdown admonition" id="exercises/02_descr_stats/ex_scales-solution-21">
+
+<p class="admonition-title">Solution to<a class="reference internal" href="#label-scales-11"> Exercise 2.14</a></p>
+<section id="solution-content">
+<p>Il sonno (tempo trascorso dormendo nelle 24 ore) è la variabile dipendente. La scala di misura è a rapporti continua - quantificazione con uno zero reale, non sono definiti i valori negativi.</p>
+</section>
+</div>
+<div class="exercise admonition" id="label-scales-12">
+
+<p class="admonition-title"><span class="caption-number">Exercise 2.15 </span></p>
+<section id="exercise-content">
+<p>I bambini delle scuole elementari vengono valutati e classificati come non lettori (0), lettori principianti (1), lettori di livello elementare (2) o lettori avanzati (3). La classificazione viene fatta per metterli in gruppi di lettura.   Si scelga la scala di misurazione appropriata.</p>
+</section>
+</div>
+<div class="solution dropdown admonition" id="exercises/02_descr_stats/ex_scales-solution-23">
+
+<p class="admonition-title">Solution to<a class="reference internal" href="#label-scales-12"> Exercise 2.15</a></p>
+<section id="solution-content">
+<p>ordinale</p>
+</section>
+</div>
+<div class="exercise admonition" id="label-scales-13">
+
+<p class="admonition-title"><span class="caption-number">Exercise 2.16 </span></p>
+<section id="exercise-content">
+<p>L’università di Firenze vuole sapere quali dormitori preferiscono gli studenti. L’amministrazione conta il numero di domande per ciascun dormitorio. Gli amministratori assegnano un rango a ciascun dormitorio in base al numero di domande ricevute.   Si scelga la scala di misurazione appropriata.</p>
+</section>
+</div>
+<div class="solution dropdown admonition" id="exercises/02_descr_stats/ex_scales-solution-25">
+
+<p class="admonition-title">Solution to<a class="reference internal" href="#label-scales-13"> Exercise 2.16</a></p>
+<section id="solution-content">
+<p>ordinale</p>
+</section>
 </div>
 </section>
 
