@@ -21,6 +21,7 @@ parts:
   - file: exercises/01_python/python_index
     sections:
     - file: exercises/01_python/ex_python
+    - file: exercises/01_python/ex_pandas
   - file: exercises/02_descr_stats/descr_stats_index
     sections:
     - file: exercises/02_descr_stats/ex_key_notions
@@ -37,6 +38,10 @@ parts:
     - file: exercises/04_rv_distr/ex_rv_discrete
     - file: exercises/04_rv_distr/ex_binomial
     - file: exercises/04_rv_distr/ex_gaussian
+    - file: exercises/04_rv_distr/ex_beta_distr
   - file: exercises/05_joint_prob/joint_prob_index
     sections:
     - file: exercises/05_joint_prob/ex_joint_prob
+  - file: exercises/28_conjugate_prior/conjugate_prior_index
+    sections:
+    - file: exercises/28_conjugate_prior/ex_conjugate_prior
