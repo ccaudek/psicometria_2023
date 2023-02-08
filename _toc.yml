@@ -16,7 +16,7 @@ parts:
   - file: esame
   - file: faq
 - caption: Esercizi
-  numbered: True 
+  numbered: True
   chapters:
   - file: exercises/01_python/python_index
     sections:
@@ -42,6 +42,9 @@ parts:
   - file: exercises/05_joint_prob/joint_prob_index
     sections:
     - file: exercises/05_joint_prob/ex_joint_prob
+  - file: exercises/08_freq_inf/freq_inf_index
+    sections:
+    - file: exercises/08_freq_inf/sampling_distr_mean
   - file: exercises/28_conjugate_prior/conjugate_prior_index
     sections:
     - file: exercises/28_conjugate_prior/ex_conjugate_prior
