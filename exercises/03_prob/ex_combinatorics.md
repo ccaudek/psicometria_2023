@@ -116,6 +116,7 @@ n1 / n
 ```
 
 ````
+
 +++
 
 ```{exercise}
@@ -145,3 +146,52 @@ print(C)
 ```
 
 ````
+
++++
+
+```{exercise}
+:label: label-combinatorics-05
+
+Supponiamo di lanciare 3 dadi equilibrati a 4 facce marcate con 1, 2, 3, 4. Sia $X$ la somma dei valori ottenuti dal lancio dei tre dadi. Si trovi la probabilità $P(X) > 8$.
+```
+
+````{solution} label-combinatorics-05
+:class: dropdown
+
+```{code-block} python
+r = range(1, 5)
+sample = [(i, j, k) for i in r for j in r for k in r]
+sample
+len(sample)
+z = [sum(point) for point in sample]
+z
+r = range(1, 5)
+sample = [(i, j, k) for i in r for j in r for k in r]
+
+for i in range(3, 13):
+    event = [roll for roll in sample if sum(roll) == i]
+    print(f"z = {i} : {len(event)} / {len(sample)}")
+px = []
+
+for i in range(3, 13):
+    event = [roll for roll in sample if sum(roll) == i]
+    px.append(len(event) / len(sample))
+
+px
+list(zip(list(range(3, 13)), px))
+0.15625 + 0.09375 + 0.046875 + 0.015625
+```
+La soluzione è 0.3125. Oppure
+
+```{code-block} python
+import empiricaldist
+
+d1 = empiricaldist.Pmf.from_seq([1,2,3,4])
+d2 = d1.add_dist(d1)
+d3 = d2.add_dist(d1)
+
+d3[9] + d3[10] + d3[11] + d3[12] 
+```
+
+````
+
