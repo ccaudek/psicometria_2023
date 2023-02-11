@@ -51,6 +51,8 @@ const thebe_selector_input = "pre"
 const thebe_selector_output = ".output, .cell_output"
 </script>
     <script async="async" src="../../_static/sphinx-thebe.js"></script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <link rel="shortcut icon" href="../../_static/icons8-graduation-cap-30.png"/>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
@@ -306,6 +308,40 @@ const thebe_selector_output = ".output, .cell_output"
    <li class="toctree-l2">
     <a class="reference internal" href="../05_joint_prob/ex_joint_prob.html">
      5.1. ✅ Probabilità congiunta
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../08_freq_inf/freq_inf_index.html">
+   6. Inferenza frequentista
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-7" name="toctree-checkbox-7" type="checkbox"/>
+  <label for="toctree-checkbox-7">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../08_freq_inf/sampling_distr_mean.html">
+     6.1. ✅ Distribuzione campionaria della media
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../28_conjugate_prior/conjugate_prior_index.html">
+   7. Distribuzioni coniugate
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-8" name="toctree-checkbox-8" type="checkbox"/>
+  <label for="toctree-checkbox-8">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../28_conjugate_prior/ex_conjugate_prior.html">
+     7.1. ✅ Probabilità congiunta
     </a>
    </li>
   </ul>
@@ -626,6 +662,52 @@ title="Print to PDF"
 
 <span class="n">C</span> <span class="o">=</span> <span class="n">comb</span><span class="p">(</span><span class="n">n</span><span class="p">,</span> <span class="n">k</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">C</span><span class="p">)</span>
+</pre></div>
+</div>
+</section>
+</div>
+<div class="exercise admonition" id="label-combinatorics-05">
+
+<p class="admonition-title"><span class="caption-number">Exercise 3.5 </span></p>
+<section id="exercise-content">
+<p>Supponiamo di lanciare 3 dadi equilibrati a 4 facce marcate con 1, 2, 3, 4. Sia <span class="math notranslate nohighlight">\(X\)</span> la somma dei valori ottenuti dal lancio dei tre dadi. Si trovi la probabilità <span class="math notranslate nohighlight">\(P(X) &gt; 8\)</span>.</p>
+</section>
+</div>
+<div class="solution dropdown admonition" id="exercises/03_prob/ex_combinatorics-solution-9">
+
+<p class="admonition-title">Solution to<a class="reference internal" href="#label-combinatorics-05"> Exercise 3.5</a></p>
+<section id="solution-content">
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">r</span> <span class="o">=</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">5</span><span class="p">)</span>
+<span class="n">sample</span> <span class="o">=</span> <span class="p">[(</span><span class="n">i</span><span class="p">,</span> <span class="n">j</span><span class="p">,</span> <span class="n">k</span><span class="p">)</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">r</span> <span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="n">r</span> <span class="k">for</span> <span class="n">k</span> <span class="ow">in</span> <span class="n">r</span><span class="p">]</span>
+<span class="n">sample</span>
+<span class="nb">len</span><span class="p">(</span><span class="n">sample</span><span class="p">)</span>
+<span class="n">z</span> <span class="o">=</span> <span class="p">[</span><span class="nb">sum</span><span class="p">(</span><span class="n">point</span><span class="p">)</span> <span class="k">for</span> <span class="n">point</span> <span class="ow">in</span> <span class="n">sample</span><span class="p">]</span>
+<span class="n">z</span>
+<span class="n">r</span> <span class="o">=</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">5</span><span class="p">)</span>
+<span class="n">sample</span> <span class="o">=</span> <span class="p">[(</span><span class="n">i</span><span class="p">,</span> <span class="n">j</span><span class="p">,</span> <span class="n">k</span><span class="p">)</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">r</span> <span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="n">r</span> <span class="k">for</span> <span class="n">k</span> <span class="ow">in</span> <span class="n">r</span><span class="p">]</span>
+
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">3</span><span class="p">,</span> <span class="mi">13</span><span class="p">):</span>
+    <span class="n">event</span> <span class="o">=</span> <span class="p">[</span><span class="n">roll</span> <span class="k">for</span> <span class="n">roll</span> <span class="ow">in</span> <span class="n">sample</span> <span class="k">if</span> <span class="nb">sum</span><span class="p">(</span><span class="n">roll</span><span class="p">)</span> <span class="o">==</span> <span class="n">i</span><span class="p">]</span>
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;z = </span><span class="si">{</span><span class="n">i</span><span class="si">}</span><span class="s2"> : </span><span class="si">{</span><span class="nb">len</span><span class="p">(</span><span class="n">event</span><span class="p">)</span><span class="si">}</span><span class="s2"> / </span><span class="si">{</span><span class="nb">len</span><span class="p">(</span><span class="n">sample</span><span class="p">)</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+<span class="n">px</span> <span class="o">=</span> <span class="p">[]</span>
+
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">3</span><span class="p">,</span> <span class="mi">13</span><span class="p">):</span>
+    <span class="n">event</span> <span class="o">=</span> <span class="p">[</span><span class="n">roll</span> <span class="k">for</span> <span class="n">roll</span> <span class="ow">in</span> <span class="n">sample</span> <span class="k">if</span> <span class="nb">sum</span><span class="p">(</span><span class="n">roll</span><span class="p">)</span> <span class="o">==</span> <span class="n">i</span><span class="p">]</span>
+    <span class="n">px</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">event</span><span class="p">)</span> <span class="o">/</span> <span class="nb">len</span><span class="p">(</span><span class="n">sample</span><span class="p">))</span>
+
+<span class="n">px</span>
+<span class="nb">list</span><span class="p">(</span><span class="nb">zip</span><span class="p">(</span><span class="nb">list</span><span class="p">(</span><span class="nb">range</span><span class="p">(</span><span class="mi">3</span><span class="p">,</span> <span class="mi">13</span><span class="p">)),</span> <span class="n">px</span><span class="p">))</span>
+<span class="mf">0.15625</span> <span class="o">+</span> <span class="mf">0.09375</span> <span class="o">+</span> <span class="mf">0.046875</span> <span class="o">+</span> <span class="mf">0.015625</span>
+</pre></div>
+</div>
+<p>La soluzione è 0.3125. Oppure</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">empiricaldist</span>
+
+<span class="n">d1</span> <span class="o">=</span> <span class="n">empiricaldist</span><span class="o">.</span><span class="n">Pmf</span><span class="o">.</span><span class="n">from_seq</span><span class="p">([</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">4</span><span class="p">])</span>
+<span class="n">d2</span> <span class="o">=</span> <span class="n">d1</span><span class="o">.</span><span class="n">add_dist</span><span class="p">(</span><span class="n">d1</span><span class="p">)</span>
+<span class="n">d3</span> <span class="o">=</span> <span class="n">d2</span><span class="o">.</span><span class="n">add_dist</span><span class="p">(</span><span class="n">d1</span><span class="p">)</span>
+
+<span class="n">d3</span><span class="p">[</span><span class="mi">9</span><span class="p">]</span> <span class="o">+</span> <span class="n">d3</span><span class="p">[</span><span class="mi">10</span><span class="p">]</span> <span class="o">+</span> <span class="n">d3</span><span class="p">[</span><span class="mi">11</span><span class="p">]</span> <span class="o">+</span> <span class="n">d3</span><span class="p">[</span><span class="mi">12</span><span class="p">]</span> 
 </pre></div>
 </div>
 </section>

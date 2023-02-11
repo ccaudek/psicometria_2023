@@ -312,6 +312,40 @@ const thebe_selector_output = ".output, .cell_output"
    </li>
   </ul>
  </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../08_freq_inf/freq_inf_index.html">
+   6. Inferenza frequentista
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-7" name="toctree-checkbox-7" type="checkbox"/>
+  <label for="toctree-checkbox-7">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../08_freq_inf/sampling_distr_mean.html">
+     6.1. ✅ Distribuzione campionaria della media
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../28_conjugate_prior/conjugate_prior_index.html">
+   7. Distribuzioni coniugate
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-8" name="toctree-checkbox-8" type="checkbox"/>
+  <label for="toctree-checkbox-8">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../28_conjugate_prior/ex_conjugate_prior.html">
+     7.1. ✅ Probabilità congiunta
+    </a>
+   </li>
+  </ul>
+ </li>
 </ul>
 
     </div>
@@ -495,14 +529,14 @@ title="Print to PDF"
 <h1><span class="section-number">3.3. </span>✅ Teorema di Bayes<a class="headerlink" href="#teorema-di-bayes" title="Permalink to this headline">#</a></h1>
 <div class="exercise admonition" id="label-prob-bayes-theorem-01">
 
-<p class="admonition-title"><span class="caption-number">Exercise 3.15 </span></p>
+<p class="admonition-title"><span class="caption-number">Exercise 3.16 </span></p>
 <section id="exercise-content">
 <p>Un esame del sangue rilieva correttamente il vampirisimo il 95% delle volte, <span class="math notranslate nohighlight">\(Pr(Positive|Vampire)\)</span> = 0.95. Il test ha un tasso di falsi psitivi di <span class="math notranslate nohighlight">\(Pr(Positive | Mortal)\)</span> = 0.01. Sappiamo anche che i vampiri sono rari – circa lo 0.1% della popolazione, <span class="math notranslate nohighlight">\(Pr(Vampire)\)</span> = 0.001. Si trovi la probabilità di essere un vampiro dato che il test ha dato un risultato positivo. (da Statistical rethinking)</p>
 </section>
 </div>
 <div class="solution dropdown admonition" id="exercises/03_prob/ex_bayes_theorem-solution-1">
 
-<p class="admonition-title">Solution to<a class="reference internal" href="#label-prob-bayes-theorem-01"> Exercise 3.15</a></p>
+<p class="admonition-title">Solution to<a class="reference internal" href="#label-prob-bayes-theorem-01"> Exercise 3.16</a></p>
 <section id="solution-content">
 <p>Per calcolare <span class="math notranslate nohighlight">\(Pr(Vampire|Positive)\)</span> applichiamo il teorema di Bayes:
 <span class="math notranslate nohighlight">\(Pr(Vampire | Positive) = \frac{Pr(Positive | Vampire) * Pr(Vampire)}{Pr(Positive)}\)</span>.</p>
@@ -520,14 +554,14 @@ title="Print to PDF"
 </div>
 <div class="exercise admonition" id="label-prob-combinatorics-02">
 
-<p class="admonition-title"><span class="caption-number">Exercise 3.16 </span></p>
+<p class="admonition-title"><span class="caption-number">Exercise 3.17 </span></p>
 <section id="exercise-content">
 <p>Se estraiamo a caso da un mazzo di carte da poker 2 carte, quante combinazioni sono possibili?</p>
 </section>
 </div>
 <div class="solution dropdown admonition" id="exercises/03_prob/ex_bayes_theorem-solution-3">
 
-<p class="admonition-title">Solution to<a class="reference internal" href="#label-prob-combinatorics-02"> Exercise 3.16</a></p>
+<p class="admonition-title">Solution to<a class="reference internal" href="#label-prob-combinatorics-02"> Exercise 3.17</a></p>
 <section id="solution-content">
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">math</span> <span class="kn">import</span> <span class="n">factorial</span>
 

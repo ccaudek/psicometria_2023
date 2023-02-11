@@ -6,7 +6,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
-    <title>3.2. ✅ Probabilità condizionata &#8212; Psicometria</title>
+    <title>✅ Variabili casuali &#8212; Psicometria</title>
     
   <!-- Loaded before other Sphinx assets -->
   <link href="../../_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
@@ -51,11 +51,11 @@ const thebe_selector_input = "pre"
 const thebe_selector_output = ".output, .cell_output"
 </script>
     <script async="async" src="../../_static/sphinx-thebe.js"></script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <link rel="shortcut icon" href="../../_static/icons8-graduation-cap-30.png"/>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
-    <link rel="next" title="3.3. ✅ Teorema di Bayes" href="ex_bayes_theorem.html" />
-    <link rel="prev" title="3.1. ✅ Calcolo combinatorio" href="ex_combinatorics.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="None">
     
@@ -179,7 +179,7 @@ const thebe_selector_output = ".output, .cell_output"
   Esercizi
  </span>
 </p>
-<ul class="current nav bd-sidenav">
+<ul class="nav bd-sidenav">
  <li class="toctree-l1 has-children">
   <a class="reference internal" href="../01_python/python_index.html">
    1. Python per la data analisi
@@ -234,23 +234,23 @@ const thebe_selector_output = ".output, .cell_output"
    </li>
   </ul>
  </li>
- <li class="toctree-l1 current active has-children">
+ <li class="toctree-l1 has-children">
   <a class="reference internal" href="prob_index.html">
    3. Teoria della probabilità
   </a>
-  <input checked="" class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/>
+  <input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/>
   <label for="toctree-checkbox-4">
    <i class="fas fa-chevron-down">
    </i>
   </label>
-  <ul class="current">
+  <ul>
    <li class="toctree-l2">
     <a class="reference internal" href="ex_combinatorics.html">
      3.1. ✅ Calcolo combinatorio
     </a>
    </li>
-   <li class="toctree-l2 current active">
-    <a class="current reference internal" href="#">
+   <li class="toctree-l2">
+    <a class="reference internal" href="ex_conditional_prob.html">
      3.2. ✅ Probabilità condizionata
     </a>
    </li>
@@ -434,7 +434,7 @@ title="Source repository"
       </li>
       
       <li>
-        <a href="https://github.com/ccaudek/psicometria_2023/issues/new?title=Issue%20on%20page%20%2Fexercises/03_prob/ex_conditional_prob.html&body=Your%20issue%20content%20here."
+        <a href="https://github.com/ccaudek/psicometria_2023/issues/new?title=Issue%20on%20page%20%2Fexercises/03_prob/ex_random_var.html&body=Your%20issue%20content%20here."
    class="headerbtn"
    data-toggle="tooltip"
 data-placement="left"
@@ -462,7 +462,7 @@ title="Open an issue"
   <div class="menu-dropdown__content">
     <ul>
       <li>
-        <a href="../../_sources/exercises/03_prob/ex_conditional_prob.md"
+        <a href="../../_sources/exercises/03_prob/ex_random_var.md"
    class="headerbtn"
    data-toggle="tooltip"
 data-placement="left"
@@ -511,7 +511,7 @@ title="Print to PDF"
         <div class="col pl-md-3 pl-lg-5 content-container">
             <!-- Table of contents that is only displayed when printing the page -->
             <div id="jb-print-docs-body" class="onlyprint">
-                <h1>✅ Probabilità condizionata</h1>
+                <h1>✅ Variabili casuali</h1>
                 <!-- Table of contents -->
                 <div id="print-main-content">
                     <div id="jb-print-toc">
@@ -523,213 +523,41 @@ title="Print to PDF"
                 
               <div>
                 
-  <section class="tex2jax_ignore mathjax_ignore" id="probabilita-condizionata">
-<h1><span class="section-number">3.2. </span>✅ Probabilità condizionata<a class="headerlink" href="#probabilita-condizionata" title="Permalink to this headline">#</a></h1>
-<div class="exercise admonition" id="label-prob-conditional_prob-01">
+  <section class="tex2jax_ignore mathjax_ignore" id="variabili-casuali">
+<h1>✅ Variabili casuali<a class="headerlink" href="#variabili-casuali" title="Permalink to this headline">#</a></h1>
+<div class="exercise admonition" id="label-rv-01">
 
-<p class="admonition-title"><span class="caption-number">Exercise 3.6 </span></p>
+<p class="admonition-title"></p>
 <section id="exercise-content">
-<p>Quale delle seguenti espressioni corrisponde all’affermazione: la probabilità che piova lunedì? (da Statistical rethinking)</p>
-<ol class="simple">
-<li><p>Pr(pioggia)</p></li>
-<li><p>Pr(pioggia | lunedì)</p></li>
-<li><p>Pr(lunedì | pioggia)</p></li>
-<li><p>Pr(pioggia, lunedì) / Pr(lunedì)</p></li>
-</ol>
+<p>Supponiamo di lanciare 3 dadi equilibrati a 4 facce marcate con 1, 2, 3, 4. Sia <span class="math notranslate nohighlight">\(X\)</span> la somma dei valori ottenuti dal lancio dei tre dadi. Si trovi la probabilità <span class="math notranslate nohighlight">\(P(X) &gt; 8\)</span>.</p>
 </section>
 </div>
-<div class="solution dropdown admonition" id="exercises/03_prob/ex_conditional_prob-solution-1">
+<div class="solution dropdown admonition" id="exercises/03_prob/ex_random_var-solution-1">
 
-<p class="admonition-title">Solution to<a class="reference internal" href="#label-prob-conditional_prob-01"> Exercise 3.6</a></p>
+<p class="admonition-title">Solution to<a class="reference internal" href="#label-rv-01"> Exercise </a></p>
 <section id="solution-content">
-<p>Interpreto questa domanda come “la probabilità di pioggia dato che è lunedì”. Ciò significa che le risposte (2) che (4) sono corrette.</p>
-</section>
-</div>
-<div class="exercise admonition" id="label-prob-conditional_prob-02">
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+<span class="kn">import</span> <span class="nn">itertools</span> <span class="k">as</span> <span class="nn">it</span>
+<span class="kn">import</span> <span class="nn">math</span>
 
-<p class="admonition-title"><span class="caption-number">Exercise 3.7 </span></p>
-<section id="exercise-content">
-<p>Quale delle seguenti affermazioni corrisponde all’espressione: Pr(lunedì | pioggia)? (da Statistical rethinking)</p>
-<ol class="simple">
-<li><p>La probabilità di pioggia lunedì.</p></li>
-<li><p>La probabilità di pioggia, dato che è lunedì.</p></li>
-<li><p>La probabilità che sia lunedì, dato che sta piovendo.</p></li>
-<li><p>La probabilità che sia lunedì e che piova.</p></li>
-</ol>
-</section>
+<span class="n">die_rolls</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="n">it</span><span class="o">.</span><span class="n">product</span><span class="p">(</span><span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">7</span><span class="p">),</span> <span class="n">repeat</span><span class="o">=</span><span class="mi">5</span><span class="p">))</span>
+<span class="n">results</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="mi">5</span><span class="p">,</span> <span class="mi">31</span><span class="p">)</span>
+<span class="n">prob_distr</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">()</span>
+<span class="n">freq</span> <span class="o">=</span> <span class="nb">sum</span><span class="p">(</span><span class="nb">sum</span><span class="p">(</span><span class="n">rol</span><span class="p">)</span> <span class="o">==</span> <span class="n">results</span> <span class="k">for</span> <span class="n">rol</span> <span class="ow">in</span> <span class="n">die_rolls</span><span class="p">)</span>
+<span class="n">prob_distr</span><span class="p">[</span><span class="s1">&#39;py&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">freq</span> <span class="o">/</span> <span class="nb">sum</span><span class="p">(</span><span class="n">freq</span><span class="p">)</span>
+<span class="n">prob_distr</span><span class="p">[</span><span class="s1">&#39;y&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">results</span>
+<span class="n">prob_distr</span><span class="p">[</span><span class="n">prob_distr</span><span class="p">[</span><span class="s1">&#39;y&#39;</span><span class="p">]</span> <span class="o">==</span> <span class="mi">19</span><span class="p">]</span>
+</pre></div>
 </div>
-<div class="solution dropdown admonition" id="exercises/03_prob/ex_conditional_prob-solution-3">
-
-<p class="admonition-title">Solution to<a class="reference internal" href="#label-prob-conditional_prob-02"> Exercise 3.7</a></p>
-<section id="solution-content">
-<p>Solo la risposta (3) corrisponde all’espressione Pr(lunedì | pioggia).</p>
-</section>
+<p>La soluzione è 0.094522.</p>
+<p>Oppure, in maniera più semplice:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">die_rolls</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="n">it</span><span class="o">.</span><span class="n">product</span><span class="p">(</span><span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">7</span><span class="p">),</span> <span class="n">repeat</span><span class="o">=</span><span class="mi">5</span><span class="p">))</span>
+<span class="n">n1</span> <span class="o">=</span> <span class="nb">sum</span><span class="p">(</span><span class="nb">sum</span><span class="p">(</span><span class="n">rol</span><span class="p">)</span> <span class="o">==</span> <span class="mi">19</span> <span class="k">for</span> <span class="n">rol</span> <span class="ow">in</span> <span class="n">die_rolls</span><span class="p">)</span>
+<span class="n">n</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">die_rolls</span><span class="p">)</span>
+<span class="n">n1</span> <span class="o">/</span> <span class="n">n</span>
+</pre></div>
 </div>
-<div class="exercise admonition" id="label-prob-conditional_prob-03">
-
-<p class="admonition-title"><span class="caption-number">Exercise 3.8 </span></p>
-<section id="exercise-content">
-<p>Quale delle seguenti espressioni corrisponde all’affermazione: la probabilità che sia lunedì, dato che sta piovendo? (da Statistical rethinking)</p>
-<ol class="simple">
-<li><p>Pr(lunedì | pioggia)</p></li>
-<li><p>Pr(pioggia | lunedì)</p></li>
-<li><p>Pr(pioggia | lunedì) Pr(lunedì)</p></li>
-<li><p>Pr(pioggia | lunedì) Pr(lunedì) / Pr(pioggia)</p></li>
-<li><p>Pr(lunedì | pioggia) Pr(pioggia) / Pr(lunedì)</p></li>
-</ol>
-</section>
-</div>
-<div class="solution dropdown admonition" id="exercises/03_prob/ex_conditional_prob-solution-5">
-
-<p class="admonition-title">Solution to<a class="reference internal" href="#label-prob-conditional_prob-03"> Exercise 3.8</a></p>
-<section id="solution-content">
-<p>Ci sono ancora due risposte corrette. L’opzione di risposta (1) è la notazione standard per la probabilità condizionata. L’opzione di risposta (4) è equivalente, poiché questo è il teorema di Bayes.</p>
-</section>
-</div>
-<div class="exercise admonition" id="label-prob-conditional_prob-04">
-
-<p class="admonition-title"><span class="caption-number">Exercise 3.9 </span></p>
-<section id="exercise-content">
-<p>Per due eventi,  𝐴 e 𝐵, 𝑃(𝐴)=0.73, 𝑃(𝐵)=0.48 e 𝑃(𝐴∩𝐵)=0.29.</p>
-<ol class="simple">
-<li><p>Trova  𝑃(𝐴∣𝐵).</p></li>
-<li><p>Trova  𝑃(𝐵∣𝐴).</p></li>
-<li><p>Determina se 𝐴 e 𝐵 sono indipendenti.</p></li>
-</ol>
-</section>
-</div>
-<div class="solution dropdown admonition" id="exercises/03_prob/ex_conditional_prob-solution-7">
-
-<p class="admonition-title">Solution to<a class="reference internal" href="#label-prob-conditional_prob-04"> Exercise 3.9</a></p>
-<section id="solution-content">
-<ol class="simple">
-<li><p>0.6</p></li>
-<li><p>0.4</p></li>
-<li><p>non indipendenti</p></li>
-</ol>
-</section>
-</div>
-<div class="exercise admonition" id="label-prob-conditional_prob-05">
-
-<p class="admonition-title"><span class="caption-number">Exercise 3.10 </span></p>
-<section id="exercise-content">
-<p>Per due eventi indipendenti  𝐴  e  𝐵,  𝑃(𝐴)=0.81  e  𝑃(𝐵)=0.27. Trova</p>
-<ol class="simple">
-<li><p>𝑃(𝐴∩𝐵).</p></li>
-<li><p>𝑃(𝐴∣𝐵).</p></li>
-<li><p>𝑃(𝐵∣𝐴).</p></li>
-</ol>
-</section>
-</div>
-<div class="solution dropdown admonition" id="exercises/03_prob/ex_conditional_prob-solution-9">
-
-<p class="admonition-title">Solution to<a class="reference internal" href="#label-prob-conditional_prob-05"> Exercise 3.10</a></p>
-<section id="solution-content">
-<ol class="simple">
-<li><p>0.22</p></li>
-<li><p>0.81</p></li>
-<li><p>0.27</p></li>
-</ol>
-</section>
-</div>
-<div class="exercise admonition" id="label-prob-conditional_prob-06">
-
-<p class="admonition-title"><span class="caption-number">Exercise 3.11 </span></p>
-<section id="exercise-content">
-<p>Per due eventi mutuamente esclusivi 𝐴 e 𝐵, 𝑃(𝐴)=0.17 e 𝑃(𝐵)=0.32.</p>
-<ol class="simple">
-<li><p>Trova 𝑃(𝐴∣𝐵).</p></li>
-<li><p>Trova 𝑃(𝐵∣𝐴).</p></li>
-</ol>
-</section>
-</div>
-<div class="solution dropdown admonition" id="exercises/03_prob/ex_conditional_prob-solution-11">
-
-<p class="admonition-title">Solution to<a class="reference internal" href="#label-prob-conditional_prob-06"> Exercise 3.11</a></p>
-<section id="solution-content">
-<ol class="simple">
-<li><p>0</p></li>
-<li><p>0</p></li>
-</ol>
-</section>
-</div>
-<div class="exercise admonition" id="label-prob-conditional_prob-07">
-
-<p class="admonition-title"><span class="caption-number">Exercise 3.12 </span></p>
-<section id="exercise-content">
-<p>Calcola le seguenti probabilità in relazione al lancio di un singolo dado equilibrato.</p>
-<ol class="simple">
-<li><p>La probabilità che il lancio dia un numero pari.</p></li>
-<li><p>La probabilità che il lancio dia un numero pari, dato che non è un due.</p></li>
-<li><p>La probabilità che il risultato dia un numnero pari, dato che non è uno.</p></li>
-</ol>
-</section>
-</div>
-<div class="solution dropdown admonition" id="exercises/03_prob/ex_conditional_prob-solution-13">
-
-<p class="admonition-title">Solution to<a class="reference internal" href="#label-prob-conditional_prob-07"> Exercise 3.12</a></p>
-<section id="solution-content">
-<ol class="simple">
-<li><p>0.5</p></li>
-<li><p>0.4</p></li>
-<li><p>0.6</p></li>
-</ol>
-</section>
-</div>
-<div class="exercise admonition" id="label-prob-conditional_prob-08">
-
-<p class="admonition-title"><span class="caption-number">Exercise 3.13 </span></p>
-<section id="exercise-content">
-<p>In un certo collegio, il 25% degli studenti è stato bocciato in matematica,
-il 15% è stato bocciato in chimica, e il 10% è stato bocciato sia in
-matematica che in chimica. Viene scelto a caso uno studente. Se lo studente è stato
-bocciato in chimica, qual è la probabilità che sia stato bocciato anche in matematica?</p>
-</section>
-</div>
-<div class="solution dropdown admonition" id="exercises/03_prob/ex_conditional_prob-solution-15">
-
-<p class="admonition-title">Solution to<a class="reference internal" href="#label-prob-conditional_prob-08"> Exercise 3.13</a></p>
-<section id="solution-content">
-<p>Sia M = {studenti bocciati in matematica} e C = {studenti bocciati in chimica},
-allora: P(M) = 0.25, P(C) = 0.15, P(M∩C) = 0.10.
-La probabilità che uno studente sia stato bocciato in matematica, se si sa
-che è stato bocciato in chimica, è P(M|C) = P(M∩C) / P(C) = 0.10 / 0.15 = 2/3.</p>
-</section>
-</div>
-<div class="exercise admonition" id="label-prob-conditional_prob-09">
-
-<p class="admonition-title"><span class="caption-number">Exercise 3.14 </span></p>
-<section id="exercise-content">
-<p>In un certo collegio, il 25% degli studenti è stato bocciato in matematica,
-il 15% è stato bocciato in chimica, e il 10% è stato bocciato sia in
-matematica che in chimica. Viene scelto a caso uno studente. Se lo studente è stato
-bocciato in matematica, qual è la probabilità che sia stato bocciato anche in chimica?</p>
-</section>
-</div>
-<div class="solution dropdown admonition" id="exercises/03_prob/ex_conditional_prob-solution-17">
-
-<p class="admonition-title">Solution to<a class="reference internal" href="#label-prob-conditional_prob-09"> Exercise 3.14</a></p>
-<section id="solution-content">
-<p>La probabilità che uno studente sia stato bocciato in chimica, se si sa che è
-stato bocciato in matematica, è P(C|M) = P(C∩M) / P(M) = 0.10 / 0.25 = 2/5.</p>
-</section>
-</div>
-<div class="exercise admonition" id="label-prob-conditional_prob-10">
-
-<p class="admonition-title"><span class="caption-number">Exercise 3.15 </span></p>
-<section id="exercise-content">
-<p>In un certo collegio, il 25% degli studenti è stato bocciato in matematica,
-il 15% è stato bocciato in chimica, e il 10% è stato bocciato sia in
-matematica che in chimica. Viene scelto a caso uno studente. Qual è la
-probabilità che sia stato bocciato in matematica o in chimica?</p>
-</section>
-</div>
-<div class="solution dropdown admonition" id="exercises/03_prob/ex_conditional_prob-solution-19">
-
-<p class="admonition-title">Solution to<a class="reference internal" href="#label-prob-conditional_prob-10"> Exercise 3.15</a></p>
-<section id="solution-content">
-<p>La probabilità che sia stato bocciato in matematica o in chimica, è
-P(M∪C) = P(M) + P(C) − P(M∩C) = 0.25 + 0.15 − 0.10 = 0.30.</p>
 </section>
 </div>
 </section>
@@ -761,20 +589,6 @@ P(M∪C) = P(M) + P(C) − P(M∩C) = 0.25 + 0.15 − 0.10 = 0.30.</p>
                 
     <!-- Previous / next buttons -->
 <div class='prev-next-area'>
-    <a class='left-prev' id="prev-link" href="ex_combinatorics.html" title="previous page">
-        <i class="fas fa-angle-left"></i>
-        <div class="prev-next-info">
-            <p class="prev-next-subtitle">previous</p>
-            <p class="prev-next-title"><span class="section-number">3.1. </span>✅ Calcolo combinatorio</p>
-        </div>
-    </a>
-    <a class='right-next' id="next-link" href="ex_bayes_theorem.html" title="next page">
-    <div class="prev-next-info">
-        <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title"><span class="section-number">3.3. </span>✅ Teorema di Bayes</p>
-    </div>
-    <i class="fas fa-angle-right"></i>
-    </a>
 </div>
             </footer>
         </div>
