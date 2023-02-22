@@ -6,7 +6,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
-    <title>6.1. ✅ Distribuzione campionaria della media &#8212; Psicometria</title>
+    <title>6.2. ✅ Test per una media della popolazione (campioni di grandi dimensioni) &#8212; Psicometria</title>
     
   <!-- Loaded before other Sphinx assets -->
   <link href="../../_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
@@ -51,11 +51,13 @@ const thebe_selector_input = "pre"
 const thebe_selector_output = ".output, .cell_output"
 </script>
     <script async="async" src="../../_static/sphinx-thebe.js"></script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <link rel="shortcut icon" href="../../_static/icons8-graduation-cap-30.png"/>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
-    <link rel="next" title="6.2. ✅ Test sulla media della popolazione per campioni di grandi dimensioni" href="test_on_means.html" />
-    <link rel="prev" title="6. Inferenza frequentista" href="freq_inf_index.html" />
+    <link rel="next" title="6.3. ✅ Interpretare il test dell’ipotesi nulla" href="interpretation_test_h0.html" />
+    <link rel="prev" title="6.1. ✅ Distribuzione campionaria della media" href="sampling_distr_mean.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="None">
     
@@ -320,14 +322,14 @@ const thebe_selector_output = ".output, .cell_output"
    </i>
   </label>
   <ul class="current">
-   <li class="toctree-l2 current active">
-    <a class="current reference internal" href="#">
+   <li class="toctree-l2">
+    <a class="reference internal" href="sampling_distr_mean.html">
      6.1. ✅ Distribuzione campionaria della media
     </a>
    </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="test_on_means.html">
-     6.2. ✅ Test sulla media della popolazione per campioni di grandi dimensioni
+   <li class="toctree-l2 current active">
+    <a class="current reference internal" href="#">
+     6.2. ✅ Test per una media della popolazione (campioni di grandi dimensioni)
     </a>
    </li>
    <li class="toctree-l2">
@@ -449,7 +451,7 @@ title="Source repository"
       </li>
       
       <li>
-        <a href="https://github.com/ccaudek/psicometria_2023/issues/new?title=Issue%20on%20page%20%2Fexercises/08_freq_inf/sampling_distr_mean.html&body=Your%20issue%20content%20here."
+        <a href="https://github.com/ccaudek/psicometria_2023/issues/new?title=Issue%20on%20page%20%2Fexercises/08_freq_inf/test_on_means.html&body=Your%20issue%20content%20here."
    class="headerbtn"
    data-toggle="tooltip"
 data-placement="left"
@@ -477,7 +479,7 @@ title="Open an issue"
   <div class="menu-dropdown__content">
     <ul>
       <li>
-        <a href="../../_sources/exercises/08_freq_inf/sampling_distr_mean.md"
+        <a href="../../_sources/exercises/08_freq_inf/test_on_means.md"
    class="headerbtn"
    data-toggle="tooltip"
 data-placement="left"
@@ -526,7 +528,7 @@ title="Print to PDF"
         <div class="col pl-md-3 pl-lg-5 content-container">
             <!-- Table of contents that is only displayed when printing the page -->
             <div id="jb-print-docs-body" class="onlyprint">
-                <h1>✅ Distribuzione campionaria della media</h1>
+                <h1>✅ Test per una media della popolazione (campioni di grandi dimensioni)</h1>
                 <!-- Table of contents -->
                 <div id="print-main-content">
                     <div id="jb-print-toc">
@@ -538,102 +540,88 @@ title="Print to PDF"
                 
               <div>
                 
-  <section class="tex2jax_ignore mathjax_ignore" id="distribuzione-campionaria-della-media">
-<h1><span class="section-number">6.1. </span>✅ Distribuzione campionaria della media<a class="headerlink" href="#distribuzione-campionaria-della-media" title="Permalink to this headline">#</a></h1>
-<div class="exercise admonition" id="ex-sampling-distr-means-23">
+  <section class="tex2jax_ignore mathjax_ignore" id="test-per-una-media-della-popolazione-campioni-di-grandi-dimensioni">
+<h1><span class="section-number">6.2. </span>✅ Test per una media della popolazione (campioni di grandi dimensioni)<a class="headerlink" href="#test-per-una-media-della-popolazione-campioni-di-grandi-dimensioni" title="Permalink to this headline">#</a></h1>
+<div class="exercise admonition" id="ex-test-media-popolazione-3">
 
-<p class="admonition-title"><span class="caption-number">Exercise 6.1 </span></p>
+<p class="admonition-title"><span class="caption-number">Exercise 6.7 </span></p>
 <section id="exercise-content">
-<p>Supponi che in una certa regione del Paese la durata media dei primi matrimoni finisca con un divorzio nei primi 7.8 anni, con una deviazione standard di 1.2 anni.
-Trova la probabilità che in un campione di 75 divorzi, la durata media dei matrimoni sia al massimo di 8 anni.</p>
+<p>Trova la regione di rifiuto (per la statistica test standardizzata) per ogni test di ipotesi. Identificare il test come a coda sinistra, a coda destra o a due code.</p>
+<p>a. <span class="math notranslate nohighlight">\(H_0\)</span>: <span class="math notranslate nohighlight">\(\mu\)</span> = 141; vs <span class="math notranslate nohighlight">\(H_a\)</span>: <span class="math notranslate nohighlight">\(\mu\)</span> &lt; 141; <span class="math notranslate nohighlight">\(\alpha\)</span> = 0.20</p>
+<p>b. <span class="math notranslate nohighlight">\(H_0\)</span>: <span class="math notranslate nohighlight">\(\mu\)</span> = -54; vs <span class="math notranslate nohighlight">\(H_a\)</span>: <span class="math notranslate nohighlight">\(\mu\)</span> &lt; -54; <span class="math notranslate nohighlight">\(\alpha\)</span> = 0.05</p>
+<p>c. <span class="math notranslate nohighlight">\(H_0\)</span>: <span class="math notranslate nohighlight">\(\mu\)</span> = 98.6; vs <span class="math notranslate nohighlight">\(H_a\)</span>: <span class="math notranslate nohighlight">\(\mu\)</span> <span class="math notranslate nohighlight">\(\neq\)</span> 98.6; <span class="math notranslate nohighlight">\(\alpha\)</span> = 0.05</p>
+<p>d. <span class="math notranslate nohighlight">\(H_0\)</span>: <span class="math notranslate nohighlight">\(\mu\)</span> = 98.6; vs <span class="math notranslate nohighlight">\(H_a\)</span>: <span class="math notranslate nohighlight">\(\mu\)</span> <span class="math notranslate nohighlight">\(\neq\)</span> 98.6; <span class="math notranslate nohighlight">\(\alpha\)</span> = 0.05</p>
 </section>
 </div>
-<div class="solution dropdown admonition" id="sol-sampling-distr-means-23">
+<div class="solution dropdown admonition" id="sol-test-media-popolazione-3">
 
-<p class="admonition-title">Solution to<a class="reference internal" href="#ex-sampling-distr-means-23"> Exercise 6.1</a></p>
+<p class="admonition-title">Solution to<a class="reference internal" href="#ex-test-media-popolazione-3"> Exercise 6.7</a></p>
 <section id="solution-content">
-<p>La probabilità è di 0.9251</p>
+<p>a. <span class="math notranslate nohighlight">\(Z\leq\)</span> -0.84</p>
+<p>b. <span class="math notranslate nohighlight">\(Z\leq\)</span> -1.645</p>
+<p>c. <span class="math notranslate nohighlight">\(Z\leq\)</span> -1.96; or <span class="math notranslate nohighlight">\(Z\geq\)</span> 1.96</p>
+<p>d. <span class="math notranslate nohighlight">\(Z\geq\)</span> 3.1</p>
 </section>
 </div>
-<div class="exercise admonition" id="ex-sampling-distr-means-21">
+<div class="exercise admonition" id="ex-test-media-popolazione-5">
 
-<p class="admonition-title"><span class="caption-number">Exercise 6.2 </span></p>
+<p class="admonition-title"><span class="caption-number">Exercise 6.8 </span></p>
 <section id="exercise-content">
-<p>I punteggi di un esame finale in un corso di matricole con un numero elevato di iscrizioni sono normalmente distribuite con una media di 72.7 e deviazione standard di 13.1.</p>
-<p>a. Trova la probabilità che il punteggio X di un esame selezionato in modo casuale sia compreso tra 70 e 80.</p>
-<p>b. Trova la probabilità che il punteggio medio X di 38 prove d’esame selezionato a caso sia compreso tra 70 e 80.</p>
+<p>Calcolare il valore della statistica del test per il test indicato, in base alle informazioni fornite.</p>
+<p>a. <span class="math notranslate nohighlight">\(H_0\)</span>: <span class="math notranslate nohighlight">\(\mu\)</span> = 72.2; vs <span class="math notranslate nohighlight">\(H_a\)</span>: <span class="math notranslate nohighlight">\(\mu\)</span> &gt; 72.2;
+<span class="math notranslate nohighlight">\(\sigma\)</span> sconosciuto; n = 55; <span class="math notranslate nohighlight">\(\bar{x}\)</span> = 75.1; s = 9.25</p>
+<p>b. <span class="math notranslate nohighlight">\(H_0\)</span>: <span class="math notranslate nohighlight">\(\mu\)</span> = 58; vs <span class="math notranslate nohighlight">\(H_a\)</span>: <span class="math notranslate nohighlight">\(\mu\)</span> &gt; 58;
+<span class="math notranslate nohighlight">\(\sigma\)</span> = 1.22; n = 40; <span class="math notranslate nohighlight">\(\bar{x}\)</span> = 58.5; s = 1.29</p>
+<p>c. <span class="math notranslate nohighlight">\(H_0\)</span>: <span class="math notranslate nohighlight">\(\mu\)</span> = -19.5; vs <span class="math notranslate nohighlight">\(H_a\)</span>: <span class="math notranslate nohighlight">\(\mu\)</span> &lt; -19.5;
+<span class="math notranslate nohighlight">\(\sigma\)</span> sconoscuiuto; n = 30; <span class="math notranslate nohighlight">\(\bar{x}\)</span> = -23.2; s = 9.55</p>
+<p>d. <span class="math notranslate nohighlight">\(H_0\)</span>: <span class="math notranslate nohighlight">\(\mu\)</span> = 805; vs <span class="math notranslate nohighlight">\(H_a\)</span>: <span class="math notranslate nohighlight">\(\mu\)</span> <span class="math notranslate nohighlight">\(\neq\)</span> 805;
+<span class="math notranslate nohighlight">\(\sigma\)</span> = 37.5; n = 75; <span class="math notranslate nohighlight">\(\bar{x}\)</span> = 818; s = 36.2</p>
 </section>
 </div>
-<div class="solution dropdown admonition" id="sol-sampling-distr-means-21">
+<div class="solution dropdown admonition" id="sol-test-media-popolazione-5">
 
-<p class="admonition-title">Solution to<a class="reference internal" href="#ex-sampling-distr-means-21"> Exercise 6.2</a></p>
+<p class="admonition-title">Solution to<a class="reference internal" href="#ex-test-media-popolazione-5"> Exercise 6.8</a></p>
 <section id="solution-content">
-<p>a. La probabilità punteggio esame è 0.2955</p>
-<p>b. La probabilità punteggio medio è 0.8977</p>
+<p>a. Z = 2.235</p>
+<p>b. Z = 2.592</p>
+<p>c. Z = −2.122</p>
+<p>d. Z = 3.002</p>
 </section>
 </div>
-<div class="exercise admonition" id="ex-sampling-distr-means-19">
+<div class="exercise admonition" id="ex-test-media-popolazione-7">
 
-<p class="admonition-title"><span class="caption-number">Exercise 6.3 </span></p>
+<p class="admonition-title"><span class="caption-number">Exercise 6.9 </span></p>
 <section id="exercise-content">
-<p>Supponiamo che il costo medio in tutto il paese di una fornitura di 30 giorni di un farmaco generico sia di euro 46.58, con deviazione standard di 4.84. Calcolare la probabilità che la media di un campione di 100 prezzi di forniture per 30 giorni di questo farmaco sia compresa tra 45 e 50 euro.</p>
+<p>Eseguire il test di ipotesi indicato, sulla base delle informazioni fornite.</p>
+<p>a. Test <span class="math notranslate nohighlight">\(H_0\)</span>: <span class="math notranslate nohighlight">\(\mu\)</span> = 212; vs <span class="math notranslate nohighlight">\(H_a\)</span>: <span class="math notranslate nohighlight">\(\mu\)</span> &lt; 212; <span class="math notranslate nohighlight">\(\alpha\)</span> = 0.10;
+<span class="math notranslate nohighlight">\(\sigma\)</span>; <span class="math notranslate nohighlight">\(\text{sconosciuto}\)</span>; n=36; <span class="math notranslate nohighlight">\(\bar{x}\)</span> = 211.2; s=2.2.</p>
+<p>b. Test <span class="math notranslate nohighlight">\(H_0\)</span>: <span class="math notranslate nohighlight">\(\mu\)</span> = -18; vs <span class="math notranslate nohighlight">\(H_a\)</span>: <span class="math notranslate nohighlight">\(\mu\)</span> &gt; -18; <span class="math notranslate nohighlight">\(\alpha\)</span> = 0.05;
+<span class="math notranslate nohighlight">\(\sigma\)</span> = 3.3; n = 44; <span class="math notranslate nohighlight">\(\bar{x}\)</span> = -17.2; s = 3.1</p>
+<p>c. Test <span class="math notranslate nohighlight">\(H_0\)</span>: <span class="math notranslate nohighlight">\(\mu\)</span> = 24; vs <span class="math notranslate nohighlight">\(H_a\)</span>: <span class="math notranslate nohighlight">\(\mu\)</span> <span class="math notranslate nohighlight">\(\neq\)</span> 24; <span class="math notranslate nohighlight">\(\alpha\)</span> = 0.02;
+<span class="math notranslate nohighlight">\(\sigma\)</span> <span class="math notranslate nohighlight">\(\text{sconosciuto}\)</span>; n=50; <span class="math notranslate nohighlight">\(\bar{x}\)</span> = 22.8; s = 1.9</p>
 </section>
 </div>
-<div class="solution dropdown admonition" id="sol-sampling-distr-means-19">
+<div class="solution dropdown admonition" id="sol-test-media-popolazione-7">
 
-<p class="admonition-title">Solution to<a class="reference internal" href="#ex-sampling-distr-means-19"> Exercise 6.3</a></p>
+<p class="admonition-title">Solution to<a class="reference internal" href="#ex-test-media-popolazione-7"> Exercise 6.9</a></p>
 <section id="solution-content">
-<p>La probabilità della media del campione è 0.9994</p>
+<p>a. Z = -2.18; <span class="math notranslate nohighlight">\(-z_{0.10}\)</span> = -1.28; rifiuto <span class="math notranslate nohighlight">\(H_0\)</span></p>
+<p>b. Z = 1.61; <span class="math notranslate nohighlight">\(z_{0.05}\)</span> = 1.645; non rifiuto <span class="math notranslate nohighlight">\(H_0\)</span></p>
+<p>c. Z = -4.47; <span class="math notranslate nohighlight">\(-z_{0.01}\)</span> = -2.33; rifiuto <span class="math notranslate nohighlight">\(H_0\)</span></p>
 </section>
 </div>
-<div class="exercise admonition" id="ex-sampling-distr-means-15">
+<div class="exercise admonition" id="ex-test-media-popolazione-17">
 
-<p class="admonition-title"><span class="caption-number">Exercise 6.4 </span></p>
+<p class="admonition-title"><span class="caption-number">Exercise 6.10 </span></p>
 <section id="exercise-content">
-<p>Supponiamo che la quantità media di colesterolo nelle uova etichettate come “grandi” sia di 186 milligrammi, con deviazione standard di 7 milligrammi. Trova la probabilità che la quantità media di colesterolo in un campione di 144 uova sia entro 2 milligrammi dalla media della popolazione.</p>
+<p>Gli autori di un sistema di algebra computerizzato desiderano confrontare la velocità di un nuovo algoritmo computazionale con l’algoritmo attualmente implementato. Applicano il nuovo algoritmo a 50 problemi standard; ha una media di 8,16 secondi con deviazione standard di 0,17 secondi. L’attuale algoritmo ha una media di 8,21 secondi su tali problemi. Verifica, al livello di significatività dell’1%, l’ipotesi alternativa che il nuovo algoritmo abbia</p>
 </section>
 </div>
-<div class="solution dropdown admonition" id="sol-sampling-distr-means-15">
+<div class="solution dropdown admonition" id="sol-test-media-popolazione-17">
 
-<p class="admonition-title">Solution to<a class="reference internal" href="#ex-sampling-distr-means-15"> Exercise 6.4</a></p>
+<p class="admonition-title">Solution to<a class="reference internal" href="#ex-test-media-popolazione-17"> Exercise 6.10</a></p>
 <section id="solution-content">
-<p>La probabilità della quantità media del campione è 0.9994</p>
-</section>
-</div>
-<div class="exercise admonition" id="ex-sampling-distr-means-9">
-
-<p class="admonition-title"><span class="caption-number">Exercise 6.5 </span></p>
-<section id="exercise-content">
-<p>Una popolazione distribuita normalmente ha una media di 1.214 e deviazione standard 122.</p>
-<p>a. Trova la probabilità che un singolo elemento X selezionato a caso della popolazione sia compreso tra 1.100 e 1.300.</p>
-<p>b. Trova la media e la deviazione standard di X per campioni di dimensione 25.</p>
-<p>c. Trova la probabilità che la media di un campione di dimensione 25 tratto da questa popolazione sia compresa tra 1.100 e 1.300.</p>
-</section>
-</div>
-<div class="solution dropdown admonition" id="sol-sampling-distr-means-9">
-
-<p class="admonition-title">Solution to<a class="reference internal" href="#ex-sampling-distr-means-9"> Exercise 6.5</a></p>
-<section id="solution-content">
-<p>a. La probabilità di elemento X è di 0.5818</p>
-<p>b. La media è di 1214. La deviazione standard è 24.4</p>
-<p>c. La probabilità della media di un campione è 0.9998</p>
-</section>
-</div>
-<div class="exercise admonition" id="ex-sampling-distr-means-7">
-
-<p class="admonition-title"><span class="caption-number">Exercise 6.6 </span></p>
-<section id="exercise-content">
-<p>Una popolazione ha una media di  557 e una deviazione standard di 35.</p>
-<p>a) Trovare la media e la deviazione standard di X per campioni di dimensione 50.</p>
-<p>b) Calcolare la probabilità che la media di un campione di dimensione 50 sia maggiore di 570.</p>
-</section>
-</div>
-<div class="solution dropdown admonition" id="sol-sampling-distr-means-7">
-
-<p class="admonition-title">Solution to<a class="reference internal" href="#ex-sampling-distr-means-7"> Exercise 6.6</a></p>
-<section id="solution-content">
-<p>a. La media è di 557. La deviazione standard è 4.9497</p>
-<p>b. La probabilità della media di un campione è di 0.0043</p>
+<p>Z = -2.08; <span class="math notranslate nohighlight">\(-z_{0.01}\)</span> = -2.33; non rifiuto <span class="math notranslate nohighlight">\(H_0\)</span></p>
 </section>
 </div>
 </section>
@@ -665,17 +653,17 @@ Trova la probabilità che in un campione di 75 divorzi, la durata media dei matr
                 
     <!-- Previous / next buttons -->
 <div class='prev-next-area'>
-    <a class='left-prev' id="prev-link" href="freq_inf_index.html" title="previous page">
+    <a class='left-prev' id="prev-link" href="sampling_distr_mean.html" title="previous page">
         <i class="fas fa-angle-left"></i>
         <div class="prev-next-info">
             <p class="prev-next-subtitle">previous</p>
-            <p class="prev-next-title"><span class="section-number">6. </span>Inferenza frequentista</p>
+            <p class="prev-next-title"><span class="section-number">6.1. </span>✅ Distribuzione campionaria della media</p>
         </div>
     </a>
-    <a class='right-next' id="next-link" href="test_on_means.html" title="next page">
+    <a class='right-next' id="next-link" href="interpretation_test_h0.html" title="next page">
     <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title"><span class="section-number">6.2. </span>✅ Test sulla media della popolazione per campioni di grandi dimensioni</p>
+        <p class="prev-next-title"><span class="section-number">6.3. </span>✅ Interpretare il test dell’ipotesi nulla</p>
     </div>
     <i class="fas fa-angle-right"></i>
     </a>

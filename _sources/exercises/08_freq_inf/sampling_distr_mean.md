@@ -42,7 +42,7 @@ b. La probabilità punteggio medio è 0.8977
 ```{exercise}
 :label: ex-sampling-distr-means-19
 
-Supponiamo che il costo medio in tutto il paese di una fornitura di 30 giorni di un farmaco generico sia di $ 46.58, con deviazione standard di $4.84. Calcolare la probabilità che la media di un campione di 100 prezzi di forniture per 30 giorni di questo farmaco sia compresa tra $45 e $50.
+Supponiamo che il costo medio in tutto il paese di una fornitura di 30 giorni di un farmaco generico sia di euro 46.58, con deviazione standard di 4.84. Calcolare la probabilità che la media di un campione di 100 prezzi di forniture per 30 giorni di questo farmaco sia compresa tra 45 e 50 euro.
 
 ```
 

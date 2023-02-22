@@ -6,7 +6,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
-    <title>6.1. ✅ Distribuzione campionaria della media &#8212; Psicometria</title>
+    <title>6.4. ✅ Stima della media di una popolazione da un piccolo campione &#8212; Psicometria</title>
     
   <!-- Loaded before other Sphinx assets -->
   <link href="../../_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
@@ -51,11 +51,13 @@ const thebe_selector_input = "pre"
 const thebe_selector_output = ".output, .cell_output"
 </script>
     <script async="async" src="../../_static/sphinx-thebe.js"></script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <link rel="shortcut icon" href="../../_static/icons8-graduation-cap-30.png"/>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
-    <link rel="next" title="6.2. ✅ Test sulla media della popolazione per campioni di grandi dimensioni" href="test_on_means.html" />
-    <link rel="prev" title="6. Inferenza frequentista" href="freq_inf_index.html" />
+    <link rel="next" title="7. Distribuzioni coniugate" href="../28_conjugate_prior/conjugate_prior_index.html" />
+    <link rel="prev" title="6.3. ✅ Interpretare il test dell’ipotesi nulla" href="interpretation_test_h0.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="None">
     
@@ -320,14 +322,14 @@ const thebe_selector_output = ".output, .cell_output"
    </i>
   </label>
   <ul class="current">
-   <li class="toctree-l2 current active">
-    <a class="current reference internal" href="#">
+   <li class="toctree-l2">
+    <a class="reference internal" href="sampling_distr_mean.html">
      6.1. ✅ Distribuzione campionaria della media
     </a>
    </li>
    <li class="toctree-l2">
     <a class="reference internal" href="test_on_means.html">
-     6.2. ✅ Test sulla media della popolazione per campioni di grandi dimensioni
+     6.2. ✅ Test su campioni di grandi dimensioni per una media della popolazione
     </a>
    </li>
    <li class="toctree-l2">
@@ -335,8 +337,8 @@ const thebe_selector_output = ".output, .cell_output"
      6.3. ✅ Interpretare il test dell’ipotesi nulla
     </a>
    </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="estimation.html">
+   <li class="toctree-l2 current active">
+    <a class="current reference internal" href="#">
      6.4. ✅ Stima della media di una popolazione da un piccolo campione
     </a>
    </li>
@@ -449,7 +451,7 @@ title="Source repository"
       </li>
       
       <li>
-        <a href="https://github.com/ccaudek/psicometria_2023/issues/new?title=Issue%20on%20page%20%2Fexercises/08_freq_inf/sampling_distr_mean.html&body=Your%20issue%20content%20here."
+        <a href="https://github.com/ccaudek/psicometria_2023/issues/new?title=Issue%20on%20page%20%2Fexercises/08_freq_inf/estimation.html&body=Your%20issue%20content%20here."
    class="headerbtn"
    data-toggle="tooltip"
 data-placement="left"
@@ -477,7 +479,7 @@ title="Open an issue"
   <div class="menu-dropdown__content">
     <ul>
       <li>
-        <a href="../../_sources/exercises/08_freq_inf/sampling_distr_mean.md"
+        <a href="../../_sources/exercises/08_freq_inf/estimation.md"
    class="headerbtn"
    data-toggle="tooltip"
 data-placement="left"
@@ -526,7 +528,7 @@ title="Print to PDF"
         <div class="col pl-md-3 pl-lg-5 content-container">
             <!-- Table of contents that is only displayed when printing the page -->
             <div id="jb-print-docs-body" class="onlyprint">
-                <h1>✅ Distribuzione campionaria della media</h1>
+                <h1>✅ Stima della media di una popolazione da un piccolo campione</h1>
                 <!-- Table of contents -->
                 <div id="print-main-content">
                     <div id="jb-print-toc">
@@ -538,102 +540,70 @@ title="Print to PDF"
                 
               <div>
                 
-  <section class="tex2jax_ignore mathjax_ignore" id="distribuzione-campionaria-della-media">
-<h1><span class="section-number">6.1. </span>✅ Distribuzione campionaria della media<a class="headerlink" href="#distribuzione-campionaria-della-media" title="Permalink to this headline">#</a></h1>
-<div class="exercise admonition" id="ex-sampling-distr-means-23">
+  <section class="tex2jax_ignore mathjax_ignore" id="stima-della-media-di-una-popolazione-da-un-piccolo-campione">
+<h1><span class="section-number">6.4. </span>✅ Stima della media di una popolazione da un piccolo campione<a class="headerlink" href="#stima-della-media-di-una-popolazione-da-un-piccolo-campione" title="Permalink to this headline">#</a></h1>
+<div class="exercise admonition" id="ex-estimation-3">
 
-<p class="admonition-title"><span class="caption-number">Exercise 6.1 </span></p>
+<p class="admonition-title"><span class="caption-number">Exercise 6.14 </span></p>
 <section id="exercise-content">
-<p>Supponi che in una certa regione del Paese la durata media dei primi matrimoni finisca con un divorzio nei primi 7.8 anni, con una deviazione standard di 1.2 anni.
-Trova la probabilità che in un campione di 75 divorzi, la durata media dei matrimoni sia al massimo di 8 anni.</p>
+<p>Viene estratto un campione casuale da una popolazione distribuita normalmente con deviazione standard sconosciuta. Costruire un intervallo di confidenza al 99% per la media della popolazione in base alle informazioni fornite.</p>
+<p>a. n = 18, <span class="math notranslate nohighlight">\(\bar{x}\)</span> = 386, s = 24</p>
+<p>b. n = 7, <span class="math notranslate nohighlight">\(\bar{x}\)</span> = 386, s = 24</p>
 </section>
 </div>
-<div class="solution dropdown admonition" id="sol-sampling-distr-means-23">
+<div class="solution dropdown admonition" id="sol-estimation-3">
 
-<p class="admonition-title">Solution to<a class="reference internal" href="#ex-sampling-distr-means-23"> Exercise 6.1</a></p>
+<p class="admonition-title">Solution to<a class="reference internal" href="#ex-estimation-3"> Exercise 6.14</a></p>
 <section id="solution-content">
-<p>La probabilità è di 0.9251</p>
+<p>a. 386 <span class="math notranslate nohighlight">\(\pm\)</span> 16.4</p>
+<p>b. 386 <span class="math notranslate nohighlight">\(\pm\)</span> 33.6</p>
 </section>
 </div>
-<div class="exercise admonition" id="ex-sampling-distr-means-21">
+<div class="exercise admonition" id="ex-estimation-5">
 
-<p class="admonition-title"><span class="caption-number">Exercise 6.2 </span></p>
+<p class="admonition-title"><span class="caption-number">Exercise 6.15 </span></p>
 <section id="exercise-content">
-<p>I punteggi di un esame finale in un corso di matricole con un numero elevato di iscrizioni sono normalmente distribuite con una media di 72.7 e deviazione standard di 13.1.</p>
-<p>a. Trova la probabilità che il punteggio X di un esame selezionato in modo casuale sia compreso tra 70 e 80.</p>
-<p>b. Trova la probabilità che il punteggio medio X di 38 prove d’esame selezionato a caso sia compreso tra 70 e 80.</p>
+<p>Un campione casuale di dimensione 14 viene estratto da una popolazione normale. Le statistiche riassuntive <span class="math notranslate nohighlight">\(\bar{x}\)</span> = 933, e s = 18</p>
+<p>a. Costruire un intervallo di confidenza all’80% per la media della popolazione <span class="math notranslate nohighlight">\(\mu\)</span>.</p>
+<p>b. Costruire un intervallo di confidenza al 90% per la media della popolazione <span class="math notranslate nohighlight">\(\mu\)</span>.</p>
+<p>c. Commenta perché un intervallo è più lungo dell’altro.</p>
 </section>
 </div>
-<div class="solution dropdown admonition" id="sol-sampling-distr-means-21">
+<div class="solution dropdown admonition" id="sol-estimation-5">
 
-<p class="admonition-title">Solution to<a class="reference internal" href="#ex-sampling-distr-means-21"> Exercise 6.2</a></p>
+<p class="admonition-title">Solution to<a class="reference internal" href="#ex-estimation-5"> Exercise 6.15</a></p>
 <section id="solution-content">
-<p>a. La probabilità punteggio esame è 0.2955</p>
-<p>b. La probabilità punteggio medio è 0.8977</p>
+<p>a. 933 <span class="math notranslate nohighlight">\(\pm\)</span> 6.5</p>
+<p>b. 933 <span class="math notranslate nohighlight">\(\pm\)</span> 8.5</p>
+<p>c. Chiedere maggiore fiducia richiede un intervallo più lungo.</p>
 </section>
 </div>
-<div class="exercise admonition" id="ex-sampling-distr-means-19">
+<div class="exercise admonition" id="ex-estimation-9">
 
-<p class="admonition-title"><span class="caption-number">Exercise 6.3 </span></p>
+<p class="admonition-title"><span class="caption-number">Exercise 6.16 </span></p>
 <section id="exercise-content">
-<p>Supponiamo che il costo medio in tutto il paese di una fornitura di 30 giorni di un farmaco generico sia di euro 46.58, con deviazione standard di 4.84. Calcolare la probabilità che la media di un campione di 100 prezzi di forniture per 30 giorni di questo farmaco sia compresa tra 45 e 50 euro.</p>
+<p>Un programma atletico universitario desidera stimare l’aumento medio del peso totale che un atleta può sollevare in tre diversi sollevamenti dopo aver seguito un particolare programma di allenamento per sei settimane. Venticinque atleti selezionati casualmente inseriti nel programma hanno mostrato un guadagno medio di 47.3 lb con deviazione standard di 6.4 lb. Costruire un intervallo di confidenza del 90% per l’aumento medio della capacità di sollevamento che tutti gli atleti sperimenterebbero se inseriti nel programma di allenamento. Supponiamo che gli aumenti tra tutti gli atleti siano distribuiti normalmente.</p>
 </section>
 </div>
-<div class="solution dropdown admonition" id="sol-sampling-distr-means-19">
+<div class="solution dropdown admonition" id="sol-estimation-9">
 
-<p class="admonition-title">Solution to<a class="reference internal" href="#ex-sampling-distr-means-19"> Exercise 6.3</a></p>
+<p class="admonition-title">Solution to<a class="reference internal" href="#ex-estimation-9"> Exercise 6.16</a></p>
 <section id="solution-content">
-<p>La probabilità della media del campione è 0.9994</p>
+<p>47.3 <span class="math notranslate nohighlight">\(\pm\)</span> 2.19</p>
 </section>
 </div>
-<div class="exercise admonition" id="ex-sampling-distr-means-15">
+<div class="exercise admonition" id="ex-estimation-15">
 
-<p class="admonition-title"><span class="caption-number">Exercise 6.4 </span></p>
+<p class="admonition-title"><span class="caption-number">Exercise 6.17 </span></p>
 <section id="exercise-content">
-<p>Supponiamo che la quantità media di colesterolo nelle uova etichettate come “grandi” sia di 186 milligrammi, con deviazione standard di 7 milligrammi. Trova la probabilità che la quantità media di colesterolo in un campione di 144 uova sia entro 2 milligrammi dalla media della popolazione.</p>
+<p>In uno studio sulla sindrome del finto puledro, il tempo medio tra la nascita e l’insorgenza di sintomi evidenti in un campione di sei puledri era di 18.6 ore, con deviazione standard di 1.7 ore. Supponendo che il tempo di insorgenza dei sintomi in tutti i puledri sia normalmente distribuito, costruire un intervallo di confidenza al 90% per il tempo medio tra la nascita e l’insorgenza di sintomi evidenti.</p>
 </section>
 </div>
-<div class="solution dropdown admonition" id="sol-sampling-distr-means-15">
+<div class="solution dropdown admonition" id="sol--estimation-15">
 
-<p class="admonition-title">Solution to<a class="reference internal" href="#ex-sampling-distr-means-15"> Exercise 6.4</a></p>
+<p class="admonition-title">Solution to<a class="reference internal" href="#ex-estimation-15"> Exercise 6.17</a></p>
 <section id="solution-content">
-<p>La probabilità della quantità media del campione è 0.9994</p>
-</section>
-</div>
-<div class="exercise admonition" id="ex-sampling-distr-means-9">
-
-<p class="admonition-title"><span class="caption-number">Exercise 6.5 </span></p>
-<section id="exercise-content">
-<p>Una popolazione distribuita normalmente ha una media di 1.214 e deviazione standard 122.</p>
-<p>a. Trova la probabilità che un singolo elemento X selezionato a caso della popolazione sia compreso tra 1.100 e 1.300.</p>
-<p>b. Trova la media e la deviazione standard di X per campioni di dimensione 25.</p>
-<p>c. Trova la probabilità che la media di un campione di dimensione 25 tratto da questa popolazione sia compresa tra 1.100 e 1.300.</p>
-</section>
-</div>
-<div class="solution dropdown admonition" id="sol-sampling-distr-means-9">
-
-<p class="admonition-title">Solution to<a class="reference internal" href="#ex-sampling-distr-means-9"> Exercise 6.5</a></p>
-<section id="solution-content">
-<p>a. La probabilità di elemento X è di 0.5818</p>
-<p>b. La media è di 1214. La deviazione standard è 24.4</p>
-<p>c. La probabilità della media di un campione è 0.9998</p>
-</section>
-</div>
-<div class="exercise admonition" id="ex-sampling-distr-means-7">
-
-<p class="admonition-title"><span class="caption-number">Exercise 6.6 </span></p>
-<section id="exercise-content">
-<p>Una popolazione ha una media di  557 e una deviazione standard di 35.</p>
-<p>a) Trovare la media e la deviazione standard di X per campioni di dimensione 50.</p>
-<p>b) Calcolare la probabilità che la media di un campione di dimensione 50 sia maggiore di 570.</p>
-</section>
-</div>
-<div class="solution dropdown admonition" id="sol-sampling-distr-means-7">
-
-<p class="admonition-title">Solution to<a class="reference internal" href="#ex-sampling-distr-means-7"> Exercise 6.6</a></p>
-<section id="solution-content">
-<p>a. La media è di 557. La deviazione standard è 4.9497</p>
-<p>b. La probabilità della media di un campione è di 0.0043</p>
+<p>18.6 <span class="math notranslate nohighlight">\(\pm\)</span> 1.4</p>
 </section>
 </div>
 </section>
@@ -665,17 +635,17 @@ Trova la probabilità che in un campione di 75 divorzi, la durata media dei matr
                 
     <!-- Previous / next buttons -->
 <div class='prev-next-area'>
-    <a class='left-prev' id="prev-link" href="freq_inf_index.html" title="previous page">
+    <a class='left-prev' id="prev-link" href="interpretation_test_h0.html" title="previous page">
         <i class="fas fa-angle-left"></i>
         <div class="prev-next-info">
             <p class="prev-next-subtitle">previous</p>
-            <p class="prev-next-title"><span class="section-number">6. </span>Inferenza frequentista</p>
+            <p class="prev-next-title"><span class="section-number">6.3. </span>✅ Interpretare il test dell’ipotesi nulla</p>
         </div>
     </a>
-    <a class='right-next' id="next-link" href="test_on_means.html" title="next page">
+    <a class='right-next' id="next-link" href="../28_conjugate_prior/conjugate_prior_index.html" title="next page">
     <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title"><span class="section-number">6.2. </span>✅ Test sulla media della popolazione per campioni di grandi dimensioni</p>
+        <p class="prev-next-title"><span class="section-number">7. </span>Distribuzioni coniugate</p>
     </div>
     <i class="fas fa-angle-right"></i>
     </a>
