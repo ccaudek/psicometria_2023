@@ -3,9 +3,10 @@
 
 # # Modalità di verifica dell'apprendimento
 # 
-# L'esame richiederà almeno una conoscenza rudimentale di Python. L'esame sarà a *libri aperti*, nel senso che gli studenti potranno utilizzare qualsiasi ausilio (elettronico o cartaceo) ritengano utile per trovare la soluzione dei problemi che verranno loro assegnati. L'unico vincolo è che lo studente dovrà lavorare in autonomia senza collaborare in nessun modo con altri. 
-# 
-# Il programma d'esame è identico per studenti frequentanti e non frequentanti.
+# - L'esame richiederà una conoscenza basilare di Python.
+# - L'esame sarà a libri aperti, il che significa che gli studenti potranno utilizzare qualsiasi strumento (cartaceo o elettronico) che ritengono utile per risolvere i problemi assegnati.
+# - Tuttavia, gli studenti dovranno lavorare autonomamente e non potranno collaborare in alcun modo con altri.
+# - Il programma d'esame è identico per gli studenti frequentanti e non frequentanti.
 # 
 # ## 💻 Quiz Moodle
 # 
@@ -25,16 +26,16 @@
 # 2. completare le due prove parziali,
 # 3. completare le attività del laboratorio didattico (stesura e presentazione orale di un lavoro di gruppo relativo all'analisi dei dati di una recente pubblicazione psicologica).
 # 
-# Gli studenti frequentanti saranno divisi in gruppi. Oltre agli esercizi WarmUp che andranno svolti individualmente (ma non verranno valutati da me), assegnerò periodicamente a ciascun gruppo la stesura di un report in itinere che ha l'obiettivo di monitorare il lavoro svolto da ciascun _gruppo_ nel corso del semestre. Gli studenti frequentanti dovranno completare entro il termine previsto tutti i report assegnati (3 nella prima metà del semestre, 2 nell'ultima parte del semestre). Il report sarà un breve resoconto del lavoro che è stato svolto dal gruppo nell'ambito del laboratorio didattico; nell'appendice del report verranno riportati i contributi individuali degli studenti che fanno parte del gruppo. Ai report verrà assegnato un giudizio complessivo (pass/fail).
+# Gli studenti frequentanti saranno divisi in gruppi. Oltre agli esercizi WarmUp che andranno svolti individualmente (ma non verranno valutati da me), assegnerò periodicamente a ciascun gruppo la stesura di un report in itinere che ha l'obiettivo di monitorare il lavoro svolto da ciascun _gruppo_ nel corso del semestre. Gli studenti frequentanti dovranno completare entro il termine previsto tutti i report assegnati. Il report sarà un breve resoconto del lavoro che è stato svolto dal gruppo nell'ambito del laboratorio didattico; nell'appendice del report verranno riportati i contributi individuali degli studenti che fanno parte del gruppo. Ai report verrà assegnato un giudizio complessivo (pass/fail).
 # 
 # Per coloro che avranno ottenuto un giudizio positivo in tutti i report in itinere, il voto finale sarà determinato come segue.
 # 
 # - 1/3 del voto sarà determinato dal risultato di una prima prova parziale che si svolgerà a metà semestre (quiz Moodle).
 # - 1/3 del voto sarà determinato dal risultato di una seconda prova parziale che si svolgerà a fine semestre (quiz Moodle).
 # - 1/3 del voto sarà determinato dalla valutazione della presentazione scritta e orale del laboratorio didattico.
-# - 2 punti bonus saranno _sommati_ al voto ottenuto mediante i criteri sopra descritti a chi svolgerà un'esperienza di laboratorio (circa 4 ore di impegno). La partecipazione è del tutto volontaria. Non partecipare a questa esperienza di laboratorio non pregiudica in nessun modo il possibile ottenimento del massimo punteggio possibile all'esame. È un modo per ottenere, possibilmente, un punteggio più alto ma, soprattutto, l'occasione di avere un'esperienza diretta di cosa significa in pratica un progetto di ricerca psicologico. Le attività di questa esperienza si svolgeranno online.
+# - Verranno assegnati 2 punti bonus a chi svolgerà un'esperienza di laboratorio (con circa 5 ore di impegno) e questi saranno aggiunti al voto ottenuto attraverso i criteri sopra descritti. La partecipazione al laboratorio è del tutto facoltativa e non influirà sul massimo punteggio ottenibile all'esame. Partecipare a questa esperienza fornirà un'opportunità per ottenere un punteggio più alto e acquisire una comprensione pratica di un progetto di ricerca psicologico. Tutte le attività del laboratorio si svolgeranno online.
 # 
-#     - Verranno utilizzate delle tecniche di analisi statistica per il rilevamento del _careless responding_. Agli studenti che metteranno in atto strategie di _cheating_ nell'esperienza di laboratorio, anziché 2 punti di bonus verrà assegnata una obbligatoria integrazione orale necessaria per potere superare l'esame.
+#     - È importante sottolineare che durante l'esperienza di laboratorio saranno adottate tecniche di analisi statistica per individuare eventuali comportamenti di careless responding. Inoltre, in caso di comportamenti scorretti come il cheating, anziché ricevere i 2 punti di bonus, gli studenti saranno sottoposti ad un'integrazione orale obbligatoria al fine di superare l'esame.
 # 
 # Negli anni passati la quasi totalità degli studenti ha scelto (con profitto) la modalità d'esame per studenti frequentanti.
 # 
