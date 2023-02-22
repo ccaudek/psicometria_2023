@@ -45,6 +45,9 @@ parts:
   - file: exercises/08_freq_inf/freq_inf_index
     sections:
     - file: exercises/08_freq_inf/sampling_distr_mean
+    - file: exercises/08_freq_inf/test_on_means
+    - file: exercises/08_freq_inf/interpretation_test_h0
+    - file: exercises/08_freq_inf/estimation
   - file: exercises/28_conjugate_prior/conjugate_prior_index
     sections:
     - file: exercises/28_conjugate_prior/ex_conjugate_prior
