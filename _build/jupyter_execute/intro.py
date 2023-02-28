@@ -1,14 +1,10 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# # Psicometria
+# # Psicometria 
 # 
 # ```{warning} 
 # Questo sito web verrà aggiornato spesso durante il periodo di svolgimento dell'insegnamento (marzo-maggio 2023).
-# ```
-# 
-# ```{admonition} Importante
-# Il presente sito web è **l'unica fonte che va consultata** per informazioni sul programma dell'insegnamento B000286 - PSICOMETRIA (Cognomi L-Z) e sulle modalità d'esame.
 # ```
 # 
 # ## 📝 Informazioni sull'insegnamento
@@ -23,6 +19,9 @@
 # **Luogo**: Plesso didattico La Torretta</br>
 # **Modalità di svolgimento della didattica**: lezioni ed esercitazioni frontali</br>
 # 
+# ```{admonition} Importante
+# Il presente sito web è **l'unica fonte che va consultata** per informazioni sul programma dell'insegnamento B000286 - PSICOMETRIA (Cognomi L-Z) A.A. 2022-2023 e sulle modalità d'esame.
+# ```
 # 
 # ## 👨‍🏫 Informazioni sul docente
 # [Corrado Caudek](https://www.unifi.it/p-doc2-2008-0-A-2c2a342f3b29-1.html)<br>
