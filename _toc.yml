@@ -42,12 +42,19 @@ parts:
   - file: exercises/05_joint_prob/joint_prob_index
     sections:
     - file: exercises/05_joint_prob/ex_joint_prob
+  - file: exercises/07_reg_lin/reg_lin_index
+    sections:
+    - file: exercises/07_reg_lin/relazioni_lineari
   - file: exercises/08_freq_inf/freq_inf_index
     sections:
-    - file: exercises/08_freq_inf/sampling_distr_mean
-    - file: exercises/08_freq_inf/test_on_means
-    - file: exercises/08_freq_inf/interpretation_test_h0
+    - file: exercises/08_freq_inf/test_media_popolazione
+    - file: exercises/08_freq_inf/confronto_medie_pop_ampie
+    - file: exercises/08_freq_inf/confronto_medie_pop_piccoli
+    - file: exercises/08_freq_inf/confronto_pop_appaiati
+    - file: exercises/08_freq_inf/confronto_proporzioni
+    # - file: exercises/08_freq_inf/sampling_distr_mean
     - file: exercises/08_freq_inf/estimation
+    - file: exercises/08_freq_inf/significato_osservato_test
   - file: exercises/28_conjugate_prior/conjugate_prior_index
     sections:
     - file: exercises/28_conjugate_prior/ex_conjugate_prior
