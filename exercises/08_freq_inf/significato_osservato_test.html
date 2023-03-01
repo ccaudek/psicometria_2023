@@ -6,7 +6,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
-    <title>6. Regressione lineare &#8212; Psicometria</title>
+    <title>7.7. ✅ Il significato osservato di un test &#8212; Psicometria</title>
     
   <!-- Loaded before other Sphinx assets -->
   <link href="../../_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
@@ -51,11 +51,13 @@ const thebe_selector_input = "pre"
 const thebe_selector_output = ".output, .cell_output"
 </script>
     <script async="async" src="../../_static/sphinx-thebe.js"></script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <link rel="shortcut icon" href="../../_static/icons8-graduation-cap-30.png"/>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
-    <link rel="next" title="6.1. ✅ Relazioni lineari tra variabili" href="relazioni_lineari.html" />
-    <link rel="prev" title="5.1. ✅ Probabilità congiunta" href="../05_joint_prob/ex_joint_prob.html" />
+    <link rel="next" title="8. Distribuzioni coniugate" href="../28_conjugate_prior/conjugate_prior_index.html" />
+    <link rel="prev" title="7.6. ✅ Stima su piccolo campione della media di una popolazione" href="estimation.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="None">
     
@@ -310,56 +312,66 @@ const thebe_selector_output = ".output, .cell_output"
    </li>
   </ul>
  </li>
- <li class="toctree-l1 current active has-children">
-  <a class="current reference internal" href="#">
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../07_reg_lin/reg_lin_index.html">
    6. Regressione lineare
   </a>
-  <input checked="" class="toctree-checkbox" id="toctree-checkbox-7" name="toctree-checkbox-7" type="checkbox"/>
+  <input class="toctree-checkbox" id="toctree-checkbox-7" name="toctree-checkbox-7" type="checkbox"/>
   <label for="toctree-checkbox-7">
    <i class="fas fa-chevron-down">
    </i>
   </label>
   <ul>
    <li class="toctree-l2">
-    <a class="reference internal" href="relazioni_lineari.html">
+    <a class="reference internal" href="../07_reg_lin/relazioni_lineari.html">
      6.1. ✅ Relazioni lineari tra variabili
     </a>
    </li>
   </ul>
  </li>
- <li class="toctree-l1 has-children">
-  <a class="reference internal" href="../08_freq_inf/freq_inf_index.html">
+ <li class="toctree-l1 current active has-children">
+  <a class="reference internal" href="freq_inf_index.html">
    7. Inferenza frequentista
   </a>
-  <input class="toctree-checkbox" id="toctree-checkbox-8" name="toctree-checkbox-8" type="checkbox"/>
+  <input checked="" class="toctree-checkbox" id="toctree-checkbox-8" name="toctree-checkbox-8" type="checkbox"/>
   <label for="toctree-checkbox-8">
    <i class="fas fa-chevron-down">
    </i>
   </label>
-  <ul>
+  <ul class="current">
    <li class="toctree-l2">
-    <a class="reference internal" href="../08_freq_inf/confronto_medie_pop_ampie.html">
-     7.1. ✅ Confronto di due medie di popolazione: campioni ampi e indipendenti
+    <a class="reference internal" href="test_media_popolazione.html">
+     7.1. ✅ Test su campioni di grandi dimensioni per una media della popolazione
     </a>
    </li>
    <li class="toctree-l2">
-    <a class="reference internal" href="../08_freq_inf/confronto_medie_pop_piccoli.html">
-     7.2. ✅ Confronto di due medie di popolazione: Campioni Piccoli e indipendenti
+    <a class="reference internal" href="confronto_medie_pop_ampie.html">
+     7.2. ✅ Confronto di due medie di popolazione: campioni ampi e indipendenti
     </a>
    </li>
    <li class="toctree-l2">
-    <a class="reference internal" href="../08_freq_inf/confronto_pop_appaiati.html">
-     7.3. ✅ Confronto di due medie di popolazione: campioni appaiati
+    <a class="reference internal" href="confronto_medie_pop_piccoli.html">
+     7.3. ✅ Confronto di due medie di popolazione: Campioni Piccoli e indipendenti
     </a>
    </li>
    <li class="toctree-l2">
-    <a class="reference internal" href="../08_freq_inf/confronto_proporzioni.html">
-     7.4. ✅ Confronto di due proporzioni della popolazione
+    <a class="reference internal" href="confronto_pop_appaiati.html">
+     7.4. ✅ Confronto di due medie di popolazione: campioni appaiati
     </a>
    </li>
    <li class="toctree-l2">
-    <a class="reference internal" href="../08_freq_inf/estimation.html">
-     7.5. ✅ Stima su piccolo campione della media di una popolazione
+    <a class="reference internal" href="confronto_proporzioni.html">
+     7.5. ✅ Confronto di due proporzioni della popolazione
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="estimation.html">
+     7.6. ✅ Stima su piccolo campione della media di una popolazione
+    </a>
+   </li>
+   <li class="toctree-l2 current active">
+    <a class="current reference internal" href="#">
+     7.7. ✅ Il significato osservato di un test
     </a>
    </li>
   </ul>
@@ -471,7 +483,7 @@ title="Source repository"
       </li>
       
       <li>
-        <a href="https://github.com/ccaudek/psicometria_2023/issues/new?title=Issue%20on%20page%20%2Fexercises/07_reg_lin/reg_lin_index.html&body=Your%20issue%20content%20here."
+        <a href="https://github.com/ccaudek/psicometria_2023/issues/new?title=Issue%20on%20page%20%2Fexercises/08_freq_inf/significato_osservato_test.html&body=Your%20issue%20content%20here."
    class="headerbtn"
    data-toggle="tooltip"
 data-placement="left"
@@ -499,7 +511,7 @@ title="Open an issue"
   <div class="menu-dropdown__content">
     <ul>
       <li>
-        <a href="../../_sources/exercises/07_reg_lin/reg_lin_index.md"
+        <a href="../../_sources/exercises/08_freq_inf/significato_osservato_test.md"
    class="headerbtn"
    data-toggle="tooltip"
 data-placement="left"
@@ -548,7 +560,7 @@ title="Print to PDF"
         <div class="col pl-md-3 pl-lg-5 content-container">
             <!-- Table of contents that is only displayed when printing the page -->
             <div id="jb-print-docs-body" class="onlyprint">
-                <h1>Regressione lineare</h1>
+                <h1>✅ Il significato osservato di un test</h1>
                 <!-- Table of contents -->
                 <div id="print-main-content">
                     <div id="jb-print-toc">
@@ -560,12 +572,62 @@ title="Print to PDF"
                 
               <div>
                 
-  <section class="tex2jax_ignore mathjax_ignore" id="regressione-lineare">
-<h1><span class="section-number">6. </span>Regressione lineare<a class="headerlink" href="#regressione-lineare" title="Permalink to this headline">#</a></h1>
-<div class="toctree-wrapper compound">
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="relazioni_lineari.html">6.1. ✅ Relazioni lineari tra variabili</a></li>
-</ul>
+  <section class="tex2jax_ignore mathjax_ignore" id="il-significato-osservato-di-un-test">
+<h1><span class="section-number">7.7. </span>✅ Il significato osservato di un test<a class="headerlink" href="#il-significato-osservato-di-un-test" title="Permalink to this headline">#</a></h1>
+<div class="exercise admonition" id="ex-meaning-test-5">
+
+<p class="admonition-title"><span class="caption-number">Exercise 7.17 </span></p>
+<section id="exercise-content">
+<p>Prendi la decisione in ogni test, sulla base delle informazioni fornite.</p>
+<p>a. <span class="math notranslate nohighlight">\(H_0\)</span>: <span class="math notranslate nohighlight">\(\mu\)</span> = 82.9 vs <span class="math notranslate nohighlight">\(H_a\)</span>: <span class="math notranslate nohighlight">\(\mu\)</span> &lt; 82.9; <span class="math notranslate nohighlight">\(\alpha\)</span> = 0.05, significato osservato p = 0.038</p>
+<p>b. <span class="math notranslate nohighlight">\(H_0\)</span>: <span class="math notranslate nohighlight">\(\mu\)</span> = 213.5 vs <span class="math notranslate nohighlight">\(H_a\)</span>: <span class="math notranslate nohighlight">\(\mu\)</span> <span class="math notranslate nohighlight">\(\neq\)</span> 213.5; <span class="math notranslate nohighlight">\(\alpha\)</span> = 0.01, significato osservato p = 0.038</p>
+</section>
+</div>
+<div class="solution dropdown admonition" id="sol-meaning-test-5">
+
+<p class="admonition-title">Solution to<a class="reference internal" href="#ex-meaning-test-5"> Exercise 7.17</a></p>
+<section id="solution-content">
+<p>a. Rifiuto <span class="math notranslate nohighlight">\(H_0\)</span></p>
+<p>b. Non rifiuto <span class="math notranslate nohighlight">\(H_0\)</span></p>
+</section>
+</div>
+<div class="exercise admonition" id="ex-meaning-test-9">
+
+<p class="admonition-title"><span class="caption-number">Exercise 7.18 </span></p>
+<section id="exercise-content">
+<p>Il punteggio medio su un esame di ammissione di 25 punti in psicologia utilizzato negli ultimi due anni in una grande università statale è 14.3. Il coordinatore per l’ammissione desidera verificare se il punteggio medio su una versione rivista dell’esame differisce da 14.3. L’esame rivisto viene proposto a 30 matricole che entrano all’inizio dell’estate; il punteggio medio è 14.6 con deviazione standard 2,4.</p>
+<p>a. Eseguire il test al livello di significatività del 10% utilizzando l’approccio del valore critico.</p>
+<p>b. Calcolare la significatività osservata del test.</p>
+<p>c. Eseguire il test al livello di significatività del 10% utilizzando l’approccio p-value. Non è necessario ripetere i primi tre passi, già fatti nella parte (a).</p>
+</section>
+</div>
+<div class="solution dropdown admonition" id="sol-meaning-test-9">
+
+<p class="admonition-title">Solution to<a class="reference internal" href="#ex-meaning-test-9"> Exercise 7.18</a></p>
+<section id="solution-content">
+<p>a. Z = 0.68; <span class="math notranslate nohighlight">\(z_{0.05}\)</span> = 1.645 rifiuto <span class="math notranslate nohighlight">\(H_0\)</span></p>
+<p>b. <span class="math notranslate nohighlight">\(p\text{-value}\)</span> = 0.4966</p>
+<p>c. Non rifiuto <span class="math notranslate nohighlight">\(H_0\)</span></p>
+</section>
+</div>
+<div class="exercise admonition" id="ex-meaning-test-11">
+
+<p class="admonition-title"><span class="caption-number">Exercise 7.19 </span></p>
+<section id="exercise-content">
+<p>In uno studio sui movimenti oculari è emersa l’attendibilità del test del 44.8%. In un nuovo studio pilota è stato introdotto uno test modificato a 35 soggetti. Il risultato è stato un aumento dell’attendibilità media del test di 45.4% con una deviazione standard del campione di 1.6%, un apparente aumento dell’attendibilità del test.</p>
+<p>a. Verifica al livello di significatività del 5% se l’attendibilità media secondo il nuovo test è superiore a 44.8%, utilizzando l’approccio del valore critico.</p>
+<p>b. Calcolare la significatività osservata del test.</p>
+<p>c. Eseguire il test al livello di significatività del 5% utilizzando l’approccio del valore p. Non è necessario ripetere i primi tre passi, già fatti nella parte (a).</p>
+</section>
+</div>
+<div class="solution dropdown admonition" id="sol-meaning-test-11">
+
+<p class="admonition-title">Solution to<a class="reference internal" href="#ex-meaning-test-11"> Exercise 7.19</a></p>
+<section id="solution-content">
+<p>a. Z = 2.22; <span class="math notranslate nohighlight">\(z_{0.05}\)</span> = 1.645, rifiuto <span class="math notranslate nohighlight">\(H_0\)</span></p>
+<p>b. <span class="math notranslate nohighlight">\(p\text{-value}\)</span> = 0.0132</p>
+<p>c. Rifiuto <span class="math notranslate nohighlight">\(H_0\)</span></p>
+</section>
 </div>
 </section>
 
@@ -582,7 +644,7 @@ title="Print to PDF"
         },
         kernelOptions: {
             kernelName: "python3",
-            path: "./exercises/07_reg_lin"
+            path: "./exercises/08_freq_inf"
         },
         predefinedOutput: true
     }
@@ -596,17 +658,17 @@ title="Print to PDF"
                 
     <!-- Previous / next buttons -->
 <div class='prev-next-area'>
-    <a class='left-prev' id="prev-link" href="../05_joint_prob/ex_joint_prob.html" title="previous page">
+    <a class='left-prev' id="prev-link" href="estimation.html" title="previous page">
         <i class="fas fa-angle-left"></i>
         <div class="prev-next-info">
             <p class="prev-next-subtitle">previous</p>
-            <p class="prev-next-title"><span class="section-number">5.1. </span>✅ Probabilità congiunta</p>
+            <p class="prev-next-title"><span class="section-number">7.6. </span>✅ Stima su piccolo campione della media di una popolazione</p>
         </div>
     </a>
-    <a class='right-next' id="next-link" href="relazioni_lineari.html" title="next page">
+    <a class='right-next' id="next-link" href="../28_conjugate_prior/conjugate_prior_index.html" title="next page">
     <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title"><span class="section-number">6.1. </span>✅ Relazioni lineari tra variabili</p>
+        <p class="prev-next-title"><span class="section-number">8. </span>Distribuzioni coniugate</p>
     </div>
     <i class="fas fa-angle-right"></i>
     </a>

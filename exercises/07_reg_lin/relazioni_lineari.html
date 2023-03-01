@@ -6,7 +6,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
-    <title>6. Regressione lineare &#8212; Psicometria</title>
+    <title>6.1. ✅ Relazioni lineari tra variabili &#8212; Psicometria</title>
     
   <!-- Loaded before other Sphinx assets -->
   <link href="../../_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
@@ -51,11 +51,13 @@ const thebe_selector_input = "pre"
 const thebe_selector_output = ".output, .cell_output"
 </script>
     <script async="async" src="../../_static/sphinx-thebe.js"></script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <link rel="shortcut icon" href="../../_static/icons8-graduation-cap-30.png"/>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
-    <link rel="next" title="6.1. ✅ Relazioni lineari tra variabili" href="relazioni_lineari.html" />
-    <link rel="prev" title="5.1. ✅ Probabilità congiunta" href="../05_joint_prob/ex_joint_prob.html" />
+    <link rel="next" title="7. Inferenza frequentista" href="../08_freq_inf/freq_inf_index.html" />
+    <link rel="prev" title="6. Regressione lineare" href="reg_lin_index.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="None">
     
@@ -311,7 +313,7 @@ const thebe_selector_output = ".output, .cell_output"
   </ul>
  </li>
  <li class="toctree-l1 current active has-children">
-  <a class="current reference internal" href="#">
+  <a class="reference internal" href="reg_lin_index.html">
    6. Regressione lineare
   </a>
   <input checked="" class="toctree-checkbox" id="toctree-checkbox-7" name="toctree-checkbox-7" type="checkbox"/>
@@ -319,9 +321,9 @@ const thebe_selector_output = ".output, .cell_output"
    <i class="fas fa-chevron-down">
    </i>
   </label>
-  <ul>
-   <li class="toctree-l2">
-    <a class="reference internal" href="relazioni_lineari.html">
+  <ul class="current">
+   <li class="toctree-l2 current active">
+    <a class="current reference internal" href="#">
      6.1. ✅ Relazioni lineari tra variabili
     </a>
    </li>
@@ -471,7 +473,7 @@ title="Source repository"
       </li>
       
       <li>
-        <a href="https://github.com/ccaudek/psicometria_2023/issues/new?title=Issue%20on%20page%20%2Fexercises/07_reg_lin/reg_lin_index.html&body=Your%20issue%20content%20here."
+        <a href="https://github.com/ccaudek/psicometria_2023/issues/new?title=Issue%20on%20page%20%2Fexercises/07_reg_lin/relazioni_lineari.html&body=Your%20issue%20content%20here."
    class="headerbtn"
    data-toggle="tooltip"
 data-placement="left"
@@ -499,7 +501,7 @@ title="Open an issue"
   <div class="menu-dropdown__content">
     <ul>
       <li>
-        <a href="../../_sources/exercises/07_reg_lin/reg_lin_index.md"
+        <a href="../../_sources/exercises/07_reg_lin/relazioni_lineari.md"
    class="headerbtn"
    data-toggle="tooltip"
 data-placement="left"
@@ -548,7 +550,7 @@ title="Print to PDF"
         <div class="col pl-md-3 pl-lg-5 content-container">
             <!-- Table of contents that is only displayed when printing the page -->
             <div id="jb-print-docs-body" class="onlyprint">
-                <h1>Regressione lineare</h1>
+                <h1>✅ Relazioni lineari tra variabili</h1>
                 <!-- Table of contents -->
                 <div id="print-main-content">
                     <div id="jb-print-toc">
@@ -560,12 +562,61 @@ title="Print to PDF"
                 
               <div>
                 
-  <section class="tex2jax_ignore mathjax_ignore" id="regressione-lineare">
-<h1><span class="section-number">6. </span>Regressione lineare<a class="headerlink" href="#regressione-lineare" title="Permalink to this headline">#</a></h1>
-<div class="toctree-wrapper compound">
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="relazioni_lineari.html">6.1. ✅ Relazioni lineari tra variabili</a></li>
-</ul>
+  <section class="tex2jax_ignore mathjax_ignore" id="relazioni-lineari-tra-variabili">
+<h1><span class="section-number">6.1. </span>✅ Relazioni lineari tra variabili<a class="headerlink" href="#relazioni-lineari-tra-variabili" title="Permalink to this headline">#</a></h1>
+<div class="exercise admonition" id="ex-relazioni-lineari-13">
+
+<p class="admonition-title"><span class="caption-number">Exercise 6.1 </span></p>
+<section id="exercise-content">
+<p>Il piano tariffario per la prestazione su una chiamata di servizio da parte di un’azienda per la valutazione d’impatto è di euro 150 più euro 50 all’ora in loco.
+a. Annotare l’equazione lineare che mette in relazione il costo del lavoro <span class="math notranslate nohighlight">\(y\)</span> con il numero di ore <span class="math notranslate nohighlight">\(x\)</span> in cui il valutatore è sul posto.
+b. Calcolare il costo della prestazione per una chiamata di servizio che dura 2.5 ore.</p>
+</section>
+</div>
+<div class="solution dropdown admonition" id="sol-relazioni-lineari-13">
+
+<p class="admonition-title">Solution to</p>
+<section id="solution-content">
+<p>a. <span class="math notranslate nohighlight">\(y = 50x + 150\)</span>
+b. 275 euro</p>
+</section>
+</div>
+<div class="exercise admonition" id="ex-relazioni-lineari-17">
+
+<p class="admonition-title"><span class="caption-number">Exercise 6.2 </span></p>
+<section id="exercise-content">
+<p>Il Large Data Set 13 registra il numero di utenti e il tempo di permanenza su un particolare tipo di applicazione per monitorare il diario alimentare. Tracciare il diagramma di dispersione con il numero di utenti come variabile indipendente (x) e il tempo di permanenza come variabile dipendente (y). Commenta l’aspetto e la forza di qualsiasi tendenza lineare.</p>
+</section>
+</div>
+<div class="solution dropdown admonition" id="sol-relazioni-lineari-17">
+
+<p class="admonition-title">Solution to</p>
+<section id="solution-content">
+<p>Sembra esserci una chiara correlazione positiva.</p>
+</section>
+</div>
+<div class="exercise admonition" id="ex-relazioni-lineari-23">
+
+<p class="admonition-title"><span class="caption-number">Exercise 6.3 </span></p>
+<section id="exercise-content">
+<p>In ogni caso indicare se ci si aspetta che le due variabili x e y indicate abbiano una correlazione positiva, negativa o nulla.
+a. il numero <span class="math notranslate nohighlight">\(x\)</span> di pagine di un libro e l’età <span class="math notranslate nohighlight">\(y\)</span> dell’autore
+b. il numero <span class="math notranslate nohighlight">\(x\)</span> di pagine di un libro e l’età <span class="math notranslate nohighlight">\(y\)</span> del lettore previsto
+c. il peso <span class="math notranslate nohighlight">\(x\)</span> di un’automobile e il consumo di carburante <span class="math notranslate nohighlight">\(y\)</span> in miglia per gallone
+d. il peso <span class="math notranslate nohighlight">\(x\)</span> di un’automobile e la lettura <span class="math notranslate nohighlight">\(y\)</span> sul suo contachilometri
+e. la quantità <span class="math notranslate nohighlight">\(x\)</span> di un sedativo che una persona ha assunto un’ora fa e il tempo <span class="math notranslate nohighlight">\(y\)</span> che impiega per rispondere a uno stimolo</p>
+</section>
+</div>
+<div class="solution dropdown admonition" id="sol-relazioni-lineari-23">
+
+<p class="admonition-title">Solution to</p>
+<section id="solution-content">
+<p>a. zero
+b. positivo
+c. negativo
+d. zero
+e. positivo</p>
+</section>
 </div>
 </section>
 
@@ -596,17 +647,17 @@ title="Print to PDF"
                 
     <!-- Previous / next buttons -->
 <div class='prev-next-area'>
-    <a class='left-prev' id="prev-link" href="../05_joint_prob/ex_joint_prob.html" title="previous page">
+    <a class='left-prev' id="prev-link" href="reg_lin_index.html" title="previous page">
         <i class="fas fa-angle-left"></i>
         <div class="prev-next-info">
             <p class="prev-next-subtitle">previous</p>
-            <p class="prev-next-title"><span class="section-number">5.1. </span>✅ Probabilità congiunta</p>
+            <p class="prev-next-title"><span class="section-number">6. </span>Regressione lineare</p>
         </div>
     </a>
-    <a class='right-next' id="next-link" href="relazioni_lineari.html" title="next page">
+    <a class='right-next' id="next-link" href="../08_freq_inf/freq_inf_index.html" title="next page">
     <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title"><span class="section-number">6.1. </span>✅ Relazioni lineari tra variabili</p>
+        <p class="prev-next-title"><span class="section-number">7. </span>Inferenza frequentista</p>
     </div>
     <i class="fas fa-angle-right"></i>
     </a>
