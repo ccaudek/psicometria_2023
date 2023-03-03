@@ -1,6 +1,117 @@
 # ✅ Python
 
 ```{exercise}
+:label: label-python-100
+
+Esegui in Python le operazioni seguenti.  Gli operadi sono 3 e 4.
+
+- addizione (+)
+- sottrazione (-)
+- moltiplicazione (*)
+- operatore modulo (%)
+- divisione (/)
+- esponenziazione (**)
+- divisione intera (//)
+
+```
+
+````{solution} label-python-100
+:class: dropdown
+
+```{code-block} python
+a = 3
+b = 4
+print(a + b)             
+print(a - b)             
+print(a * b)            
+print(a / b)             
+print(a ** b)            
+print(a % b)             
+print(a // b)          
+```
+````
+
++++
+
+```{exercise}
+:label: label-python-101
+
+Determina il tipo dei dati seguenti.
+
+- 10
+- 9.8
+- 3.14
+- ['Maria', 'Python', 'Firenze']
+- Il tuo nome
+- [1, 2, 3]
+- {1, 2, 9}
+- {"a", "b", "c"}
+- {'nome': "Corrado"}
+- (9.8, 3.14, 2.7)
+
+```
+
+````{solution} label-python-101
+:class: dropdown
+
+```{code-block} python
+print(type(10))       
+print(type(9.8))      
+print(type(3.14))       
+print(type(['Maria', 'Python', 'Firenze']))     
+print(type('Corrado'))  
+print(type([1, 2, 3]))   
+print(type({'nome':'Corrado'})) 
+print(type({1, 2, 9}))    
+print(type({"a", "b", "c"}))    
+print(type((9.8, 3.14, 2.7)))   
+     
+```
+````
+
++++
+
+
+
+```{exercise}
+:label: label-python-102
+
+Usando Python, trova la distanza euclidea tra i punti (2, 3) e (10, 8).
+
+```
+
+````{solution} label-python-102
+:class: dropdown
+
+```{code-block} python
+# Per capire il problema, disegnamo prima i due punti e il segmento che li unisce. Il problema chiede
+# di trovare la lunghezza di tale segmento.
+
+import matplotlib.pyplot as plt
+
+point1 = [2, 3]
+point2 = [10, 8]
+x_values = [point1[0], point2[0]]
+y_values = [point1[1], point2[1]]
+plt.plot(x_values, y_values, 'bo', linestyle="--")
+plt.text(point1[0]+0.4, point1[1], "Punto 1")
+plt.text(point2[0]-1.1, point2[1], "Punto 2")
+plt.show()
+
+# Usando il teorema di Pitagora, dobbiamo calcolare (10-2)**2 + (8-3)**2 sotto radice.
+
+import numpy as np
+
+np.sqrt((10-2)**2 + (8-3)**2)
+```
+````
+
++++
+
+
+
+
+```{exercise}
 :label: label-python-01
 
 Date le seguenti variabili, 
