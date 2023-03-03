@@ -111,7 +111,7 @@ const thebe_selector_output = ".output, .cell_output"
         <ul class="nav bd-sidenav bd-sidenav__home-link">
             <li class="toctree-l1">
                 <a class="reference internal" href="../../intro.html">
-                    Psicometria (B000286) partizione L-Z, A.A. 2022-2023
+                    Psicometria
                 </a>
             </li>
         </ul>
@@ -311,8 +311,8 @@ const thebe_selector_output = ".output, .cell_output"
   </ul>
  </li>
  <li class="toctree-l1 has-children">
-  <a class="reference internal" href="../08_freq_inf/freq_inf_index.html">
-   6. Inferenza frequentista
+  <a class="reference internal" href="../07_reg_lin/reg_lin_index.html">
+   6. Regressione lineare
   </a>
   <input class="toctree-checkbox" id="toctree-checkbox-7" name="toctree-checkbox-7" type="checkbox"/>
   <label for="toctree-checkbox-7">
@@ -321,30 +321,15 @@ const thebe_selector_output = ".output, .cell_output"
   </label>
   <ul>
    <li class="toctree-l2">
-    <a class="reference internal" href="../08_freq_inf/sampling_distr_mean.html">
-     6.1. ✅ Distribuzione campionaria della media
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="../08_freq_inf/test_on_means.html">
-     6.2. ✅ Test per una media della popolazione (campioni di grandi dimensioni)
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="../08_freq_inf/interpretation_test_h0.html">
-     6.3. ✅ Interpretare il test dell’ipotesi nulla
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="../08_freq_inf/estimation.html">
-     6.4. ✅ Stima della media di una popolazione da un piccolo campione
+    <a class="reference internal" href="../07_reg_lin/relazioni_lineari.html">
+     6.1. ✅ Relazioni lineari tra variabili
     </a>
    </li>
   </ul>
  </li>
  <li class="toctree-l1 has-children">
-  <a class="reference internal" href="../28_conjugate_prior/conjugate_prior_index.html">
-   7. Distribuzioni coniugate
+  <a class="reference internal" href="../08_freq_inf/freq_inf_index.html">
+   7. Inferenza frequentista
   </a>
   <input class="toctree-checkbox" id="toctree-checkbox-8" name="toctree-checkbox-8" type="checkbox"/>
   <label for="toctree-checkbox-8">
@@ -353,8 +338,55 @@ const thebe_selector_output = ".output, .cell_output"
   </label>
   <ul>
    <li class="toctree-l2">
+    <a class="reference internal" href="../08_freq_inf/test_media_popolazione.html">
+     7.1. ✅ Test su campioni di grandi dimensioni per una media della popolazione
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../08_freq_inf/confronto_medie_pop_ampie.html">
+     7.2. ✅ Confronto di due medie di popolazione: campioni ampi e indipendenti
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../08_freq_inf/confronto_medie_pop_piccoli.html">
+     7.3. ✅ Confronto di due medie di popolazione: Campioni Piccoli e indipendenti
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../08_freq_inf/confronto_pop_appaiati.html">
+     7.4. ✅ Confronto di due medie di popolazione: campioni appaiati
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../08_freq_inf/confronto_proporzioni.html">
+     7.5. ✅ Confronto di due proporzioni della popolazione
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../08_freq_inf/estimation.html">
+     7.6. ✅ Stima su piccolo campione della media di una popolazione
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../08_freq_inf/significato_osservato_test.html">
+     7.7. ✅ Il significato osservato di un test
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../28_conjugate_prior/conjugate_prior_index.html">
+   8. Distribuzioni coniugate
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-9" name="toctree-checkbox-9" type="checkbox"/>
+  <label for="toctree-checkbox-9">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
     <a class="reference internal" href="../28_conjugate_prior/ex_conjugate_prior.html">
-     7.1. ✅ Probabilità congiunta
+     8.1. ✅ Probabilità congiunta
     </a>
    </li>
   </ul>
@@ -540,17 +572,122 @@ title="Print to PDF"
                 
   <section class="tex2jax_ignore mathjax_ignore" id="python">
 <h1><span class="section-number">1.1. </span>✅ Python<a class="headerlink" href="#python" title="Permalink to this headline">#</a></h1>
-<div class="exercise admonition" id="label-python-01">
+<div class="exercise admonition" id="label-python-100">
 
 <p class="admonition-title"><span class="caption-number">Exercise 1.1 </span></p>
+<section id="exercise-content">
+<p>Esegui in Python le operazioni seguenti.  Gli operadi sono 3 e 4.</p>
+<ul class="simple">
+<li><p>addizione (+)</p></li>
+<li><p>sottrazione (-)</p></li>
+<li><p>moltiplicazione (*)</p></li>
+<li><p>operatore modulo (%)</p></li>
+<li><p>divisione (/)</p></li>
+<li><p>esponenziazione (**)</p></li>
+<li><p>divisione intera (//)</p></li>
+</ul>
+</section>
+</div>
+<div class="solution dropdown admonition" id="exercises/01_python/ex_python-solution-1">
+
+<p class="admonition-title">Solution to<a class="reference internal" href="#label-python-100"> Exercise 1.1</a></p>
+<section id="solution-content">
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">a</span> <span class="o">=</span> <span class="mi">3</span>
+<span class="n">b</span> <span class="o">=</span> <span class="mi">4</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">a</span> <span class="o">+</span> <span class="n">b</span><span class="p">)</span>             
+<span class="nb">print</span><span class="p">(</span><span class="n">a</span> <span class="o">-</span> <span class="n">b</span><span class="p">)</span>             
+<span class="nb">print</span><span class="p">(</span><span class="n">a</span> <span class="o">*</span> <span class="n">b</span><span class="p">)</span>            
+<span class="nb">print</span><span class="p">(</span><span class="n">a</span> <span class="o">/</span> <span class="n">b</span><span class="p">)</span>             
+<span class="nb">print</span><span class="p">(</span><span class="n">a</span> <span class="o">**</span> <span class="n">b</span><span class="p">)</span>            
+<span class="nb">print</span><span class="p">(</span><span class="n">a</span> <span class="o">%</span> <span class="n">b</span><span class="p">)</span>             
+<span class="nb">print</span><span class="p">(</span><span class="n">a</span> <span class="o">//</span> <span class="n">b</span><span class="p">)</span>          
+</pre></div>
+</div>
+</section>
+</div>
+<div class="exercise admonition" id="label-python-101">
+
+<p class="admonition-title"><span class="caption-number">Exercise 1.2 </span></p>
+<section id="exercise-content">
+<p>Determina il tipo dei dati seguenti.</p>
+<ul class="simple">
+<li><p>10</p></li>
+<li><p>9.8</p></li>
+<li><p>3.14</p></li>
+<li><p>[‘Maria’, ‘Python’, ‘Firenze’]</p></li>
+<li><p>Il tuo nome</p></li>
+<li><p>[1, 2, 3]</p></li>
+<li><p>{1, 2, 9}</p></li>
+<li><p>{“a”, “b”, “c”}</p></li>
+<li><p>{‘nome’: “Corrado”}</p></li>
+<li><p>(9.8, 3.14, 2.7)</p></li>
+</ul>
+</section>
+</div>
+<div class="solution dropdown admonition" id="exercises/01_python/ex_python-solution-3">
+
+<p class="admonition-title">Solution to<a class="reference internal" href="#label-python-101"> Exercise 1.2</a></p>
+<section id="solution-content">
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="nb">type</span><span class="p">(</span><span class="mi">10</span><span class="p">))</span>       
+<span class="nb">print</span><span class="p">(</span><span class="nb">type</span><span class="p">(</span><span class="mf">9.8</span><span class="p">))</span>      
+<span class="nb">print</span><span class="p">(</span><span class="nb">type</span><span class="p">(</span><span class="mf">3.14</span><span class="p">))</span>       
+<span class="nb">print</span><span class="p">(</span><span class="nb">type</span><span class="p">([</span><span class="s1">&#39;Maria&#39;</span><span class="p">,</span> <span class="s1">&#39;Python&#39;</span><span class="p">,</span> <span class="s1">&#39;Firenze&#39;</span><span class="p">]))</span>     
+<span class="nb">print</span><span class="p">(</span><span class="nb">type</span><span class="p">(</span><span class="s1">&#39;Corrado&#39;</span><span class="p">))</span>  
+<span class="nb">print</span><span class="p">(</span><span class="nb">type</span><span class="p">([</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">]))</span>   
+<span class="nb">print</span><span class="p">(</span><span class="nb">type</span><span class="p">({</span><span class="s1">&#39;nome&#39;</span><span class="p">:</span><span class="s1">&#39;Corrado&#39;</span><span class="p">}))</span> 
+<span class="nb">print</span><span class="p">(</span><span class="nb">type</span><span class="p">({</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">9</span><span class="p">}))</span>    
+<span class="nb">print</span><span class="p">(</span><span class="nb">type</span><span class="p">({</span><span class="s2">&quot;a&quot;</span><span class="p">,</span> <span class="s2">&quot;b&quot;</span><span class="p">,</span> <span class="s2">&quot;c&quot;</span><span class="p">}))</span>    
+<span class="nb">print</span><span class="p">(</span><span class="nb">type</span><span class="p">((</span><span class="mf">9.8</span><span class="p">,</span> <span class="mf">3.14</span><span class="p">,</span> <span class="mf">2.7</span><span class="p">)))</span>   
+     
+</pre></div>
+</div>
+</section>
+</div>
+<div class="exercise admonition" id="label-python-102">
+
+<p class="admonition-title"><span class="caption-number">Exercise 1.3 </span></p>
+<section id="exercise-content">
+<p>Usando Python, trova la distanza euclidea tra i punti (2, 3) e (10, 8).</p>
+</section>
+</div>
+<div class="solution dropdown admonition" id="exercises/01_python/ex_python-solution-5">
+
+<p class="admonition-title">Solution to<a class="reference internal" href="#label-python-102"> Exercise 1.3</a></p>
+<section id="solution-content">
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># Per capire il problema, disegnamo prima i due punti e il segmento che li unisce. Il problema chiede</span>
+<span class="c1"># di trovare la lunghezza di tale segmento.</span>
+
+<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
+
+<span class="n">point1</span> <span class="o">=</span> <span class="p">[</span><span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">]</span>
+<span class="n">point2</span> <span class="o">=</span> <span class="p">[</span><span class="mi">10</span><span class="p">,</span> <span class="mi">8</span><span class="p">]</span>
+<span class="n">x_values</span> <span class="o">=</span> <span class="p">[</span><span class="n">point1</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">point2</span><span class="p">[</span><span class="mi">0</span><span class="p">]]</span>
+<span class="n">y_values</span> <span class="o">=</span> <span class="p">[</span><span class="n">point1</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span> <span class="n">point2</span><span class="p">[</span><span class="mi">1</span><span class="p">]]</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">x_values</span><span class="p">,</span> <span class="n">y_values</span><span class="p">,</span> <span class="s1">&#39;bo&#39;</span><span class="p">,</span> <span class="n">linestyle</span><span class="o">=</span><span class="s2">&quot;--&quot;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">text</span><span class="p">(</span><span class="n">point1</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">+</span><span class="mf">0.4</span><span class="p">,</span> <span class="n">point1</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span> <span class="s2">&quot;Punto 1&quot;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">text</span><span class="p">(</span><span class="n">point2</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">-</span><span class="mf">1.1</span><span class="p">,</span> <span class="n">point2</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span> <span class="s2">&quot;Punto 2&quot;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+
+<span class="c1"># Usando il teorema di Pitagora, dobbiamo calcolare (10-2)**2 + (8-3)**2 sotto radice.</span>
+
+<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+
+<span class="n">np</span><span class="o">.</span><span class="n">sqrt</span><span class="p">((</span><span class="mi">10</span><span class="o">-</span><span class="mi">2</span><span class="p">)</span><span class="o">**</span><span class="mi">2</span> <span class="o">+</span> <span class="p">(</span><span class="mi">8</span><span class="o">-</span><span class="mi">3</span><span class="p">)</span><span class="o">**</span><span class="mi">2</span><span class="p">)</span>
+</pre></div>
+</div>
+</section>
+</div>
+<div class="exercise admonition" id="label-python-01">
+
+<p class="admonition-title"><span class="caption-number">Exercise 1.4 </span></p>
 <section id="exercise-content">
 <p>Date le seguenti variabili,
 <code class="docutils literal notranslate"><span class="pre">thing</span> <span class="pre">=</span> <span class="pre">&quot;light&quot;</span></code> e <code class="docutils literal notranslate"><span class="pre">speed</span> <span class="pre">=</span> <span class="pre">299792458</span></code>, si usi la formattazione f-string per stampare <code class="docutils literal notranslate"><span class="pre">The</span> <span class="pre">speed</span> <span class="pre">of</span> <span class="pre">light</span> <span class="pre">is</span> <span class="pre">2.997925e+08</span> <span class="pre">m/s.</span></code>.</p>
 </section>
 </div>
-<div class="solution dropdown admonition" id="exercises/01_python/ex_python-solution-1">
+<div class="solution dropdown admonition" id="exercises/01_python/ex_python-solution-7">
 
-<p class="admonition-title">Solution to<a class="reference internal" href="#label-python-01"> Exercise 1.1</a></p>
+<p class="admonition-title">Solution to<a class="reference internal" href="#label-python-01"> Exercise 1.4</a></p>
 <section id="solution-content">
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">thing</span> <span class="o">=</span> <span class="s2">&quot;light&quot;</span>
 <span class="n">speed</span> <span class="o">=</span> <span class="mi">299792458</span>  <span class="c1"># m/s</span>
@@ -561,7 +698,7 @@ title="Print to PDF"
 </div>
 <div class="exercise admonition" id="label-python-02">
 
-<p class="admonition-title"><span class="caption-number">Exercise 1.2 </span></p>
+<p class="admonition-title"><span class="caption-number">Exercise 1.5 </span></p>
 <section id="exercise-content">
 <p>Si definisca la variabile <code class="docutils literal notranslate"><span class="pre">language</span></code>. Si scriva uno script che usa <code class="docutils literal notranslate"><span class="pre">if/elif/else</span></code> e ritorna</p>
 <ul class="simple">
@@ -571,9 +708,9 @@ title="Print to PDF"
 </ul>
 </section>
 </div>
-<div class="solution dropdown admonition" id="exercises/01_python/ex_python-solution-3">
+<div class="solution dropdown admonition" id="exercises/01_python/ex_python-solution-9">
 
-<p class="admonition-title">Solution to<a class="reference internal" href="#label-python-02"> Exercise 1.2</a></p>
+<p class="admonition-title">Solution to<a class="reference internal" href="#label-python-02"> Exercise 1.5</a></p>
 <section id="solution-content">
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">language</span> <span class="o">=</span> <span class="s2">&quot;python&quot;</span>
 <span class="k">if</span> <span class="n">language</span><span class="o">.</span><span class="n">lower</span><span class="p">()</span> <span class="o">==</span> <span class="s2">&quot;python&quot;</span><span class="p">:</span>
@@ -588,14 +725,14 @@ title="Print to PDF"
 </div>
 <div class="exercise admonition" id="label-python-03">
 
-<p class="admonition-title"><span class="caption-number">Exercise 1.3 </span></p>
+<p class="admonition-title"><span class="caption-number">Exercise 1.6 </span></p>
 <section id="exercise-content">
 <p>Si crei una funzione che accetta due numeri e ritorna True se la somma dei due numeri è maggiore di 0 o False se la somma è minore o uguale a 0.</p>
 </section>
 </div>
-<div class="solution dropdown admonition" id="exercises/01_python/ex_python-solution-5">
+<div class="solution dropdown admonition" id="exercises/01_python/ex_python-solution-11">
 
-<p class="admonition-title">Solution to<a class="reference internal" href="#label-python-03"> Exercise 1.3</a></p>
+<p class="admonition-title">Solution to<a class="reference internal" href="#label-python-03"> Exercise 1.6</a></p>
 <section id="solution-content">
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">mysum</span><span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">):</span>
     <span class="k">return</span> <span class="kc">True</span> <span class="k">if</span> <span class="n">a</span><span class="o">+</span><span class="n">b</span> <span class="o">&gt;</span> <span class="mi">0</span> <span class="k">else</span> <span class="kc">False</span>
@@ -607,14 +744,14 @@ title="Print to PDF"
 </div>
 <div class="exercise admonition" id="label-python-04">
 
-<p class="admonition-title"><span class="caption-number">Exercise 1.4 </span></p>
+<p class="admonition-title"><span class="caption-number">Exercise 1.7 </span></p>
 <section id="exercise-content">
 <p>Si usi una list comprehension per sommare 10 a ciascun elemento della seguente lista: [1, 2, 3, 4, 5].</p>
 </section>
 </div>
-<div class="solution dropdown admonition" id="exercises/01_python/ex_python-solution-7">
+<div class="solution dropdown admonition" id="exercises/01_python/ex_python-solution-13">
 
-<p class="admonition-title">Solution to<a class="reference internal" href="#label-python-04"> Exercise 1.4</a></p>
+<p class="admonition-title">Solution to<a class="reference internal" href="#label-python-04"> Exercise 1.7</a></p>
 <section id="solution-content">
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">mylist</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">]</span>
 <span class="p">[</span><span class="n">element</span> <span class="o">+</span><span class="mi">10</span> <span class="k">for</span> <span class="n">element</span> <span class="ow">in</span> <span class="n">mylist</span><span class="p">]</span>
@@ -624,14 +761,14 @@ title="Print to PDF"
 </div>
 <div class="exercise admonition" id="label-python-05">
 
-<p class="admonition-title"><span class="caption-number">Exercise 1.5 </span></p>
+<p class="admonition-title"><span class="caption-number">Exercise 1.8 </span></p>
 <section id="exercise-content">
 <p>Si usi una list comprehension sulla seguente lista [‘giovanna’, ‘Maria’, ‘luca’, ‘Fabio’, ‘valentina’], in maniera tale da selezionare solo i nomi la cui prima lettera è maiuscola. Si usi la funzione <code class="docutils literal notranslate"><span class="pre">str.isupper()</span></code>.</p>
 </section>
 </div>
-<div class="solution dropdown admonition" id="exercises/01_python/ex_python-solution-9">
+<div class="solution dropdown admonition" id="exercises/01_python/ex_python-solution-15">
 
-<p class="admonition-title">Solution to<a class="reference internal" href="#label-python-05"> Exercise 1.5</a></p>
+<p class="admonition-title">Solution to<a class="reference internal" href="#label-python-05"> Exercise 1.8</a></p>
 <section id="solution-content">
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">names</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;giovanna&#39;</span><span class="p">,</span> <span class="s1">&#39;Maria&#39;</span><span class="p">,</span> <span class="s1">&#39;luca&#39;</span><span class="p">,</span> <span class="s1">&#39;Fabio&#39;</span><span class="p">,</span> <span class="s1">&#39;valentina&#39;</span><span class="p">]</span>
 <span class="p">[</span><span class="n">_</span> <span class="k">for</span> <span class="n">_</span> <span class="ow">in</span> <span class="n">names</span> <span class="k">if</span> <span class="n">_</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">isupper</span><span class="p">()]</span>
@@ -641,14 +778,14 @@ title="Print to PDF"
 </div>
 <div class="exercise admonition" id="label-python-06">
 
-<p class="admonition-title"><span class="caption-number">Exercise 1.6 </span></p>
+<p class="admonition-title"><span class="caption-number">Exercise 1.9 </span></p>
 <section id="exercise-content">
 <p>Si crei un dizionario <code class="docutils literal notranslate"><span class="pre">d</span></code> costituito da 10 elementi nel quale la chiave ha la forma ‘key-0’, ‘key-1’, ecc. e i corrispondenti valori vadano da 0 a 9. Da questo dizionario si recuperi il valore associato a <code class="docutils literal notranslate"><span class="pre">key-5</span></code>.</p>
 </section>
 </div>
-<div class="solution dropdown admonition" id="exercises/01_python/ex_python-solution-11">
+<div class="solution dropdown admonition" id="exercises/01_python/ex_python-solution-17">
 
-<p class="admonition-title">Solution to<a class="reference internal" href="#label-python-06"> Exercise 1.6</a></p>
+<p class="admonition-title">Solution to<a class="reference internal" href="#label-python-06"> Exercise 1.9</a></p>
 <section id="solution-content">
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">keys</span> <span class="o">=</span> <span class="p">[</span><span class="sa">f</span><span class="s2">&quot;key-</span><span class="si">{</span><span class="n">k</span><span class="si">}</span><span class="s2">&quot;</span> <span class="k">for</span> <span class="n">k</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">10</span><span class="p">)]</span>
 <span class="n">vals</span> <span class="o">=</span> <span class="nb">range</span><span class="p">(</span><span class="mi">10</span><span class="p">)</span>
@@ -660,14 +797,14 @@ title="Print to PDF"
 </div>
 <div class="exercise admonition" id="label-python-07">
 
-<p class="admonition-title"><span class="caption-number">Exercise 1.7 </span></p>
+<p class="admonition-title"><span class="caption-number">Exercise 1.10 </span></p>
 <section id="exercise-content">
 <p>Si scriva un ciclo for che, per i numeri da 1 a 5, stampi “Il quadrato di 1 è 1.”, “Il quadrato di 2 è 4.”, ecc.</p>
 </section>
 </div>
-<div class="solution dropdown admonition" id="exercises/01_python/ex_python-solution-13">
+<div class="solution dropdown admonition" id="exercises/01_python/ex_python-solution-19">
 
-<p class="admonition-title">Solution to<a class="reference internal" href="#label-python-07"> Exercise 1.7</a></p>
+<p class="admonition-title">Solution to<a class="reference internal" href="#label-python-07"> Exercise 1.10</a></p>
 <section id="solution-content">
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">numbers</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">]</span>
 <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">numbers</span><span class="p">:</span>
@@ -679,14 +816,14 @@ title="Print to PDF"
 </div>
 <div class="exercise admonition" id="label-python-08">
 
-<p class="admonition-title"><span class="caption-number">Exercise 1.8 </span></p>
+<p class="admonition-title"><span class="caption-number">Exercise 1.11 </span></p>
 <section id="exercise-content">
-<p>Anziché usare un ciclo for, si innalzino al quadrato gli elementi della lista dell’esercizio <a class="reference internal" href="#label-python-07"><span class="std std-numref">Exercise 1.7</span></a> usando una list comprehension.</p>
+<p>Anziché usare un ciclo for, si innalzino al quadrato gli elementi della lista dell’esercizio <a class="reference internal" href="#label-python-07"><span class="std std-numref">Exercise 1.10</span></a> usando una list comprehension.</p>
 </section>
 </div>
-<div class="solution dropdown admonition" id="exercises/01_python/ex_python-solution-15">
+<div class="solution dropdown admonition" id="exercises/01_python/ex_python-solution-21">
 
-<p class="admonition-title">Solution to<a class="reference internal" href="#label-python-08"> Exercise 1.8</a></p>
+<p class="admonition-title">Solution to<a class="reference internal" href="#label-python-08"> Exercise 1.11</a></p>
 <section id="solution-content">
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">numbers</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">]</span>
 <span class="p">[</span><span class="n">_</span> <span class="o">**</span><span class="mi">2</span> <span class="k">for</span> <span class="n">_</span> <span class="ow">in</span> <span class="n">numbers</span><span class="p">]</span>
@@ -696,14 +833,14 @@ title="Print to PDF"
 </div>
 <div class="exercise admonition" id="label-python-09">
 
-<p class="admonition-title"><span class="caption-number">Exercise 1.9 </span></p>
+<p class="admonition-title"><span class="caption-number">Exercise 1.12 </span></p>
 <section id="exercise-content">
 <p>Usando <code class="docutils literal notranslate"><span class="pre">if/else</span></code> in un ciclo <code class="docutils literal notranslate"><span class="pre">for</span></code>, per ciascun elemento di una lista di numeri da 0 a 10, si stampi un messaggio che specifica se il numero è pari o dispari. (suggerimento: si usi l’operatore <code class="docutils literal notranslate"><span class="pre">%</span></code>)</p>
 </section>
 </div>
-<div class="solution dropdown admonition" id="exercises/01_python/ex_python-solution-17">
+<div class="solution dropdown admonition" id="exercises/01_python/ex_python-solution-23">
 
-<p class="admonition-title">Solution to<a class="reference internal" href="#label-python-09"> Exercise 1.9</a></p>
+<p class="admonition-title">Solution to<a class="reference internal" href="#label-python-09"> Exercise 1.12</a></p>
 <section id="solution-content">
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">11</span><span class="p">):</span>
     <span class="k">if</span> <span class="n">i</span> <span class="o">%</span> <span class="mi">2</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
@@ -716,14 +853,14 @@ title="Print to PDF"
 </div>
 <div class="exercise admonition" id="label-python-10">
 
-<p class="admonition-title"><span class="caption-number">Exercise 1.10 </span></p>
+<p class="admonition-title"><span class="caption-number">Exercise 1.13 </span></p>
 <section id="exercise-content">
 <p>Si crei una list comprehension che seleziona i numeri pari da una lista di interi da 0 a 10.</p>
 </section>
 </div>
-<div class="solution dropdown admonition" id="exercises/01_python/ex_python-solution-19">
+<div class="solution dropdown admonition" id="exercises/01_python/ex_python-solution-25">
 
-<p class="admonition-title">Solution to<a class="reference internal" href="#label-python-10"> Exercise 1.10</a></p>
+<p class="admonition-title">Solution to<a class="reference internal" href="#label-python-10"> Exercise 1.13</a></p>
 <section id="solution-content">
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
 
@@ -734,9 +871,9 @@ title="Print to PDF"
 </div>
 </section>
 </div>
-<div class="solution dropdown admonition" id="exercises/01_python/ex_python-solution-21">
+<div class="solution dropdown admonition" id="exercises/01_python/ex_python-solution-27">
 
-<p class="admonition-title">Solution to<a class="reference internal" href="#label-python-10"> Exercise 1.10</a></p>
+<p class="admonition-title">Solution to<a class="reference internal" href="#label-python-10"> Exercise 1.13</a></p>
 <section id="solution-content">
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">numbers</span> <span class="o">=</span> <span class="p">[</span><span class="mi">4</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">7</span><span class="p">,</span> <span class="mi">8</span><span class="p">]</span>
 <span class="k">for</span> <span class="n">i</span><span class="p">,</span> <span class="n">v</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">numbers</span><span class="p">):</span>
@@ -747,14 +884,14 @@ title="Print to PDF"
 </div>
 <div class="exercise admonition" id="label-python-11">
 
-<p class="admonition-title"><span class="caption-number">Exercise 1.11 </span></p>
+<p class="admonition-title"><span class="caption-number">Exercise 1.14 </span></p>
 <section id="exercise-content">
 <p>Per la lista [1.23, 10, ‘Maria’, 20, ‘Giovanni’], si stampino l’elemento 1 e l’elemento 4.</p>
 </section>
 </div>
-<div class="solution dropdown admonition" id="exercises/01_python/ex_python-solution-23">
+<div class="solution dropdown admonition" id="exercises/01_python/ex_python-solution-29">
 
-<p class="admonition-title">Solution to<a class="reference internal" href="#label-python-11"> Exercise 1.11</a></p>
+<p class="admonition-title">Solution to<a class="reference internal" href="#label-python-11"> Exercise 1.14</a></p>
 <section id="solution-content">
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">my_list</span> <span class="o">=</span> <span class="p">[</span><span class="mf">1.23</span><span class="p">,</span> <span class="mi">10</span><span class="p">,</span> <span class="s1">&#39;Maria&#39;</span><span class="p">,</span> <span class="mi">20</span><span class="p">,</span> <span class="s1">&#39;Giovanni&#39;</span><span class="p">]</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">my_list</span><span class="p">[</span><span class="mi">1</span><span class="p">])</span>  
@@ -765,14 +902,14 @@ title="Print to PDF"
 </div>
 <div class="exercise admonition" id="label-python-12">
 
-<p class="admonition-title"><span class="caption-number">Exercise 1.12 </span></p>
+<p class="admonition-title"><span class="caption-number">Exercise 1.15 </span></p>
 <section id="exercise-content">
 <p>Per la lista [1.23, 10, ‘Maria’, 20, ‘Giovanni’], si stampino il penultimo e il quartultimo elemento.</p>
 </section>
 </div>
-<div class="solution dropdown admonition" id="exercises/01_python/ex_python-solution-25">
+<div class="solution dropdown admonition" id="exercises/01_python/ex_python-solution-31">
 
-<p class="admonition-title">Solution to<a class="reference internal" href="#label-python-12"> Exercise 1.12</a></p>
+<p class="admonition-title">Solution to<a class="reference internal" href="#label-python-12"> Exercise 1.15</a></p>
 <section id="solution-content">
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">my_list</span> <span class="o">=</span> <span class="p">[</span><span class="mf">1.23</span><span class="p">,</span> <span class="mi">10</span><span class="p">,</span> <span class="s1">&#39;Maria&#39;</span><span class="p">,</span> <span class="mi">20</span><span class="p">,</span> <span class="s1">&#39;Giovanni&#39;</span><span class="p">]</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">my_list</span><span class="p">[</span><span class="o">-</span><span class="mi">2</span><span class="p">])</span>  
@@ -783,14 +920,14 @@ title="Print to PDF"
 </div>
 <div class="exercise admonition" id="label-python-13">
 
-<p class="admonition-title"><span class="caption-number">Exercise 1.13 </span></p>
+<p class="admonition-title"><span class="caption-number">Exercise 1.16 </span></p>
 <section id="exercise-content">
 <p>Per la lista [1.23, 10, ‘Maria’, 20, ‘Giovanni’], si estraggano mediante <em>list slicing</em> il terzo, quarto e quinto elemento.</p>
 </section>
 </div>
-<div class="solution dropdown admonition" id="exercises/01_python/ex_python-solution-27">
+<div class="solution dropdown admonition" id="exercises/01_python/ex_python-solution-33">
 
-<p class="admonition-title">Solution to<a class="reference internal" href="#label-python-13"> Exercise 1.13</a></p>
+<p class="admonition-title">Solution to<a class="reference internal" href="#label-python-13"> Exercise 1.16</a></p>
 <section id="solution-content">
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">my_list</span> <span class="o">=</span> <span class="p">[</span><span class="mf">1.23</span><span class="p">,</span> <span class="mi">10</span><span class="p">,</span> <span class="s1">&#39;Maria&#39;</span><span class="p">,</span> <span class="mi">20</span><span class="p">,</span> <span class="s1">&#39;Giovanni&#39;</span><span class="p">]</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">my_list</span><span class="p">[</span><span class="mi">2</span><span class="p">:</span><span class="mi">5</span><span class="p">])</span> 
@@ -800,14 +937,14 @@ title="Print to PDF"
 </div>
 <div class="exercise admonition" id="label-python-14">
 
-<p class="admonition-title"><span class="caption-number">Exercise 1.14 </span></p>
+<p class="admonition-title"><span class="caption-number">Exercise 1.17 </span></p>
 <section id="exercise-content">
 <p>Per la lista [1.23, 10, ‘Maria’, 20, ‘Giovanni’], usando il ciclo <code class="docutils literal notranslate"><span class="pre">for</span></code> e la keyword <code class="docutils literal notranslate"><span class="pre">in</span></code>, si stampino gli elementi della lista.</p>
 </section>
 </div>
-<div class="solution dropdown admonition" id="exercises/01_python/ex_python-solution-29">
+<div class="solution dropdown admonition" id="exercises/01_python/ex_python-solution-35">
 
-<p class="admonition-title">Solution to<a class="reference internal" href="#label-python-14"> Exercise 1.14</a></p>
+<p class="admonition-title">Solution to<a class="reference internal" href="#label-python-14"> Exercise 1.17</a></p>
 <section id="solution-content">
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">for</span> <span class="n">item</span> <span class="ow">in</span> <span class="n">my_list</span><span class="p">:</span>
     <span class="nb">print</span><span class="p">(</span><span class="n">item</span><span class="p">)</span>
@@ -817,14 +954,14 @@ title="Print to PDF"
 </div>
 <div class="exercise admonition" id="label-python-15">
 
-<p class="admonition-title"><span class="caption-number">Exercise 1.15 </span></p>
+<p class="admonition-title"><span class="caption-number">Exercise 1.18 </span></p>
 <section id="exercise-content">
 <p>Per la lista [1.23, 10, ‘Maria’, 20, ‘Giovanni’], usando il ciclo <code class="docutils literal notranslate"><span class="pre">for</span></code> e utilizzando l’indice degli elementi, si stampino gli elementi della lista.</p>
 </section>
 </div>
-<div class="solution dropdown admonition" id="exercises/01_python/ex_python-solution-31">
+<div class="solution dropdown admonition" id="exercises/01_python/ex_python-solution-37">
 
-<p class="admonition-title">Solution to<a class="reference internal" href="#label-python-15"> Exercise 1.15</a></p>
+<p class="admonition-title">Solution to<a class="reference internal" href="#label-python-15"> Exercise 1.18</a></p>
 <section id="solution-content">
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">my_list</span> <span class="o">=</span> <span class="p">[</span><span class="mf">1.23</span><span class="p">,</span> <span class="mi">10</span><span class="p">,</span> <span class="s1">&#39;Maria&#39;</span><span class="p">,</span> <span class="mi">20</span><span class="p">,</span> <span class="s1">&#39;Giovanni&#39;</span><span class="p">]</span>
 
@@ -836,14 +973,14 @@ title="Print to PDF"
 </div>
 <div class="exercise admonition" id="label-python-16">
 
-<p class="admonition-title"><span class="caption-number">Exercise 1.16 </span></p>
+<p class="admonition-title"><span class="caption-number">Exercise 1.19 </span></p>
 <section id="exercise-content">
 <p>Si concatenino le liste [1, 2, 3, 4] e [5, 6, 7, 8].</p>
 </section>
 </div>
-<div class="solution dropdown admonition" id="exercises/01_python/ex_python-solution-33">
+<div class="solution dropdown admonition" id="exercises/01_python/ex_python-solution-39">
 
-<p class="admonition-title">Solution to<a class="reference internal" href="#label-python-16"> Exercise 1.16</a></p>
+<p class="admonition-title">Solution to<a class="reference internal" href="#label-python-16"> Exercise 1.19</a></p>
 <section id="solution-content">
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">my_list1</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">]</span>
 <span class="n">my_list2</span> <span class="o">=</span> <span class="p">[</span><span class="mi">5</span><span class="p">,</span> <span class="mi">6</span><span class="p">,</span> <span class="mi">7</span><span class="p">,</span> <span class="mi">8</span><span class="p">]</span>
@@ -859,14 +996,14 @@ title="Print to PDF"
 </div>
 <div class="exercise admonition" id="label-python-17">
 
-<p class="admonition-title"><span class="caption-number">Exercise 1.17 </span></p>
+<p class="admonition-title"><span class="caption-number">Exercise 1.20 </span></p>
 <section id="exercise-content">
 <p>Si crei la lista [1, 2, 3]. Si faccia una copia della lista usando l’operatore <code class="docutils literal notranslate"><span class="pre">=</span></code>. Si modifichi il primo elemento della lista originaria ponendolo uguale a 99. Si stampino i valori della seconda lista.</p>
 </section>
 </div>
-<div class="solution dropdown admonition" id="exercises/01_python/ex_python-solution-35">
+<div class="solution dropdown admonition" id="exercises/01_python/ex_python-solution-41">
 
-<p class="admonition-title">Solution to<a class="reference internal" href="#label-python-17"> Exercise 1.17</a></p>
+<p class="admonition-title">Solution to<a class="reference internal" href="#label-python-17"> Exercise 1.20</a></p>
 <section id="solution-content">
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">my_list1</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">]</span>
 
@@ -883,14 +1020,14 @@ title="Print to PDF"
 </div>
 <div class="exercise admonition" id="label-python-18">
 
-<p class="admonition-title"><span class="caption-number">Exercise 1.18 </span></p>
+<p class="admonition-title"><span class="caption-number">Exercise 1.21 </span></p>
 <section id="exercise-content">
 <p>Si crei la lista [1, 2, 3]. Si faccia una copia della lista usando il metodo <code class="docutils literal notranslate"><span class="pre">copy()</span></code>. Si modifichi il primo elemento della lista originaria ponendolo uguale a 99. Si stampino i valori della seconda lista.</p>
 </section>
 </div>
-<div class="solution dropdown admonition" id="exercises/01_python/ex_python-solution-37">
+<div class="solution dropdown admonition" id="exercises/01_python/ex_python-solution-43">
 
-<p class="admonition-title">Solution to<a class="reference internal" href="#label-python-18"> Exercise 1.18</a></p>
+<p class="admonition-title">Solution to<a class="reference internal" href="#label-python-18"> Exercise 1.21</a></p>
 <section id="solution-content">
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">my_list1</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">]</span>
 
@@ -907,7 +1044,7 @@ title="Print to PDF"
 </div>
 <div class="exercise admonition" id="label-python-19">
 
-<p class="admonition-title"><span class="caption-number">Exercise 1.19 </span></p>
+<p class="admonition-title"><span class="caption-number">Exercise 1.22 </span></p>
 <section id="exercise-content">
 <p>Senza eseguire le seguenti istruzioni, indovinate se producono True o False.</p>
 <p>x = 2;
@@ -921,9 +1058,9 @@ z = 4;</p>
 <p>True and ((x &lt; z) or (x &lt; y))</p>
 </section>
 </div>
-<div class="solution dropdown admonition" id="exercises/01_python/ex_python-solution-39">
+<div class="solution dropdown admonition" id="exercises/01_python/ex_python-solution-45">
 
-<p class="admonition-title">Solution to<a class="reference internal" href="#label-python-19"> Exercise 1.19</a></p>
+<p class="admonition-title">Solution to<a class="reference internal" href="#label-python-19"> Exercise 1.22</a></p>
 <section id="solution-content">
 <p>Per verificare la soluzione, inserite (una per volta) le istruzioni precedenti in una cella di un Jupyter Notebook.</p>
 </section>

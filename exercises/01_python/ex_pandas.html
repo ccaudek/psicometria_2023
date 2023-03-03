@@ -111,7 +111,7 @@ const thebe_selector_output = ".output, .cell_output"
         <ul class="nav bd-sidenav bd-sidenav__home-link">
             <li class="toctree-l1">
                 <a class="reference internal" href="../../intro.html">
-                    Psicometria (B000286) partizione L-Z, A.A. 2022-2023
+                    Psicometria
                 </a>
             </li>
         </ul>
@@ -311,8 +311,8 @@ const thebe_selector_output = ".output, .cell_output"
   </ul>
  </li>
  <li class="toctree-l1 has-children">
-  <a class="reference internal" href="../08_freq_inf/freq_inf_index.html">
-   6. Inferenza frequentista
+  <a class="reference internal" href="../07_reg_lin/reg_lin_index.html">
+   6. Regressione lineare
   </a>
   <input class="toctree-checkbox" id="toctree-checkbox-7" name="toctree-checkbox-7" type="checkbox"/>
   <label for="toctree-checkbox-7">
@@ -321,30 +321,15 @@ const thebe_selector_output = ".output, .cell_output"
   </label>
   <ul>
    <li class="toctree-l2">
-    <a class="reference internal" href="../08_freq_inf/sampling_distr_mean.html">
-     6.1. ✅ Distribuzione campionaria della media
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="../08_freq_inf/test_on_means.html">
-     6.2. ✅ Test per una media della popolazione (campioni di grandi dimensioni)
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="../08_freq_inf/interpretation_test_h0.html">
-     6.3. ✅ Interpretare il test dell’ipotesi nulla
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="../08_freq_inf/estimation.html">
-     6.4. ✅ Stima della media di una popolazione da un piccolo campione
+    <a class="reference internal" href="../07_reg_lin/relazioni_lineari.html">
+     6.1. ✅ Relazioni lineari tra variabili
     </a>
    </li>
   </ul>
  </li>
  <li class="toctree-l1 has-children">
-  <a class="reference internal" href="../28_conjugate_prior/conjugate_prior_index.html">
-   7. Distribuzioni coniugate
+  <a class="reference internal" href="../08_freq_inf/freq_inf_index.html">
+   7. Inferenza frequentista
   </a>
   <input class="toctree-checkbox" id="toctree-checkbox-8" name="toctree-checkbox-8" type="checkbox"/>
   <label for="toctree-checkbox-8">
@@ -353,8 +338,55 @@ const thebe_selector_output = ".output, .cell_output"
   </label>
   <ul>
    <li class="toctree-l2">
+    <a class="reference internal" href="../08_freq_inf/test_media_popolazione.html">
+     7.1. ✅ Test su campioni di grandi dimensioni per una media della popolazione
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../08_freq_inf/confronto_medie_pop_ampie.html">
+     7.2. ✅ Confronto di due medie di popolazione: campioni ampi e indipendenti
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../08_freq_inf/confronto_medie_pop_piccoli.html">
+     7.3. ✅ Confronto di due medie di popolazione: Campioni Piccoli e indipendenti
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../08_freq_inf/confronto_pop_appaiati.html">
+     7.4. ✅ Confronto di due medie di popolazione: campioni appaiati
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../08_freq_inf/confronto_proporzioni.html">
+     7.5. ✅ Confronto di due proporzioni della popolazione
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../08_freq_inf/estimation.html">
+     7.6. ✅ Stima su piccolo campione della media di una popolazione
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../08_freq_inf/significato_osservato_test.html">
+     7.7. ✅ Il significato osservato di un test
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../28_conjugate_prior/conjugate_prior_index.html">
+   8. Distribuzioni coniugate
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-9" name="toctree-checkbox-9" type="checkbox"/>
+  <label for="toctree-checkbox-9">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
     <a class="reference internal" href="../28_conjugate_prior/ex_conjugate_prior.html">
-     7.1. ✅ Probabilità congiunta
+     8.1. ✅ Probabilità congiunta
     </a>
    </li>
   </ul>
@@ -542,14 +574,14 @@ title="Print to PDF"
 <h1><span class="section-number">1.2. </span>✅ Pandas<a class="headerlink" href="#pandas" title="Permalink to this headline">#</a></h1>
 <div class="exercise admonition" id="label-pandas-01">
 
-<p class="admonition-title"><span class="caption-number">Exercise 1.20 </span></p>
+<p class="admonition-title"><span class="caption-number">Exercise 1.23 </span></p>
 <section id="exercise-content">
 <p>Scrivi le istruzioni Pandas per selezionare, dal set di dati <code class="docutils literal notranslate"><span class="pre">penguins.csv</span></code>, le osservazioni in cui <code class="docutils literal notranslate"><span class="pre">bill_depth_mm</span></code> &gt;= 18.7, considerando solo i pinguini dell’isola Dream. Dopo avere importato i dati, si eliminino i valori mancanti.</p>
 </section>
 </div>
 <div class="solution dropdown admonition" id="exercises/01_python/ex_pandas-solution-1">
 
-<p class="admonition-title">Solution to<a class="reference internal" href="#label-pandas-01"> Exercise 1.20</a></p>
+<p class="admonition-title">Solution to<a class="reference internal" href="#label-pandas-01"> Exercise 1.23</a></p>
 <section id="solution-content">
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span> 
 <span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
@@ -564,14 +596,14 @@ title="Print to PDF"
 </div>
 <div class="exercise admonition" id="label-pandas-02">
 
-<p class="admonition-title"><span class="caption-number">Exercise 1.21 </span></p>
+<p class="admonition-title"><span class="caption-number">Exercise 1.24 </span></p>
 <section id="exercise-content">
 <p>Scrivi le istruzioni Pandas per selezionare, dal set di dati <code class="docutils literal notranslate"><span class="pre">penguins.csv</span></code>, le prime 5 osservazioni della specie Chinstrap, considerando solo quelli pinguini sull’isola Torgersen di sesso femminile. Dopo avere importato i dati, si eliminino i valori mancanti.</p>
 </section>
 </div>
 <div class="solution dropdown admonition" id="exercises/01_python/ex_pandas-solution-3">
 
-<p class="admonition-title">Solution to<a class="reference internal" href="#label-pandas-02"> Exercise 1.21</a></p>
+<p class="admonition-title">Solution to<a class="reference internal" href="#label-pandas-02"> Exercise 1.24</a></p>
 <section id="solution-content">
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span> 
 <span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
@@ -587,14 +619,14 @@ title="Print to PDF"
 </div>
 <div class="exercise admonition" id="label-pandas-03">
 
-<p class="admonition-title"><span class="caption-number">Exercise 1.22 </span></p>
+<p class="admonition-title"><span class="caption-number">Exercise 1.25 </span></p>
 <section id="exercise-content">
 <p>Si trovi la media, la deviazione standard e la numerosità delle osservazioni <code class="docutils literal notranslate"><span class="pre">bill_length_mm</span></code> per i pinguini di sesso maschile della specie Chinstrap che si trovano sull’isola Dream. Dopo avere importato i dati, si eliminino i valori mancanti.</p>
 </section>
 </div>
 <div class="solution dropdown admonition" id="exercises/01_python/ex_pandas-solution-5">
 
-<p class="admonition-title">Solution to<a class="reference internal" href="#label-pandas-03"> Exercise 1.22</a></p>
+<p class="admonition-title">Solution to<a class="reference internal" href="#label-pandas-03"> Exercise 1.25</a></p>
 <section id="solution-content">
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span> 
 <span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
