@@ -20,9 +20,9 @@
 # | 5       | 2023/03/13 | La misurazione in psicologia; dati e frequenze | [8][l8], [9][l9], [10][l10] | [hw4][hw4], [hw5][hw5], [hw6][hw6] |
 # | 6       | 2023/03/14 | Statistica descrittiva: indici di posizione e di scala; | [11][l11] | [hw7][hw7] |
 # | 7       | 2023/03/16 | Le relazioni tra variabili  | [12][l12]  | TODO | <!-- probability theory -->
-# | 8       | 2023/03/20 | Calcolo combinatorio; probabilità condizionata | [13][l13], [14][l14], [15][l15] | [hw1][hw1] |
-# | 9       | 2023/03/21 | Teorema di Bayes | [16][l16] | [hw1][hw1] |
-# | 10       | 2023/03/23 | Variabili casuali, probabilità congiunta, densità di probabilità | [17][l17], [18][l18], [19][l19] | [hw1][hw1] |
+# | 8       | 2023/03/20 | Calcolo combinatorio; probabilità condizionata | [13][l13], [14][l14], [15][l15] | TODO |
+# | 9       | 2023/03/21 | Teorema di Bayes | [16][l16] | TODO |
+# | 10       | 2023/03/23 | Variabili casuali, probabilità congiunta, densità di probabilità | [17][l17], [18][l18], [19][l19] | TODO |
 # | 11       | 2023/03/27 | Distribuzioni di massa di probabilità     | [20][l20]    | TODO |
 # | 12       | 2023/03/28 | Distribuzioni di densità di probabilità   | [21][l21]    | TODO |
 # | 13      | 2023/03/30 | La funzione di verosimiglianza | [22][l22], [23][l23] | TODO |<!-- bayesiann inference -->
