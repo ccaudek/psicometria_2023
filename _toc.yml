@@ -22,6 +22,7 @@ parts:
     sections:
     - file: exercises/01_python/ex_python
     - file: exercises/01_python/ex_pandas
+    - file: exercises/01_python/ex_matplotlib
   - file: exercises/02_descr_stats/descr_stats_index
     sections:
     - file: exercises/02_descr_stats/ex_key_notions

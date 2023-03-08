@@ -15,8 +15,8 @@
 # | ------- | ---------- | ------------------------------------------ | ----------------------- | ------------------------ |
 # | 1       | 2023/03/02 | Presentazione                       | [1][l1], [2][l2]  | -- | <!--intro to coding -->
 # | 2       | 2023/03/06 | Introduzione a Python               | [3][l3]          | [hw1][hw1] |
-# | 3       | 2023/03/07 | Introduzione a Numpy e Pandas       | [4][l4], [5][l5] | [hw2][hw1] |
-# | 4       | 2023/03/09 | Introduzione a Matlibplot e Seaborn | [6][l6], [7][l7] | [hw3][hw1] | <!-- descriptive stats -->
+# | 3       | 2023/03/07 | Introduzione a Numpy e Pandas       | [4][l4], [5][l5] | [hw2][hw2]; altri esercizi su Numpy sono forniti nella pagina web dedicata della dispensa |
+# | 4       | 2023/03/09 | Introduzione a Matlibplot e Seaborn | [6][l6], [7][l7] | [hw3][hw3] | 
 # | 5       | 2023/03/13 | La misurazione in psicologia; dati e frequenze | [8][l8], [9][l9], [10][l10] | [hw4][hw1] |
 # | 6       | 2023/03/14 | Statistica descrittiva: indici di posizione e di scala; | [11][l11]  | [hw5][hw1] |
 # | 7       | 2023/03/16 | Le relazioni tra variabili  | [12][l12]  | TODO | <!-- probability theory -->
@@ -100,11 +100,8 @@
 # 
 # 
 # [hw1]: https://ccaudek.github.io/psicometria_2023/exercises/01_python/ex_python.html
-# [hw2]: https://python-public-policy.afeld.me/en/{{school_slug}}/hw_2.html
-# [hw3]: https://python-public-policy.afeld.me/en/{{school_slug}}/hw_3.html
-# [hw4]: https://python-public-policy.afeld.me/en/{{school_slug}}/hw_4.html
-# [hw5_prop]: https://python-public-policy.afeld.me/en/{{school_slug}}/hw_4.html#homework-6-proposal
-# [hw5]: https://python-public-policy.afeld.me/en/{{school_slug}}/hw_5.html
+# [hw2]: https://ccaudek.github.io/psicometria_2023/exercises/01_python/ex_pandas.html
+# [hw3]: https://ccaudek.github.io/psicometria_2023/exercises/01_python/ex_matplotlib.html
 # 
 # 
 # <!-- ------------------------------------------------------ -->

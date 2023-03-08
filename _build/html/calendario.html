@@ -111,7 +111,7 @@ const thebe_selector_output = ".output, .cell_output"
         <ul class="nav bd-sidenav bd-sidenav__home-link">
             <li class="toctree-l1">
                 <a class="reference internal" href="intro.html">
-                    Psicometria (B000286) partizione L-Z, A.A. 2022-2023
+                    Psicometria
                 </a>
             </li>
         </ul>
@@ -198,6 +198,11 @@ const thebe_selector_output = ".output, .cell_output"
    <li class="toctree-l2">
     <a class="reference internal" href="exercises/01_python/ex_pandas.html">
      1.2. ✅ Pandas
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="exercises/01_python/ex_matplotlib.html">
+     1.3. ✅ Matplotlib e Seaborn
     </a>
    </li>
   </ul>
@@ -311,8 +316,8 @@ const thebe_selector_output = ".output, .cell_output"
   </ul>
  </li>
  <li class="toctree-l1 has-children">
-  <a class="reference internal" href="exercises/08_freq_inf/freq_inf_index.html">
-   6. Inferenza frequentista
+  <a class="reference internal" href="exercises/07_reg_lin/reg_lin_index.html">
+   6. Regressione lineare
   </a>
   <input class="toctree-checkbox" id="toctree-checkbox-7" name="toctree-checkbox-7" type="checkbox"/>
   <label for="toctree-checkbox-7">
@@ -321,30 +326,15 @@ const thebe_selector_output = ".output, .cell_output"
   </label>
   <ul>
    <li class="toctree-l2">
-    <a class="reference internal" href="exercises/08_freq_inf/sampling_distr_mean.html">
-     6.1. ✅ Distribuzione campionaria della media
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="exercises/08_freq_inf/test_on_means.html">
-     6.2. ✅ Test per una media della popolazione (campioni di grandi dimensioni)
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="exercises/08_freq_inf/interpretation_test_h0.html">
-     6.3. ✅ Interpretare il test dell’ipotesi nulla
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="exercises/08_freq_inf/estimation.html">
-     6.4. ✅ Stima della media di una popolazione da un piccolo campione
+    <a class="reference internal" href="exercises/07_reg_lin/relazioni_lineari.html">
+     6.1. ✅ Relazioni lineari tra variabili
     </a>
    </li>
   </ul>
  </li>
  <li class="toctree-l1 has-children">
-  <a class="reference internal" href="exercises/28_conjugate_prior/conjugate_prior_index.html">
-   7. Distribuzioni coniugate
+  <a class="reference internal" href="exercises/08_freq_inf/freq_inf_index.html">
+   7. Inferenza frequentista
   </a>
   <input class="toctree-checkbox" id="toctree-checkbox-8" name="toctree-checkbox-8" type="checkbox"/>
   <label for="toctree-checkbox-8">
@@ -353,8 +343,55 @@ const thebe_selector_output = ".output, .cell_output"
   </label>
   <ul>
    <li class="toctree-l2">
+    <a class="reference internal" href="exercises/08_freq_inf/test_media_popolazione.html">
+     7.1. ✅ Test su campioni di grandi dimensioni per una media della popolazione
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="exercises/08_freq_inf/confronto_medie_pop_ampie.html">
+     7.2. ✅ Confronto di due medie di popolazione: campioni ampi e indipendenti
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="exercises/08_freq_inf/confronto_medie_pop_piccoli.html">
+     7.3. ✅ Confronto di due medie di popolazione: Campioni Piccoli e indipendenti
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="exercises/08_freq_inf/confronto_pop_appaiati.html">
+     7.4. ✅ Confronto di due medie di popolazione: campioni appaiati
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="exercises/08_freq_inf/confronto_proporzioni.html">
+     7.5. ✅ Confronto di due proporzioni della popolazione
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="exercises/08_freq_inf/estimation.html">
+     7.6. ✅ Stima su piccolo campione della media di una popolazione
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="exercises/08_freq_inf/significato_osservato_test.html">
+     7.7. ✅ Il significato osservato di un test
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="exercises/28_conjugate_prior/conjugate_prior_index.html">
+   8. Distribuzioni coniugate
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-9" name="toctree-checkbox-9" type="checkbox"/>
+  <label for="toctree-checkbox-9">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
     <a class="reference internal" href="exercises/28_conjugate_prior/ex_conjugate_prior.html">
-     7.1. ✅ Probabilità congiunta
+     8.1. ✅ Probabilità congiunta
     </a>
    </li>
   </ul>
@@ -697,13 +734,13 @@ title="Print to PDF"
 <td><p>2023/03/07</p></td>
 <td><p>Introduzione a Numpy e Pandas</p></td>
 <td><p><a class="reference external" href="https://ccaudek.github.io/ds4psy_2023/020_intro_numpy.html">4</a>, <a class="reference external" href="https://ccaudek.github.io/ds4psy_2023/025_intro_pandas.html">5</a></p></td>
-<td><p><a class="reference external" href="https://ccaudek.github.io/psicometria_2023/exercises/01_python/ex_python.html">hw2</a></p></td>
+<td><p><a class="reference external" href="https://ccaudek.github.io/psicometria_2023/exercises/01_python/ex_pandas.html">hw2</a>; altri esercizi su Numpy sono forniti nella pagina web dedicata della dispensa</p></td>
 </tr>
 <tr class="row-odd"><td><p>4</p></td>
 <td><p>2023/03/09</p></td>
 <td><p>Introduzione a Matlibplot e Seaborn</p></td>
 <td><p><a class="reference external" href="https://ccaudek.github.io/ds4psy_2023/035_intro_matplotlib.html">6</a>, <a class="reference external" href="https://ccaudek.github.io/ds4psy_2023/040_intro_seaborn.html">7</a></p></td>
-<td><p><a class="reference external" href="https://ccaudek.github.io/psicometria_2023/exercises/01_python/ex_python.html">hw3</a></p></td>
+<td><p><a class="reference external" href="https://ccaudek.github.io/psicometria_2023/exercises/01_python/ex_matplotlib.html">hw3</a></p></td>
 </tr>
 <tr class="row-even"><td><p>5</p></td>
 <td><p>2023/03/13</p></td>
