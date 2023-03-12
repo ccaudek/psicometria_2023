@@ -113,7 +113,7 @@ const thebe_selector_output = ".output, .cell_output"
         <ul class="nav bd-sidenav bd-sidenav__home-link">
             <li class="toctree-l1">
                 <a class="reference internal" href="../../intro.html">
-                    Psicometria (B000286) partizione L-Z, A.A. 2022-2023
+                    Psicometria
                 </a>
             </li>
         </ul>
@@ -200,6 +200,11 @@ const thebe_selector_output = ".output, .cell_output"
    <li class="toctree-l2">
     <a class="reference internal" href="../01_python/ex_pandas.html">
      1.2. ✅ Pandas
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../01_python/ex_matplotlib.html">
+     1.3. ✅ Matplotlib e Seaborn
     </a>
    </li>
   </ul>
@@ -313,8 +318,8 @@ const thebe_selector_output = ".output, .cell_output"
   </ul>
  </li>
  <li class="toctree-l1 has-children">
-  <a class="reference internal" href="../08_freq_inf/freq_inf_index.html">
-   6. Inferenza frequentista
+  <a class="reference internal" href="../07_reg_lin/reg_lin_index.html">
+   6. Regressione lineare
   </a>
   <input class="toctree-checkbox" id="toctree-checkbox-7" name="toctree-checkbox-7" type="checkbox"/>
   <label for="toctree-checkbox-7">
@@ -323,30 +328,15 @@ const thebe_selector_output = ".output, .cell_output"
   </label>
   <ul>
    <li class="toctree-l2">
-    <a class="reference internal" href="../08_freq_inf/sampling_distr_mean.html">
-     6.1. ✅ Distribuzione campionaria della media
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="../08_freq_inf/test_on_means.html">
-     6.2. ✅ Test per una media della popolazione (campioni di grandi dimensioni)
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="../08_freq_inf/interpretation_test_h0.html">
-     6.3. ✅ Interpretare il test dell’ipotesi nulla
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="../08_freq_inf/estimation.html">
-     6.4. ✅ Stima della media di una popolazione da un piccolo campione
+    <a class="reference internal" href="../07_reg_lin/relazioni_lineari.html">
+     6.1. ✅ Relazioni lineari tra variabili
     </a>
    </li>
   </ul>
  </li>
  <li class="toctree-l1 has-children">
-  <a class="reference internal" href="../28_conjugate_prior/conjugate_prior_index.html">
-   7. Distribuzioni coniugate
+  <a class="reference internal" href="../08_freq_inf/freq_inf_index.html">
+   7. Inferenza frequentista
   </a>
   <input class="toctree-checkbox" id="toctree-checkbox-8" name="toctree-checkbox-8" type="checkbox"/>
   <label for="toctree-checkbox-8">
@@ -355,8 +345,55 @@ const thebe_selector_output = ".output, .cell_output"
   </label>
   <ul>
    <li class="toctree-l2">
+    <a class="reference internal" href="../08_freq_inf/test_media_popolazione.html">
+     7.1. ✅ Test su campioni di grandi dimensioni per una media della popolazione
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../08_freq_inf/confronto_medie_pop_ampie.html">
+     7.2. ✅ Confronto di due medie di popolazione: campioni ampi e indipendenti
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../08_freq_inf/confronto_medie_pop_piccoli.html">
+     7.3. ✅ Confronto di due medie di popolazione: Campioni Piccoli e indipendenti
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../08_freq_inf/confronto_pop_appaiati.html">
+     7.4. ✅ Confronto di due medie di popolazione: campioni appaiati
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../08_freq_inf/confronto_proporzioni.html">
+     7.5. ✅ Confronto di due proporzioni della popolazione
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../08_freq_inf/estimation.html">
+     7.6. ✅ Stima su piccolo campione della media di una popolazione
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../08_freq_inf/significato_osservato_test.html">
+     7.7. ✅ Il significato osservato di un test
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../28_conjugate_prior/conjugate_prior_index.html">
+   8. Distribuzioni coniugate
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-9" name="toctree-checkbox-9" type="checkbox"/>
+  <label for="toctree-checkbox-9">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
     <a class="reference internal" href="../28_conjugate_prior/ex_conjugate_prior.html">
-     7.1. ✅ Probabilità congiunta
+     8.1. ✅ Probabilità congiunta
     </a>
    </li>
   </ul>
@@ -567,32 +604,156 @@ title="Print to PDF"
 <p>La risposta è 0.08683729433272395.</p>
 </section>
 </div>
-<div class="exercise admonition" id="label-prob-combinatorics-02">
+<div class="exercise admonition" id="label-prob-bayes-theorem-02">
 
 <p class="admonition-title"><span class="caption-number">Exercise 3.17 </span></p>
 <section id="exercise-content">
-<p>Se estraiamo a caso da un mazzo di carte da poker 2 carte, quante combinazioni sono possibili?</p>
+<p>Supponiamo che la probabilità che il tempo sia nuvoloso sia del 40%. Supponiamo inoltre che la probabilità di pioggia in un dato giorno sia del 20%. Supponiamo infine che la probabilità che il tempo sia nuvoloso in un giorno di pioggia sia dell’85%.</p>
+<p>Se fuori è nuvoloso in un dato giorno, qual è la probabilità che quel giorno piova?</p>
 </section>
 </div>
 <div class="solution dropdown admonition" id="exercises/03_prob/ex_bayes_theorem-solution-3">
 
-<p class="admonition-title">Solution to<a class="reference internal" href="#label-prob-combinatorics-02"> Exercise 3.17</a></p>
+<p class="admonition-title">Solution to<a class="reference internal" href="#label-prob-bayes-theorem-02"> Exercise 3.17</a></p>
 <section id="solution-content">
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">math</span> <span class="kn">import</span> <span class="n">factorial</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">bayesTheorem</span><span class="p">(</span><span class="n">pA</span><span class="p">,</span> <span class="n">pB</span><span class="p">,</span> <span class="n">pBA</span><span class="p">):</span>
+    <span class="k">return</span> <span class="n">pA</span> <span class="o">*</span> <span class="n">pBA</span> <span class="o">/</span> <span class="n">pB</span>
 
-<span class="n">n</span> <span class="o">=</span> <span class="mi">52</span>
-<span class="n">k</span> <span class="o">=</span> <span class="mi">2</span>
-<span class="n">C</span> <span class="o">=</span> <span class="n">factorial</span><span class="p">(</span><span class="n">n</span><span class="p">)</span> <span class="o">/</span> <span class="p">(</span><span class="n">factorial</span><span class="p">(</span><span class="n">k</span><span class="p">)</span> <span class="o">*</span> <span class="n">factorial</span><span class="p">(</span><span class="n">n</span> <span class="o">-</span> <span class="n">k</span><span class="p">))</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">C</span><span class="p">)</span>
+<span class="n">pRain</span> <span class="o">=</span> <span class="mf">0.2</span>
+<span class="n">pCloudy</span> <span class="o">=</span> <span class="mf">0.4</span>
+<span class="n">pCloudyRain</span> <span class="o">=</span> <span class="mf">0.85</span>
+
+<span class="n">bayesTheorem</span><span class="p">(</span><span class="n">pRain</span><span class="p">,</span> <span class="n">pCloudy</span><span class="p">,</span> <span class="n">pCloudyRain</span><span class="p">)</span>
 </pre></div>
 </div>
-<p>La soluzione è 1326. Oppure</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">math</span> <span class="kn">import</span> <span class="n">comb</span>
+<p>La risposta è 0.425.</p>
+</section>
+</div>
+<div class="exercise admonition" id="label-prob-bayes-theorem-03">
 
-<span class="n">C</span> <span class="o">=</span> <span class="n">comb</span><span class="p">(</span><span class="n">n</span><span class="p">,</span> <span class="n">k</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">C</span><span class="p">)</span>
+<p class="admonition-title"><span class="caption-number">Exercise 3.18 </span></p>
+<section id="exercise-content">
+<p>Come sapete, i test Covid-19 sono comuni al giorno d’oggi, ma alcuni risultati dei test non sono veri. Assumiamo: un test diagnostico ha un’accuratezza del 99% e il 60% di tutte le persone testate ha il Covid-19. In tali circostanze, se un paziente risulta positivo, qual è la probabilità che abbia effettivamente il Covid-19?</p>
+</section>
+</div>
+<div class="solution dropdown admonition" id="exercises/03_prob/ex_bayes_theorem-solution-5">
+
+<p class="admonition-title">Solution to<a class="reference internal" href="#label-prob-bayes-theorem-03"> Exercise 3.18</a></p>
+<section id="solution-content">
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span>
 </pre></div>
 </div>
+<p>La probabilità a posteriori di essere positivo dato un risultato positivo al test si trova con il teorema di Bayes: (probabilità a priori x verosimiglianza) / p(essere positivo).</p>
+<p>La probabilità di essere positivo è 0.99 x 0.6 + 0.01 x 0.4 = 0.598.</p>
+<p>Dunque, (0.6 x 0.99) / 0.598 = 0.993.</p>
+</section>
+</div>
+<div class="exercise admonition" id="label-prob-bayes-theorem-04">
+
+<p class="admonition-title"><span class="caption-number">Exercise 3.19 </span></p>
+<section id="exercise-content">
+<p>Come sapete, i test Covid-19 sono comuni al giorno d’oggi, ma alcuni risultati dei test non sono veri. Assumiamo: un test diagnostico ha un’accuratezza del 99% e il 60% di tutte le persone testate ha il Covid-19. In tali circostanze, se un paziente risulta positivo, qual è la probabilità che abbia effettivamente il Covid-19?</p>
+</section>
+</div>
+<div class="solution dropdown admonition" id="exercises/03_prob/ex_bayes_theorem-solution-7">
+
+<p class="admonition-title">Solution to<a class="reference internal" href="#label-prob-bayes-theorem-04"> Exercise 3.19</a></p>
+<section id="solution-content">
+<p>La probabilità a posteriori di essere positivo dato un risultato positivo al test si trova con il teorema di Bayes: (probabilità a priori x verosimiglianza) / p(essere positivo).</p>
+<p>La probabilità di essere positivo è 0.99 x 0.6 + 0.01 x 0.4 = 0.598.</p>
+<p>Dunque, (0.6 x 0.99) / 0.598 = 0.993.</p>
+</section>
+</div>
+<div class="exercise admonition" id="label-prob-bayes-theorem-05">
+
+<p class="admonition-title"><span class="caption-number">Exercise 3.20 </span></p>
+<section id="exercise-content">
+<p>Supponiamo che un test per l’utilizzo di un particolare droga sia sensibile al 97% e specifico al 95%. Cioè, il test produrrà il 97% di risultati veri positivi per i tossicodipendenti e il 95% di risultati veri negativi per i non tossicodipendenti. Supponiamo che lo 0.5% della popolazione generale faccia uso della droga. Qual è la probabilità che un individuo selezionato a caso con un test positivo sia un tossicodipendente?</p>
+</section>
+</div>
+<div class="solution dropdown admonition" id="exercises/03_prob/ex_bayes_theorem-solution-9">
+
+<p class="admonition-title">Solution to<a class="reference internal" href="#label-prob-bayes-theorem-05"> Exercise 3.20</a></p>
+<section id="solution-content">
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">drug_user</span><span class="p">(</span><span class="n">prob_th</span><span class="o">=</span><span class="mf">0.5</span><span class="p">,</span><span class="n">sensitivity</span><span class="o">=</span><span class="mf">0.99</span><span class="p">,</span><span class="n">specificity</span><span class="o">=</span><span class="mf">0.99</span><span class="p">,</span><span class="n">prevelance</span><span class="o">=</span><span class="mf">0.01</span><span class="p">,</span><span class="n">verbose</span><span class="o">=</span><span class="kc">True</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="n">p_user</span> <span class="o">=</span> <span class="n">prevelance</span>
+    <span class="n">p_non_user</span> <span class="o">=</span> <span class="mi">1</span><span class="o">-</span><span class="n">prevelance</span>
+    <span class="n">p_pos_user</span> <span class="o">=</span> <span class="n">sensitivity</span>
+    <span class="n">p_neg_user</span> <span class="o">=</span> <span class="n">specificity</span>
+    <span class="n">p_pos_non_user</span> <span class="o">=</span> <span class="mi">1</span><span class="o">-</span><span class="n">specificity</span>
+    
+    <span class="n">num</span> <span class="o">=</span> <span class="n">p_pos_user</span><span class="o">*</span><span class="n">p_user</span>
+    <span class="n">den</span> <span class="o">=</span> <span class="n">p_pos_user</span><span class="o">*</span><span class="n">p_user</span><span class="o">+</span><span class="n">p_pos_non_user</span><span class="o">*</span><span class="n">p_non_user</span>
+    
+    <span class="n">prob</span> <span class="o">=</span> <span class="n">num</span><span class="o">/</span><span class="n">den</span>
+    
+    <span class="k">if</span> <span class="n">verbose</span><span class="p">:</span>
+        <span class="k">if</span> <span class="n">prob</span> <span class="o">&gt;</span> <span class="n">prob_th</span><span class="p">:</span>
+            <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;The test-taker could be an user&quot;</span><span class="p">)</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;The test-taker may not be an user&quot;</span><span class="p">)</span>
+
+    <span class="k">return</span> <span class="n">prob</span>
+
+<span class="n">p</span> <span class="o">=</span> <span class="n">drug_user</span><span class="p">(</span><span class="n">prob_th</span><span class="o">=</span><span class="mf">0.5</span><span class="p">,</span><span class="n">sensitivity</span><span class="o">=</span><span class="mf">0.97</span><span class="p">,</span><span class="n">specificity</span><span class="o">=</span><span class="mf">0.95</span><span class="p">,</span><span class="n">prevelance</span><span class="o">=</span><span class="mf">0.005</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Probability of the test-taker being a drug user is:&quot;</span><span class="p">,</span> <span class="nb">round</span><span class="p">(</span><span class="n">p</span><span class="p">,</span> <span class="mi">3</span><span class="p">))</span>
+</pre></div>
+</div>
+<p>Anche con un test corretto al 97% per rilevare casi positivi e corretto al 95% per rifiutare casi negativi, la vera probabilità di essere un tossicodipendente con un risultato positivo è solo dell’8.9%.</p>
+</section>
+</div>
+<div class="exercise admonition" id="label-prob-bayes-theorem-06">
+
+<p class="admonition-title"><span class="caption-number">Exercise 3.21 </span></p>
+<section id="exercise-content">
+<p>In riferimento al problema precedente, si trovi la prevalenza nella popolazione tale per cui il test produca una probabilità di essere un tossicodipendente pari a 0.5.</p>
+</section>
+</div>
+<div class="solution dropdown admonition" id="exercises/03_prob/ex_bayes_theorem-solution-11">
+
+<p class="admonition-title">Solution to<a class="reference internal" href="#label-prob-bayes-theorem-06"> Exercise 3.21</a></p>
+<section id="solution-content">
+<p>Il modo più semplice di risolvere questo problema è di usare un ciclo for.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
+<span class="kn">import</span> <span class="nn">scipy.stats</span> <span class="k">as</span> <span class="nn">st</span>
+<span class="kn">import</span> <span class="nn">seaborn</span> <span class="k">as</span> <span class="nn">sns</span>
+
+<span class="n">ps</span> <span class="o">=</span> <span class="p">[]</span>
+<span class="n">pres</span> <span class="o">=</span> <span class="p">[]</span>
+<span class="k">for</span> <span class="n">pre</span> <span class="ow">in</span> <span class="n">np</span><span class="o">.</span><span class="n">linspace</span><span class="p">(</span><span class="mf">0.0</span><span class="p">,</span> <span class="mf">0.1</span><span class="p">,</span> <span class="n">num</span><span class="o">=</span><span class="mi">10000</span><span class="p">):</span>
+    <span class="n">pres</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">pre</span><span class="p">)</span>
+    <span class="n">p</span> <span class="o">=</span> <span class="n">drug_user</span><span class="p">(</span>
+        <span class="n">prob_th</span><span class="o">=</span><span class="mf">0.5</span><span class="p">,</span> <span class="n">sensitivity</span><span class="o">=</span><span class="mf">0.97</span><span class="p">,</span> <span class="n">specificity</span><span class="o">=</span><span class="mf">0.95</span><span class="p">,</span> <span class="n">prevelance</span><span class="o">=</span><span class="n">pre</span><span class="p">,</span> <span class="n">verbose</span><span class="o">=</span><span class="kc">False</span>
+    <span class="p">)</span>
+    <span class="n">ps</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">p</span><span class="p">)</span>
+
+<span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span> <span class="mi">5</span><span class="p">))</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s2">&quot;Probability of user with prevalence rate&quot;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">pres</span><span class="p">,</span> <span class="n">ps</span><span class="p">,</span> <span class="n">linestyle</span><span class="o">=</span><span class="s1">&#39;-&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">grid</span><span class="p">(</span><span class="kc">True</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s2">&quot;Prevalence (percentage)&quot;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s2">&quot;Probability of being a user&quot;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span> 
+
+<span class="n">df</span><span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">()</span>
+
+<span class="n">df</span><span class="p">[</span><span class="s2">&quot;prevalence&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="n">pres</span>
+<span class="n">df</span><span class="p">[</span><span class="s2">&quot;post_prob&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="n">ps</span>
+<span class="n">df</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
+</pre></div>
+</div>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># find row with closest value to 0.5 in post_prob column</span>
+<span class="n">df_closest</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">iloc</span><span class="p">[(</span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;post_prob&#39;</span><span class="p">]</span><span class="o">-</span><span class="mf">0.5</span><span class="p">)</span><span class="o">.</span><span class="n">abs</span><span class="p">()</span><span class="o">.</span><span class="n">argsort</span><span class="p">()[:</span><span class="mi">1</span><span class="p">]]</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">df_closest</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>La prevalenza nella popolazione deve essere circa uguale a 0.049.</p>
 </section>
 </div>
 </section>
