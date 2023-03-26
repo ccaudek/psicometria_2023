@@ -40,6 +40,7 @@ parts:
     - file: exercises/04_rv_distr/ex_binomial
     - file: exercises/04_rv_distr/ex_gaussian
     - file: exercises/04_rv_distr/ex_beta_distr
+    - file: exercises/04_rv_distr/ex_likelihood
   - file: exercises/05_joint_prob/joint_prob_index
     sections:
     - file: exercises/05_joint_prob/ex_joint_prob
