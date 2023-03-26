@@ -1,5 +1,0 @@
-# Regressione lineare
-
-```{tableofcontents}
-
-```

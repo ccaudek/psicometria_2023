@@ -72,3 +72,32 @@ Uno psicologo ha messo a punto un intervento per fare in modo che almeno la met�
 
 0.0577
 ````
+
++++
+
+```{exercise}
+:label: label-binomial-04
+Determinare se le seguenti situazioni suggeriscono una variabile casuale con una distribuzione binomiale:
+
+a) Il numero di domande corrette se si indovina casualmente in un quiz di 20 domande a scelta multipla in cui ogni domanda ha 4 possibili risposte.
+b) Il numero di persone con gli occhi blu in un gruppo di 10 persone estratte da una stanza di 30 persone senza ripetizione.
+c) Il numero di cinguettii di uccelli che si possono sentire in un giorno se il numero medio di cinguettii all'ora è 15.
+d) Il numero di teste viste in 30 lanci di una moneta.
+e) Il numero di ciascuna delle 3 specie di fiori presenti in una raccolta di 100 fiori.
+f) Il numero di lanci di due dadi che danno un totale primo se i dadi vengono lanciati 50 volte.
+g) Il numero di 400 soggetti che assumono aspirina che hanno indicato di aver avuto un mal di testa lo stesso giorno in cui hanno assunto questo farmaco.
+
+```
+
+````{solution} label-binomial-04
+:class: dropdown
+
+a) Sì, questo suggerisce una variabile casuale con una distribuzione binomiale
+b) No. Le "prove" (le persone estratte dalla stanza e testate se hanno gli occhi blu o meno) non sono indipendenti. Man mano che vengono estratte persone con gli occhi blu dalla stanza, la probabilità che la prossima persona estratta dalla stanza abbia gli occhi blu diminuisce.
+c) No. Non c'è un limite superiore al numero di cinguettii che si potrebbero sentire. In una situazione binomiale, il numero massimo di successi è limitato dal numero fisso di prove.
+d) Sì, questo suggerisce una variabile casuale con una distribuzione binomiale
+e) No. Ci sono più di due risultati possibili. Se una specie potesse essere il "successo" e un'altra essere il "fallimento", quale sarebbe la terza specie?
+f) Sì, questo suggerisce una variabile casuale con una distribuzione binomiale
+g) Sì, questo suggerisce una variabile casuale con una distribuzione binomiale
+
+````

@@ -1,5 +1,0 @@
-# Inferenza frequentista
-
-```{tableofcontents}
-
-```
