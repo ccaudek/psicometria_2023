@@ -9,7 +9,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
-    <title>8.1. ✅ Probabilità congiunta &#8212; Psicometria</title>
+    <title>8.1. ✅ Caso Beta-Binomiale &#8212; Psicometria</title>
   
   
   
@@ -61,6 +61,8 @@ const thebe_selector_input = "pre"
 const thebe_selector_output = ".output, .cell_output"
 </script>
     <script async="async" src="../../_static/sphinx-thebe.js"></script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'exercises/28_conjugate_prior/ex_conjugate_prior';</script>
     <link rel="shortcut icon" href="../../_static/icons8-graduation-cap-30.png"/>
     <link rel="index" title="Index" href="../../genindex.html" />
@@ -196,6 +198,7 @@ const thebe_selector_output = ".output, .cell_output"
 <li class="toctree-l2"><a class="reference internal" href="../04_rv_distr/ex_binomial.html">4.2. ✅ Distribuzione binomiale</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../04_rv_distr/ex_gaussian.html">4.3. ✅ Distribuzione Normale</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../04_rv_distr/ex_beta_distr.html">4.4. ✅ Distribuzione Beta</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../04_rv_distr/ex_likelihood.html">4.5. ✅ Verosimiglianza</a></li>
 </ul>
 </li>
 <li class="toctree-l1 has-children"><a class="reference internal" href="../05_joint_prob/joint_prob_index.html">5. Probabilità congiunta</a><input class="toctree-checkbox" id="toctree-checkbox-6" name="toctree-checkbox-6" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-6"><i class="fa-solid fa-chevron-down"></i></label><ul>
@@ -217,7 +220,7 @@ const thebe_selector_output = ".output, .cell_output"
 </ul>
 </li>
 <li class="toctree-l1 current active has-children"><a class="reference internal" href="conjugate_prior_index.html">8. Distribuzioni coniugate</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-9" name="toctree-checkbox-9" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-9"><i class="fa-solid fa-chevron-down"></i></label><ul class="current">
-<li class="toctree-l2 current active"><a class="current reference internal" href="#">8.1. ✅ Probabilità congiunta</a></li>
+<li class="toctree-l2 current active"><a class="current reference internal" href="#">8.1. ✅ Caso Beta-Binomiale</a></li>
 </ul>
 </li>
 </ul>
@@ -401,7 +404,7 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>✅ Probabilità congiunta</h1>
+    <h1>✅ Caso Beta-Binomiale</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
@@ -415,8 +418,8 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article" role="main">
                   
-  <section class="tex2jax_ignore mathjax_ignore" id="probabilita-congiunta">
-<h1><span class="section-number">8.1. </span>✅ Probabilità congiunta<a class="headerlink" href="#probabilita-congiunta" title="Permalink to this headline">#</a></h1>
+  <section class="tex2jax_ignore mathjax_ignore" id="caso-beta-binomiale">
+<h1><span class="section-number">8.1. </span>✅ Caso Beta-Binomiale<a class="headerlink" href="#caso-beta-binomiale" title="Permalink to this headline">#</a></h1>
 <div class="exercise admonition" id="label-conjugate-prior-01">
 
 <p class="admonition-title"><span class="caption-number">Exercise 8.1 </span></p>
@@ -483,6 +486,139 @@ document.write(`
 </pre></div>
 </div>
 <p>0.5178</p>
+</section>
+</div>
+<div class="exercise admonition" id="label-beta-binom-01">
+
+<p class="admonition-title"><span class="caption-number">Exercise 8.5 </span></p>
+<section id="exercise-content">
+<p>Supponiamo di avere osservato 18 successi in 24 prove bernoulliane. Ipotizziamo una distribuzione a priori Beta(3, 9) per il parametro <span class="math notranslate nohighlight">\(\theta\)</span> (probabilità di successo). Si trovi la media della distribuzione a posteriori.</p>
+</section>
+</div>
+<div class="solution dropdown admonition" id="exercises/28_conjugate_prior/ex_conjugate_prior-solution-9">
+
+<p class="admonition-title">Solution to<a class="reference internal" href="#label-beta-binom-01"> Exercise 8.5</a></p>
+<section id="solution-content">
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">y</span> <span class="o">=</span> <span class="mi">18</span>
+<span class="n">n</span> <span class="o">=</span> <span class="mi">24</span>
+
+<span class="n">alpha_prior</span> <span class="o">=</span> <span class="mi">3</span>
+<span class="n">beta_prior</span> <span class="o">=</span> <span class="mi">9</span>
+
+<span class="n">alpha</span> <span class="o">=</span> <span class="n">alpha_prior</span> <span class="o">+</span> <span class="n">y</span>
+<span class="n">beta</span> <span class="o">=</span> <span class="n">beta_prior</span> <span class="o">+</span> <span class="n">n</span> <span class="o">-</span> <span class="n">y</span>
+
+<span class="n">mean</span> <span class="o">=</span> <span class="n">alpha</span> <span class="o">/</span> <span class="p">(</span><span class="n">alpha</span> <span class="o">+</span> <span class="n">beta</span><span class="p">)</span>
+<span class="n">mean</span>
+</pre></div>
+</div>
+<p>0.5833333333333334</p>
+</section>
+</div>
+<div class="exercise admonition" id="label-beta-binom-02">
+
+<p class="admonition-title"><span class="caption-number">Exercise 8.6 </span></p>
+<section id="exercise-content">
+<p>Supponiamo di avere osservato 18 successi in 24 prove bernoulliane. Ipotizziamo una distribuzione a priori Beta(3, 9) per il parametro <span class="math notranslate nohighlight">\(\theta\)</span> (probabilità di successo). Si trovi la varianza della distribuzione a posteriori.</p>
+</section>
+</div>
+<div class="solution dropdown admonition" id="exercises/28_conjugate_prior/ex_conjugate_prior-solution-11">
+
+<p class="admonition-title">Solution to<a class="reference internal" href="#label-beta-binom-02"> Exercise 8.6</a></p>
+<section id="solution-content">
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">y</span> <span class="o">=</span> <span class="mi">18</span>
+<span class="n">n</span> <span class="o">=</span> <span class="mi">24</span>
+
+<span class="n">alpha_prior</span> <span class="o">=</span> <span class="mi">3</span>
+<span class="n">beta_prior</span> <span class="o">=</span> <span class="mi">9</span>
+
+<span class="n">alpha</span> <span class="o">=</span> <span class="n">alpha_prior</span> <span class="o">+</span> <span class="n">y</span>
+<span class="n">beta</span> <span class="o">=</span> <span class="n">beta_prior</span> <span class="o">+</span> <span class="n">n</span> <span class="o">-</span> <span class="n">y</span>
+
+<span class="n">var</span> <span class="o">=</span> <span class="n">alpha</span> <span class="o">*</span> <span class="n">beta</span> <span class="o">/</span> <span class="p">((</span><span class="n">alpha</span> <span class="o">+</span> <span class="n">beta</span><span class="p">)</span> <span class="o">**</span> <span class="mi">2</span> <span class="o">*</span> <span class="p">(</span><span class="n">alpha</span> <span class="o">+</span> <span class="n">beta</span> <span class="o">+</span> <span class="mi">1</span><span class="p">))</span>
+<span class="n">var</span>
+</pre></div>
+</div>
+<p>0.006569069069069069</p>
+</section>
+</div>
+<div class="exercise admonition" id="label-beta-binom-03">
+
+<p class="admonition-title"><span class="caption-number">Exercise 8.7 </span></p>
+<section id="exercise-content">
+<p>Supponiamo di avere osservato 18 successi in 24 prove bernoulliane. Ipotizziamo una distribuzione a priori Beta(3, 9) per il parametro <span class="math notranslate nohighlight">\(\theta\)</span> (probabilità di successo). Si trovi la probabilità che, nella distribuzione a posteriori, il parametro <span class="math notranslate nohighlight">\(\theta\)</span> (probabilità di successo) assuma un valore minore di 0.4.</p>
+</section>
+</div>
+<div class="solution dropdown admonition" id="exercises/28_conjugate_prior/ex_conjugate_prior-solution-13">
+
+<p class="admonition-title">Solution to<a class="reference internal" href="#label-beta-binom-03"> Exercise 8.7</a></p>
+<section id="solution-content">
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">y</span> <span class="o">=</span> <span class="mi">18</span>
+<span class="n">n</span> <span class="o">=</span> <span class="mi">24</span>
+
+<span class="n">alpha_prior</span> <span class="o">=</span> <span class="mi">3</span>
+<span class="n">beta_prior</span> <span class="o">=</span> <span class="mi">9</span>
+
+<span class="n">alpha</span> <span class="o">=</span> <span class="n">alpha_prior</span> <span class="o">+</span> <span class="n">y</span>
+<span class="n">beta</span> <span class="o">=</span> <span class="n">beta_prior</span> <span class="o">+</span> <span class="n">n</span> <span class="o">-</span> <span class="n">y</span>
+
+<span class="n">st</span><span class="o">.</span><span class="n">beta</span><span class="o">.</span><span class="n">cdf</span><span class="p">(</span><span class="mf">0.4</span><span class="p">,</span> <span class="n">alpha</span><span class="p">,</span> <span class="n">beta</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>0.013257856051262343</p>
+</section>
+</div>
+<div class="exercise admonition" id="label-beta-binom-04">
+
+<p class="admonition-title"><span class="caption-number">Exercise 8.8 </span></p>
+<section id="exercise-content">
+<p>Supponiamo di avere osservato 18 successi in 24 prove bernoulliane. Ipotizziamo una distribuzione a priori Beta(3, 9) per il parametro <span class="math notranslate nohighlight">\(\theta\)</span> (probabilità di successo). Si trovi la probabilità che, nella distribuzione a posteriori, il parametro <span class="math notranslate nohighlight">\(\theta\)</span> (probabilità di successo) assuma un valore compreso tra 0.4 e 0.6.</p>
+</section>
+</div>
+<div class="solution dropdown admonition" id="exercises/28_conjugate_prior/ex_conjugate_prior-solution-15">
+
+<p class="admonition-title">Solution to<a class="reference internal" href="#label-beta-binom-04"> Exercise 8.8</a></p>
+<section id="solution-content">
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">y</span> <span class="o">=</span> <span class="mi">18</span>
+<span class="n">n</span> <span class="o">=</span> <span class="mi">24</span>
+
+<span class="n">alpha_prior</span> <span class="o">=</span> <span class="mi">3</span>
+<span class="n">beta_prior</span> <span class="o">=</span> <span class="mi">9</span>
+
+<span class="n">alpha</span> <span class="o">=</span> <span class="n">alpha_prior</span> <span class="o">+</span> <span class="n">y</span>
+<span class="n">beta</span> <span class="o">=</span> <span class="n">beta_prior</span> <span class="o">+</span> <span class="n">n</span> <span class="o">-</span> <span class="n">y</span>
+
+<span class="n">st</span><span class="o">.</span><span class="n">beta</span><span class="o">.</span><span class="n">cdf</span><span class="p">(</span><span class="mf">0.6</span><span class="p">,</span> <span class="n">alpha</span><span class="p">,</span> <span class="n">beta</span><span class="p">)</span> <span class="o">-</span> <span class="n">st</span><span class="o">.</span><span class="n">beta</span><span class="o">.</span><span class="n">cdf</span><span class="p">(</span><span class="mf">0.4</span><span class="p">,</span> <span class="n">alpha</span><span class="p">,</span> <span class="n">beta</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>0.5594962066370368</p>
+</section>
+</div>
+<div class="exercise admonition" id="label-beta-binom-05">
+
+<p class="admonition-title"><span class="caption-number">Exercise 8.9 </span></p>
+<section id="exercise-content">
+<p>Supponiamo di avere osservato 18 successi in 24 prove bernoulliane. Ipotizziamo una distribuzione a priori Beta(3, 9) per il parametro <span class="math notranslate nohighlight">\(\theta\)</span> (probabilità di successo). Si trovi la moda della distribuzione a posteriori del parametro <span class="math notranslate nohighlight">\(\theta\)</span> (probabilità di successo).</p>
+</section>
+</div>
+<div class="solution dropdown admonition" id="exercises/28_conjugate_prior/ex_conjugate_prior-solution-17">
+
+<p class="admonition-title">Solution to<a class="reference internal" href="#label-beta-binom-05"> Exercise 8.9</a></p>
+<section id="solution-content">
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">y</span> <span class="o">=</span> <span class="mi">18</span>
+<span class="n">n</span> <span class="o">=</span> <span class="mi">24</span>
+
+<span class="n">alpha_prior</span> <span class="o">=</span> <span class="mi">3</span>
+<span class="n">beta_prior</span> <span class="o">=</span> <span class="mi">9</span>
+
+<span class="n">alpha</span> <span class="o">=</span> <span class="n">alpha_prior</span> <span class="o">+</span> <span class="n">y</span>
+<span class="n">beta</span> <span class="o">=</span> <span class="n">beta_prior</span> <span class="o">+</span> <span class="n">n</span> <span class="o">-</span> <span class="n">y</span>
+
+<span class="n">mo</span> <span class="o">=</span> <span class="p">(</span><span class="n">alpha</span> <span class="o">-</span> <span class="mi">1</span><span class="p">)</span> <span class="o">/</span> <span class="p">(</span><span class="n">alpha</span> <span class="o">+</span> <span class="n">beta</span> <span class="o">-</span> <span class="mi">2</span><span class="p">)</span>
+<span class="n">mo</span>
+</pre></div>
+</div>
+<p>0.5882352941176471</p>
 </section>
 </div>
 </section>

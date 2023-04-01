@@ -197,6 +197,7 @@ const thebe_selector_output = ".output, .cell_output"
 <li class="toctree-l2"><a class="reference internal" href="exercises/04_rv_distr/ex_binomial.html">4.2. ✅ Distribuzione binomiale</a></li>
 <li class="toctree-l2"><a class="reference internal" href="exercises/04_rv_distr/ex_gaussian.html">4.3. ✅ Distribuzione Normale</a></li>
 <li class="toctree-l2"><a class="reference internal" href="exercises/04_rv_distr/ex_beta_distr.html">4.4. ✅ Distribuzione Beta</a></li>
+<li class="toctree-l2"><a class="reference internal" href="exercises/04_rv_distr/ex_likelihood.html">4.5. ✅ Verosimiglianza</a></li>
 </ul>
 </li>
 <li class="toctree-l1 has-children"><a class="reference internal" href="exercises/05_joint_prob/joint_prob_index.html">5. Probabilità congiunta</a><input class="toctree-checkbox" id="toctree-checkbox-6" name="toctree-checkbox-6" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-6"><i class="fa-solid fa-chevron-down"></i></label><ul>
@@ -218,7 +219,7 @@ const thebe_selector_output = ".output, .cell_output"
 </ul>
 </li>
 <li class="toctree-l1 has-children"><a class="reference internal" href="exercises/28_conjugate_prior/conjugate_prior_index.html">8. Distribuzioni coniugate</a><input class="toctree-checkbox" id="toctree-checkbox-9" name="toctree-checkbox-9" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-9"><i class="fa-solid fa-chevron-down"></i></label><ul>
-<li class="toctree-l2"><a class="reference internal" href="exercises/28_conjugate_prior/ex_conjugate_prior.html">8.1. ✅ Probabilità congiunta</a></li>
+<li class="toctree-l2"><a class="reference internal" href="exercises/28_conjugate_prior/ex_conjugate_prior.html">8.1. ✅ Caso Beta-Binomiale</a></li>
 </ul>
 </li>
 </ul>
@@ -571,103 +572,103 @@ document.write(`
 <td><p>TODO</p></td>
 </tr>
 <tr class="row-odd"><td><p>16</p></td>
-<td><p>2023/04/06</p></td>
+<td><p>2023/04/13</p></td>
 <td><p>Approssimazione della distribuzione a posteriori</p></td>
 <td><p><a class="reference external" href="https://ccaudek.github.io/ds4psy_2023/325_metropolis.html">28</a></p></td>
 <td><p>TODO</p></td>
 </tr>
 <tr class="row-even"><td><p>17</p></td>
-<td><p>2023/04/11</p></td>
-<td><p>MCMC e schema beta-binomiale</p></td>
-<td><p><a class="reference external" href="https://ccaudek.github.io/ds4psy_2023/330_beta_binomial.html">29</a></p></td>
-<td><p>TODO</p></td>
-</tr>
-<tr class="row-odd"><td><p>18</p></td>
-<td><p>2023/04/13</p></td>
-<td><p>Diagnostica delle catene markoviane; sintesi a posteriori</p></td>
-<td><p><a class="reference external" href="https://ccaudek.github.io/ds4psy_2023/335_mcmc_diagnostics.html">30</a>, <a class="reference external" href="https://ccaudek.github.io/ds4psy_2023/340_summarize_posterior.html">31</a></p></td>
-<td><p>TODO</p></td>
-</tr>
-<tr class="row-even"><td><p>19</p></td>
 <td><p>2023/04/17</p></td>
 <td><p><strong>Prova in itinere (1)</strong></p></td>
 <td><p>–</p></td>
 <td><p>–</p></td>
 </tr>
-<tr class="row-odd"><td><p>20</p></td>
+<tr class="row-odd"><td><p>18</p></td>
 <td><p>2023/04/18</p></td>
+<td><p>MCMC e schema beta-binomiale</p></td>
+<td><p><a class="reference external" href="https://ccaudek.github.io/ds4psy_2023/330_beta_binomial.html">29</a></p></td>
+<td><p>TODO</p></td>
+</tr>
+<tr class="row-even"><td><p>19</p></td>
+<td><p>2023/04/20</p></td>
+<td><p>Diagnostica delle catene markoviane; sintesi a posteriori</p></td>
+<td><p><a class="reference external" href="https://ccaudek.github.io/ds4psy_2023/335_mcmc_diagnostics.html">30</a>, <a class="reference external" href="https://ccaudek.github.io/ds4psy_2023/340_summarize_posterior.html">31</a></p></td>
+<td><p>TODO</p></td>
+</tr>
+<tr class="row-odd"><td><p>20</p></td>
+<td><p>2023/04/27</p></td>
 <td><p>Predizione bayesiana; inferenza su una media</p></td>
 <td><p><a class="reference external" href="https://ccaudek.github.io/ds4psy_2023/345_bayesian_prediction.html">32</a>, <a class="reference external" href="https://ccaudek.github.io/ds4psy_2023/350_normal_normal_mod.html">33</a></p></td>
 <td><p>TODO</p></td>
 </tr>
 <tr class="row-even"><td><p>21</p></td>
-<td><p>2023/04/20</p></td>
+<td><p>2023/05/02</p></td>
 <td><p>Inferenza su due o più gruppi</p></td>
 <td><p><a class="reference external" href="https://ccaudek.github.io/ds4psy_2023/355_groups_comparison.html">34</a></p></td>
 <td><p>TODO</p></td>
 </tr>
 <tr class="row-odd"><td><p>22</p></td>
-<td><p>2023/04/24</p></td>
+<td><p>2023/05/04</p></td>
 <td><p>Il modello di regressione lineare</p></td>
 <td><p><a class="reference external" href="https://ccaudek.github.io/ds4psy_2023/400_reglin_1.html">35</a>, <a class="reference external" href="https://ccaudek.github.io/ds4psy_2023/405_reglin_2.html">36</a></p></td>
 <td><p>TODO</p></td>
 </tr>
 <tr class="row-even"><td><p>23</p></td>
-<td><p>2023/04/27</p></td>
+<td><p>2023/05/08</p></td>
 <td><p>Regressione lineare con PyMC; confronto tra le medie di due gruppi</p></td>
 <td><p><a class="reference external" href="https://ccaudek.github.io/ds4psy_2023/410_reglin_3.html">37</a>, <a class="reference external" href="https://ccaudek.github.io/ds4psy_2023/415_reglin_4.html">38</a></p></td>
 <td><p>TODO</p></td>
 </tr>
 <tr class="row-odd"><td><p>24</p></td>
-<td><p>2023/05/02</p></td>
+<td><p>2023/05/09</p></td>
 <td><p>PPC</p></td>
 <td><p><a class="reference external" href="https://ccaudek.github.io/ds4psy_2023/420_reglin_ppc.html">39</a></p></td>
 <td><p>TODO</p></td>
 </tr>
 <tr class="row-even"><td><p>25</p></td>
-<td><p>2023/05/04</p></td>
+<td><p>2023/05/11</p></td>
 <td><p>La distribuzione delle statistiche campionarie</p></td>
 <td><p><a class="reference external" href="https://ccaudek.github.io/ds4psy_2023/500_intro_frequentist.html">40</a>, <a class="reference external" href="https://ccaudek.github.io/ds4psy_2023/505_conf_interv.html">41</a></p></td>
 <td><p>TODO</p></td>
 </tr>
 <tr class="row-odd"><td><p>26</p></td>
-<td><p>2023/05/08</p></td>
+<td><p>2023/05/15</p></td>
 <td><p>I test di ipotesi statistiche</p></td>
 <td><p><a class="reference external" href="https://ccaudek.github.io/ds4psy_2023/510_test_ipotesi.html">42</a></p></td>
 <td><p>TODO</p></td>
 </tr>
 <tr class="row-even"><td><p>27</p></td>
-<td><p>2023/05/09</p></td>
+<td><p>2023/05/16</p></td>
 <td><p>Esercitazione</p></td>
 <td><p>–</p></td>
 <td><p>TODO</p></td>
 </tr>
 <tr class="row-odd"><td><p>28</p></td>
-<td><p>2023/05/11</p></td>
+<td><p>2023/05/18</p></td>
 <td><p>I limiti dell’inferenza frequentista</p></td>
 <td><p><a class="reference external" href="https://ccaudek.github.io/ds4psy_2023/515_limiti_stat_frequentista.html">43</a>, <a class="reference external" href="https://ccaudek.github.io/ds4psy_2023/520_s_m_errors.html">44</a></p></td>
 <td><p>TODO</p></td>
 </tr>
 <tr class="row-even"><td><p>29</p></td>
-<td><p>2023/05/15</p></td>
+<td><p>2023/05/22</p></td>
 <td><p><strong>Prova in itinere (2)</strong></p></td>
 <td><p>–</p></td>
 <td><p>–</p></td>
 </tr>
 <tr class="row-odd"><td><p>30</p></td>
-<td><p>2023/05/16</p></td>
+<td><p>2023/05/23</p></td>
 <td><p><strong>Presentazione dei progetti di gruppo (1)</strong></p></td>
 <td><p>–</p></td>
 <td><p>–</p></td>
 </tr>
 <tr class="row-even"><td><p>31</p></td>
-<td><p>2023/05/18</p></td>
+<td><p>2023/05/25</p></td>
 <td><p><strong>Presentazione dei progetti di gruppo (2)</strong></p></td>
 <td><p>–</p></td>
 <td><p>–</p></td>
 </tr>
 <tr class="row-odd"><td><p>32</p></td>
-<td><p>2023/05/22</p></td>
+<td><p>2023/05/29</p></td>
 <td><p><strong>Presentazione dei progetti di gruppo (3)</strong></p></td>
 <td><p>–</p></td>
 <td><p>–</p></td>
