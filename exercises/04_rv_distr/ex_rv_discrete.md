@@ -10,7 +10,7 @@ Da un grande numero di dati relativi ad un compito di attenzione svolto da pazie
 | ---- | ---- | ---- | ---- | ---- | ---- | ---- | 
 | P(x) | 0.10 | 0.23 | 0.34 | 0.25 | 0.05 | 0.02 |
 
-a. Si trovi il tempo medi di completamento del compito. 
+a. Si trovi il tempo medio di completamento del compito. 
 
 b. Si trovi la deviazione standard del tempo necessario per completare questo compito, in questa popolazione.
 

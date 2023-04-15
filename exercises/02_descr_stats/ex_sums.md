@@ -220,7 +220,7 @@ Si valuti $\frac{\sum_{i=1}^5 (x_i - \bar{X})^2}{5}$.
 import numpy as np
 
 x = np.array([4, -1, 5, 6, 1])
-x.mean()
+x.var()
 ```
-La soluzione è 3.
+La soluzione è 6.8.
 ````
