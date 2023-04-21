@@ -1,62 +1,66 @@
 format: jb-book
 root: intro
-options:  # The options key will be applied to all chapters, but not sub-sections
+options: # The options key will be applied to all chapters, but not sub-sections
   numbered: True
 parts:
-- caption: A.A. 2022-2023
-  chapters:
-  - file: syllabus
-  - file: materiali_didattici
-  - file: come_studiare
-  - file: calendario
-  - file: laboratorio_didattico/laboratorio_didattico_index
-    sections:
-    - file: laboratorio_didattico/laboratorio_didattico.ipynb
-    - file: laboratorio_didattico/melody
-  - file: esame
-  - file: faq
-- caption: Esercizi
-  numbered: True
-  chapters:
-  - file: exercises/01_python/python_index
-    sections:
-    - file: exercises/01_python/ex_python
-    - file: exercises/01_python/ex_pandas
-    - file: exercises/01_python/ex_matplotlib
-  - file: exercises/02_descr_stats/descr_stats_index
-    sections:
-    - file: exercises/02_descr_stats/ex_key_notions
-    - file: exercises/02_descr_stats/ex_scales
-    - file: exercises/02_descr_stats/ex_sums
-    - file: exercises/02_descr_stats/ex_eda
-  - file: exercises/03_prob/prob_index
-    sections:
-    - file: exercises/03_prob/ex_combinatorics
-    - file: exercises/03_prob/ex_conditional_prob
-    - file: exercises/03_prob/ex_bayes_theorem
-  - file: exercises/04_rv_distr/rv_distr_index
-    sections:
-    - file: exercises/04_rv_distr/ex_rv_discrete
-    - file: exercises/04_rv_distr/ex_binomial
-    - file: exercises/04_rv_distr/ex_gaussian
-    - file: exercises/04_rv_distr/ex_beta_distr
-    - file: exercises/04_rv_distr/ex_likelihood
-  - file: exercises/05_joint_prob/joint_prob_index
-    sections:
-    - file: exercises/05_joint_prob/ex_joint_prob
-  - file: exercises/07_reg_lin/reg_lin_index
-    sections:
-    - file: exercises/07_reg_lin/relazioni_lineari
-  - file: exercises/08_freq_inf/freq_inf_index
-    sections:
-    - file: exercises/08_freq_inf/test_media_popolazione
-    - file: exercises/08_freq_inf/confronto_medie_pop_ampie
-    - file: exercises/08_freq_inf/confronto_medie_pop_piccoli
-    - file: exercises/08_freq_inf/confronto_pop_appaiati
-    - file: exercises/08_freq_inf/confronto_proporzioni
-    # - file: exercises/08_freq_inf/sampling_distr_mean
-    - file: exercises/08_freq_inf/estimation
-    - file: exercises/08_freq_inf/significato_osservato_test
-  - file: exercises/28_conjugate_prior/conjugate_prior_index
-    sections:
-    - file: exercises/28_conjugate_prior/ex_conjugate_prior
+  - caption: A.A. 2022-2023
+    chapters:
+      - file: syllabus
+      - file: materiali_didattici
+      - file: come_studiare
+      - file: calendario
+      - file: laboratorio_didattico/laboratorio_didattico_index
+        sections:
+          - file: laboratorio_didattico/laboratorio_didattico.ipynb
+          - file: laboratorio_didattico/melody
+      - file: esame
+      - file: faq
+  - caption: Esercizi
+    numbered: True
+    chapters:
+      - file: exercises/01_python/python_index
+        sections:
+          - file: exercises/01_python/ex_python
+          - file: exercises/01_python/ex_pandas
+          - file: exercises/01_python/ex_matplotlib
+      - file: exercises/02_descr_stats/descr_stats_index
+        sections:
+          - file: exercises/02_descr_stats/ex_key_notions
+          - file: exercises/02_descr_stats/ex_scales
+          - file: exercises/02_descr_stats/ex_sums
+          - file: exercises/02_descr_stats/ex_eda
+      - file: exercises/03_prob/prob_index
+        sections:
+          - file: exercises/03_prob/ex_combinatorics
+          - file: exercises/03_prob/ex_conditional_prob
+          - file: exercises/03_prob/ex_bayes_theorem
+      - file: exercises/04_rv_distr/rv_distr_index
+        sections:
+          - file: exercises/04_rv_distr/ex_rv_discrete
+          - file: exercises/04_rv_distr/ex_binomial
+          - file: exercises/04_rv_distr/ex_gaussian
+          - file: exercises/04_rv_distr/ex_beta_distr
+          - file: exercises/04_rv_distr/ex_likelihood
+      - file: exercises/05_joint_prob/joint_prob_index
+        sections:
+          - file: exercises/05_joint_prob/ex_joint_prob
+      - file: exercises/06_bayes_inf/bayes_inf_index
+        sections:
+          - file: exercises/06_bayes_inf/ex_bayes_inf
+          - file: exercises/06_bayes_inf/ex_one_mean
+      - file: exercises/07_reg_lin/reg_lin_index
+        sections:
+          - file: exercises/07_reg_lin/relazioni_lineari
+      - file: exercises/08_freq_inf/freq_inf_index
+        sections:
+          - file: exercises/08_freq_inf/test_media_popolazione
+          - file: exercises/08_freq_inf/confronto_medie_pop_ampie
+          - file: exercises/08_freq_inf/confronto_medie_pop_piccoli
+          - file: exercises/08_freq_inf/confronto_pop_appaiati
+          - file: exercises/08_freq_inf/confronto_proporzioni
+          # - file: exercises/08_freq_inf/sampling_distr_mean
+          - file: exercises/08_freq_inf/estimation
+          - file: exercises/08_freq_inf/significato_osservato_test
+      - file: exercises/28_conjugate_prior/conjugate_prior_index
+        sections:
+          - file: exercises/28_conjugate_prior/ex_conjugate_prior
