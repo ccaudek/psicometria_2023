@@ -43,8 +43,16 @@ nbclient.exceptions.CellTimeoutError: A cell timed out while it was being execut
 The message was: Cell execution timed out.
 Here is a preview of the cell contents:
 -------------------
-['with Model() as model4:', '', '    # Define priors', '    alpha = pm.Normal("alpha", mu=0, sigma=2)', '    beta = pm.Normal("beta", mu=0, sigma=2)']
-...
-['    # Expected value of outcome', '    mu = alpha + beta * x', '    # Likelihood of observations', '    Y_obs = pm.Normal("Y_obs", mu=mu, sigma=sigma, observed=y)', '    trace4 = pm.sample(5000)']
+model1 = pm.Model()
+
+with model1:
+
+    # Priors
+    mu = pm.Normal("mu", mu=0.5, sigma=0.5)
+    sigma = pm.HalfCauchy("sigma", beta=1)
+    # Likelihood of observations
+    Y_obs = pm.Normal("Y_obs", mu=mu, sigma=sigma, observed=y)
+    trace1 = pm.sample()
+
 -------------------
 
