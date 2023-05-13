@@ -3,11 +3,11 @@
 <!DOCTYPE html>
 
 
-<html lang="en" >
+<html >
 
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
     <title>Il significato sociale della musica in età evolutiva &#8212; Psicometria</title>
   
@@ -45,7 +45,6 @@
     <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
     <script src="../_static/jquery.js"></script>
     <script src="../_static/underscore.js"></script>
-    <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
     <script src="../_static/doctools.js"></script>
     <script src="../_static/clipboard.min.js"></script>
     <script src="../_static/copybutton.js"></script>
@@ -71,7 +70,7 @@ const thebe_selector_output = ".output, .cell_output"
     <link rel="next" title="Modalità di verifica dell’apprendimento" href="../esame.html" />
     <link rel="prev" title="Istruzioni E-tivity" href="laboratorio_didattico.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
-  <meta name="docsearch:language" content="en"/>
+  <meta name="docsearch:language" content="None"/>
   </head>
   
   
@@ -487,9 +486,9 @@ document.write(`
                 <article class="bd-article" role="main">
                   
   <section class="tex2jax_ignore mathjax_ignore" id="il-significato-sociale-della-musica-in-eta-evolutiva">
-<h1>Il significato sociale della musica in età evolutiva<a class="headerlink" href="#il-significato-sociale-della-musica-in-eta-evolutiva" title="Permalink to this heading">#</a></h1>
+<h1>Il significato sociale della musica in età evolutiva<a class="headerlink" href="#il-significato-sociale-della-musica-in-eta-evolutiva" title="Permalink to this headline">#</a></h1>
 <section id="motivazione">
-<h2>Motivazione<a class="headerlink" href="#motivazione" title="Permalink to this heading">#</a></h2>
+<h2>Motivazione<a class="headerlink" href="#motivazione" title="Permalink to this headline">#</a></h2>
 <p>La produzione e fruizione della musica è una caratteristica universale del genere umano. I neonati umani imparano e ricordano le melodie e si muovono spontaneamente al ritmo della musica. I genitori cantano frequentemente delle canzoni ai loro figli piccoli, in uno stile che è comune a molte culture. Ci possiamo dunque chiedere quale sia la <em>funzione</em> di questo comportamento dei genitori nei confronti dei loro figli. Mehr, Song e Spelke (2016) esplorano l’ipotesi che la melodia, una caratteristica saliente della musica vocale, trasmetta informazioni sociali ai bambini.</p>
 <p>Per valutare questa ipotesi, Mehr et al. (2016) esaminano un campione di 32 bambini di età media pari a 5.6 mesi (SD = 0.31, gamma di variazione: 5.1–6.1). Nel loro primo esperimento, Mehr e al. si chiedono se la familiarità con una melodia possa modulare una preferenza sociale, ovvero possa influenzare i tempi di fissazione dello sguardo (<em>looking-time</em>) che i bambini dirigono verso un individuo adulto sconosciuto che, cantando, produce una melodia conosciuta.</p>
 <p>Nella prima fase dell’esperimento, ai genitori dei bambini veniva chiesto di imparare una nuova ninna-nanna e di ripeterla spesso al figlio/a. Nella seconda fase dell’esperimento, ai bambini venivano presentati due video, uno di fianco all’altro.  Uno dei due video faceva vedere uno sconosciuto che cantava la melodia che, in precedenza, i genitori avevano presentato ai bambini; l’altro video faceva vedere uno sconosciuto che cantava una ninna-nanna diversa. La variabile dipendente era il tempo di fissazione dello sguardo del bambino.</p>
@@ -500,7 +499,7 @@ document.write(`
 <p>Lo scopo dell’analisi statistica riportata qui di seguito è quello di replicare questi risultati mediante l’analisi dei dati messi a disposizione dagli autori. La stessa analisi statistica verrà eseguita usando due metodi diversi: l’approccio frequentista e l’approccio bayesiano.</p>
 </section>
 <section id="analisi-dei-dati">
-<h2>Analisi dei dati<a class="headerlink" href="#analisi-dei-dati" title="Permalink to this heading">#</a></h2>
+<h2>Analisi dei dati<a class="headerlink" href="#analisi-dei-dati" title="Permalink to this headline">#</a></h2>
 <p>Per replicare i risultati riportati da  Mehr et al. (2016), importiamo i dati contenuti nel file <code class="docutils literal notranslate"><span class="pre">MehrSongSpelke_exp_1.csv</span></code>.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -522,11 +521,6 @@ document.write(`
 <span class="n">rng</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">default_rng</span><span class="p">(</span><span class="n">RANDOM_SEED</span><span class="p">)</span>
 <span class="n">az</span><span class="o">.</span><span class="n">style</span><span class="o">.</span><span class="n">use</span><span class="p">(</span><span class="s2">&quot;arviz-darkgrid&quot;</span><span class="p">)</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">style</span><span class="o">.</span><span class="n">use</span><span class="p">(</span><span class="s1">&#39;tableau-colorblind10&#39;</span><span class="p">)</span>
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>WARNING (pytensor.tensor.blas): Using NumPy C-API based implementation for BLAS functions.
 </pre></div>
 </div>
 </div>
@@ -618,9 +612,9 @@ Name: Test_Proportion_Gaze_to_Singer, dtype: float64
 </div>
 </div>
 <section id="test-t-di-student-per-un-solo-campione">
-<h3>Test <span class="math notranslate nohighlight">\(t\)</span> di Student per un solo campione<a class="headerlink" href="#test-t-di-student-per-un-solo-campione" title="Permalink to this heading">#</a></h3>
+<h3>Test <span class="math notranslate nohighlight">\(t\)</span> di Student per un solo campione<a class="headerlink" href="#test-t-di-student-per-un-solo-campione" title="Permalink to this headline">#</a></h3>
 <section id="approccio-frequentista">
-<h4>Approccio frequentista<a class="headerlink" href="#approccio-frequentista" title="Permalink to this heading">#</a></h4>
+<h4>Approccio frequentista<a class="headerlink" href="#approccio-frequentista" title="Permalink to this headline">#</a></h4>
 <p>Utilizzo l’approccio frequentista per fare inferenza su <span class="math notranslate nohighlight">\(\mu\)</span>, ovvero sulla proporzione media del tempo complessivo di fissazione dello sguardo verso lo sconosciuto che cantava la melodia familiare, piuttosto che verso lo sconosciuto che cantava una canzone ignota. Nel caso della procedura di test di ipotesi, l’ipotesi nulla è</p>
 <div class="math notranslate nohighlight">
 \[
@@ -672,7 +666,7 @@ H_0: \mu = 0.5.
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>0.03158793887638613
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>0.031587938876386126
 </pre></div>
 </div>
 </div>
@@ -691,7 +685,7 @@ T = \frac{\bar{y} - \mu_0}{\hat{\sigma}_{\bar{y}}} = \frac{0.59 - 0.50}{0.032} =
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>2.959713527554351
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>2.9597135275543516
 </pre></div>
 </div>
 </div>
@@ -772,7 +766,7 @@ T = \frac{\bar{y} - \mu_0}{\hat{\sigma}_{\bar{y}}} = \frac{0.59 - 0.50}{0.032} =
 <p>Anche questo risultato coincide con il valore riportato dagli autori.</p>
 </section>
 <section id="analisi-bayesiana">
-<h4>Analisi Bayesiana<a class="headerlink" href="#analisi-bayesiana" title="Permalink to this heading">#</a></h4>
+<h4>Analisi Bayesiana<a class="headerlink" href="#analisi-bayesiana" title="Permalink to this headline">#</a></h4>
 <p>Facciamo inferenza su <span class="math notranslate nohighlight">\(\mu\)</span> usando l’approccio bayesiano. I dati sono i seguenti:</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -808,15 +802,6 @@ T = \frac{\bar{y} - \mu_0}{\hat{\sigma}_{\bar{y}}} = \frac{0.59 - 0.50}{0.032} =
 </pre></div>
 </div>
 <div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>NUTS: [mu, sigma]
-</pre></div>
-</div>
-<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>WARNING (pytensor.tensor.blas): Using NumPy C-API based implementation for BLAS functions.
-</pre></div>
-</div>
-<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>WARNING (pytensor.tensor.blas): Using NumPy C-API based implementation for BLAS functions.
-</pre></div>
-</div>
-<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>WARNING (pytensor.tensor.blas): Using NumPy C-API based implementation for BLAS functions.
 </pre></div>
 </div>
 <div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
@@ -1115,9 +1100,9 @@ T = \frac{\bar{y} - \mu_0}{\hat{\sigma}_{\bar{y}}} = \frac{0.59 - 0.50}{0.032} =
 </section>
 </section>
 <section id="confronto-tra-due-gruppi">
-<h3>Confronto tra due gruppi<a class="headerlink" href="#confronto-tra-due-gruppi" title="Permalink to this heading">#</a></h3>
+<h3>Confronto tra due gruppi<a class="headerlink" href="#confronto-tra-due-gruppi" title="Permalink to this headline">#</a></h3>
 <section id="approccio-frequentista-test-t-di-student-per-campioni-appaiati">
-<h4>Approccio frequentista (test <span class="math notranslate nohighlight">\(t\)</span> di Student per campioni appaiati)<a class="headerlink" href="#approccio-frequentista-test-t-di-student-per-campioni-appaiati" title="Permalink to this heading">#</a></h4>
+<h4>Approccio frequentista (test <span class="math notranslate nohighlight">\(t\)</span> di Student per campioni appaiati)<a class="headerlink" href="#approccio-frequentista-test-t-di-student-per-campioni-appaiati" title="Permalink to this headline">#</a></h4>
 <p>Mehr e al. (2016) hanno confrontato il tempo di fissazione dello sguardo verso lo sconosciuto che sorride soltanto e lo sconosciuto che canta la melodia familiare.  La distribuzione dei tempi di fissazione dello sguardo nelle due condizioni è presentata nel pannello a della Figura 2 del loro articolo. Riproduco qui sotto la figura. I tempi di fissazione dello sguardo nelle condizioni baseline e test corrispondono, rispettivamente, alle variabili <code class="docutils literal notranslate"><span class="pre">Baseline_Proportion_Gaze_to_Singer</span></code> e <code class="docutils literal notranslate"><span class="pre">Test_Proportion_Gaze_to_Singer</span></code>.</p>
 <p>Per replicare la Figura 2a riportata nell’articolo devo convertire i dati nel formato <em>long</em>, ovvero nel formato in cui a ciascuna colonna del DataFrame corrisponde una variabile. Nel caso presente, creo una variabile chiamata <em>condizione</em>, con modalità <em>baseline</em> e <em>test</em>; una seconda variabile, <em>y</em>, descrive i tempi di fissazione dello sguardo. Per creare un DataFrame che contiene queste due variabili, procedo come segue.</p>
 <div class="cell docutils container">
@@ -1346,7 +1331,7 @@ dtype: float64
 <p>Le stime dell’intervallo di confidenza e della dimensione dell’effetto coincidono con i valori riportati da Mehr e al. (2016).</p>
 </section>
 <section id="id1">
-<h4>Analisi bayesiana<a class="headerlink" href="#id1" title="Permalink to this heading">#</a></h4>
+<h4>Analisi bayesiana<a class="headerlink" href="#id1" title="Permalink to this headline">#</a></h4>
 <p>Dato che, nel caso di campioni appaiati, abbiamo un unico valore della varibile dipendente per ciascuna “coppia”, l’analisi statistica è sostanzialmente identica a quella già descritta sopra. In questo caso, la variabile dipendente è chiamata <code class="docutils literal notranslate"><span class="pre">diff</span></code>.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -1455,9 +1440,9 @@ dtype: float64
 </section>
 </section>
 <section id="analisi-di-regressione">
-<h3>Analisi di regressione<a class="headerlink" href="#analisi-di-regressione" title="Permalink to this heading">#</a></h3>
+<h3>Analisi di regressione<a class="headerlink" href="#analisi-di-regressione" title="Permalink to this headline">#</a></h3>
 <section id="id2">
-<h4>Approccio frequentista<a class="headerlink" href="#id2" title="Permalink to this heading">#</a></h4>
+<h4>Approccio frequentista<a class="headerlink" href="#id2" title="Permalink to this headline">#</a></h4>
 <p>Mehr et al. (2016) affermano</p>
 <blockquote>
 <div><p>We used simple linear regression to investigate whether the degree of infants’ increase in attention to the singer of the familiar song from baseline to test depended on their level of in-home exposure to that song. Parents reported singing regularly to their infants (median of 9 performances per day, interquartile range = [4, 11]; estimated total number of song performances: M = 76, SD = 56). After a log2 transformation (because of strong curvature), song exposure was a significant predictor of the within-subjects main effect (Fig. 2b), χ2(1) = 7.53, p = .006, R2 = .14 (Wald test).</p>
@@ -1555,7 +1540,7 @@ Notes:
 <p>Poniamo attenzione qui alla stima del coefficiente <span class="math notranslate nohighlight">\(\beta\)</span> (l’effetto della <span class="math notranslate nohighlight">\(x\)</span> sulla <span class="math notranslate nohighlight">\(y\)</span>) e all’intervallo di fiducia frequentista per questo parametro.</p>
 </section>
 <section id="inferenza-bayesiana">
-<h4>Inferenza bayesiana<a class="headerlink" href="#inferenza-bayesiana" title="Permalink to this heading">#</a></h4>
+<h4>Inferenza bayesiana<a class="headerlink" href="#inferenza-bayesiana" title="Permalink to this headline">#</a></h4>
 <p>Svolgo ora la stessa analisi usando l’approccio bayesiano. Dato che userò delle priors debolmente informative, mi aspetto che i risultati siano molto simili ai precedenti.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -1685,11 +1670,11 @@ Notes:
 </section>
 </section>
 <section id="conclusioni">
-<h2>Conclusioni<a class="headerlink" href="#conclusioni" title="Permalink to this heading">#</a></h2>
+<h2>Conclusioni<a class="headerlink" href="#conclusioni" title="Permalink to this headline">#</a></h2>
 <p>Mehr e al. (2016) riportano che i bambini di cinque mesi dirigono in modo preferenziale la propria attenzione verso un adulto sconosciuto che canta una melodia familiare piuttosto che verso un adulto sconosciuto che canta una melodia simile, ma sconosciuta. Questi risultati sono stati trovati quando la familiarizzazione con la ninna-nanna target veniva creata mediante l’interazione tra il bambino e un adulto che faceva parte dell’ambiente domestico. L’attenzione dei bambini, invece, non veniva modulata dalla familiarità con la melodia nel caso in cui la melodia in questione fosse stata presentata in precedenza al bambino in un modo diverso, ovvero essendo prodotta da un giocattolo, o da un adulto che il bambino conosceva poco. In base a tali risultati, Mehr e al. (2016) concludono che le melodie prodotte nell’ambiente domestico, attraverso l’interazione tra il bambino e un adulto conosciuto, sono dotate di un particolare significato sociale per i bambini.</p>
 </section>
 <section id="riferimenti-bibliografici">
-<h2>Riferimenti bibliografici<a class="headerlink" href="#riferimenti-bibliografici" title="Permalink to this heading">#</a></h2>
+<h2>Riferimenti bibliografici<a class="headerlink" href="#riferimenti-bibliografici" title="Permalink to this headline">#</a></h2>
 <p>Mehr, S. A., Song, L. A., &amp; Spelke, E. S. (2016). For 5-month-old infants, melodies are social. <em>Psychological Science</em>, <em>27</em>(4), 486-501.</p>
 </section>
 </section>
