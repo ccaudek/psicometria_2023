@@ -1,7 +1,7 @@
-# ✅ Confronto di due medie di popolazione: campioni ampi e indipendenti
+# ✅ Confronto di due medie di popolazione
 
 ```{exercise}
-:label: ex-confronto-medie-17
+:label: ex-confronto-medie-1
 
 Un amministratore universitario ha affermato che gli studenti della magistrale trascorrono più tempo a studiare rispetto a quelli della triennale.
 
@@ -16,9 +16,9 @@ a. Verificare questa affermazione rispetto all'impostazione predefinita secondo 
 b. Calcolare la significatività osservata del test.
 ```
 
-````{solution} ex-confronto-medie-17
+````{solution} ex-confronto-medie-1
 :class: dropdown
-:label: sol-confronto-medie-17
+:label: sol-confronto-medie-1
 
 a. Z = 3.888, $z_{0.01}$ = 2.326, rifiuto $H_0$ (Gli studenti della magistrale studiano di più)
 b. $p-value$ = 0.0001 
@@ -28,7 +28,7 @@ b. $p-value$ = 0.0001
 +++
 
 ```{exercise}
-:label: ex-confronto-medie-19
+:label: ex-confronto-medie-2
 
 Agli studenti di due classi della scuola di psicologia sono state date due versioni dello stesso test, ma con l'ordine delle domande disposte dal più facile al più difficile nella versione A e in ordine inverso nella versione B. Agli studenti selezionati a caso di ciascuna classe è stata data la versione A e il resto Versione B. I risultati sono mostrati nella tabella.
 
@@ -43,9 +43,9 @@ c. Calcolare la significatività osservata del test.
 
 ```
 
-```{solution} ex-confronto-medie-19
+```{solution} ex-confronto-medie-2
 :class: dropdown
-:label: sol-confronto-medie-19
+:label: sol-confronto-medie-2
 
 a. $5\pm$ 1.8
 b. Z = 4.454, $z_{0.01}$ = 2.326, rifiuto $H_0$ 
@@ -56,7 +56,7 @@ c. $p-value$ = 0.0000
 +++
 
 ```{exercise}
-:label: ex-confronto-medie-21
+:label: ex-confronto-medie-3
 
 Confrontando il rendimento scolastico degli studenti universitari affiliati al laboratorio collettivo degli studenti e di quegli studenti maschi non affiliati, è stato estratto un campione casuale di studenti da ciascuna delle due popolazioni di un campus universitario. Di seguito sono riportate le statistiche riassuntive sui GPA degli studenti.
 
@@ -69,9 +69,9 @@ Verifica, al livello di significatività del 5%, se i dati forniscono prove suff
 
 ```
 
-```{solution} ex-confronto-medie-21
+```{solution} ex-confronto-medie-3
 :class: dropdown
-:label: sol-confronto-medie-21
+:label: sol-confronto-medie-3
 
 Z = 0.738, $\pm$ $z_{0.025}$ = $\pm$ 1.960, non rifiuto $H_0$ (no differenze)
 ```
