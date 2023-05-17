@@ -214,7 +214,14 @@ const thebe_selector_output = ".output, .cell_output"
 </ul>
 </li>
 <li class="toctree-l1 has-children"><a class="reference internal" href="exercises/08_freq_inf/freq_inf_index.html">8. Inferenza frequentista</a><input class="toctree-checkbox" id="toctree-checkbox-9" name="toctree-checkbox-9" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-9"><i class="fa-solid fa-chevron-down"></i></label><ul>
-<li class="toctree-l2"><a class="reference internal" href="exercises/08_freq_inf/a_test_media_pop.html">8.1. ✅ Test su campioni di grandi dimensioni per una media della popolazione</a></li>
+<li class="toctree-l2"><a class="reference internal" href="exercises/08_freq_inf/a_test_media_pop.html">8.1. ✅ Test sulla media della popolazione</a></li>
+<li class="toctree-l2"><a class="reference internal" href="exercises/08_freq_inf/b_medie_pop_ampie.html">8.2. ✅ Confronto di due medie di popolazione</a></li>
+<li class="toctree-l2"><a class="reference internal" href="exercises/08_freq_inf/c_medie_pop_piccoli.html">8.3. ✅ Confronto di due medie di popolazione: Campioni Piccoli e indipendenti</a></li>
+<li class="toctree-l2"><a class="reference internal" href="exercises/08_freq_inf/d_campioni_appaiati.html">8.4. ✅ Confronto di due medie di popolazione: campioni appaiati</a></li>
+<li class="toctree-l2"><a class="reference internal" href="exercises/08_freq_inf/e_confronto_proporzioni.html">8.5. ✅ Confronto di due proporzioni della popolazione</a></li>
+<li class="toctree-l2"><a class="reference internal" href="exercises/08_freq_inf/f_estimation.html">8.6. ✅ Stima su piccolo campione della media di una popolazione</a></li>
+<li class="toctree-l2"><a class="reference internal" href="exercises/08_freq_inf/g_significato_test.html">8.7. ✅ Il significato osservato di un test</a></li>
+<li class="toctree-l2"><a class="reference internal" href="exercises/08_freq_inf/h_interpretation_test.html">8.8. ✅ Interpretare il test dell’ipotesi nulla</a></li>
 </ul>
 </li>
 <li class="toctree-l1 has-children"><a class="reference internal" href="exercises/28_conjugate_prior/conjugate_prior_index.html">9. Distribuzioni coniugate</a><input class="toctree-checkbox" id="toctree-checkbox-10" name="toctree-checkbox-10" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-10"><i class="fa-solid fa-chevron-down"></i></label><ul>
@@ -462,11 +469,18 @@ document.write(`
 <h1>Materiali didattici<a class="headerlink" href="#materiali-didattici" title="Permalink to this headline">#</a></h1>
 <section id="dispensa">
 <h2>Dispensa<a class="headerlink" href="#dispensa" title="Permalink to this headline">#</a></h2>
-<p>La dispensa <a class="reference external" href="https://ccaudek.github.io/ds4psy_2023/intro.html">ds4p23</a> contiene tutto ciò che sarà discusso in aula e richiesto all’esame. Al suo interno, sono presenti tutte le istruzioni in Python necessarie per condurre le analisi guidate dei dati richieste per superare l’esame.</p>
+<p>La dispensa denominata “ds4p23”, reperibile al seguente link <a class="reference external" href="https://ccaudek.github.io/ds4psy_2023/intro.html">ds4p23</a>, rappresenta una risorsa completa che copre l’intero contenuto del corso e costituisce il materiale di riferimento per l’esame. All’interno di questa dispensa, sono disponibili tutte le istruzioni in linguaggio Python necessarie per condurre in modo guidato le analisi dei dati richieste per superare con successo l’esame. Al fine di prepararsi adeguatamente all’esame, è altresì necessaria la lettura degli articoli seguenti:</p>
+<ul class="simple">
+<li><p>Loken, E., &amp; Gelman, A. (2017). Measurement error and the replication crisis. <em>Science</em>, <em>355</em>(6325), 584-585.</p></li>
+<li><p>Amrhein, V., Greenland, S., &amp; McShane, B. (2019). Comment: Retire statistical significance. <em>Nature</em>, <em>567</em>, 305-307.</p></li>
+<li><p>Wasserstein, R. L., Schirm, A. L., &amp; Lazar, N. A. (2019). Moving to a world beyond “p&lt; 0.05”. <em>The American Statistician</em>, <em>73</em>(sup1), 1-19.</p></li>
+</ul>
+<p>Gli articoli sono disponibili nella pagina Moodle del corso.</p>
 </section>
 <section id="materiali-supplementari">
 <h2>Materiali supplementari<a class="headerlink" href="#materiali-supplementari" title="Permalink to this headline">#</a></h2>
-<p>Un testo introduttivo eccellente che non richiede alcuna conoscenza pregressa di statistica e di programmazione, è <em>Data Analysis for Social Science: A Friendly and Practical Introduction</em> di Elena Llaudet e Kosuke Imai (2022), edito dalla Princeton University Press. Questo testo fornisce una guida passo-passo per analizzare dati del mondo reale con il programma statistico R e copre i concetti di base dell’analisi dei dati e l’approccio frequentista. Pur non trattando la statistica bayesiana e utilizzando esempi in R, questo testo rappresenta un’ottima risorsa per la preparazione dell’esame di questo insegnamento. Inoltre, si noti che, per questo testo e per altri simili, il fatto che gli esempi siano in R e non in Python non costituisce un grande limite: con l’aiuto di ChatGPT, è facile convertire la sintassi R in Python.</p>
+<p>I materiali supplementari di seguito elencati non sono obbligatori per la preparazione all’esame. Tuttavia, sono forniti come risorse aggiuntive per coloro che desiderano approfondire gli argomenti trattati nella dispensa o consultare testi che presentano gli stessi contenuti da prospettive diverse.</p>
+<p>Un’introduzione accessibile all’analisi dei dati è rappresentata dal libro intitolato “Data Analysis for Social Science: A Friendly and Practical Introduction” scritto da Elena Llaudet e Kosuke Imai (2022) e pubblicato dalla Princeton University Press. Questa risorsa fornisce una guida dettagliata e graduale per l’analisi dei dati utilizzando il software statistico R. Pur non trattando specificamente la statistica bayesiana, il libro costituisce comunque un’eccellente introduzione agli argomenti affrontati nel contesto del presente corso. È importante notare che, nonostante gli esempi forniti nel libro siano basati su R e non su Python, questa differenza non rappresenta una limitazione significativa. Grazie all’assistenza fornita da ChatGPT, è possibile agevolmente convertire la sintassi R in Python.</p>
 <p>Un’ottima risorsa per chi vuole apprendere il linguaggio di programmazione Python è il sito <a class="reference external" href="https://www.tomasbeuzen.com/python-programming-for-data-science/README.html">Python Programming for Data Science</a>. Ai fini di questo corso, in aggiunta ai contenuti forniti, una conoscenza di base degli argomenti trattati sul suddetto sito risulta sufficiente.</p>
 <p>Recentemente, sono stati pubblicati numerosi testi che offrono un’ottima introduzione all’inferenza bayesiana. Il materiale didattico usato in questo corso si ispira fortemente ai testi elencati di seguito.  Ad eccezione di quello di Richard McElreath, questi testi sono open source, quindi chiunque desideri approfondire l’argomento può consultarli facilmente.</p>
 <ul class="simple">
