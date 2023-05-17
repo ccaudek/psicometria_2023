@@ -9,7 +9,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
-    <title>8.5. ✅ Confronto di due proporzioni della popolazione &#8212; Psicometria</title>
+    <title>8.8. ✅ Interpretare il test dell’ipotesi nulla &#8212; Psicometria</title>
   
   
   
@@ -63,12 +63,12 @@ const thebe_selector_output = ".output, .cell_output"
     <script async="async" src="../../_static/sphinx-thebe.js"></script>
     <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
     <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
-    <script>DOCUMENTATION_OPTIONS.pagename = 'exercises/08_freq_inf/confronto_proporzioni';</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'exercises/08_freq_inf/h_interpretation_test';</script>
     <link rel="shortcut icon" href="../../_static/icons8-graduation-cap-30.png"/>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
-    <link rel="next" title="8.6. ✅ Stima su piccolo campione della media di una popolazione" href="estimation.html" />
-    <link rel="prev" title="8.4. ✅ Confronto di due medie di popolazione: campioni appaiati" href="confronto_pop_appaiati.html" />
+    <link rel="next" title="9. Distribuzioni coniugate" href="../28_conjugate_prior/conjugate_prior_index.html" />
+    <link rel="prev" title="8.7. ✅ Il significato osservato di un test" href="g_significato_test.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="None"/>
   </head>
@@ -216,13 +216,14 @@ const thebe_selector_output = ".output, .cell_output"
 </ul>
 </li>
 <li class="toctree-l1 current active has-children"><a class="reference internal" href="freq_inf_index.html">8. Inferenza frequentista</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-9" name="toctree-checkbox-9" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-9"><i class="fa-solid fa-chevron-down"></i></label><ul class="current">
-<li class="toctree-l2"><a class="reference internal" href="test_media_popolazione.html">8.1. ✅ Test su campioni di grandi dimensioni per una media della popolazione</a></li>
-<li class="toctree-l2"><a class="reference internal" href="confronto_medie_pop_ampie.html">8.2. ✅ Confronto di due medie di popolazione: campioni ampi e indipendenti</a></li>
-<li class="toctree-l2"><a class="reference internal" href="confronto_medie_pop_piccoli.html">8.3. ✅ Confronto di due medie di popolazione: Campioni Piccoli e indipendenti</a></li>
-<li class="toctree-l2"><a class="reference internal" href="confronto_pop_appaiati.html">8.4. ✅ Confronto di due medie di popolazione: campioni appaiati</a></li>
-<li class="toctree-l2 current active"><a class="current reference internal" href="#">8.5. ✅ Confronto di due proporzioni della popolazione</a></li>
-<li class="toctree-l2"><a class="reference internal" href="estimation.html">8.6. ✅ Stima su piccolo campione della media di una popolazione</a></li>
-<li class="toctree-l2"><a class="reference internal" href="significato_osservato_test.html">8.7. ✅ Il significato osservato di un test</a></li>
+<li class="toctree-l2"><a class="reference internal" href="a_test_media_pop.html">8.1. ✅ Test sulla media della popolazione</a></li>
+<li class="toctree-l2"><a class="reference internal" href="b_medie_pop_ampie.html">8.2. ✅ Confronto di due medie di popolazione</a></li>
+<li class="toctree-l2"><a class="reference internal" href="c_medie_pop_piccoli.html">8.3. ✅ Confronto di due medie di popolazione: Campioni Piccoli e indipendenti</a></li>
+<li class="toctree-l2"><a class="reference internal" href="d_campioni_appaiati.html">8.4. ✅ Confronto di due medie di popolazione: campioni appaiati</a></li>
+<li class="toctree-l2"><a class="reference internal" href="e_confronto_proporzioni.html">8.5. ✅ Confronto di due proporzioni della popolazione</a></li>
+<li class="toctree-l2"><a class="reference internal" href="f_estimation.html">8.6. ✅ Stima su piccolo campione della media di una popolazione</a></li>
+<li class="toctree-l2"><a class="reference internal" href="g_significato_test.html">8.7. ✅ Il significato osservato di un test</a></li>
+<li class="toctree-l2 current active"><a class="current reference internal" href="#">8.8. ✅ Interpretare il test dell’ipotesi nulla</a></li>
 </ul>
 </li>
 <li class="toctree-l1 has-children"><a class="reference internal" href="../28_conjugate_prior/conjugate_prior_index.html">9. Distribuzioni coniugate</a><input class="toctree-checkbox" id="toctree-checkbox-10" name="toctree-checkbox-10" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-10"><i class="fa-solid fa-chevron-down"></i></label><ul>
@@ -300,7 +301,7 @@ const thebe_selector_output = ".output, .cell_output"
       
       
       
-      <li><a href="https://github.com/ccaudek/psicometria_2023/issues/new?title=Issue%20on%20page%20%2Fexercises/08_freq_inf/confronto_proporzioni.html&body=Your%20issue%20content%20here." target="_blank"
+      <li><a href="https://github.com/ccaudek/psicometria_2023/issues/new?title=Issue%20on%20page%20%2Fexercises/08_freq_inf/h_interpretation_test.html&body=Your%20issue%20content%20here." target="_blank"
    class="btn btn-sm btn-source-issues-button dropdown-item"
    title="Open an issue"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -330,7 +331,7 @@ const thebe_selector_output = ".output, .cell_output"
       
       
       
-      <li><a href="../../_sources/exercises/08_freq_inf/confronto_proporzioni.md" target="_blank"
+      <li><a href="../../_sources/exercises/08_freq_inf/h_interpretation_test.md" target="_blank"
    class="btn btn-sm btn-download-source-button dropdown-item"
    title="Download source file"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -410,7 +411,7 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>✅ Confronto di due proporzioni della popolazione</h1>
+    <h1>✅ Interpretare il test dell’ipotesi nulla</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
@@ -424,69 +425,61 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article" role="main">
                   
-  <section class="tex2jax_ignore mathjax_ignore" id="confronto-di-due-proporzioni-della-popolazione">
-<h1><span class="section-number">8.5. </span>✅ Confronto di due proporzioni della popolazione<a class="headerlink" href="#confronto-di-due-proporzioni-della-popolazione" title="Permalink to this headline">#</a></h1>
-<div class="exercise admonition" id="ex-confronto-proporzioni-3">
+  <section class="tex2jax_ignore mathjax_ignore" id="interpretare-il-test-dell-ipotesi-nulla">
+<h1><span class="section-number">8.8. </span>✅ Interpretare il test dell’ipotesi nulla<a class="headerlink" href="#interpretare-il-test-dell-ipotesi-nulla" title="Permalink to this headline">#</a></h1>
+<div class="exercise admonition" id="ex-significato-test-5">
 
-<p class="admonition-title"><span class="caption-number">Exercise 8.10 </span></p>
+<p class="admonition-title"><span class="caption-number">Exercise 8.28 </span></p>
 <section id="exercise-content">
-<p>Costruire l’intervallo di confidenza per <span class="math notranslate nohighlight">\(p_1\)</span> − <span class="math notranslate nohighlight">\(p_2\)</span> per il livello di confidenza ei dati forniti. (I campioni sono sufficientemente grandi).</p>
-<p>a. Confidenza del 80%.
-<span class="math notranslate nohighlight">\(n_1\)</span> = 300; <span class="math notranslate nohighlight">\(\hat{p_1}\)</span> = 0.255
-<span class="math notranslate nohighlight">\(n_2\)</span> = 400; <span class="math notranslate nohighlight">\(\hat{p_2}\)</span> = 0.193</p>
-<p>b. Confidenza del 95%.
-<span class="math notranslate nohighlight">\(n_1\)</span> = 3500; <span class="math notranslate nohighlight">\(\hat{p_1}\)</span> = 0.147
-<span class="math notranslate nohighlight">\(n_2\)</span> = 3750; <span class="math notranslate nohighlight">\(\hat{p_2}\)</span> = 0.131</p>
+<p>Prendi la decisione in ogni test, sulla base delle informazioni fornite.</p>
+<p>a. H_0: <span class="math notranslate nohighlight">\(\mu\)</span> = 82.9; vs <span class="math notranslate nohighlight">\(H_a\)</span>: <span class="math notranslate nohighlight">\(\mu\)</span> &lt; 82.9; <span class="math notranslate nohighlight">\(\alpha\)</span> = 0.05, significato osservato p = 0.038</p>
+<p>b. H_0: <span class="math notranslate nohighlight">\(\mu\)</span> = 213.5; vs <span class="math notranslate nohighlight">\(H_a\)</span>: <span class="math notranslate nohighlight">\(\mu \neq\)</span> 213.5; <span class="math notranslate nohighlight">\(\alpha\)</span> = 0.01, significato osservato p = 0.038</p>
 </section>
 </div>
-<div class="solution dropdown admonition" id="sol-confronto-proporzioni-3">
+<div class="solution dropdown admonition" id="sol-significato-test-5">
 
-<p class="admonition-title">Solution to<a class="reference internal" href="#ex-confronto-proporzioni-3"> Exercise 8.10</a></p>
+<p class="admonition-title">Solution to<a class="reference internal" href="#ex-significato-test-5"> Exercise 8.28</a></p>
 <section id="solution-content">
-<p>a. (0.0210,0.1030)
-b. (0.0001,0.0319)</p>
+<p>a. Rifiuto <span class="math notranslate nohighlight">\(H_0\)</span></p>
+<p>b. Non rifiuto <span class="math notranslate nohighlight">\(H_0\)</span></p>
 </section>
 </div>
-<div class="exercise admonition" id="ex-confronto-proporzioni-7">
+<div class="exercise admonition" id="ex-significato-test-9">
 
-<p class="admonition-title"><span class="caption-number">Exercise 8.11 </span></p>
+<p class="admonition-title"><span class="caption-number">Exercise 8.29 </span></p>
 <section id="exercise-content">
-<p>Eseguire il test delle ipotesi indicato, utilizzando i dati forniti. Utilizzare l’approccio del valore critico. Calcola anche il valore p del test. (I campioni sono sufficientemente grandi.)</p>
-<p>a. Test <span class="math notranslate nohighlight">\(H_0\)</span>: <span class="math notranslate nohighlight">\(p_1\)</span> - <span class="math notranslate nohighlight">\(p_2\)</span> = 0.25 vs <span class="math notranslate nohighlight">\(H_a\)</span>: <span class="math notranslate nohighlight">\(p_1\)</span> - <span class="math notranslate nohighlight">\(p_2\)</span> &lt; 0.25; <span class="math notranslate nohighlight">\(\alpha\)</span> = 0.005</p>
-<p><span class="math notranslate nohighlight">\(n_1\)</span> = 1400; <span class="math notranslate nohighlight">\(\hat{p_1}\)</span> = 0.57
-<span class="math notranslate nohighlight">\(n_2\)</span> = 1200; <span class="math notranslate nohighlight">\(\hat{p_2}\)</span> = 0.37</p>
-<p>b. Test <span class="math notranslate nohighlight">\(H_0\)</span>: <span class="math notranslate nohighlight">\(p_1\)</span> - <span class="math notranslate nohighlight">\(p_2\)</span> = 0.16 vs <span class="math notranslate nohighlight">\(H_a\)</span>: <span class="math notranslate nohighlight">\(p_1\)</span> - <span class="math notranslate nohighlight">\(p_2\)</span> <span class="math notranslate nohighlight">\(\neq\)</span> 0.16; <span class="math notranslate nohighlight">\(\alpha\)</span> = 0.02</p>
-<p><span class="math notranslate nohighlight">\(n_1\)</span> = 750; <span class="math notranslate nohighlight">\(\hat{p_1}\)</span> = 0.43
-<span class="math notranslate nohighlight">\(n_2\)</span> = 600; <span class="math notranslate nohighlight">\(\hat{p_2}\)</span> = 0.22</p>
+<p>Il punteggio medio su un esame di collocamento di 25 punti in matematica utilizzato negli ultimi due anni in una grande università statale è 14.3. Il coordinatore del collocamento desidera verificare se il punteggio medio su una versione rivista dell’esame differisce da 14.3. Dà l’esame rivisto a 30 matricole che entrano all’inizio dell’estate; il punteggio medio è 14.6 con deviazione standard 2.4.</p>
+<p>a. Eseguire il test al livello di significatività del 10% utilizzando l’approccio del valore critico.</p>
+<p>b. Calcolare la significatività osservata del test.</p>
+<p>c. Eseguire il test al livello di significatività del 10% utilizzando l’approccio p-value. Non è necessario ripetere i primi tre passi, già fatti nella parte (a).</p>
 </section>
 </div>
-<div class="solution dropdown admonition" id="sol-confronto-proporzioni-7">
+<div class="solution dropdown admonition" id="sol-significato-test-9">
 
-<p class="admonition-title">Solution to<a class="reference internal" href="#ex-confronto-proporzioni-7"> Exercise 8.11</a></p>
+<p class="admonition-title">Solution to<a class="reference internal" href="#ex-significato-test-9"> Exercise 8.29</a></p>
 <section id="solution-content">
-<p>a. Z = -2.602; <span class="math notranslate nohighlight">\(-z_{0.005}\)</span> = -2.576; <span class="math notranslate nohighlight">\(\text{p-value}\)</span> = 0.0047, rifiuto <span class="math notranslate nohighlight">\(H_0\)</span>
-b. Z = 2.020; <span class="math notranslate nohighlight">\(\pm z_{0.01}\)</span> = <span class="math notranslate nohighlight">\(\pm\)</span> 2.326; <span class="math notranslate nohighlight">\(\text{p-value}\)</span> = 0.0434, non rifiuto <span class="math notranslate nohighlight">\(H_0\)</span></p>
+<p>a. Z = 0.68; <span class="math notranslate nohighlight">\(z_{0.05}\)</span> = 1.645 rifiuto <span class="math notranslate nohighlight">\(H_0\)</span></p>
+<p>b. p-value = 0.4966</p>
+<p>c. Non rifiuto <span class="math notranslate nohighlight">\(H_0\)</span></p>
 </section>
 </div>
-<div class="exercise admonition" id="ex-confronto-proporzioni-11">
+<div class="exercise admonition" id="ex-significato-test-11">
 
-<p class="admonition-title"><span class="caption-number">Exercise 8.12 </span></p>
+<p class="admonition-title"><span class="caption-number">Exercise 8.30 </span></p>
 <section id="exercise-content">
-<p>Eseguire il test delle ipotesi indicato, utilizzando i dati forniti. Utilizzare l’approccio del valore critico. Calcola anche il valore p del test. (I campioni sono sufficientemente grandi.)</p>
-<p>a. Test <span class="math notranslate nohighlight">\(H_0\)</span>: <span class="math notranslate nohighlight">\(p_1\)</span> - <span class="math notranslate nohighlight">\(p_2\)</span> = 0.22 vs <span class="math notranslate nohighlight">\(H_a\)</span>: <span class="math notranslate nohighlight">\(p_1\)</span> - <span class="math notranslate nohighlight">\(p_2\)</span> &gt; 0.22; <span class="math notranslate nohighlight">\(\alpha\)</span> = 0.05</p>
-<p><span class="math notranslate nohighlight">\(n_1\)</span> = 90; <span class="math notranslate nohighlight">\(\hat{p_1}\)</span> = 0.72
-<span class="math notranslate nohighlight">\(n_2\)</span> = 75; <span class="math notranslate nohighlight">\(\hat{p_2}\)</span> = 0.40</p>
-<p>b. Test <span class="math notranslate nohighlight">\(H_0\)</span>: <span class="math notranslate nohighlight">\(p_1\)</span> - <span class="math notranslate nohighlight">\(p_2\)</span> = 0.37 vs <span class="math notranslate nohighlight">\(H_a\)</span>: <span class="math notranslate nohighlight">\(p_1\)</span> - <span class="math notranslate nohighlight">\(p_2\)</span> <span class="math notranslate nohighlight">\(\neq\)</span> 0.37; <span class="math notranslate nohighlight">\(\alpha\)</span> = 0.02</p>
-<p><span class="math notranslate nohighlight">\(n_1\)</span> = 425; <span class="math notranslate nohighlight">\(\hat{p_1}\)</span> = 0.772
-<span class="math notranslate nohighlight">\(n_2\)</span> = 425; <span class="math notranslate nohighlight">\(\hat{p_2}\)</span> = 0.331</p>
+<p>Supponiamo che il 44.8 rappresenti la media del punteggio di un test di intelligenza per una popolazione di studenti in uno stato. Un nuovo metodo di insegnamento è stato introdotto in 35 classi indipendenti e la media del punteggio dei test di intelligenza è stata di 45.4, con una deviazione standard del campione di 1.6. Si vuole verificare se il nuovo metodo di insegnamento abbia portato ad un aumento significativo dei punteggi di test rispetto al vecchio metodo.</p>
+<p>a. Verificare se il rendimento medio del nuovo metodo di insegnamento è superiore a quello del vecchio metodo (<span class="math notranslate nohighlight">\(\alpha\)</span> = 0.05) utilizzando l’approccio del valore critico.</p>
+<p>b. Calcolare la significatività osservata del test.</p>
+<p>c. Eseguire il test al livello di significatività del 5% utilizzando l’approccio del valore p. Non è necessario ripetere i primi tre passi, già fatti nella parte (a).</p>
 </section>
 </div>
-<div class="solution dropdown admonition" id="sol-confronto-proporzioni-11">
+<div class="solution dropdown admonition" id="sol-significato-test-11">
 
-<p class="admonition-title">Solution to<a class="reference internal" href="#ex-confronto-proporzioni-11"> Exercise 8.12</a></p>
+<p class="admonition-title">Solution to<a class="reference internal" href="#ex-significato-test-11"> Exercise 8.30</a></p>
 <section id="solution-content">
-<p>a. Z =1.36; <span class="math notranslate nohighlight">\(\text{p-value}\)</span> = 0.0869, non rifiuto <span class="math notranslate nohighlight">\(H_0\)</span>
-b. Z = 2.32; <span class="math notranslate nohighlight">\(\text{p-value}\)</span> = 0.0204, non rifiuto <span class="math notranslate nohighlight">\(H_0\)</span></p>
+<p>a. Z=2.22; <span class="math notranslate nohighlight">\(z_{0.05}\)</span> = 1.645, rifiuto <span class="math notranslate nohighlight">\(H_0\)</span></p>
+<p>b. p-value = 0.0132</p>
+<p>c. Rifiuto <span class="math notranslate nohighlight">\(H_0\)</span></p>
 </section>
 </div>
 </section>
@@ -523,20 +516,20 @@ b. Z = 2.32; <span class="math notranslate nohighlight">\(\text{p-value}\)</span
     <div class="footer-article-item"><!-- Previous / next buttons -->
 <div class="prev-next-area">
     <a class="left-prev"
-       href="confronto_pop_appaiati.html"
+       href="g_significato_test.html"
        title="previous page">
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title"><span class="section-number">8.4. </span>✅ Confronto di due medie di popolazione: campioni appaiati</p>
+        <p class="prev-next-title"><span class="section-number">8.7. </span>✅ Il significato osservato di un test</p>
       </div>
     </a>
     <a class="right-next"
-       href="estimation.html"
+       href="../28_conjugate_prior/conjugate_prior_index.html"
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title"><span class="section-number">8.6. </span>✅ Stima su piccolo campione della media di una popolazione</p>
+        <p class="prev-next-title"><span class="section-number">9. </span>Distribuzioni coniugate</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>

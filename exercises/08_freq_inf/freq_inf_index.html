@@ -65,7 +65,7 @@ const thebe_selector_output = ".output, .cell_output"
     <link rel="shortcut icon" href="../../_static/icons8-graduation-cap-30.png"/>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
-    <link rel="next" title="8.1. ✅ Test su campioni di grandi dimensioni per una media della popolazione" href="test_media_popolazione.html" />
+    <link rel="next" title="8.1. ✅ Test sulla media della popolazione" href="a_test_media_pop.html" />
     <link rel="prev" title="7.1. ✅ Relazioni lineari tra variabili" href="../07_reg_lin/relazioni_lineari.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="None"/>
@@ -214,13 +214,14 @@ const thebe_selector_output = ".output, .cell_output"
 </ul>
 </li>
 <li class="toctree-l1 current active has-children"><a class="current reference internal" href="#">8. Inferenza frequentista</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-9" name="toctree-checkbox-9" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-9"><i class="fa-solid fa-chevron-down"></i></label><ul>
-<li class="toctree-l2"><a class="reference internal" href="test_media_popolazione.html">8.1. ✅ Test su campioni di grandi dimensioni per una media della popolazione</a></li>
-<li class="toctree-l2"><a class="reference internal" href="confronto_medie_pop_ampie.html">8.2. ✅ Confronto di due medie di popolazione: campioni ampi e indipendenti</a></li>
-<li class="toctree-l2"><a class="reference internal" href="confronto_medie_pop_piccoli.html">8.3. ✅ Confronto di due medie di popolazione: Campioni Piccoli e indipendenti</a></li>
-<li class="toctree-l2"><a class="reference internal" href="confronto_pop_appaiati.html">8.4. ✅ Confronto di due medie di popolazione: campioni appaiati</a></li>
-<li class="toctree-l2"><a class="reference internal" href="confronto_proporzioni.html">8.5. ✅ Confronto di due proporzioni della popolazione</a></li>
-<li class="toctree-l2"><a class="reference internal" href="estimation.html">8.6. ✅ Stima su piccolo campione della media di una popolazione</a></li>
-<li class="toctree-l2"><a class="reference internal" href="significato_osservato_test.html">8.7. ✅ Il significato osservato di un test</a></li>
+<li class="toctree-l2"><a class="reference internal" href="a_test_media_pop.html">8.1. ✅ Test sulla media della popolazione</a></li>
+<li class="toctree-l2"><a class="reference internal" href="b_medie_pop_ampie.html">8.2. ✅ Confronto di due medie di popolazione</a></li>
+<li class="toctree-l2"><a class="reference internal" href="c_medie_pop_piccoli.html">8.3. ✅ Confronto di due medie di popolazione: Campioni Piccoli e indipendenti</a></li>
+<li class="toctree-l2"><a class="reference internal" href="d_campioni_appaiati.html">8.4. ✅ Confronto di due medie di popolazione: campioni appaiati</a></li>
+<li class="toctree-l2"><a class="reference internal" href="e_confronto_proporzioni.html">8.5. ✅ Confronto di due proporzioni della popolazione</a></li>
+<li class="toctree-l2"><a class="reference internal" href="f_estimation.html">8.6. ✅ Stima su piccolo campione della media di una popolazione</a></li>
+<li class="toctree-l2"><a class="reference internal" href="g_significato_test.html">8.7. ✅ Il significato osservato di un test</a></li>
+<li class="toctree-l2"><a class="reference internal" href="h_interpretation_test.html">8.8. ✅ Interpretare il test dell’ipotesi nulla</a></li>
 </ul>
 </li>
 <li class="toctree-l1 has-children"><a class="reference internal" href="../28_conjugate_prior/conjugate_prior_index.html">9. Distribuzioni coniugate</a><input class="toctree-checkbox" id="toctree-checkbox-10" name="toctree-checkbox-10" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-10"><i class="fa-solid fa-chevron-down"></i></label><ul>
@@ -426,13 +427,14 @@ document.write(`
 <h1><span class="section-number">8. </span>Inferenza frequentista<a class="headerlink" href="#inferenza-frequentista" title="Permalink to this headline">#</a></h1>
 <div class="toctree-wrapper compound">
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="test_media_popolazione.html">8.1. ✅ Test su campioni di grandi dimensioni per una media della popolazione</a></li>
-<li class="toctree-l1"><a class="reference internal" href="confronto_medie_pop_ampie.html">8.2. ✅ Confronto di due medie di popolazione: campioni ampi e indipendenti</a></li>
-<li class="toctree-l1"><a class="reference internal" href="confronto_medie_pop_piccoli.html">8.3. ✅ Confronto di due medie di popolazione: Campioni Piccoli e indipendenti</a></li>
-<li class="toctree-l1"><a class="reference internal" href="confronto_pop_appaiati.html">8.4. ✅ Confronto di due medie di popolazione: campioni appaiati</a></li>
-<li class="toctree-l1"><a class="reference internal" href="confronto_proporzioni.html">8.5. ✅ Confronto di due proporzioni della popolazione</a></li>
-<li class="toctree-l1"><a class="reference internal" href="estimation.html">8.6. ✅ Stima su piccolo campione della media di una popolazione</a></li>
-<li class="toctree-l1"><a class="reference internal" href="significato_osservato_test.html">8.7. ✅ Il significato osservato di un test</a></li>
+<li class="toctree-l1"><a class="reference internal" href="a_test_media_pop.html">8.1. ✅ Test sulla media della popolazione</a></li>
+<li class="toctree-l1"><a class="reference internal" href="b_medie_pop_ampie.html">8.2. ✅ Confronto di due medie di popolazione</a></li>
+<li class="toctree-l1"><a class="reference internal" href="c_medie_pop_piccoli.html">8.3. ✅ Confronto di due medie di popolazione: Campioni Piccoli e indipendenti</a></li>
+<li class="toctree-l1"><a class="reference internal" href="d_campioni_appaiati.html">8.4. ✅ Confronto di due medie di popolazione: campioni appaiati</a></li>
+<li class="toctree-l1"><a class="reference internal" href="e_confronto_proporzioni.html">8.5. ✅ Confronto di due proporzioni della popolazione</a></li>
+<li class="toctree-l1"><a class="reference internal" href="f_estimation.html">8.6. ✅ Stima su piccolo campione della media di una popolazione</a></li>
+<li class="toctree-l1"><a class="reference internal" href="g_significato_test.html">8.7. ✅ Il significato osservato di un test</a></li>
+<li class="toctree-l1"><a class="reference internal" href="h_interpretation_test.html">8.8. ✅ Interpretare il test dell’ipotesi nulla</a></li>
 </ul>
 </div>
 </section>
@@ -478,11 +480,11 @@ document.write(`
       </div>
     </a>
     <a class="right-next"
-       href="test_media_popolazione.html"
+       href="a_test_media_pop.html"
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title"><span class="section-number">8.1. </span>✅ Test su campioni di grandi dimensioni per una media della popolazione</p>
+        <p class="prev-next-title"><span class="section-number">8.1. </span>✅ Test sulla media della popolazione</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
